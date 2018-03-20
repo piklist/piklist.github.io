@@ -1,4 +1,4 @@
-## Order
+## Tab Order
 
 The sort order of this settings tab. 
 
@@ -9,5 +9,5 @@ Piklist Parts: settings
 
 Example:
 ```
-order: 4
+Tab Order: 4
 ```
