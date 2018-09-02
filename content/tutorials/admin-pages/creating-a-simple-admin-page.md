@@ -46,7 +46,7 @@ If you go to the WordPress admin you should see a menu item called "About".
 
 This code tells Piklist to place the contents of this file on the `about_my_plugin` page. Notice that the value that goes in `Page:` matches the `menu_slug` you defined when you registered the page.
 
-* NOTE: There are many other [options you can add to the Comment Block](http://localhost:1313/Piklist-Documentation/folder-structure/comment-block-parameters/).
+* NOTE: There are many other [options you can add to the Comment Block](/comment-block-parameters/).
 
 * Under this comment block you can add text, html, php, etc. Anything you want to show on this page.
 
