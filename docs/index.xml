@@ -626,8 +626,9 @@ NOTES:
       
       <guid>https://docs.piklist.com/fields/types/group/</guid>
       <description>&#39;type&#39; =&amp;gt; &#39;group&#39; Adds a group of fields.
-If field parameter is set, a serialized array is created of the field group, otherwise they will be saved as individual meta. Individual meta can easily be searched. The columns field parameter is especially helpful in Field Groups for more complex layouts like address blocks.
-Examples piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;group&#39; ,&#39;field&#39; =&amp;gt; &#39;address_group&#39; ,&#39;label&#39; =&amp;gt; __(&#39;Address (Grouped)&#39;, &#39;piklist-demo&#39;) ,&#39;list&#39; =&amp;gt; false ,&#39;description&#39; =&amp;gt; __(&#39;A grouped field with the field parameter set.</description>
+If the main field parameter is set, a serialized array is created of all the fields in the group. Not including it saves all the fields as individual meta. Individual meta can easily be searched.
+ The columns field parameter is especially helpful in Field Groups for more complex layouts like address blocks.
+ Examples piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;group&#39; ,&#39;field&#39; =&amp;gt; &#39;address_group&#39; // removing this parameter saves all fields as separate meta ,&#39;label&#39; =&amp;gt; __(&#39;Address (Grouped)&#39;, &#39;piklist-demo&#39;) ,&#39;list&#39; =&amp;gt; false ,&#39;description&#39; =&amp;gt; __(&#39;A grouped field with the field parameter set.</description>
     </item>
     
     <item>

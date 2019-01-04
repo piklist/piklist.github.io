@@ -13,19 +13,19 @@
     <title>group Field &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1546535916" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1546535916" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1546535916" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1546535916" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1546535916" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1546535916" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1546535916" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1546535916" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1546634191" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1546634191" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1546634191" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1546634191" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1546634191" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1546634191" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1546634191" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1546634191" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1546535916" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1546634191" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1546535916"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1546634191"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1546535916"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1546535916"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1546634191"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1546634191"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1546535916"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1546634191"></script>
 
     
   </div>
@@ -1717,14 +1717,19 @@
 
 <p>Adds a group of fields.</p>
 
-<p>If <code>field</code> parameter is set, a serialized array is created of the field group, otherwise they will be saved as individual meta. Individual meta can easily be searched.
-The columns field parameter is especially helpful in Field Groups for more complex layouts like address blocks.</p>
+<div class="notices tip" ><p>If the main <code>field</code> parameter is set, a serialized array is created of all the fields in the group. Not including it saves all the fields as individual meta. Individual meta can easily be searched.</p>
+</div>
+
+
+<div class="notices tip" ><p>The <code>columns</code> field parameter is especially helpful in Field Groups for more complex layouts like address blocks.</p>
+</div>
+
 
 <h3 id="examples">Examples</h3>
 
 <pre><code class="language-php">piklist('field', array(
     'type' =&gt; 'group'
-    ,'field' =&gt; 'address_group'
+    ,'field' =&gt; 'address_group' // removing this parameter saves all fields as separate meta
     ,'label' =&gt; __('Address (Grouped)', 'piklist-demo')
     ,'list' =&gt; false
     ,'description' =&gt; __('A grouped field with the field parameter set.', 'piklist-demo')
@@ -1781,11 +1786,20 @@ The columns field parameter is especially helpful in Field Groups for more compl
 
 <h4 id="display-grouped-fields">Display Grouped Fields</h4>
 
-<p>If <code>field</code> value is set for the group, unserialize the contents of the field like this:</p>
+<p>If the main <code>field</code> value is set for the group, unserialize the contents of the field like this:</p>
 
-<pre><code>$group_data = get_post_meta($post-&gt;ID, 'field_name', true);
+<pre><code>$group_data = get_post_meta($post-&gt;ID, 'address_group', true);
 $group_data = maybe_unserialize($group_data); // nice WP helper function to unserialize if needed
-print_r($group_data); // output the results
+print_r($group_data); // output the results or loop through them with a `foreach` statement.
+</code></pre>
+
+<p>If the main <code>field</code> value is not set for the group, then each field is saved as separate meta. You can retrieve like this:</p>
+
+<pre><code>echo get_post_meta($post-&gt;ID, 'address_1', false);
+echo get_post_meta($post-&gt;ID, 'address_2', false);
+echo get_post_meta($post-&gt;ID, 'city', false);
+echo get_post_meta($post-&gt;ID, 'state', false);
+echo get_post_meta($post-&gt;ID, 'postal_code', false);
 </code></pre>
 
 
@@ -3510,20 +3524,20 @@ print_r($group_data); // output the results
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1546535916"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1546535916"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1546535916"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1546535916"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1546535916"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1546535916"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1546535916"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1546634191"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1546535917"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1546535917"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1546535917"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1546634191"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1546634191"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1546535917" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1546535917"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1546634191" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1546634191"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
