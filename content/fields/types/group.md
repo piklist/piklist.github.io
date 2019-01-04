@@ -6,14 +6,19 @@ menuTitle: "group"
 
 Adds a group of fields.
 
-If `field` parameter is set, a serialized array is created of the field group, otherwise they will be saved as individual meta. Individual meta can easily be searched.
-The columns field parameter is especially helpful in Field Groups for more complex layouts like address blocks.
+{{% notice tip %}}
+If the main `field` parameter is set, a serialized array is created of all the fields in the group. Not including it saves all the fields as individual meta. Individual meta can easily be searched.
+{{% /notice %}}
+
+{{% notice tip %}}
+The `columns` field parameter is especially helpful in Field Groups for more complex layouts like address blocks.
+{{% /notice %}}
 
 ### Examples
 ```php
 piklist('field', array(
     'type' => 'group'
-    ,'field' => 'address_group'
+    ,'field' => 'address_group' // removing this parameter saves all fields as separate meta
     ,'label' => __('Address (Grouped)', 'piklist-demo')
     ,'list' => false
     ,'description' => __('A grouped field with the field parameter set.', 'piklist-demo')
@@ -68,9 +73,19 @@ piklist('field', array(
 
 ### Usage
 #### Display Grouped Fields
-If `field` value is set for the group, unserialize the contents of the field like this:
+If the main `field` value is set for the group, unserialize the contents of the field like this:
 ```
-$group_data = get_post_meta($post->ID, 'field_name', true);
+$group_data = get_post_meta($post->ID, 'address_group', true);
 $group_data = maybe_unserialize($group_data); // nice WP helper function to unserialize if needed
-print_r($group_data); // output the results
+print_r($group_data); // output the results or loop through them with a `foreach` statement.
   ```
+
+If the main `field` value is not set for the group, then each field is saved as separate meta. You can retrieve like this:
+
+```
+echo get_post_meta($post->ID, 'address_1', false);
+echo get_post_meta($post->ID, 'address_2', false);
+echo get_post_meta($post->ID, 'city', false);
+echo get_post_meta($post->ID, 'state', false);
+echo get_post_meta($post->ID, 'postal_code', false);
+```
