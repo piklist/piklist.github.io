@@ -28,26 +28,52 @@ piklist('field', array(
 The datepicker field can be localized by translating these parameters. This example shows the field being translated into French.
 
 ```
-piklist('field', array(
-    'type' => 'datepicker',
-    'field' => 'my_date_field',
-    'label' => 'Date',
-    'options' => array(
-      'closeText'=>'Fermer',
-      'prevText'=>'Précédent',
-      'nextText'=>'Suivant',
-      'currentText'=>'Aujourd\'hui',
-      'monthNames'=>['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
-      'monthNamesShort'=>['Janv.','Févr.','Mars','Avril','Mai','Juin','Juil.','Août','Sept.','Oct.','Nov.','Déc.'],
-      'dayNames'=>['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
-      'dayNamesShort'=>['Dim.','Lun.','Mar.','Mer.','Jeu.','Ven.','Sam.'],
-      'dayNamesMin'=>['D','L','M','M','J','V','S'],
-      'weekHeader'=>'Sem.',
-      'dateFormat'=>'dd/mm/yy',
-      'firstDay'=>1,
-      'isRTL'=>false,
-      'showMonthAfterYear'=>false,
-      'yearSuffix'=>''
-    )
-  ));
+piklist( 'field', array(
+	'type'    => 'datepicker',
+	'field'   => 'my_date_field',
+	'label'   => 'Date',
+	'options' => array(
+		'closeText'          => 'Fermer',
+		'prevText'           => 'Précédent',
+		'nextText'           => 'Suivant',
+		'currentText'        => 'Aujourd\'hui',
+		'monthNames'         => [
+			'January',
+			'February',
+			'March',
+			'April',
+			'May',
+			'June',
+			'July',
+			'August',
+			'September',
+			'October',
+			'November',
+			'December',
+		],
+		'monthNamesShort'    => [
+			'Jan.',
+			'Feb.',
+			'Mar.',
+			'Apr.',
+			'May.',
+			'Jun.',
+			'Jul.',
+			'Aug.',
+			'Sept.',
+			'Oct.',
+			'Nov.',
+			'Dec.',
+		],
+		'dayNames'           => [ 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ],
+		'dayNamesShort'      => [ 'Sat.', 'Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.' ],
+		'dayNamesMin'        => [ 'S', 'S', 'M', 'T', 'W', 'T', 'F' ],
+		'weekHeader'         => 'Sat.',
+		'dateFormat'         => 'dd/mm/yy',
+		'firstDay'           => 1,
+		'isRTL'              => false,
+		'showMonthAfterYear' => false,
+		'yearSuffix'         => '',
+	),
+) );
  ```
