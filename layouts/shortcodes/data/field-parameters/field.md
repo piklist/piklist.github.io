@@ -7,5 +7,10 @@ For `scope`: `post_meta`, `term_meta`, `option`: this is the name of the field t
 For `scope`: `post`, `taxonomy`: use the name of the post_type or taxonomy you want to save your data to.
 
 * Input:  string
-Example:
+Examples:
+
 `'field' => 'my_field'`
+
+`'field' => 'post_type_name'`
+
+`'field' => 'taxonomy_name'`
