@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.55.5" />
     <meta name="description" content="The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.">
 
 
@@ -13,19 +13,19 @@
     <title>piklist_post_types &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1548284016" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1558658821" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1548284016" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1558658821" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1558658821"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1548284016"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1548284016"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1558658821"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1558658821"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1548284016"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1558658821"></script>
 
     
   </div>
@@ -1744,14 +1744,14 @@
 <p>Add custom classes to the body attribute of any page that displays this post type. In the admin only.</p>
 
 <ul>
-<li>Input:  Array</li>
-</ul>
+<li><p>Input:  Array</p>
 
 <pre><code>'admin_body_class' =&gt; array(
-  'custom-body-class',
-  'custom-body-class-2
+'custom-body-class',
+'custom-body-class-2
 )
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="edit-columns"><code>edit_columns</code></h3>
 
@@ -1759,14 +1759,15 @@
 
 <ul>
 <li>Input:  Array</li>
-<li>values:  array of items to change. key = default WordPress title, value = new title</li>
-</ul>
+
+<li><p>values:  array of items to change. key = default WordPress title, value = new title</p>
 
 <pre><code>'edit_columns' =&gt; array(
-  'title' =&gt; 'Demo',
-  'author' =&gt; 'Assigned to'
+'title' =&gt; 'Demo',
+'author' =&gt; 'Assigned to'
 )
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="hide-meta-box"><code>hide_meta_box</code></h3>
 
@@ -1774,13 +1775,14 @@
 
 <ul>
 <li>Input:  Array</li>
-<li>values:  array for metaboxes to hide</li>
-</ul>
+
+<li><p>values:  array for metaboxes to hide</p>
 
 <pre><code>'hide_meta_box' =&gt; array(
-  'author'
+'author'
 )
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="hide-post-row-actions"><code>hide_post_row_actions</code></h3>
 
@@ -1788,26 +1790,27 @@
 
 <ul>
 <li>Input:  Array</li>
-<li>values:  array of row actions, the key corresponding to the span class attribute of the element</li>
-</ul>
+
+<li><p>values:  array of row actions, the key corresponding to the span class attribute of the element</p>
 
 <pre><code>'hide_post_row_actions' =&gt; array(
-  'trash',
-  'edit',
-  'quick-edit'
+'trash',
+'edit',
+'quick-edit'
 )
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="hide-screen-options"><code>hide_screen_options</code></h3>
 
 <p>Hide the screen options tab on the post edit screens.</p>
 
 <ul>
-<li>Input:  Array</li>
-</ul>
+<li><p>Input:  Array</p>
 
 <pre><code>'hide_screen_options' =&gt; true
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="status"><code>status</code></h3>
 
@@ -1818,31 +1821,32 @@
 
 <ul>
 <li>Input:  Array</li>
-<li>values:  array of statuses and labels</li>
-</ul>
+
+<li><p>values:  array of statuses and labels</p>
 
 <pre><code>'status' =&gt; array(
-  'new' =&gt; array(
-    'label' =&gt; 'New',
-    'public' =&gt; false
-  )
-  ,'pending' =&gt; array(
-    'label' =&gt; 'Pending Review',
-    'public' =&gt; false
-  )
-  ,'demo' =&gt; array(
-    'label' =&gt; 'Demo',
-    'public' =&gt; true,
-    'exclude_from_search' =&gt; true,
-    'show_in_admin_all_list' =&gt; true,
-    'show_in_admin_status_list' =&gt; true
-  )
-  ,'lock' =&gt; array(
-    'label' =&gt; 'Lock',
-    'public' =&gt; true
-  )
+'new' =&gt; array(
+'label' =&gt; 'New',
+'public' =&gt; false
 )
-</code></pre>
+,'pending' =&gt; array(
+'label' =&gt; 'Pending Review',
+'public' =&gt; false
+)
+,'demo' =&gt; array(
+'label' =&gt; 'Demo',
+'public' =&gt; true,
+'exclude_from_search' =&gt; true,
+'show_in_admin_all_list' =&gt; true,
+'show_in_admin_status_list' =&gt; true
+)
+,'lock' =&gt; array(
+'label' =&gt; 'Lock',
+'public' =&gt; true
+)
+)
+</code></pre></li>
+</ul>
 
 <h3 id="title"><code>title</code></h3>
 
@@ -1850,11 +1854,12 @@
 
 <ul>
 <li>Input:  Array</li>
-<li>values:  text you want to show</li>
-</ul>
+
+<li><p>values:  text you want to show</p>
 
 <pre><code>'title' =&gt; 'Enter Custom Title'
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>NOTE: WordPress doesn’t allow a Post Type slug defined as &lsquo;order&rsquo;. This is not allowed <code>'slug' =&gt; 'order'</code></p>
 
@@ -3180,42 +3185,6 @@
             
         
                     
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
             
         
                     
@@ -3496,6 +3465,42 @@
                     
                     
 
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
                     
                         
             
@@ -3637,20 +3642,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1558658821"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1558658821"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1548284016" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1548284016"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1558658821" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1558658821"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

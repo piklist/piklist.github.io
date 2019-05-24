@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.55.5" />
     <meta name="description" content="Use Piklist updates to run your update scripts">
 
 
@@ -13,19 +13,19 @@
     <title>Getting started with updates &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1548284016" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1558658821" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1548284016" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1558658821" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1558658821"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1548284016"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1548284016"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1558658821"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1558658821"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1548284016"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1558658821"></script>
 
     
   </div>
@@ -1507,57 +1507,6 @@
 
         
           
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
         
         </ul>
       
@@ -1749,56 +1698,57 @@
 <ul>
 <li>This update scripts runs if you are upgrading from Piklist version 0.7.1.</li>
 <li>The script moves data from a legacy table to a new table, and drops the old table.</li>
-<li>You can find it in <code>piklist/parts/updates</code></li>
-</ul>
+
+<li><p>You can find it in <code>piklist/parts/updates</code></p>
 
 <pre><code>if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 if (!class_exists('Piklist_Update_0_7_2'))
 {
-  class Piklist_Update_0_7_2
-  {
-    public function __construct()
-    {
-      add_action('admin_init', array($this, 'admin_init'));
-    }
-
-    public function admin_init()
-    {
-      global $wpdb;
-
-      $legacy_table = $wpdb-&gt;prefix . 'piklist_cpt_relate';
-
-      $count = $wpdb-&gt;get_var(&quot;SHOW TABLES LIKE '{$legacy_table}'&quot;);
-
-      // Does the legacy table exist?
-      if (!empty($count))
-      {
-        // Grab data from legacy table
-        $data = $wpdb-&gt;get_results(&quot;SELECT * FROM {$legacy_table}&quot;, ARRAY_A);
-
-        // Move data to new table
-        foreach ($data as $row)
-        {
-          $wpdb-&gt;insert(
-            $wpdb-&gt;post_relationships
-            ,$row
-            ,array(
-              '%d'
-              ,'%d'
-              ,'%d'
-            )
-          );
-        }
-
-        // Delete legacy table
-        $wpdb-&gt;query(&quot;DROP TABLE IF EXISTS {$legacy_table}&quot;);
-      }
-    }
-  }
+class Piklist_Update_0_7_2
+{
+public function __construct()
+{
+  add_action('admin_init', array($this, 'admin_init'));
 }
 
-</code></pre>
+public function admin_init()
+{
+  global $wpdb;
+
+  $legacy_table = $wpdb-&gt;prefix . 'piklist_cpt_relate';
+
+  $count = $wpdb-&gt;get_var(&quot;SHOW TABLES LIKE '{$legacy_table}'&quot;);
+
+  // Does the legacy table exist?
+  if (!empty($count))
+  {
+    // Grab data from legacy table
+    $data = $wpdb-&gt;get_results(&quot;SELECT * FROM {$legacy_table}&quot;, ARRAY_A);
+
+    // Move data to new table
+    foreach ($data as $row)
+    {
+      $wpdb-&gt;insert(
+        $wpdb-&gt;post_relationships
+        ,$row
+        ,array(
+          '%d'
+          ,'%d'
+          ,'%d'
+        )
+      );
+    }
+
+    // Delete legacy table
+    $wpdb-&gt;query(&quot;DROP TABLE IF EXISTS {$legacy_table}&quot;);
+  }
+}
+}
+}
+
+</code></pre></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -3060,42 +3010,6 @@ if (!class_exists('Piklist_Update_0_7_2'))
             
         
                     
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
             
         
                     
@@ -3395,6 +3309,42 @@ if (!class_exists('Piklist_Update_0_7_2'))
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -3509,7 +3459,7 @@ if (!class_exists('Piklist_Update_0_7_2'))
 
 
         
-            <a class="nav nav-prev" href="https://docs.piklist.com/tutorials/shortcodes/" title="Shortcodes"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="https://docs.piklist.com/tutorials/taxonomies-terms/" title="Taxonomies / Terms"> <i class="fa fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="https://docs.piklist.com/tutorials/users/" title="Users" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -3521,20 +3471,20 @@ if (!class_exists('Piklist_Update_0_7_2'))
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1558658821"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1558658821"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1548284016" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1548284016"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1558658821" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1558658821"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

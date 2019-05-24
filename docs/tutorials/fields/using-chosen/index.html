@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.55.5" />
     <meta name="description" content="Chosen is a jQuery plugin that makes long, unwieldy select boxes much more user-friendly, and can easily be used with Piklist">
 
 
@@ -13,19 +13,19 @@
     <title>Using &#34;Chosen&#34; for select fields &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1548284016" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1548284016" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1558658821" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1558658821" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1548284016" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1558658821" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1558658821"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1548284016"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1548284016"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1558658821"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1558658821"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1548284016"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1558658821"></script>
 
     
   </div>
@@ -1729,74 +1729,74 @@ add_action( 'wp_enqueue_scripts', 'my_enqueue_files' );
 </code></pre>
 
 <ul>
-<li>Now let&rsquo;s add a select field with lots of options. Add this field to the proper file in your <code>/parts</code> folder:</li>
-</ul>
+<li><p>Now let&rsquo;s add a select field with lots of options. Add this field to the proper file in your <code>/parts</code> folder:</p>
 
 <pre><code>piklist('field', array(
-  'type' =&gt; 'select'
-  ,'field' =&gt; 'us_states'
-  ,'label' =&gt; 'Select a state'
-  ,'required' =&gt; true
-  ,'choices' =&gt; array(
-      '' =&gt; ''
-      ,'AL' =&gt; 'AL'
-      ,'AK' =&gt; 'AK'
-      ,'AZ' =&gt; 'AZ'
-      ,'AR' =&gt; 'AR'
-      ,'CA' =&gt; 'CA'
-      ,'CO' =&gt; 'CO'
-      ,'CT' =&gt; 'CT'
-      ,'DE' =&gt; 'DE'
-      ,'DC' =&gt; 'DC'
-      ,'FL' =&gt; 'FL'
-      ,'GA' =&gt; 'GA'
-      ,'HI' =&gt; 'HI'
-      ,'ID' =&gt; 'ID'
-      ,'IL' =&gt; 'IL'
-      ,'IN' =&gt; 'IN'
-      ,'IA' =&gt; 'IA'
-      ,'KS' =&gt; 'KS'
-      ,'KY' =&gt; 'KY'
-      ,'LA' =&gt; 'LA'
-      ,'ME' =&gt; 'ME'
-      ,'MD' =&gt; 'MD'
-      ,'MA' =&gt; 'MA'
-      ,'MI' =&gt; 'MI'
-      ,'MN' =&gt; 'MN'
-      ,'MS' =&gt; 'MS'
-      ,'MO' =&gt; 'MO'
-      ,'MT' =&gt; 'MT'
-      ,'NE' =&gt; 'NE'
-      ,'NV' =&gt; 'NV'
-      ,'NH' =&gt; 'NH'
-      ,'NJ' =&gt; 'NJ'
-      ,'NM' =&gt; 'NM'
-      ,'NY' =&gt; 'NY'
-      ,'NC' =&gt; 'NC'
-      ,'ND' =&gt; 'ND'
-      ,'OH' =&gt; 'OH'
-      ,'OK' =&gt; 'OK'
-      ,'OR' =&gt; 'OR'
-      ,'PA' =&gt; 'PA'
-      ,'RI' =&gt; 'RI'
-      ,'SC' =&gt; 'SC'
-      ,'SD' =&gt; 'SD'
-      ,'TN' =&gt; 'TN'
-      ,'TX' =&gt; 'TX'
-      ,'UT' =&gt; 'UT'
-      ,'VT' =&gt; 'VT'
-      ,'VA' =&gt; 'VA'
-      ,'WA' =&gt; 'WA'
-      ,'WV' =&gt; 'WV'
-      ,'WI' =&gt; 'WI'
-      ,'WY' =&gt; 'WY'
-  )
-  ,'attributes' =&gt; array(
-    'class' =&gt; 'chosen-select'
-    ,'data-placeholder' =&gt; 'Choose a State'
-  )
+'type' =&gt; 'select'
+,'field' =&gt; 'us_states'
+,'label' =&gt; 'Select a state'
+,'required' =&gt; true
+,'choices' =&gt; array(
+  '' =&gt; ''
+  ,'AL' =&gt; 'AL'
+  ,'AK' =&gt; 'AK'
+  ,'AZ' =&gt; 'AZ'
+  ,'AR' =&gt; 'AR'
+  ,'CA' =&gt; 'CA'
+  ,'CO' =&gt; 'CO'
+  ,'CT' =&gt; 'CT'
+  ,'DE' =&gt; 'DE'
+  ,'DC' =&gt; 'DC'
+  ,'FL' =&gt; 'FL'
+  ,'GA' =&gt; 'GA'
+  ,'HI' =&gt; 'HI'
+  ,'ID' =&gt; 'ID'
+  ,'IL' =&gt; 'IL'
+  ,'IN' =&gt; 'IN'
+  ,'IA' =&gt; 'IA'
+  ,'KS' =&gt; 'KS'
+  ,'KY' =&gt; 'KY'
+  ,'LA' =&gt; 'LA'
+  ,'ME' =&gt; 'ME'
+  ,'MD' =&gt; 'MD'
+  ,'MA' =&gt; 'MA'
+  ,'MI' =&gt; 'MI'
+  ,'MN' =&gt; 'MN'
+  ,'MS' =&gt; 'MS'
+  ,'MO' =&gt; 'MO'
+  ,'MT' =&gt; 'MT'
+  ,'NE' =&gt; 'NE'
+  ,'NV' =&gt; 'NV'
+  ,'NH' =&gt; 'NH'
+  ,'NJ' =&gt; 'NJ'
+  ,'NM' =&gt; 'NM'
+  ,'NY' =&gt; 'NY'
+  ,'NC' =&gt; 'NC'
+  ,'ND' =&gt; 'ND'
+  ,'OH' =&gt; 'OH'
+  ,'OK' =&gt; 'OK'
+  ,'OR' =&gt; 'OR'
+  ,'PA' =&gt; 'PA'
+  ,'RI' =&gt; 'RI'
+  ,'SC' =&gt; 'SC'
+  ,'SD' =&gt; 'SD'
+  ,'TN' =&gt; 'TN'
+  ,'TX' =&gt; 'TX'
+  ,'UT' =&gt; 'UT'
+  ,'VT' =&gt; 'VT'
+  ,'VA' =&gt; 'VA'
+  ,'WA' =&gt; 'WA'
+  ,'WV' =&gt; 'WV'
+  ,'WI' =&gt; 'WI'
+  ,'WY' =&gt; 'WY'
+)
+,'attributes' =&gt; array(
+'class' =&gt; 'chosen-select'
+,'data-placeholder' =&gt; 'Choose a State'
+)
 ));
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>Let&rsquo;s take a closer look at this field:</p>
 
@@ -3178,42 +3178,6 @@ piklist('field', array(
             
         
                     
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
             
         
                     
@@ -3498,6 +3462,42 @@ piklist('field', array(
                     
                     
 
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
                     
                         
             
@@ -3639,20 +3639,20 @@ piklist('field', array(
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1558658821"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1548284016"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1548284016"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1558658821"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1558658821"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1548284016" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1548284016"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1558658821" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1558658821"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
