@@ -13,19 +13,19 @@
     <title>Field Parameters &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1558659832" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1558659832" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1558659832" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1558659832" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1558659832" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1558659832" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1558659832" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1558659832" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1558660231" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1558660231" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1558660231" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1558660231" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1558660231" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1558660231" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1558660231" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1558660231" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1558659832" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1558660231" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1558659832"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1558660231"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1558659832"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1558659832"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1558660231"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1558660231"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1558659832"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1558660231"></script>
 
     
   </div>
@@ -1784,33 +1784,33 @@ To display the results of the Add-More in your theme, pull the data like you nor
 
 <h3 id="sub-parameters">Sub Parameters:</h3>
 
-<h4 id="relation">relation</h4>
+<h4 id="relation-sub-parameter">relation (sub parameter)</h4>
 
 <p>When using multiple conditions, the default logic is AND. Use this parameter to change the logic to OR.
 Examples:
 <code>'relation' =&gt; 'or'</code>
 <code>'relation' =&gt; 'and'</code></p>
 
-<h4 id="field">field</h4>
+<h4 id="field-sub-parameter">field (sub parameter)</h4>
 
 <p>The name of the field you will be watching for Hide/Show, or the field you will be Updating.
 Example:
 <code>'field' =&gt; 'my_field'</code></p>
 
-<h4 id="value">value</h4>
+<h4 id="value-sub-parameter">value (sub parameter)</h4>
 
 <p>The value(s) of the field that will trigger the condition. This parameter also accepts an array of values.
 Examples:
 <code>'value' =&gt; 'yes'</code>
 <code>'value' =&gt; array('yes', 'maybe')</code></p>
 
-<h4 id="reset">reset</h4>
+<h4 id="reset-sub-parameter">reset (sub parameter)</h4>
 
 <p>By default, any field that is hidden/shown will have their values reset. To prevent this set reset to false.
 Example:
 <code>'reset' =&gt; 'false'</code></p>
 
-<h4 id="compare">compare</h4>
+<h4 id="compare-sub-parameter">compare (sub parameter)</h4>
 
 <p>Operator to test the value against. Currently only two values are supported: == and !=.
 * default: ==</p>
@@ -1818,7 +1818,7 @@ Example:
 <p>Example:
 <code>'compare' =&gt; '!='</code></p>
 
-<h4 id="type">type</h4>
+<h4 id="type-sub-parameter">type (sub parameter)</h4>
 
 <p>Piklist supports two condition types; <code>toggle</code> and <code>update</code>.
 * default: toggle</p>
@@ -1826,15 +1826,15 @@ Example:
 <p>Example:
 <code>'type' =&gt; update</code></p>
 
-<h4 id="scope">scope</h4>
+<h4 id="scope-sub-parameter">scope (sub parameter)</h4>
 
 <p>IMPORTANT: Only use if you manually set the scope in the field you are monitoring for Hide/Show.
 Example:
 <code>'scope' =&gt; taxonomy</code></p>
 
-<h4 id="post-status-hide">post_status_hide</h4>
+<h4 id="post-status-hide-sub-parameter">post_status_hide (sub parameter)</h4>
 
-<h4 id="post-status-value">post_status_value</h4>
+<h4 id="post-status-value-sub-parameter">post_status_value (sub parameter)</h4>
 
 <p>Example:</p>
 
@@ -2091,9 +2091,14 @@ Example:
 
 <ul>
 <li>Input:  string
-Example:
-<code>'field' =&gt; 'my_field'</code></li>
+Examples:</li>
 </ul>
+
+<p><code>'field' =&gt; 'my_field'</code></p>
+
+<p><code>'field' =&gt; 'post_type_name'</code></p>
+
+<p><code>'field' =&gt; 'taxonomy_name'</code></p>
 <h2 id="group-field">group_field</h2>
 
 <ul>
@@ -4169,20 +4174,20 @@ piklist('field', array(
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1558659832"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1558660231"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1558659832"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1558659832"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1558660231"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1558660231"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1558659832" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1558659832"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1558660231" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1558660231"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
