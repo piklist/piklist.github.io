@@ -7,50 +7,50 @@ Set conditions for your fields.
 
 ### Sub Parameters:
 
-#### relation
+#### relation (sub parameter)
 When using multiple conditions, the default logic is AND. Use this parameter to change the logic to OR.
 Examples:
 `'relation' => 'or'`
 `'relation' => 'and'`
 
-#### field
+#### field (sub parameter)
 The name of the field you will be watching for Hide/Show, or the field you will be Updating.
 Example:
 `'field' => 'my_field'`
 
-#### value
+#### value (sub parameter)
 The value(s) of the field that will trigger the condition. This parameter also accepts an array of values.
 Examples:
 `'value' => 'yes'`
 `'value' => array('yes', 'maybe')`
 
-#### reset
+#### reset (sub parameter)
 By default, any field that is hidden/shown will have their values reset. To prevent this set reset to false.
 Example:
 `'reset' => 'false'`
 
-#### compare
+#### compare (sub parameter)
 Operator to test the value against. Currently only two values are supported: == and !=.
 * default: ==
 
 Example:
 `'compare' => '!='`
 
-#### type
+#### type (sub parameter)
 Piklist supports two condition types; `toggle` and `update`.
 * default: toggle
 
 Example:
 `'type' => update`
 
-#### scope
+#### scope (sub parameter)
 IMPORTANT: Only use if you manually set the scope in the field you are monitoring for Hide/Show.
 Example:
 `'scope' => taxonomy`
 
-#### post_status_hide
+#### post_status_hide (sub parameter)
 
-#### post_status_value
+#### post_status_value (sub parameter)
 
 
 
