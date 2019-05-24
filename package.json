@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/piklist/Piklist-Documentation#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.3.1"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
