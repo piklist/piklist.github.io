@@ -29,6 +29,7 @@ add_filter('piklist_taxonomies', 'demo_type_tax');
           ,'rewrite' => array(
             'slug' => 'demo-type'
           )
+        )
       );
     return $taxonomies;
   }
