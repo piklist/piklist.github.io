@@ -1,4 +1,4 @@
-## Ddge
+## Edge
 
 Which edge should be adjacent to the target.
 
