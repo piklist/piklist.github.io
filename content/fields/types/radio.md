@@ -11,8 +11,8 @@ piklist('field', array(
     'label' => 'Radio',
     'choices' => array(
       'first' => 'First Choice',
-      ,'second' => 'Second Choice',
-      ,'third' => 'Third Choice'
+      'second' => 'Second Choice',
+      'third' => 'Third Choice'
     )
 ));
 ```
