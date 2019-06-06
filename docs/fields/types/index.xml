@@ -157,7 +157,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;number&#39;, &#39;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/radio/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;radio&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;radio&#39;, &#39;field&#39; =&amp;gt; &#39;my_radio&#39;, &#39;label&#39; =&amp;gt; &#39;Radio&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, ,&#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, ,&#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  </description>
+      <description> &#39;type&#39; =&amp;gt; &#39;radio&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;radio&#39;, &#39;field&#39; =&amp;gt; &#39;my_radio&#39;, &#39;label&#39; =&amp;gt; &#39;Radio&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, &#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, &#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  </description>
     </item>
     
     <item>

@@ -837,7 +837,7 @@
 	"title": "radio Field",
 	"tags": [],
 	"description": "",
-	"content": " 'type' =\u0026gt; 'radio' piklist('field', array( 'type' =\u0026gt; 'radio', 'field' =\u0026gt; 'my_radio', 'label' =\u0026gt; 'Radio', 'choices' =\u0026gt; array( 'first' =\u0026gt; 'First Choice', ,'second' =\u0026gt; 'Second Choice', ,'third' =\u0026gt; 'Third Choice' ) ));  "
+	"content": " 'type' =\u0026gt; 'radio' piklist('field', array( 'type' =\u0026gt; 'radio', 'field' =\u0026gt; 'my_radio', 'label' =\u0026gt; 'Radio', 'choices' =\u0026gt; array( 'first' =\u0026gt; 'First Choice', 'second' =\u0026gt; 'Second Choice', 'third' =\u0026gt; 'Third Choice' ) ));  "
 },
 {
 	"uri": "https://docs.piklist.com/fields/types/range/",
