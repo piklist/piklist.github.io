@@ -23,7 +23,10 @@ function my_enqueue_files() {
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_files' );
 ```
-Note: for backend (admin) pages like a post editor, use admin_enqueue_scripts action hook instead.
+Note: for backend (admin) pages like a post editor, use admin_enqueue_scripts action hook instead:
+```
+add_action( 'admin_enqueue_scripts', 'my_enqueue_files' );
+```
 
 * Now let's add a select field with lots of options. Add this field to the proper file in your `/parts` folder:
 
