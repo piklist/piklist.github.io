@@ -51,13 +51,20 @@ piklist('field', array(
 
 WordPress has a standard function, `the_content()`, for displaying data from the post editor. This function automatically gets filtered by WordPress to format your data correctly. When you want to display data from your custom editor field you may also need to duplicate the functionality of `the_content()``.
 
-Format line breaks:
-The WordPress function `wpautop()` changes double line-breaks into HTML paragraphs.
-`echo wpautop( get_post_meta( $post->ID, 'field_name', true ) );`
+Get the field data, and then apply the WordPress filter. Here's an example:
+```
+$my_field = get_post_meta(get_the_ID(), 'field_name', true);
+echo apply_filters( 'the_content', $my_field );
+```
 
 Run shortcodes:
 Use `do_shortcode()` to run shortcodes in your content.
 `echo do_shortcode( get_post_meta( $post->ID, 'field_name', true ) );`
 
 You can even use both together:
-`echo do_shortcode( wpautop( get_post_meta( $post->ID, 'field_name', true) ) );`
+```
+$my_field = get_post_meta(get_the_ID(), 'field_name', true);
+$my_field = apply_filters( 'the_content', $my_field );
+echo do_shortcode( $my_field );
+```
+
