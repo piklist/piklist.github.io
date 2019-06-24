@@ -13,19 +13,19 @@
     <title>editor Field &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1559843624" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1559843624" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1559843624" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1559843624" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1559843624" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1559843624" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1559843624" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1559843624" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1561339918" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1561339918" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1561339918" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1561339918" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1561339918" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1561339918" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1561339918" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1561339918" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1559843624" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1561339918" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1559843624"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1561339918"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1559843624"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1559843624"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1561339918"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1561339918"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1559843624"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1561339918"></script>
 
     
   </div>
@@ -1761,16 +1761,22 @@
 
 <p>WordPress has a standard function, <code>the_content()</code>, for displaying data from the post editor. This function automatically gets filtered by WordPress to format your data correctly. When you want to display data from your custom editor field you may also need to duplicate the functionality of <code>the_content()</code>`.</p>
 
-<p>Format line breaks:
-The WordPress function <code>wpautop()</code> changes double line-breaks into HTML paragraphs.
-<code>echo wpautop( get_post_meta( $post-&gt;ID, 'field_name', true ) );</code></p>
+<p>Get the field data, and then apply the WordPress filter. Here&rsquo;s an example:</p>
+
+<pre><code>$my_field = get_post_meta(get_the_ID(), 'field_name', true);
+echo apply_filters( 'the_content', $my_field );
+</code></pre>
 
 <p>Run shortcodes:
 Use <code>do_shortcode()</code> to run shortcodes in your content.
 <code>echo do_shortcode( get_post_meta( $post-&gt;ID, 'field_name', true ) );</code></p>
 
-<p>You can even use both together:
-<code>echo do_shortcode( wpautop( get_post_meta( $post-&gt;ID, 'field_name', true) ) );</code></p>
+<p>You can even use both together:</p>
+
+<pre><code>$my_field = get_post_meta(get_the_ID(), 'field_name', true);
+$my_field = apply_filters( 'the_content', $my_field );
+echo do_shortcode( $my_field );
+</code></pre>
 
 
 <footer class=" footline" >
@@ -3494,20 +3500,20 @@ Use <code>do_shortcode()</code> to run shortcodes in your content.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1559843624"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1561339918"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1559843624"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1559843624"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1561339918"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1561339918"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1559843624" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1559843624"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1561339918" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1561339918"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
