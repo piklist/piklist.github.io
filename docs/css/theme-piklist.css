@@ -312,10 +312,6 @@ h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    text-transform: capitalize;
-}
-
 .container {
     width: 100%;
     padding-right: 15px;
