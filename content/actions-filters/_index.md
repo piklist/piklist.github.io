@@ -6,4 +6,4 @@ weight: 1200
 
 Piklist includes tons of actions and filters.
 
-{{% children description="true" depth="3" showhidden="true" %}}
+{{% children description="true" depth="2" showhidden="true" %}}
