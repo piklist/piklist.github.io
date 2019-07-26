@@ -40,7 +40,7 @@
 	{{$numn := add $num $.count }}
 
   {{(printf "<h%d class=\"child\">" $numn)|safeHTML}}
-  <p class="children-title"><a href="{{.URL}}" >{{ .Title }}</a></p>
+  <p class="children-title"><a href="{{.Permalink}}" >{{ .Title }}</a></p>
 	{{if $.description}}
 		{{if .Description}}
       <p class="children-description">{{.Description}}</p>
@@ -52,7 +52,7 @@
 
   {{else}}
   {{(printf "<%s class=\"child\">" $.style)|safeHTML}}
-  <p class="children-title"><a href="{{.URL}}" >{{ .Title }}</a></p>
+  <p class="children-title"><a href="{{.Permalink}}" >{{ .Title }}</a></p>
 	{{if $.description}} {{if .Description}}
       <p class="children-description">{{.Description}}</p>
 		{{else}}
