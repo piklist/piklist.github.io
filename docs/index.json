@@ -305,7 +305,7 @@
 	"title": "Actions and Filters",
 	"tags": [],
 	"description": "Piklist Actions and Filters",
-	"content": "Piklist includes tons of actions and filters.\nFilters\nPiklist Filters\n  piklist_admin_pages\nThe piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.\n   piklist_empty_post_title\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Let’s you programmatically set the post title when adding a new post (post type).\u0026lt;/p\u0026gt;  \n  piklist_part_process\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The `piklist_part_process` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\u0026lt;/p\u0026gt;  \n  piklist_part_process-{$folder}\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The `piklist_part_process-{$folder}` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\u0026lt;/p\u0026gt;  \n  piklist_post_types\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.\u0026lt;/p\u0026gt;  \n  piklist_pre_update_option\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_pre_update_option filter is used to filter the settings input before they are saved\u0026lt;/p\u0026gt;  \n  piklist_pre_updateoption$setting\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_pre_update_option_$setting filter is used to filter the settings input before they are saved\u0026lt;/p\u0026gt;  \n  piklist_sanitization_rules\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Add your own rules to sanitize field data.\u0026lt;/p\u0026gt;  \n  piklist_taxonomies\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Extends the standard WordPress function register_taxonomy with additional features and parameters.\u0026lt;/p\u0026gt;  \n  piklist_validation_rules\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Add your own rules to validate field data.\u0026lt;/p\u0026gt;  \n  \n\n"
+	"content": "Piklist includes tons of actions and filters.\nActions\nPiklist Actions\n  edit_term_taxonomy\ndo_action('edit_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy    edited_term_taxonomy\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('edited_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php  Arguments $term $taxonomy \n  piklist_activate_add_on\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after an add-on is activated.\u0026lt;/p\u0026gt;  \n  piklist_admin_page_after_title\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after the title on an Admin Page\u0026lt;/p\u0026gt;  \n  piklistevent{$active_field[\u0026#39;scope\u0026#39;]}_field\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action(\u0026amp;quot;piklist_event_{$active_field['scope']}_field\u0026amp;quot;, $active_field); Class class-piklist-field.php  Arguments $active_field[\u0026lsquo;scope\u0026rsquo;] $active_field \n  piklist_notices\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;do_action('piklist_notices'); Class class-piklist-universal-widget.php\u0026lt;/p\u0026gt;  \n  piklist_parts_process\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts are in process.\u0026lt;/p\u0026gt;  \n  piklist_parts_process-{$folder}\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts are in process.\u0026lt;/p\u0026gt;  \n  piklist_parts_processed\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts have been processed.\u0026lt;/p\u0026gt;  \n  piklist_parts_processed-{$folder}\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts have been processed.\u0026lt;/p\u0026gt;  \n  piklist_plugin_loaded-\u0026#39; . $type \n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a plugin is loaded.\u0026lt;/p\u0026gt;  \n  piklist_post_render_ajax_shortcode\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;do_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php  Arguments $post_id Post ID shortcode Full shortcode with attributes\n\n  piklist_post_render_dashboard_widget\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a Dashboard Widget is rendered\u0026lt;/p\u0026gt;  \n  piklist_post_render_media_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a media meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a post meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_setting_section\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a settings section is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_settings_form\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after the settings form renders on an Admin Page\u0026lt;/p\u0026gt;  \n  piklist_post_render_shortcode\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a shortcode is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_user_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a user meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_widget\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('piklist_post_render_widget', $this-\u0026amp;gt;widgets[$widget]); Class class-piklist-universal-widget.php  Arguments $this-\u0026gt;widgets[$widget] \n  piklist_post_render_workflow\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a Workflow is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_ajax_shortcode\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;do_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php  Arguments $post_id Post ID shortcode Full shortcode with attributes\n\n  piklist_pre_render_dashboard_widget\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a Dashboard Widget is rendered\u0026lt;/p\u0026gt;  \n  piklist_pre_render_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a post meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_setting_section\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a settings section is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_settings_form\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before the settings form renders on an Admin Page\u0026lt;/p\u0026gt;  \n  piklist_pre_render_shortcode\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a shortcode is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_user_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a user meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_widget\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('piklist_pre_render_widget', $this-\u0026amp;gt;widgets[$widget]); Class class-piklist-universal-widget.php  Arguments $this-\u0026gt;widgets[$widget] \n  piklist_pre_render_workflow\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a Workflow is rendered.\u0026lt;/p\u0026gt;  \n  piklist_render_field_custom_assets\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Allow custom assets for fields\u0026lt;/p\u0026gt;  \n  piklist_save_fields\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Fire actions with all rendered fields for the form\u0026lt;/p\u0026gt;  \n  piklist_settings_form\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after the settings form renders on an Admin Page\u0026lt;/p\u0026gt;  \n  piklist_widget_active\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('piklist_widget_active', $this-\u0026amp;gt;widget_name, $widgets); Class class-piklist-universal-widget.php  Arguments $this-\u0026gt;widget_name $widgets \n  piklist_workflow_flow_append\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a Workflow is rendered.\u0026lt;/p\u0026gt;  \n  \nFilters\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;piklist_admin_pages  The piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers. piklist_empty_post_title \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Let’s you programmatically set the post title when adding a new post (post type).\u0026lt;/p\u0026gt;\npiklist_part_process \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_part_process filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\n\n piklist_admin_pages\nThe piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.\n   piklist_empty_post_title\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Let’s you programmatically set the post title when adding a new post (post type).\u0026lt;/p\u0026gt;  \n  piklist_part_process\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The `piklist_part_process` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\u0026lt;/p\u0026gt;  \n  piklist_part_process-{$folder}\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The `piklist_part_process-{$folder}` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\u0026lt;/p\u0026gt;  \n  piklist_post_types\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.\u0026lt;/p\u0026gt;  \n  piklist_pre_update_option\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_pre_update_option filter is used to filter the settings input before they are saved\u0026lt;/p\u0026gt;  \n  piklist_pre_updateoption$setting\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_pre_update_option_$setting filter is used to filter the settings input before they are saved\u0026lt;/p\u0026gt;  \n  piklist_sanitization_rules\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Add your own rules to sanitize field data.\u0026lt;/p\u0026gt;  \n  piklist_taxonomies\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Extends the standard WordPress function register_taxonomy with additional features and parameters.\u0026lt;/p\u0026gt;  \n  piklist_validation_rules\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Add your own rules to validate field data.\u0026lt;/p\u0026gt;  \n  \n\n"
 },
 {
 	"uri": "https://docs.piklist.com/comment-block-parameters/",
@@ -334,6 +334,13 @@
 	"tags": [],
 	"description": "Piklist Documentation is a community effort. Learn how to contribute here.",
 	"content": " The Piklist Documentation like Piklist itself is a community effort. The code for the documentation is hosted on Github and can be edited and added to like any other file via a pull request.\nThis can be done 100% in the Github.com UI. However, if you like you can also pull the repository to your local and edit there. This guide reviews using the Github.com UI.\nGetting Started You only need to do these steps once.\nGithub.com account The first step is to make sure you have a Github.com account and you\u0026rsquo;re logged in.\nFork the piklist-documentation repository You need to fork the documentation project so you can have a copy in your own repository. Visit the documentation repository and click on the \u0026ldquo;Fork\u0026rdquo; button in the upper right.\nGithub just copied all the documentation files to your personal Github account.\nEditing an existing page  At the bottom of every page in the documentation (including this one) is a red \u0026ldquo;Improve this page\u0026rdquo; button. Clicking that button brings you to the appropriate page on Github, in YOUR account where you can start editing. Make any changes you want. Scroll down to the bottom of the page, add some comments if necessary and click \u0026ldquo;propose file change\u0026rdquo;. Github saves the file and creates a new branch automatically. Click \u0026ldquo;Create pull request\u0026rdquo;. Double check your comments and click \u0026ldquo;Create pull request\u0026rdquo; again.  Add a new page  Go to the content directory of the documentation on Github. Find the appropriate folder for your new page. Click \u0026ldquo;Create new file\u0026rdquo; Name your file. The name of your file will be the URL for that page so please name it something relevant and SEO friendly. The documenation is written in Markdown, so the file should end in \u0026ldquo;.md\u0026rdquo;. Example: how-to-do-awesome-things-with-piklist.md. Add content to the new file. Use an existing documentation file as a guide. Scroll down to the bottom of the page, add some comments if necessary and click \u0026ldquo;propose file change\u0026rdquo;. Github saves the file and creates a new branch automatically. Click \u0026ldquo;Create pull request\u0026rdquo;. Double check your comments and click \u0026ldquo;Create pull request\u0026rdquo; again.  After you submit a Pull Request You can view all pull requests here.\nA member of the Piklist documentation team will review your changes. We may make some changes or ask you some questions before accepting them.\nThank you for making the Piklist documentation better.\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/",
+	"title": "Actions",
+	"tags": [],
+	"description": "Piklist Actions",
+	"content": "edit_term_taxonomy\ndo_action('edit_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy    edited_term_taxonomy\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('edited_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php  Arguments $term $taxonomy \n  piklist_activate_add_on\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after an add-on is activated.\u0026lt;/p\u0026gt;  \n  piklist_admin_page_after_title\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after the title on an Admin Page\u0026lt;/p\u0026gt;  \n  piklistevent{$active_field[\u0026#39;scope\u0026#39;]}_field\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action(\u0026amp;quot;piklist_event_{$active_field['scope']}_field\u0026amp;quot;, $active_field); Class class-piklist-field.php  Arguments $active_field[\u0026lsquo;scope\u0026rsquo;] $active_field \n  piklist_notices\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;do_action('piklist_notices'); Class class-piklist-universal-widget.php\u0026lt;/p\u0026gt;  \n  piklist_parts_process\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts are in process.\u0026lt;/p\u0026gt;  \n  piklist_parts_process-{$folder}\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts are in process.\u0026lt;/p\u0026gt;  \n  piklist_parts_processed\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts have been processed.\u0026lt;/p\u0026gt;  \n  piklist_parts_processed-{$folder}\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Signals that parts have been processed.\u0026lt;/p\u0026gt;  \n  piklist_plugin_loaded-\u0026#39; . $type \n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a plugin is loaded.\u0026lt;/p\u0026gt;  \n  piklist_post_render_ajax_shortcode\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;do_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php  Arguments $post_id Post ID shortcode Full shortcode with attributes\n\n  piklist_post_render_dashboard_widget\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a Dashboard Widget is rendered\u0026lt;/p\u0026gt;  \n  piklist_post_render_media_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a media meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a post meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_setting_section\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a settings section is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_settings_form\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after the settings form renders on an Admin Page\u0026lt;/p\u0026gt;  \n  piklist_post_render_shortcode\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a shortcode is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_user_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a user meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_post_render_widget\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('piklist_post_render_widget', $this-\u0026amp;gt;widgets[$widget]); Class class-piklist-universal-widget.php  Arguments $this-\u0026gt;widgets[$widget] \n  piklist_post_render_workflow\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after a Workflow is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_ajax_shortcode\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;do_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php  Arguments $post_id Post ID shortcode Full shortcode with attributes\n\n  piklist_pre_render_dashboard_widget\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a Dashboard Widget is rendered\u0026lt;/p\u0026gt;  \n  piklist_pre_render_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a post meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_setting_section\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a settings section is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_settings_form\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before the settings form renders on an Admin Page\u0026lt;/p\u0026gt;  \n  piklist_pre_render_shortcode\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a shortcode is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_user_meta_box\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a user meta box is rendered.\u0026lt;/p\u0026gt;  \n  piklist_pre_render_widget\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('piklist_pre_render_widget', $this-\u0026amp;gt;widgets[$widget]); Class class-piklist-universal-widget.php  Arguments $this-\u0026gt;widgets[$widget] \n  piklist_pre_render_workflow\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a Workflow is rendered.\u0026lt;/p\u0026gt;  \n  piklist_render_field_custom_assets\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Allow custom assets for fields\u0026lt;/p\u0026gt;  \n  piklist_save_fields\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Fire actions with all rendered fields for the form\u0026lt;/p\u0026gt;  \n  piklist_settings_form\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs after the settings form renders on an Admin Page\u0026lt;/p\u0026gt;  \n  piklist_widget_active\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt; do_action('piklist_widget_active', $this-\u0026amp;gt;widget_name, $widgets); Class class-piklist-universal-widget.php  Arguments $this-\u0026gt;widget_name $widgets \n  piklist_workflow_flow_append\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Runs before a Workflow is rendered.\u0026lt;/p\u0026gt;  \n  \n"
 },
 {
 	"uri": "https://docs.piklist.com/tutorials/meta-boxes/add-subtitle-field/",
@@ -472,7 +479,7 @@
 	"uri": "https://docs.piklist.com/actions-filters/filters/",
 	"title": "Filters",
 	"tags": [],
-	"description": "Piklist Filters",
+	"description": "",
 	"content": "piklist_admin_pages\nThe piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.\n   piklist_empty_post_title\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Let’s you programmatically set the post title when adding a new post (post type).\u0026lt;/p\u0026gt;  \n  piklist_part_process\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The `piklist_part_process` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\u0026lt;/p\u0026gt;  \n  piklist_part_process-{$folder}\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The `piklist_part_process-{$folder}` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\u0026lt;/p\u0026gt;  \n  piklist_post_types\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.\u0026lt;/p\u0026gt;  \n  piklist_pre_update_option\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_pre_update_option filter is used to filter the settings input before they are saved\u0026lt;/p\u0026gt;  \n  piklist_pre_updateoption$setting\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;The piklist_pre_update_option_$setting filter is used to filter the settings input before they are saved\u0026lt;/p\u0026gt;  \n  piklist_sanitization_rules\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Add your own rules to sanitize field data.\u0026lt;/p\u0026gt;  \n  piklist_taxonomies\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Extends the standard WordPress function register_taxonomy with additional features and parameters.\u0026lt;/p\u0026gt;  \n  piklist_validation_rules\n \u0026lt;p class=\u0026quot;children-description\u0026quot;\u0026gt;Add your own rules to validate field data.\u0026lt;/p\u0026gt;  \n  \n"
 },
 {
@@ -707,6 +714,20 @@
 	"content": " 'type' =\u0026gt; 'datepicker' Create a jQuery datepicker field.\nThis field uses the standard jQuery DatePicker field, and respects the same options. Just define them in the Piklist options array. See examples below.\nYou can use Piklist field parameters to customize this field.\nBasic Datepicker field\npiklist('field', array( 'type' =\u0026gt; 'datepicker', 'field' =\u0026gt; 'my_date_field', 'label' =\u0026gt; 'Date', 'value' =\u0026gt; date('M d, Y', time() + 604800), // set default value 'options' =\u0026gt; array( 'dateFormat' =\u0026gt; 'M d, yy' ) ));  Localizing the Datepicker field\nThe datepicker field can be localized by translating these parameters. This example shows the field being translated into French.\npiklist('field', array( 'type' =\u0026gt; 'datepicker', 'field' =\u0026gt; 'my_date_field', 'label' =\u0026gt; 'Date', 'options' =\u0026gt; array( 'closeText'=\u0026gt;'Fermer', 'prevText'=\u0026gt;'Précédent', 'nextText'=\u0026gt;'Suivant', 'currentText'=\u0026gt;'Aujourd\\'hui', 'monthNames'=\u0026gt;['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'], 'monthNamesShort'=\u0026gt;['Janv.','Févr.','Mars','Avril','Mai','Juin','Juil.','Août','Sept.','Oct.','Nov.','Déc.'], 'dayNames'=\u0026gt;['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'], 'dayNamesShort'=\u0026gt;['Dim.','Lun.','Mar.','Mer.','Jeu.','Ven.','Sam.'], 'dayNamesMin'=\u0026gt;['D','L','M','M','J','V','S'], 'weekHeader'=\u0026gt;'Sem.', 'dateFormat'=\u0026gt;'dd/mm/yy', 'firstDay'=\u0026gt;1, 'isRTL'=\u0026gt;false, 'showMonthAfterYear'=\u0026gt;false, 'yearSuffix'=\u0026gt;'' ) ));  "
 },
 {
+	"uri": "https://docs.piklist.com/actions-filters/actions/edit_term_taxonomy/",
+	"title": "edit_term_taxonomy",
+	"tags": [],
+	"description": "",
+	"content": " do_action('edit_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php\nArguments $term $taxonomy "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/edited_term_taxonomy/",
+	"title": "edited_term_taxonomy",
+	"tags": [],
+	"description": "",
+	"content": " do_action('edited_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php\nArguments $term $taxonomy "
+},
+{
 	"uri": "https://docs.piklist.com/fields/types/editor/",
 	"title": "editor Field",
 	"tags": [],
@@ -763,6 +784,20 @@
 	"content": " 'type' =\u0026gt; 'number' This is an HTML5 field\npiklist('field', array( 'type' =\u0026gt; 'number', 'field' =\u0026gt; 'my_field', 'label' =\u0026gt; 'my field', ));  "
 },
 {
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/",
+	"title": "piklist_activate_add_on",
+	"tags": [],
+	"description": "Runs after an add-on is activated.",
+	"content": " do_action('piklist_activate_add_on'); Class class-piklist-add-on.php\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_admin_page_after_title/",
+	"title": "piklist_admin_page_after_title",
+	"tags": [],
+	"description": "Runs after the title on an Admin Page",
+	"content": " do_action('piklist_admin_page_after_title'); File parts/shared/admin-page.php\n"
+},
+{
 	"uri": "https://docs.piklist.com/actions-filters/filters/piklist_admin_pages/",
 	"title": "piklist_admin_pages",
 	"tags": [],
@@ -775,6 +810,20 @@
 	"tags": [],
 	"description": "Let’s you programmatically set the post title when adding a new post (post type).",
 	"content": " apply_filters('piklist_empty_post_title', $data['post_title'], $post_array); Let’s you programmatically set the post title when adding a new post (post type).\nExample:\n// Set the Post Title to \u0026quot;Order #\u0026quot; plus post ID: function set_post_title_to_order_number($data, $post_array) { if ($post_array['post_type'] == 'MY-POST-TYPE') { return 'Order #' . $post_array['ID']; } else { return $data; } } add_filter('piklist_empty_post_title', 'set_post_title_to_order_number', 10, 2);  IMPORTANT: This filter works best when there is no title field for posts. To disable the title field, do not pass \u0026ldquo;title\u0026rdquo; to the supports parameter when registering a post type.\nIMPORTANT: You may need to resave your permalinks after loading this function. In the WordPress admin, go to Settings \u0026gt; Permalinks and press save.\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_event_active_fieldscope_field/",
+	"title": "piklist_event_{$active_field[&#39;scope&#39;]}_field",
+	"tags": [],
+	"description": "",
+	"content": " do_action(\u0026quot;piklist_event_{$active_field['scope']}_field\u0026quot;, $active_field); Class class-piklist-field.php\nArguments $active_field['scope'] $active_field "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_notices/",
+	"title": "piklist_notices",
+	"tags": [],
+	"description": "",
+	"content": " do_action('piklist_notices'); Class class-piklist-universal-widget.php\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/filters/piklist_part_process/",
@@ -791,11 +840,179 @@
 	"content": " apply_filters(\u0026quot;piklist_part_process-{$folder}\u0026quot;, $_part); The piklist_part_process-{$folder} filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\nParameters $folder The parts folder you want to filter (e.g. meta-boxes, settings, etc.)\n$part The individual part (e.g. meta-box, setting, etc.) to be modified or removed. It’s an associative array that contains all the information about the part.\n Input: Array  $folder The folder the part is stored in. If it’s a meta-box, then this would be “meta-boxes”.\n Input: Array  Example:\nLet’s say we have a couple meta-boxes on our default post type. One of the meta-boxes has a field that asks whether this post is about a magician. We then want another meta-box with details about the magician to only show up if it is. To get the details meta-box to only show up in this instance would look like this:\nadd_filter('piklist_part_process', function($part) { global $post; // Make sure this is a post edit screen if ( $post \u0026amp;\u0026amp; 'post' === $post-\u0026gt;post_type ) { // Check that this is the right folder and part if ( 'meta-boxes' === $folder \u0026amp;\u0026amp; 'magician-details.php' === $part['part'] ) { if ( 'yes' !== get_post_meta($post-\u0026gt;ID, 'is_magician', true) ) { return false; } } } return $part; }  "
 },
 {
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_parts_process/",
+	"title": "piklist_parts_process",
+	"tags": [],
+	"description": "Signals that parts are in process.",
+	"content": " do_action('piklist_parts_process', $folder); Class class-piklist.php\nArguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/",
+	"title": "piklist_parts_process-{$folder}",
+	"tags": [],
+	"description": "Signals that parts are in process.",
+	"content": " do_action(\u0026quot;piklist_parts_process-{$folder}\u0026quot;); Class class-piklist.php\nArguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_parts_processed/",
+	"title": "piklist_parts_processed",
+	"tags": [],
+	"description": "Signals that parts have been processed.",
+	"content": " do_action('piklist_parts_processed', $folder); Class class-piklist.php\nArguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/",
+	"title": "piklist_parts_processed-{$folder}",
+	"tags": [],
+	"description": "Signals that parts have been processed.",
+	"content": " do_action(\u0026quot;piklist_parts_processed-{$folder}\u0026quot;); Class class-piklist.php\nArguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_plugin_loaded-type/",
+	"title": "piklist_plugin_loaded-&#39; . $type ",
+	"tags": [],
+	"description": "Runs after a plugin is loaded.",
+	"content": " do_action('piklist_plugin_loaded-' . $type);); Class class-piklist.php\nArguments $type); Slug for the plugin\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_ajax_shortcode/",
+	"title": "piklist_post_render_ajax_shortcode",
+	"tags": [],
+	"description": "",
+	"content": " do_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php\nArguments $post_id Post ID\nshortcode Full shortcode with attributes\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_dashboard_widget/",
+	"title": "piklist_post_render_dashboard_widget",
+	"tags": [],
+	"description": "Runs after a Dashboard Widget is rendered",
+	"content": " do_action('piklist_post_render_dashboard_widget', $null, $widget); Class class-piklist-dashboard.php\nArguments $null Dashboard Widget data\n$widget Dashboard Widget configuration\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_media_meta_box/",
+	"title": "piklist_post_render_media_meta_box",
+	"tags": [],
+	"description": "Runs after a media meta box is rendered.",
+	"content": " do_action('piklist_post_render_media_meta_box', $post, $meta_box); Class class-piklist-media.php\nArguments $post The post object\n$meta_box The meta box object\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_meta_box/",
+	"title": "piklist_post_render_meta_box",
+	"tags": [],
+	"description": "Runs after a post meta box is rendered.",
+	"content": " do_action('piklist_post_render_meta_box', $post, $meta_box); Class class-piklist-meta.php\nArguments $post The post object\n$meta_box The meta box object\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_setting_section/",
+	"title": "piklist_post_render_setting_section",
+	"tags": [],
+	"description": "Runs after a settings section is rendered.",
+	"content": " do_action('piklist_post_render_setting_section', $section, $options); Class class-piklist-setting.php\nArguments $section $options "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_settings_form/",
+	"title": "piklist_post_render_settings_form",
+	"tags": [],
+	"description": "Runs after the settings form renders on an Admin Page",
+	"content": " do_action('piklist_post_render_settings_form'); File parts/shared/admin-page.php\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_shortcode/",
+	"title": "piklist_post_render_shortcode",
+	"tags": [],
+	"description": "Runs after a shortcode is rendered.",
+	"content": " do_action('piklist_post_render_shortcode', $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php\nArguments $attributes self::$shortcodes[$tag] "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_user_meta_box/",
+	"title": "piklist_post_render_user_meta_box",
+	"tags": [],
+	"description": "Runs after a user meta box is rendered.",
+	"content": " do_action('piklist_post_render_user_meta_box', $user, $meta_box); Class class-piklist-user.php\nArguments $user The user object\n$meta_box The meta box object\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_widget/",
+	"title": "piklist_post_render_widget",
+	"tags": [],
+	"description": "",
+	"content": " do_action('piklist_post_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php\nArguments $this-\u0026gt;widgets[$widget] "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_workflow/",
+	"title": "piklist_post_render_workflow",
+	"tags": [],
+	"description": "Runs after a Workflow is rendered.",
+	"content": " do_action('piklist_post_render_workflow', $active); File parts/shared/workflow.php\nArguments active The active tab\n"
+},
+{
 	"uri": "https://docs.piklist.com/actions-filters/filters/piklist_post_types/",
 	"title": "piklist_post_types",
 	"tags": [],
 	"description": "The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.",
 	"content": " apply_filters('piklist_post_types', self::$post_types); The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.\nTo register a Post Type with Piklist:\n Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme\u0026rsquo;s functions.php file or your plugin file.\nParameters This filter supports every parameter that register_post_type() supports. Additionally, you may use the following Piklist specific parameters.\nadmin_body_class Add custom classes to the body attribute of any page that displays this post type. In the admin only.\n Input: Array\n'admin_body_class' =\u0026gt; array( 'custom-body-class', 'custom-body-class-2 )   edit_columns Change the titles of the columns on the list posts screen.\n Input: Array values: array of items to change. key = default WordPress title, value = new title\n'edit_columns' =\u0026gt; array( 'title' =\u0026gt; 'Demo', 'author' =\u0026gt; 'Assigned to' )   hide_meta_box Easily hide meta boxes per post type. Even if the Post Type \u0026ldquo;supports\u0026rdquo; the metabox, you can still hide it\n Input: Array values: array for metaboxes to hide\n'hide_meta_box' =\u0026gt; array( 'author' )   hide_post_row_actions Hide the post row actions that show up when you hover over a post in the list posts screen (e.g. edit, quick edit, trash, preview)\n Input: Array values: array of row actions, the key corresponding to the span class attribute of the element\n'hide_post_row_actions' =\u0026gt; array( 'trash', 'edit', 'quick-edit' )   hide_screen_options Hide the screen options tab on the post edit screens.\n Input: Array\n'hide_screen_options' =\u0026gt; true   status Register custom post statuses to use with this Post Type. A few important notes: * You must define ALL the statuses for your Post Type. * Statuses are universal, meaning any status you register cannot have the same key as an existing status. If it does, the label you define will change the other status as well. * You can use any parameter from the WordPress register_post_status function.\n Input: Array values: array of statuses and labels\n'status' =\u0026gt; array( 'new' =\u0026gt; array( 'label' =\u0026gt; 'New', 'public' =\u0026gt; false ) ,'pending' =\u0026gt; array( 'label' =\u0026gt; 'Pending Review', 'public' =\u0026gt; false ) ,'demo' =\u0026gt; array( 'label' =\u0026gt; 'Demo', 'public' =\u0026gt; true, 'exclude_from_search' =\u0026gt; true, 'show_in_admin_all_list' =\u0026gt; true, 'show_in_admin_status_list' =\u0026gt; true ) ,'lock' =\u0026gt; array( 'label' =\u0026gt; 'Lock', 'public' =\u0026gt; true ) )   title Change the “Enter title here” text that appears when you create a new Post.\n Input: Array values: text you want to show\n'title' =\u0026gt; 'Enter Custom Title'   NOTE: WordPress doesn’t allow a Post Type slug defined as \u0026lsquo;order\u0026rsquo;. This is not allowed 'slug' =\u0026gt; 'order'\nEXAMPLE: add_filter('piklist_post_types', 'piklist_demo_post_types'); function piklist_demo_post_types($post_types) { $post_types['piklist_demo'] = array( 'labels' =\u0026gt; piklist('post_type_labels', 'Piklist Demo') ,'title' =\u0026gt; __('Enter a new Demo Title') ,'menu_icon' =\u0026gt; piklist('url', 'piklist') . '/parts/img/piklist-menu-icon.svg' ,'page_icon' =\u0026gt; piklist('url', 'piklist') . '/parts/img/piklist-page-icon-32.png' ,'supports' =\u0026gt; array( 'title' ,'post-formats' ) ,'public' =\u0026gt; true ,'admin_body_class' =\u0026gt; array( 'custom-body-class' ) ,'has_archive' =\u0026gt; true ,'rewrite' =\u0026gt; array( 'slug' =\u0026gt; 'piklist-demo' ) ,'capability_type' =\u0026gt; 'post' ,'edit_columns' =\u0026gt; array( 'title' =\u0026gt; __('Demo') ,'author' =\u0026gt; __('Assigned to') ) ,'hide_meta_box' =\u0026gt; array( 'author' ) ,'status' =\u0026gt; array( 'new' =\u0026gt; array( 'label' =\u0026gt; 'New' ,'public' =\u0026gt; false ) ,'pending' =\u0026gt; array( 'label' =\u0026gt; 'Pending Review' ,'public' =\u0026gt; false ) ,'demo' =\u0026gt; array( 'label' =\u0026gt; 'Demo' ,'public' =\u0026gt; true ,'exclude_from_search' =\u0026gt; true ,'show_in_admin_all_list' =\u0026gt; true ,'show_in_admin_status_list' =\u0026gt; true ) ,'lock' =\u0026gt; array( 'label' =\u0026gt; 'Lock' ,'public' =\u0026gt; true ) ) ); return $post_types; }  "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_ajax_shortcode/",
+	"title": "piklist_pre_render_ajax_shortcode",
+	"tags": [],
+	"description": "",
+	"content": " do_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php\nArguments $post_id Post ID\nshortcode Full shortcode with attributes\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_dashboard_widget/",
+	"title": "piklist_pre_render_dashboard_widget",
+	"tags": [],
+	"description": "Runs before a Dashboard Widget is rendered",
+	"content": " do_action('piklist_pre_render_dashboard_widget', $null, $null); Class class-piklist-dashboard.php\nArguments $null Dashboard Widget data\n$data Dashboard Widget configuration\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/",
+	"title": "piklist_pre_render_meta_box",
+	"tags": [],
+	"description": "Runs before a post meta box is rendered.",
+	"content": " do_action('piklist_pre_render_meta_box', $post, $meta_box); Class class-piklist-meta.php\nArguments $post The post object\n$meta_box The meta box object\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_setting_section/",
+	"title": "piklist_pre_render_setting_section",
+	"tags": [],
+	"description": "Runs before a settings section is rendered.",
+	"content": " do_action('piklist_pre_render_setting_section', $section, $options); Class class-piklist-setting.php\nArguments $section $options "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_settings_form/",
+	"title": "piklist_pre_render_settings_form",
+	"tags": [],
+	"description": "Runs before the settings form renders on an Admin Page",
+	"content": " do_action('piklist_pre_render_settings_form'); File parts/shared/admin-page.php\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_shortcode/",
+	"title": "piklist_pre_render_shortcode",
+	"tags": [],
+	"description": "Runs before a shortcode is rendered.",
+	"content": " do_action('piklist_pre_render_shortcode', $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php\nArguments $attributes self::$shortcodes[$tag] "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_user_meta_box/",
+	"title": "piklist_pre_render_user_meta_box",
+	"tags": [],
+	"description": "Runs before a user meta box is rendered.",
+	"content": " do_action('piklist_pre_render_user_meta_box', $user, $meta_box); Class class-piklist-user.php\nArguments $user The user object\n$meta_box The meta box object\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_widget/",
+	"title": "piklist_pre_render_widget",
+	"tags": [],
+	"description": "",
+	"content": " do_action('piklist_pre_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php\nArguments $this-\u0026gt;widgets[$widget] "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_workflow/",
+	"title": "piklist_pre_render_workflow",
+	"tags": [],
+	"description": "Runs before a Workflow is rendered.",
+	"content": " do_action('piklist_pre_render_workflow', $active); File parts/shared/workflow.php\nArguments active The active tab\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/filters/piklist_pre_update_option/",
@@ -812,11 +1029,32 @@
 	"content": " apply_filters('piklist_pre_update_option_' . $setting, $settings, $new, $old); The piklist_pre_update_option_$setting filter is used to filter the settings input before they are saved. This allows you to manipulate the input data, or even add additional settings before the data is entered into the database.\nParameters This filter provides you with the following parameters:\n$settings All key=\u0026gt;value pairs for this setting. If you are using multiple tabs, this will show all settings for all tabs.\n Input: Array  $new This is the data that was entered into the form BEFORE it’s save\n Input: Array  $old The data that is in the database\n Input: Array  Example:\n //When the user enters data in the piklist_demo_fields settings page and they press save, add another setting called option_key with the value of option_value. add_filter( 'piklist_pre_update_option_piklist_demo_fields','my_update_option', 10, 3 ); function my_update_option($settings, $new, $old) { $settings['option_key'] = 'option_value'; return $settings; }  "
 },
 {
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_render_field_custom_assets/",
+	"title": "piklist_render_field_custom_assets",
+	"tags": [],
+	"description": "Allow custom assets for fields",
+	"content": " do_action('piklist_render_field_custom_assets', $type); Class class-piklist-field.php\nArguments $type "
+},
+{
 	"uri": "https://docs.piklist.com/actions-filters/filters/piklist_sanitization_rules/",
 	"title": "piklist_sanitization_rules",
 	"tags": [],
 	"description": "Add your own rules to sanitize field data.",
 	"content": " apply_filters('piklist_sanitization_rules', self::$sanitization_rules); Add your own rules to sanitize field data.\nExample:\n// create a sanitization rule called \u0026quot;my_email_sanitization\u0026quot; add_filter('piklist_sanitization_rules', 'sanitize_email_function', 11); function sanitize_email_function($sanitization_rules) { $sanitization_rules['my_email_sanitization'] = array( 'callback' =\u0026gt; 'sanitize_email_callback' ); return $sanitization_rules; } function sanitize_email_callback($value, $field, $options) { return sanitize_email($value); // sanitize_email() is a core WordPress function }  Usage:\n'sanitize' =\u0026gt; array( array( 'type' =\u0026gt; 'my_email_sanitization' ) )  "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_save_fields/",
+	"title": "piklist_save_fields",
+	"tags": [],
+	"description": "Fire actions with all rendered fields for the form",
+	"content": " do_action('piklist_save_fields', self::$fields_rendered); Class class-piklist-field.php\nArguments self::$fields_rendered "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_settings_form/",
+	"title": "piklist_settings_form",
+	"tags": [],
+	"description": "Runs after the settings form renders on an Admin Page",
+	"content": " do_action('piklist_settings_form'); File parts/shared/admin-page.php\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/filters/piklist_taxonomies/",
@@ -831,6 +1069,20 @@
 	"tags": [],
 	"description": "Add your own rules to validate field data.",
 	"content": " apply_filters('piklist_validation_rules', self::$validation_rules); Add your own rules to validate field data.\nExample:\nadd_filter('piklist_validation_rules', 'check_valid_number', 11); function check_valid_number($validation_rules) { $validation_rules['my_number'] = array( 'rule' =\u0026gt; \u0026quot;/[-+]?[0-9]*[.,]?[0-9]+/\u0026quot; ,'message' =\u0026gt; __('is not a number') ); return $validation_rules; }  Usage:\n'validate' =\u0026gt; array( array( 'type' =\u0026gt; 'my_number' ) )  Create a rule with a callback function:\n// Create a validation rule called \u0026quot;my_file_exists\u0026quot; add_filter('piklist_validation_rules', 'check_file_exists', 11); function check_file_exists($validation_rules) { $validation_rules['my_file_exists'] = array( 'callback' =\u0026gt; 'my_validate_file_exists' ); return $validation_rules; } /** * @param int $index The field index being checked. * @param mixed $value The value of the field. * @param array $options The options. * @param array $field The field object. * @param array $fields Collection of fields. */ function my_validate_file_exists($index, $value, $options, $field, $fields) { return @file_get_contents($value) ? true : 'contains a file that does not exist.'; }  "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_widget_active/",
+	"title": "piklist_widget_active",
+	"tags": [],
+	"description": "",
+	"content": " do_action('piklist_widget_active', $this-\u0026gt;widget_name, $widgets); Class class-piklist-universal-widget.php\nArguments $this-\u0026gt;widget_name $widgets "
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_workflow_flow_append/",
+	"title": "piklist_workflow_flow_append",
+	"tags": [],
+	"description": "Runs before a Workflow is rendered.",
+	"content": " do_action('piklist_workflow_flow_append', $tab['data']['flow_slug']); File parts/shared/admin-workflow.php\nArguments $tab['data']['flow_slug'] Which tab slug to append to.\n"
 },
 {
 	"uri": "https://docs.piklist.com/fields/types/radio/",

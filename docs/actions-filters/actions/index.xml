@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Actions on Piklist Documentation</title>
+    <link>https://docs.piklist.com/actions-filters/actions/</link>
+    <description>Recent content in Actions on Piklist Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.piklist.com/actions-filters/actions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>edit_term_taxonomy</title>
+      <link>https://docs.piklist.com/actions-filters/actions/edit_term_taxonomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/edit_term_taxonomy/</guid>
+      <description> do_action(&#39;edit_term_taxonomy&#39;, $term, $taxonomy); Class class-piklist-taxonomy.php
+Arguments $term $taxonomy </description>
+    </item>
+    
+    <item>
+      <title>edited_term_taxonomy</title>
+      <link>https://docs.piklist.com/actions-filters/actions/edited_term_taxonomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/edited_term_taxonomy/</guid>
+      <description> do_action(&#39;edited_term_taxonomy&#39;, $term, $taxonomy); Class class-piklist-taxonomy.php
+Arguments $term $taxonomy </description>
+    </item>
+    
+    <item>
+      <title>piklist_activate_add_on</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/</guid>
+      <description>do_action(&#39;piklist_activate_add_on&#39;); Class class-piklist-add-on.php</description>
+    </item>
+    
+    <item>
+      <title>piklist_admin_page_after_title</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_admin_page_after_title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_admin_page_after_title/</guid>
+      <description>do_action(&#39;piklist_admin_page_after_title&#39;); File parts/shared/admin-page.php</description>
+    </item>
+    
+    <item>
+      <title>piklist_event_{$active_field[&#39;scope&#39;]}_field</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_event_active_fieldscope_field/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_event_active_fieldscope_field/</guid>
+      <description> do_action(&amp;quot;piklist_event_{$active_field[&#39;scope&#39;]}_field&amp;quot;, $active_field); Class class-piklist-field.php
+Arguments $active_field[&#39;scope&#39;] $active_field </description>
+    </item>
+    
+    <item>
+      <title>piklist_notices</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_notices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_notices/</guid>
+      <description>do_action(&#39;piklist_notices&#39;); Class class-piklist-universal-widget.php</description>
+    </item>
+    
+    <item>
+      <title>piklist_parts_process</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_process/</guid>
+      <description>do_action(&#39;piklist_parts_process&#39;, $folder); Class class-piklist.php
+Arguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)</description>
+    </item>
+    
+    <item>
+      <title>piklist_parts_process-{$folder}</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</guid>
+      <description>do_action(&amp;quot;piklist_parts_process-{$folder}&amp;quot;); Class class-piklist.php
+Arguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)</description>
+    </item>
+    
+    <item>
+      <title>piklist_parts_processed</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed/</guid>
+      <description>do_action(&#39;piklist_parts_processed&#39;, $folder); Class class-piklist.php
+Arguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)</description>
+    </item>
+    
+    <item>
+      <title>piklist_parts_processed-{$folder}</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</guid>
+      <description>do_action(&amp;quot;piklist_parts_processed-{$folder}&amp;quot;); Class class-piklist.php
+Arguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)</description>
+    </item>
+    
+    <item>
+      <title>piklist_plugin_loaded-&#39; . $type </title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_plugin_loaded-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_plugin_loaded-type/</guid>
+      <description>do_action(&#39;piklist_plugin_loaded-&#39; . $type);); Class class-piklist.php
+Arguments $type); Slug for the plugin</description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_ajax_shortcode</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_ajax_shortcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_ajax_shortcode/</guid>
+      <description>do_action(&#39;piklist_post_render_ajax_shortcode&#39;, $post_id, $shortcode); Class class-piklist-shortcode.php
+Arguments $post_id Post ID
+shortcode Full shortcode with attributes</description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_dashboard_widget</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_dashboard_widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_dashboard_widget/</guid>
+      <description>do_action(&#39;piklist_post_render_dashboard_widget&#39;, $null, $widget); Class class-piklist-dashboard.php
+Arguments $null Dashboard Widget data
+$widget Dashboard Widget configuration</description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_media_meta_box</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_media_meta_box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_media_meta_box/</guid>
+      <description>do_action(&#39;piklist_post_render_media_meta_box&#39;, $post, $meta_box); Class class-piklist-media.php
+Arguments $post The post object
+$meta_box The meta box object</description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_meta_box</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_meta_box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_meta_box/</guid>
+      <description>do_action(&#39;piklist_post_render_meta_box&#39;, $post, $meta_box); Class class-piklist-meta.php
+Arguments $post The post object
+$meta_box The meta box object</description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_setting_section</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_setting_section/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_setting_section/</guid>
+      <description> do_action(&#39;piklist_post_render_setting_section&#39;, $section, $options); Class class-piklist-setting.php
+Arguments $section $options </description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_settings_form</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_settings_form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_settings_form/</guid>
+      <description>do_action(&#39;piklist_post_render_settings_form&#39;); File parts/shared/admin-page.php</description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_shortcode</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_shortcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_shortcode/</guid>
+      <description> do_action(&#39;piklist_post_render_shortcode&#39;, $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php
+Arguments $attributes self::$shortcodes[$tag] </description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_user_meta_box</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_user_meta_box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_user_meta_box/</guid>
+      <description>do_action(&#39;piklist_post_render_user_meta_box&#39;, $user, $meta_box); Class class-piklist-user.php
+Arguments $user The user object
+$meta_box The meta box object</description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_widget</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_widget/</guid>
+      <description> do_action(&#39;piklist_post_render_widget&#39;, $this-&amp;gt;widgets[$widget]); Class class-piklist-universal-widget.php
+Arguments $this-&amp;gt;widgets[$widget] </description>
+    </item>
+    
+    <item>
+      <title>piklist_post_render_workflow</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_post_render_workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_workflow/</guid>
+      <description>do_action(&#39;piklist_post_render_workflow&#39;, $active); File parts/shared/workflow.php
+Arguments active The active tab</description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_ajax_shortcode</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_ajax_shortcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_ajax_shortcode/</guid>
+      <description>do_action(&#39;piklist_pre_render_ajax_shortcode&#39;, $post_id, $shortcode); Class class-piklist-shortcode.php
+Arguments $post_id Post ID
+shortcode Full shortcode with attributes</description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_dashboard_widget</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_dashboard_widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_dashboard_widget/</guid>
+      <description>do_action(&#39;piklist_pre_render_dashboard_widget&#39;, $null, $null); Class class-piklist-dashboard.php
+Arguments $null Dashboard Widget data
+$data Dashboard Widget configuration</description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_meta_box</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/</guid>
+      <description>do_action(&#39;piklist_pre_render_meta_box&#39;, $post, $meta_box); Class class-piklist-meta.php
+Arguments $post The post object
+$meta_box The meta box object</description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_setting_section</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_setting_section/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_setting_section/</guid>
+      <description> do_action(&#39;piklist_pre_render_setting_section&#39;, $section, $options); Class class-piklist-setting.php
+Arguments $section $options </description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_settings_form</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_settings_form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_settings_form/</guid>
+      <description>do_action(&#39;piklist_pre_render_settings_form&#39;); File parts/shared/admin-page.php</description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_shortcode</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_shortcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_shortcode/</guid>
+      <description> do_action(&#39;piklist_pre_render_shortcode&#39;, $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php
+Arguments $attributes self::$shortcodes[$tag] </description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_user_meta_box</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_user_meta_box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_user_meta_box/</guid>
+      <description>do_action(&#39;piklist_pre_render_user_meta_box&#39;, $user, $meta_box); Class class-piklist-user.php
+Arguments $user The user object
+$meta_box The meta box object</description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_widget</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_widget/</guid>
+      <description> do_action(&#39;piklist_pre_render_widget&#39;, $this-&amp;gt;widgets[$widget]); Class class-piklist-universal-widget.php
+Arguments $this-&amp;gt;widgets[$widget] </description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_workflow</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_workflow/</guid>
+      <description>do_action(&#39;piklist_pre_render_workflow&#39;, $active); File parts/shared/workflow.php
+Arguments active The active tab</description>
+    </item>
+    
+    <item>
+      <title>piklist_render_field_custom_assets</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_render_field_custom_assets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_render_field_custom_assets/</guid>
+      <description> do_action(&#39;piklist_render_field_custom_assets&#39;, $type); Class class-piklist-field.php
+Arguments $type </description>
+    </item>
+    
+    <item>
+      <title>piklist_save_fields</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_save_fields/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_save_fields/</guid>
+      <description> do_action(&#39;piklist_save_fields&#39;, self::$fields_rendered); Class class-piklist-field.php
+Arguments self::$fields_rendered </description>
+    </item>
+    
+    <item>
+      <title>piklist_settings_form</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_settings_form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_settings_form/</guid>
+      <description>do_action(&#39;piklist_settings_form&#39;); File parts/shared/admin-page.php</description>
+    </item>
+    
+    <item>
+      <title>piklist_widget_active</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_widget_active/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_widget_active/</guid>
+      <description> do_action(&#39;piklist_widget_active&#39;, $this-&amp;gt;widget_name, $widgets); Class class-piklist-universal-widget.php
+Arguments $this-&amp;gt;widget_name $widgets </description>
+    </item>
+    
+    <item>
+      <title>piklist_workflow_flow_append</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_workflow_flow_append/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_workflow_flow_append/</guid>
+      <description>do_action(&#39;piklist_workflow_flow_append&#39;, $tab[&#39;data&#39;][&#39;flow_slug&#39;]); File parts/shared/admin-workflow.php
+Arguments $tab[&#39;data&#39;][&#39;flow_slug&#39;] Which tab slug to append to.</description>
+    </item>
+    
+  </channel>
+</rss>
