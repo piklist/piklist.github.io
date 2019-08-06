@@ -694,7 +694,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;number&#39;, &#39;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/</guid>
-      <description>Runs after an add-on is activated.
+      <description>Runs after a Piklist add-on is activated.
 do_action(&#39;piklist_activate_add_on&#39;); Class class-piklist-add-on.php</description>
     </item>
     
@@ -736,7 +736,8 @@ Example:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_event_active_fieldscope_field/</guid>
-      <description> do_action(&amp;quot;piklist_event_{$active_field[&#39;scope&#39;]}_field&amp;quot;, $active_field); Class class-piklist-field.php
+      <description> Triggers when field events are fired.
+do_action(&amp;quot;piklist_event_{$active_field[&#39;scope&#39;]}_field&amp;quot;, $active_field); Class class-piklist-field.php
 Arguments $active_field[&#39;scope&#39;] $active_field </description>
     </item>
     
@@ -809,7 +810,7 @@ Arguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</guid>
       <description>do_action(&amp;quot;piklist_parts_processed-{$folder}&amp;quot;); Class class-piklist.php
-Arguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)</description>
+Arguments $folder The parts folder where the file is located ( e.g. meta-boxes, notices, terms, users, etc.).</description>
     </item>
     
     <item>
@@ -828,9 +829,10 @@ Arguments $type); Slug for the plugin</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_ajax_shortcode/</guid>
-      <description>do_action(&#39;piklist_post_render_ajax_shortcode&#39;, $post_id, $shortcode); Class class-piklist-shortcode.php
-Arguments $post_id Post ID
-shortcode Full shortcode with attributes</description>
+      <description>Runs after the shortcode preview in the admin.
+do_action(&#39;piklist_post_render_ajax_shortcode&#39;, $post_id, $shortcode); Class class-piklist-shortcode.php
+Arguments $post_id int Post ID
+shortcode array Full shortcode with attributes</description>
     </item>
     
     <item>
@@ -872,8 +874,9 @@ $meta_box The meta box object</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_setting_section/</guid>
-      <description> do_action(&#39;piklist_post_render_setting_section&#39;, $section, $options); Class class-piklist-setting.php
-Arguments $section $options </description>
+      <description>do_action(&#39;piklist_post_render_setting_section&#39;, $section, $options); Class class-piklist-setting.php
+Arguments $section section data from Piklist part file
+$options field list</description>
     </item>
     
     <item>
@@ -891,8 +894,9 @@ Arguments $section $options </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_post_render_shortcode/</guid>
-      <description> do_action(&#39;piklist_post_render_shortcode&#39;, $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php
-Arguments $attributes self::$shortcodes[$tag] </description>
+      <description>do_action(&#39;piklist_post_render_shortcode&#39;, $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php
+Arguments $attributes attributes passed to the shortcode
+self::$shortcodes[$tag] shortcode data from Piklist part file</description>
     </item>
     
     <item>
@@ -944,9 +948,10 @@ Parameters This filter supports every parameter that register_post_type() suppor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_ajax_shortcode/</guid>
-      <description>do_action(&#39;piklist_pre_render_ajax_shortcode&#39;, $post_id, $shortcode); Class class-piklist-shortcode.php
-Arguments $post_id Post ID
-shortcode Full shortcode with attributes</description>
+      <description>Runs before the shortcode preview in the admin.
+do_action(&#39;piklist_pre_render_ajax_shortcode&#39;, $post_id, $shortcode); Class class-piklist-shortcode.php
+Arguments $post_id int Post ID
+shortcode array Full shortcode with attributes</description>
     </item>
     
     <item>
@@ -961,11 +966,22 @@ $data Dashboard Widget configuration</description>
     </item>
     
     <item>
-      <title>piklist_pre_render_meta_box</title>
+      <title>piklist_pre_render_media_meta_box</title>
       <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/</guid>
+      <description>do_action(&#39;piklist_pre_render_media_meta_box&#39;, $post, $meta_box); Class class-piklist-media.php
+Arguments $post The post object
+$meta_box The meta box object</description>
+    </item>
+    
+    <item>
+      <title>piklist_pre_render_meta_box</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_meta_box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_meta_box/</guid>
       <description>do_action(&#39;piklist_pre_render_meta_box&#39;, $post, $meta_box); Class class-piklist-meta.php
 Arguments $post The post object
 $meta_box The meta box object</description>
@@ -977,8 +993,9 @@ $meta_box The meta box object</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_setting_section/</guid>
-      <description> do_action(&#39;piklist_pre_render_setting_section&#39;, $section, $options); Class class-piklist-setting.php
-Arguments $section $options </description>
+      <description>do_action(&#39;piklist_pre_render_setting_section&#39;, $section, $options); Class class-piklist-setting.php
+Arguments $section section data from Piklist part file
+$options field list</description>
     </item>
     
     <item>
@@ -996,8 +1013,9 @@ Arguments $section $options </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_shortcode/</guid>
-      <description> do_action(&#39;piklist_pre_render_shortcode&#39;, $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php
-Arguments $attributes self::$shortcodes[$tag] </description>
+      <description>do_action(&#39;piklist_pre_render_shortcode&#39;, $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php
+Arguments $attributes attributes passed to the shortcode
+self::$shortcodes[$tag] shortcode data from Piklist part file</description>
     </item>
     
     <item>
@@ -1006,9 +1024,10 @@ Arguments $attributes self::$shortcodes[$tag] </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_user_meta_box/</guid>
-      <description>do_action(&#39;piklist_pre_render_user_meta_box&#39;, $user, $meta_box); Class class-piklist-user.php
-Arguments $user The user object
-$meta_box The meta box object</description>
+      <description>Runs before a user meta box is rendered.
+do_action(&#39;piklist_pre_render_user_meta_box&#39;, $user, $meta_box); Class class-piklist-user.php
+Arguments $user user data
+$meta_box meta box configuration</description>
     </item>
     
     <item>

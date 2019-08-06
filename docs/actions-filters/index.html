@@ -13,19 +13,19 @@
     <title>Actions and Filters &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1565057755" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1565057755" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1565057755" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1565057755" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1565057755" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1565057755" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1565057755" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1565057755" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1565062790" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1565062790" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1565062790" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1565062790" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1565062790" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1565062790" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1565062790" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1565062790" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1565057755" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1565062790" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1565057755"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1565062790"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1565057755"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1565057755"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1565062790"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1565062790"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1565057755"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1565062790"></script>
 
     
   </div>
@@ -1371,6 +1371,9 @@
             
             
           
+            
+            
+          
         
         </ul>
       
@@ -1905,7 +1908,7 @@ Arguments $term $taxonomy </p>
   <li class="child">
   <p class="children-title"><a href="https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/" >piklist_activate_add_on</a></p>
      
-      <p class="children-description">Runs after an add-on is activated.</p>
+      <p class="children-description">Runs after a Piklist add-on is activated.</p>
         
     
   </li>
@@ -1941,8 +1944,7 @@ Arguments $term $taxonomy </p>
   <li class="child">
   <p class="children-title"><a href="https://docs.piklist.com/actions-filters/actions/piklist_event_active_fieldscope_field/" >piklist_event_{$active_field[&#39;scope&#39;]}_field</a></p>
      
-      <p class="children-summary"> do_action(&quot;piklist_event_{$active_field['scope']}_field&quot;, $active_field); Class class-piklist-field.php
-Arguments $active_field['scope'] $active_field </p>
+      <p class="children-description">Triggers when field events are fired.</p>
         
     
   </li>
@@ -2068,9 +2070,7 @@ Arguments $active_field['scope'] $active_field </p>
   <li class="child">
   <p class="children-title"><a href="https://docs.piklist.com/actions-filters/actions/piklist_post_render_ajax_shortcode/" >piklist_post_render_ajax_shortcode</a></p>
      
-      <p class="children-summary">do_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php
-Arguments $post_id Post ID
-shortcode Full shortcode with attributes</p>
+      <p class="children-description">Runs after the shortcode preview in the admin.</p>
         
     
   </li>
@@ -2251,9 +2251,7 @@ Arguments $this-&gt;widgets[$widget] </p>
   <li class="child">
   <p class="children-title"><a href="https://docs.piklist.com/actions-filters/actions/piklist_pre_render_ajax_shortcode/" >piklist_pre_render_ajax_shortcode</a></p>
      
-      <p class="children-summary">do_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php
-Arguments $post_id Post ID
-shortcode Full shortcode with attributes</p>
+      <p class="children-description">Runs before the shortcode preview in the admin.</p>
         
     
   </li>
@@ -2287,7 +2285,25 @@ shortcode Full shortcode with attributes</p>
 
 
   <li class="child">
-  <p class="children-title"><a href="https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/" >piklist_pre_render_meta_box</a></p>
+  <p class="children-title"><a href="https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/" >piklist_pre_render_media_meta_box</a></p>
+     
+      <p class="children-description">Runs before a post meta box is rendered.</p>
+        
+    
+  </li>
+
+
+
+            
+
+        
+    
+        
+
+
+
+  <li class="child">
+  <p class="children-title"><a href="https://docs.piklist.com/actions-filters/actions/piklist_pre_render_meta_box/" >piklist_pre_render_meta_box</a></p>
      
       <p class="children-description">Runs before a post meta box is rendered.</p>
         
@@ -3354,18 +3370,8 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
 
                     
-                        
-            
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
                         
             
@@ -3415,6 +3421,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
             
         
                     
+            
+        
+                    
                         
             
             
@@ -3627,22 +3636,25 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
             
             
                 
+                    
                     
                 
                 
 
                     
                     
+                        
                     
-
                     
-            
-        
+
                     
                         
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3652,9 +3664,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
 
                     
-            
-        
-                    
                         
             
             
@@ -3923,9 +3932,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -3942,6 +3948,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -4099,16 +4108,10 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
             
         
                     
-            
-        
-                    
                         
             
             
@@ -4153,9 +4156,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -4236,6 +4236,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+            
+        
                     
             
         
@@ -4252,9 +4255,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -4373,32 +4373,16 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
             
                 
                     
-                    
                 
                 
 
-                    
                     
-                        
                     
                     
 
                     
-                        
             
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
                         
             
@@ -4432,18 +4416,8 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
             
         
                     
-                        
-            
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
             
         
@@ -4476,9 +4450,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -4572,6 +4543,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+            
+        
                     
             
         
@@ -4586,11 +4560,10 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
 
                     
                     
+                        
                     
-
                     
-            
-        
+
                     
                         
             
@@ -4604,6 +4577,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4620,6 +4598,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4636,6 +4619,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4653,37 +4641,30 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
 
                     
+                        
+            
             
         
                     
                         
             
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
+                        
+            
             
         
                     
                         
             
             
-                
-                    
-                
-                
-
-                    
-                    
+        
                     
-
+                        
+            
+            
+        
                     
             
         
@@ -4700,6 +4681,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4717,6 +4703,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
 
                     
+                        
+            
+            
+        
+                    
             
         
                     
@@ -4732,6 +4723,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4748,6 +4744,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4765,69 +4766,45 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
 
                     
+                        
             
+            
         
                     
                         
             
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
+                        
             
+            
         
                     
                         
             
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
+                        
             
+            
         
                     
                         
             
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
+                        
             
+            
         
                     
                         
             
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
             
         
@@ -4844,6 +4821,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4860,6 +4842,11 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+                        
+            
+            
+        
                     
             
         
@@ -4877,21 +4864,15 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
 
                     
+                        
             
+            
         
                     
                         
             
             
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
             
         
@@ -4908,9 +4889,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -4925,9 +4903,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
 
                     
-            
-        
-                    
                         
             
             
@@ -4956,9 +4931,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -4975,6 +4947,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -5132,16 +5107,10 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
             
         
                     
-            
-        
-                    
                         
             
             
@@ -5170,6 +5139,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -5263,6 +5235,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -5276,6 +5251,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -5501,6 +5479,9 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
             
         
                     
+            
+        
+                    
                         
             
             
@@ -5513,9 +5494,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -5677,708 +5655,6 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
             
         
                     
@@ -6512,20 +5788,20 @@ The <code>piklist_part_process</code> filter is used to filter the parts (e.g. m
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1565057755"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1565062790"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1565057755"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1565057755"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1565062790"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1565062790"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1565057755" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1565057755"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1565062790" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1565062790"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

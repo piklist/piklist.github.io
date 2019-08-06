@@ -564,7 +564,7 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/</loc>
-    <lastmod>2019-08-05T22:15:33-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -584,7 +584,7 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_event_active_fieldscope_field/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -619,7 +619,7 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -629,7 +629,7 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_post_render_ajax_shortcode/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -649,7 +649,7 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_post_render_setting_section/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -659,7 +659,7 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_post_render_shortcode/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -684,7 +684,7 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_ajax_shortcode/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -694,12 +694,17 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_meta_box/</loc>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_setting_section/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
@@ -709,12 +714,12 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_shortcode/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/actions/piklist_pre_render_user_meta_box/</loc>
-    <lastmod>2019-07-14T23:20:04-04:00</lastmod>
+    <lastmod>2019-08-05T23:39:31-04:00</lastmod>
   </url>
   
   <url>

@@ -305,7 +305,7 @@
 	"title": "Actions and Filters",
 	"tags": [],
 	"description": "Piklist Actions and Filters",
-	"content": "Piklist includes tons of actions and filters.\nActions\nPiklist Actions\n  edit_term_taxonomy\ndo_action('edit_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  edited_term_taxonomy\ndo_action('edited_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  piklist_activate_add_on\nRuns after an add-on is activated.\n piklist_admin_page_after_title\nRuns after the title on an Admin Page\n piklist_event_{$active_field[\u0026#39;scope\u0026#39;]}_field\ndo_action(\u0026quot;piklist_event_{$active_field['scope']}_field\u0026quot;, $active_field); Class class-piklist-field.php Arguments $active_field['scope'] $active_field  piklist_notices\ndo_action('piklist_notices'); Class class-piklist-universal-widget.php\n piklist_parts_process\nSignals that parts are in process.\n piklist_parts_process-{$folder}\nSignals that parts are in process.\n piklist_parts_processed\nSignals that parts have been processed.\n piklist_parts_processed-{$folder}\nSignals that parts have been processed.\n piklist_plugin_loaded-\u0026#39; . $type \nRuns after a plugin is loaded.\n piklist_post_render_ajax_shortcode\ndo_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php Arguments $post_id Post ID shortcode Full shortcode with attributes\n piklist_post_render_dashboard_widget\nRuns after a Dashboard Widget is rendered\n piklist_post_render_media_meta_box\nRuns after a media meta box is rendered.\n piklist_post_render_meta_box\nRuns after a post meta box is rendered.\n piklist_post_render_setting_section\nRuns after a settings section is rendered.\n piklist_post_render_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_post_render_shortcode\nRuns after a shortcode is rendered.\n piklist_post_render_user_meta_box\nRuns after a user meta box is rendered.\n piklist_post_render_widget\ndo_action('piklist_post_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_post_render_workflow\nRuns after a Workflow is rendered.\n piklist_pre_render_ajax_shortcode\ndo_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php Arguments $post_id Post ID shortcode Full shortcode with attributes\n piklist_pre_render_dashboard_widget\nRuns before a Dashboard Widget is rendered\n piklist_pre_render_meta_box\nRuns before a post meta box is rendered.\n piklist_pre_render_setting_section\nRuns before a settings section is rendered.\n piklist_pre_render_settings_form\nRuns before the settings form renders on an Admin Page\n piklist_pre_render_shortcode\nRuns before a shortcode is rendered.\n piklist_pre_render_user_meta_box\nRuns before a user meta box is rendered.\n piklist_pre_render_widget\ndo_action('piklist_pre_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_pre_render_workflow\nRuns before a Workflow is rendered.\n piklist_render_field_custom_assets\nAllow custom assets for fields\n piklist_save_fields\nFire actions with all rendered fields for the form\n piklist_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_widget_active\ndo_action('piklist_widget_active', $this-\u0026gt;widget_name, $widgets); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widget_name $widgets  piklist_workflow_flow_append\nRuns before a Workflow is rendered.\n  Filters\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;piklist_admin_pages  The piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers. piklist_empty_post_title Let’s you programmatically set the post title when adding a new post (post type). piklist_part_process The piklist_part_process filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed. piklist_part_process-{$folder}\n\n piklist_admin_pages\nThe piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.\n piklist_empty_post_title\nLet’s you programmatically set the post title when adding a new post (post type).\n piklist_part_process\nThe `piklist_part_process` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\n piklist_part_process-{$folder}\nThe `piklist_part_process-{$folder}` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\n piklist_post_types\nThe piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.\n piklist_pre_update_option\nThe piklist_pre_update_option filter is used to filter the settings input before they are saved\n piklist_pre_update_option_$setting\nThe piklist_pre_update_option_$setting filter is used to filter the settings input before they are saved\n piklist_sanitization_rules\nAdd your own rules to sanitize field data.\n piklist_taxonomies\nExtends the standard WordPress function register_taxonomy with additional features and parameters.\n piklist_validation_rules\nAdd your own rules to validate field data.\n  \n"
+	"content": "Piklist includes tons of actions and filters.\nActions\nPiklist Actions\n  edit_term_taxonomy\ndo_action('edit_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  edited_term_taxonomy\ndo_action('edited_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  piklist_activate_add_on\nRuns after a Piklist add-on is activated.\n piklist_admin_page_after_title\nRuns after the title on an Admin Page\n piklist_event_{$active_field[\u0026#39;scope\u0026#39;]}_field\nTriggers when field events are fired.\n piklist_notices\ndo_action('piklist_notices'); Class class-piklist-universal-widget.php\n piklist_parts_process\nSignals that parts are in process.\n piklist_parts_process-{$folder}\nSignals that parts are in process.\n piklist_parts_processed\nSignals that parts have been processed.\n piklist_parts_processed-{$folder}\nSignals that parts have been processed.\n piklist_plugin_loaded-\u0026#39; . $type \nRuns after a plugin is loaded.\n piklist_post_render_ajax_shortcode\nRuns after the shortcode preview in the admin.\n piklist_post_render_dashboard_widget\nRuns after a Dashboard Widget is rendered\n piklist_post_render_media_meta_box\nRuns after a media meta box is rendered.\n piklist_post_render_meta_box\nRuns after a post meta box is rendered.\n piklist_post_render_setting_section\nRuns after a settings section is rendered.\n piklist_post_render_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_post_render_shortcode\nRuns after a shortcode is rendered.\n piklist_post_render_user_meta_box\nRuns after a user meta box is rendered.\n piklist_post_render_widget\ndo_action('piklist_post_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_post_render_workflow\nRuns after a Workflow is rendered.\n piklist_pre_render_ajax_shortcode\nRuns before the shortcode preview in the admin.\n piklist_pre_render_dashboard_widget\nRuns before a Dashboard Widget is rendered\n piklist_pre_render_media_meta_box\nRuns before a post meta box is rendered.\n piklist_pre_render_meta_box\nRuns before a post meta box is rendered.\n piklist_pre_render_setting_section\nRuns before a settings section is rendered.\n piklist_pre_render_settings_form\nRuns before the settings form renders on an Admin Page\n piklist_pre_render_shortcode\nRuns before a shortcode is rendered.\n piklist_pre_render_user_meta_box\nRuns before a user meta box is rendered.\n piklist_pre_render_widget\ndo_action('piklist_pre_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_pre_render_workflow\nRuns before a Workflow is rendered.\n piklist_render_field_custom_assets\nAllow custom assets for fields\n piklist_save_fields\nFire actions with all rendered fields for the form\n piklist_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_widget_active\ndo_action('piklist_widget_active', $this-\u0026gt;widget_name, $widgets); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widget_name $widgets  piklist_workflow_flow_append\nRuns before a Workflow is rendered.\n  Filters\n \u0026lt;p class=\u0026quot;children-summary\u0026quot;\u0026gt;piklist_admin_pages  The piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers. piklist_empty_post_title Let’s you programmatically set the post title when adding a new post (post type). piklist_part_process The piklist_part_process filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed. piklist_part_process-{$folder}\n\n piklist_admin_pages\nThe piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.\n piklist_empty_post_title\nLet’s you programmatically set the post title when adding a new post (post type).\n piklist_part_process\nThe `piklist_part_process` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\n piklist_part_process-{$folder}\nThe `piklist_part_process-{$folder}` filter is used to filter the parts (e.g. meta-boxes, settings, etc.) before they are saved. This allows you to modify or remove parts before they’re processed.\n piklist_post_types\nThe piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.\n piklist_pre_update_option\nThe piklist_pre_update_option filter is used to filter the settings input before they are saved\n piklist_pre_update_option_$setting\nThe piklist_pre_update_option_$setting filter is used to filter the settings input before they are saved\n piklist_sanitization_rules\nAdd your own rules to sanitize field data.\n piklist_taxonomies\nExtends the standard WordPress function register_taxonomy with additional features and parameters.\n piklist_validation_rules\nAdd your own rules to validate field data.\n  \n"
 },
 {
 	"uri": "https://docs.piklist.com/comment-block-parameters/",
@@ -340,7 +340,7 @@
 	"title": "Actions",
 	"tags": [],
 	"description": "Piklist Actions",
-	"content": "edit_term_taxonomy\ndo_action('edit_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  edited_term_taxonomy\ndo_action('edited_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  piklist_activate_add_on\nRuns after an add-on is activated.\n piklist_admin_page_after_title\nRuns after the title on an Admin Page\n piklist_event_{$active_field[\u0026#39;scope\u0026#39;]}_field\ndo_action(\u0026quot;piklist_event_{$active_field['scope']}_field\u0026quot;, $active_field); Class class-piklist-field.php Arguments $active_field['scope'] $active_field  piklist_notices\ndo_action('piklist_notices'); Class class-piklist-universal-widget.php\n piklist_parts_process\nSignals that parts are in process.\n piklist_parts_process-{$folder}\nSignals that parts are in process.\n piklist_parts_processed\nSignals that parts have been processed.\n piklist_parts_processed-{$folder}\nSignals that parts have been processed.\n piklist_plugin_loaded-\u0026#39; . $type \nRuns after a plugin is loaded.\n piklist_post_render_ajax_shortcode\ndo_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php Arguments $post_id Post ID shortcode Full shortcode with attributes\n piklist_post_render_dashboard_widget\nRuns after a Dashboard Widget is rendered\n piklist_post_render_media_meta_box\nRuns after a media meta box is rendered.\n piklist_post_render_meta_box\nRuns after a post meta box is rendered.\n piklist_post_render_setting_section\nRuns after a settings section is rendered.\n piklist_post_render_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_post_render_shortcode\nRuns after a shortcode is rendered.\n piklist_post_render_user_meta_box\nRuns after a user meta box is rendered.\n piklist_post_render_widget\ndo_action('piklist_post_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_post_render_workflow\nRuns after a Workflow is rendered.\n piklist_pre_render_ajax_shortcode\ndo_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php Arguments $post_id Post ID shortcode Full shortcode with attributes\n piklist_pre_render_dashboard_widget\nRuns before a Dashboard Widget is rendered\n piklist_pre_render_meta_box\nRuns before a post meta box is rendered.\n piklist_pre_render_setting_section\nRuns before a settings section is rendered.\n piklist_pre_render_settings_form\nRuns before the settings form renders on an Admin Page\n piklist_pre_render_shortcode\nRuns before a shortcode is rendered.\n piklist_pre_render_user_meta_box\nRuns before a user meta box is rendered.\n piklist_pre_render_widget\ndo_action('piklist_pre_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_pre_render_workflow\nRuns before a Workflow is rendered.\n piklist_render_field_custom_assets\nAllow custom assets for fields\n piklist_save_fields\nFire actions with all rendered fields for the form\n piklist_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_widget_active\ndo_action('piklist_widget_active', $this-\u0026gt;widget_name, $widgets); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widget_name $widgets  piklist_workflow_flow_append\nRuns before a Workflow is rendered.\n  "
+	"content": "edit_term_taxonomy\ndo_action('edit_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  edited_term_taxonomy\ndo_action('edited_term_taxonomy', $term, $taxonomy); Class class-piklist-taxonomy.php Arguments $term $taxonomy  piklist_activate_add_on\nRuns after a Piklist add-on is activated.\n piklist_admin_page_after_title\nRuns after the title on an Admin Page\n piklist_event_{$active_field[\u0026#39;scope\u0026#39;]}_field\nTriggers when field events are fired.\n piklist_notices\ndo_action('piklist_notices'); Class class-piklist-universal-widget.php\n piklist_parts_process\nSignals that parts are in process.\n piklist_parts_process-{$folder}\nSignals that parts are in process.\n piklist_parts_processed\nSignals that parts have been processed.\n piklist_parts_processed-{$folder}\nSignals that parts have been processed.\n piklist_plugin_loaded-\u0026#39; . $type \nRuns after a plugin is loaded.\n piklist_post_render_ajax_shortcode\nRuns after the shortcode preview in the admin.\n piklist_post_render_dashboard_widget\nRuns after a Dashboard Widget is rendered\n piklist_post_render_media_meta_box\nRuns after a media meta box is rendered.\n piklist_post_render_meta_box\nRuns after a post meta box is rendered.\n piklist_post_render_setting_section\nRuns after a settings section is rendered.\n piklist_post_render_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_post_render_shortcode\nRuns after a shortcode is rendered.\n piklist_post_render_user_meta_box\nRuns after a user meta box is rendered.\n piklist_post_render_widget\ndo_action('piklist_post_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_post_render_workflow\nRuns after a Workflow is rendered.\n piklist_pre_render_ajax_shortcode\nRuns before the shortcode preview in the admin.\n piklist_pre_render_dashboard_widget\nRuns before a Dashboard Widget is rendered\n piklist_pre_render_media_meta_box\nRuns before a post meta box is rendered.\n piklist_pre_render_meta_box\nRuns before a post meta box is rendered.\n piklist_pre_render_setting_section\nRuns before a settings section is rendered.\n piklist_pre_render_settings_form\nRuns before the settings form renders on an Admin Page\n piklist_pre_render_shortcode\nRuns before a shortcode is rendered.\n piklist_pre_render_user_meta_box\nRuns before a user meta box is rendered.\n piklist_pre_render_widget\ndo_action('piklist_pre_render_widget', $this-\u0026gt;widgets[$widget]); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widgets[$widget]  piklist_pre_render_workflow\nRuns before a Workflow is rendered.\n piklist_render_field_custom_assets\nAllow custom assets for fields\n piklist_save_fields\nFire actions with all rendered fields for the form\n piklist_settings_form\nRuns after the settings form renders on an Admin Page\n piklist_widget_active\ndo_action('piklist_widget_active', $this-\u0026gt;widget_name, $widgets); Class class-piklist-universal-widget.php Arguments $this-\u0026gt;widget_name $widgets  piklist_workflow_flow_append\nRuns before a Workflow is rendered.\n  "
 },
 {
 	"uri": "https://docs.piklist.com/tutorials/meta-boxes/add-subtitle-field/",
@@ -787,8 +787,8 @@
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/",
 	"title": "piklist_activate_add_on",
 	"tags": [],
-	"description": "Runs after an add-on is activated.",
-	"content": " Runs after an add-on is activated.\ndo_action('piklist_activate_add_on'); Class class-piklist-add-on.php\n"
+	"description": "Runs after a Piklist add-on is activated.",
+	"content": " Runs after a Piklist add-on is activated.\ndo_action('piklist_activate_add_on'); Class class-piklist-add-on.php\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_admin_page_after_title/",
@@ -815,8 +815,8 @@
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_event_active_fieldscope_field/",
 	"title": "piklist_event_{$active_field[&#39;scope&#39;]}_field",
 	"tags": [],
-	"description": "",
-	"content": " do_action(\u0026quot;piklist_event_{$active_field['scope']}_field\u0026quot;, $active_field); Class class-piklist-field.php\nArguments $active_field['scope'] $active_field "
+	"description": "Triggers when field events are fired.",
+	"content": " Triggers when field events are fired.\ndo_action(\u0026quot;piklist_event_{$active_field['scope']}_field\u0026quot;, $active_field); Class class-piklist-field.php\nArguments $active_field['scope'] $active_field "
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_notices/",
@@ -865,7 +865,7 @@
 	"title": "piklist_parts_processed-{$folder}",
 	"tags": [],
 	"description": "Signals that parts have been processed.",
-	"content": " do_action(\u0026quot;piklist_parts_processed-{$folder}\u0026quot;); Class class-piklist.php\nArguments $folder The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)\n"
+	"content": " do_action(\u0026quot;piklist_parts_processed-{$folder}\u0026quot;); Class class-piklist.php\nArguments $folder The parts folder where the file is located ( e.g. meta-boxes, notices, terms, users, etc.).\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_plugin_loaded-type/",
@@ -878,8 +878,8 @@
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_ajax_shortcode/",
 	"title": "piklist_post_render_ajax_shortcode",
 	"tags": [],
-	"description": "",
-	"content": " do_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php\nArguments $post_id Post ID\nshortcode Full shortcode with attributes\n"
+	"description": "Runs after the shortcode preview in the admin.",
+	"content": " Runs after the shortcode preview in the admin.\ndo_action('piklist_post_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php\nArguments $post_id int Post ID\nshortcode array Full shortcode with attributes\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_dashboard_widget/",
@@ -907,7 +907,7 @@
 	"title": "piklist_post_render_setting_section",
 	"tags": [],
 	"description": "Runs after a settings section is rendered.",
-	"content": " do_action('piklist_post_render_setting_section', $section, $options); Class class-piklist-setting.php\nArguments $section $options "
+	"content": " do_action('piklist_post_render_setting_section', $section, $options); Class class-piklist-setting.php\nArguments $section section data from Piklist part file\n$options field list\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_settings_form/",
@@ -921,7 +921,7 @@
 	"title": "piklist_post_render_shortcode",
 	"tags": [],
 	"description": "Runs after a shortcode is rendered.",
-	"content": " do_action('piklist_post_render_shortcode', $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php\nArguments $attributes self::$shortcodes[$tag] "
+	"content": " do_action('piklist_post_render_shortcode', $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php\nArguments $attributes attributes passed to the shortcode\nself::$shortcodes[$tag] shortcode data from Piklist part file\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_post_render_user_meta_box/",
@@ -955,8 +955,8 @@
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_ajax_shortcode/",
 	"title": "piklist_pre_render_ajax_shortcode",
 	"tags": [],
-	"description": "",
-	"content": " do_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php\nArguments $post_id Post ID\nshortcode Full shortcode with attributes\n"
+	"description": "Runs before the shortcode preview in the admin.",
+	"content": " Runs before the shortcode preview in the admin.\ndo_action('piklist_pre_render_ajax_shortcode', $post_id, $shortcode); Class class-piklist-shortcode.php\nArguments $post_id int Post ID\nshortcode array Full shortcode with attributes\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_dashboard_widget/",
@@ -967,6 +967,13 @@
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_media_meta_box/",
+	"title": "piklist_pre_render_media_meta_box",
+	"tags": [],
+	"description": "Runs before a post meta box is rendered.",
+	"content": " do_action('piklist_pre_render_media_meta_box', $post, $meta_box); Class class-piklist-media.php\nArguments $post The post object\n$meta_box The meta box object\n"
+},
+{
+	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_meta_box/",
 	"title": "piklist_pre_render_meta_box",
 	"tags": [],
 	"description": "Runs before a post meta box is rendered.",
@@ -977,7 +984,7 @@
 	"title": "piklist_pre_render_setting_section",
 	"tags": [],
 	"description": "Runs before a settings section is rendered.",
-	"content": " do_action('piklist_pre_render_setting_section', $section, $options); Class class-piklist-setting.php\nArguments $section $options "
+	"content": " do_action('piklist_pre_render_setting_section', $section, $options); Class class-piklist-setting.php\nArguments $section section data from Piklist part file\n$options field list\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_settings_form/",
@@ -991,14 +998,14 @@
 	"title": "piklist_pre_render_shortcode",
 	"tags": [],
 	"description": "Runs before a shortcode is rendered.",
-	"content": " do_action('piklist_pre_render_shortcode', $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php\nArguments $attributes self::$shortcodes[$tag] "
+	"content": " do_action('piklist_pre_render_shortcode', $attributes, self::$shortcodes[$tag]); Class class-piklist-shortcode.php\nArguments $attributes attributes passed to the shortcode\nself::$shortcodes[$tag] shortcode data from Piklist part file\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_user_meta_box/",
 	"title": "piklist_pre_render_user_meta_box",
 	"tags": [],
 	"description": "Runs before a user meta box is rendered.",
-	"content": " do_action('piklist_pre_render_user_meta_box', $user, $meta_box); Class class-piklist-user.php\nArguments $user The user object\n$meta_box The meta box object\n"
+	"content": " Runs before a user meta box is rendered.\ndo_action('piklist_pre_render_user_meta_box', $user, $meta_box); Class class-piklist-user.php\nArguments $user user data\n$meta_box meta box configuration\n"
 },
 {
 	"uri": "https://docs.piklist.com/actions-filters/actions/piklist_pre_render_widget/",
