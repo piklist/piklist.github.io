@@ -36,7 +36,8 @@ Arguments $term $taxonomy </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/actions/piklist_activate_add_on/</guid>
-      <description>do_action(&#39;piklist_activate_add_on&#39;); Class class-piklist-add-on.php</description>
+      <description>Runs after an add-on is activated.
+do_action(&#39;piklist_activate_add_on&#39;); Class class-piklist-add-on.php</description>
     </item>
     
     <item>
