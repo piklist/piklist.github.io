@@ -1,8 +1,10 @@
 ---
 title: "piklist_event_{$active_field['scope']}_field"
-description:
+description: "Triggers when field events are fired."
 hidden: "true"
 ---
+
+Triggers when field events are fired.
 
 #### `do_action("piklist_event_{$active_field['scope']}_field", $active_field);`
 

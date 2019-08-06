@@ -1,9 +1,9 @@
 ---
 title: "piklist_activate_add_on"
-description: "Runs after an add-on is activated."
+description: "Runs after a Piklist add-on is activated."
 hidden: "true"
 ---
-Runs after an add-on is activated.
+Runs after a Piklist add-on is activated.
 #### `do_action('piklist_activate_add_on');`
 
 

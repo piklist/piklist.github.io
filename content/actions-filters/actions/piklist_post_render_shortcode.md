@@ -13,6 +13,7 @@ hidden: "true"
 ## Arguments
 
 ### `$attributes`
-
+attributes passed to the shortcode
 
 ### `self::$shortcodes[$tag]`
+shortcode data from Piklist part file

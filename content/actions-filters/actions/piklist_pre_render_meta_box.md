@@ -1,14 +1,14 @@
 ---
-title: "piklist_pre_render_media_meta_box"
+title: "piklist_pre_render_meta_box"
 description: "Runs before a post meta box is rendered."
 hidden: "true"
 ---
 
-#### `do_action('piklist_pre_render_media_meta_box', $post, $meta_box);`
+#### `do_action('piklist_pre_render_meta_box', $post, $meta_box);`
 
 
 ## Class
-`class-piklist-media.php`
+`class-piklist-meta.php`
 
 ## Arguments
 

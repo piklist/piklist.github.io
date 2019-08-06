@@ -13,4 +13,4 @@ hidden: "true"
 ## Arguments
 
 ### `$folder`
-The parts folder ( e.g. meta-boxes, notices, terms, users, etc.)
+The parts folder where the file is located ( e.g. meta-boxes, notices, terms, users, etc.).
