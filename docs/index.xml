@@ -205,9 +205,9 @@ Creating a Piklist add-on is not much different than creating a Piklist plugin. 
       
       <guid>https://docs.piklist.com/fields/validating-fields/</guid>
       <description>When writing field code, whether with Piklist or not, you should be extra cautious of how you handle data coming into WordPress and how it’s presented to the end user. Piklist makes validating your data easy with the validate parameter.
+You can also create your own custom validation rules using the piklist_validation_rules filter.
 Choose the appropriate type of validation for each of your fields.
-email Verifies that the input is in the proper format for an email address.
-Uses the standard WordPress function is_email</description>
+email Verifies that the input is in the proper format for an email address.</description>
     </item>
     
     <item>
@@ -712,6 +712,26 @@ Parameters $part The individual part (e.g. meta-box, setting, etc.) to be modifi
 Parameters $folder The parts folder you want to filter (e.g. meta-boxes, settings, etc.)
 $part The individual part (e.g. meta-box, setting, etc.) to be modified or removed. It’s an associative array that contains all the information about the part.
  Input: Array  $folder The folder the part is stored in.</description>
+    </item>
+    
+    <item>
+      <title>piklist_parts_process-{$folder}</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</guid>
+      <description>do_action(&amp;quot;piklist_parts_process-{$folder}&amp;quot;); Class class-piklist.php
+Arguments $folder The parts folder where the file is located ( e.g. meta-boxes, notices, terms, users, etc.).</description>
+    </item>
+    
+    <item>
+      <title>piklist_parts_processed-{$folder}</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</guid>
+      <description>do_action(&amp;quot;piklist_parts_processed-{$folder}&amp;quot;); Class class-piklist.php
+Arguments $folder The parts folder where the file is located ( e.g. meta-boxes, notices, terms, users, etc.).</description>
     </item>
     
     <item>

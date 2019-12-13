@@ -10,5 +10,25 @@
 	<atom:link href="https://docs.piklist.com/actions-filters/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>piklist_parts_process-{$folder}</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</guid>
+      <description>do_action(&amp;quot;piklist_parts_process-{$folder}&amp;quot;); Class class-piklist.php
+Arguments $folder The parts folder where the file is located ( e.g. meta-boxes, notices, terms, users, etc.).</description>
+    </item>
+    
+    <item>
+      <title>piklist_parts_processed-{$folder}</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</guid>
+      <description>do_action(&amp;quot;piklist_parts_processed-{$folder}&amp;quot;); Class class-piklist.php
+Arguments $folder The parts folder where the file is located ( e.g. meta-boxes, notices, terms, users, etc.).</description>
+    </item>
+    
   </channel>
 </rss>

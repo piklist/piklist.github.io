@@ -109,7 +109,7 @@
   
   <url>
     <loc>https://docs.piklist.com/fields/validating-fields/</loc>
-    <lastmod>2018-01-01T08:08:14-05:00</lastmod>
+    <lastmod>2019-12-02T21:47:23-05:00</lastmod>
   </url>
   
   <url>
@@ -459,7 +459,7 @@
   
   <url>
     <loc>https://docs.piklist.com/tutorials/fields/using-chosen/</loc>
-    <lastmod>2018-06-15T16:26:02-04:00</lastmod>
+    <lastmod>2019-10-07T12:42:16-04:00</lastmod>
   </url>
   
   <url>
@@ -565,6 +565,14 @@
   <url>
     <loc>https://docs.piklist.com/actions-filters/filters/piklist_part_process_folder/</loc>
     <lastmod>2017-12-11T00:40:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/actions-filters/actions/piklist_parts_processed-folder/</loc>
   </url>
   
   <url>

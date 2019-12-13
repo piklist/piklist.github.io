@@ -30,9 +30,9 @@ Codex reference for parameters: sanitize_email
       
       <guid>https://docs.piklist.com/fields/validating-fields/</guid>
       <description>When writing field code, whether with Piklist or not, you should be extra cautious of how you handle data coming into WordPress and how it’s presented to the end user. Piklist makes validating your data easy with the validate parameter.
+You can also create your own custom validation rules using the piklist_validation_rules filter.
 Choose the appropriate type of validation for each of your fields.
-email Verifies that the input is in the proper format for an email address.
-Uses the standard WordPress function is_email</description>
+email Verifies that the input is in the proper format for an email address.</description>
     </item>
     
     <item>
