@@ -10,12 +10,21 @@ Only used for Post data.
 Examples:
 
 ```
+// lock on publish
 'on_post_status' => array(
 	'value' => 'publish'
 )
 ```
 
 ```
+// lock on draft or publish
+'on_post_status' => array(
+	'value' => array('draft','publish')
+)
+```
+
+```
+// lock on all statuses between repair and closed
 'on_post_status' => array(
 	'value' => 'repair--closed'
 )
