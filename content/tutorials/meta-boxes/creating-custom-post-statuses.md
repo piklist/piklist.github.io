@@ -98,3 +98,15 @@ add_filter('piklist_post_types', 'demo_post_type');
 return $post_types;
 }
 ```
+
+Custom Post Statuses in Piklist take the same parameters as the WordPress function [register_post_status](https://developer.wordpress.org/reference/functions/register_post_status/). They get passed in an array as seen below:
+
+```
+,'closed' => array(
+	'label' => 'Closed',
+	'public' => true,
+	'exclude_from_search' => true,
+	'show_in_admin_all_list' => true,
+	'show_in_admin_status_list' => true
+)
+```
