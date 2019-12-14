@@ -13,19 +13,19 @@
     <title>Creating Custom Post Statuses &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576292850" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576292850" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576292850" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576292850" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576292850" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576292850" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576292850" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576292850" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576292850" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576292850"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576292850"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576292850"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576292850"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
 
     
   </div>
@@ -1796,6 +1796,17 @@
   );
 return $post_types;
 }
+</code></pre>
+
+<p>Custom Post Statuses in Piklist take the same parameters as the WordPress function <a href="https://developer.wordpress.org/reference/functions/register_post_status/">register_post_status</a>. They get passed in an array as seen below:</p>
+
+<pre><code>,'closed' =&gt; array(
+	'label' =&gt; 'Closed',
+	'public' =&gt; true,
+	'exclude_from_search' =&gt; true,
+	'show_in_admin_all_list' =&gt; true,
+	'show_in_admin_status_list' =&gt; true
+)
 </code></pre>
 
 
@@ -3551,20 +3562,20 @@ return $post_types;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576292850"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576292850"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576292850"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576292850" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576292850"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
