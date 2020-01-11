@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Piklist makes it easy to show one or more fields, based on the value of another field, and so much more.">
 
 
@@ -13,19 +13,19 @@
     <title>Conditionally Show Fields &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,17 +1685,15 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#build-the-control-field">Build the Control Field</a></li>
-<li><a href="#build-the-conditional-field">Build the Conditional Field</a></li>
-<li><a href="#full-code-snippet">Full Code Snippet:</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#build-the-control-field">Build the Control Field</a></li>
+        <li><a href="#build-the-conditional-field">Build the Conditional Field</a></li>
+        <li><a href="#full-code-snippet">Full Code Snippet:</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1714,31 +1712,26 @@
         
 
 
-
-
 <h2 id="description">Description</h2>
-
 <p>Piklist makes it easy to show one or more fields, based on the value of another field, and so much more. The Piklist conditions parameter is very powerful, and you can see all the options in the documentation.</p>
-
 <p>In this tutorial, if the user clicks on the “Yes” radio button to subscribe to our newsletter, we will show an “Email” text field.</p>
-
 <ul>
-<li><p>Conditional fields work on almost every page in WordPress. In this tutorial we are going to build these fields for a Post.</p></li>
-
-<li><p>First let’s build a metabox using our <a href="https://docs.piklist.com/getting-started/">base tutorial</a>. You can stop at &ldquo;Adding Fields&rdquo;, since we will be creating our own fields.</p></li>
-
-<li><p>Now, let’s add two fields:</p>
-
+<li>
+<p>Conditional fields work on almost every page in WordPress. In this tutorial we are going to build these fields for a Post.</p>
+</li>
+<li>
+<p>First let’s build a metabox using our <a href="https://docs.piklist.com/getting-started/">base tutorial</a>. You can stop at &ldquo;Adding Fields&rdquo;, since we will be creating our own fields.</p>
+</li>
+<li>
+<p>Now, let’s add two fields:</p>
 <ol>
 <li>The Control field will be a radio button</li>
 <li>The Conditional field will only display if “Yes” is selected in the radio button.</li>
-</ol></li>
+</ol>
+</li>
 </ul>
-
 <h3 id="build-the-control-field">Build the Control Field</h3>
-
 <p>Building the Control field in Piklist is exactly the same as building any other field. There is absolutely nothing different about it. In this case, we are going to build the standard radio field that will ask the user if they want to subscribe to the newsletter:</p>
-
 <pre><code>piklist('field', array(
  'type' =&gt; 'radio'
  ,'field' =&gt; 'subscribe_to_newsletter'
@@ -1752,14 +1745,9 @@
  )
  ,'value' =&gt; 'no'
 ));
-</code></pre>
-
-<p>Note, that we set <code>value =&gt; 'no'</code>. This sets the default value of the field to “No”, which hides the email box.</p>
-
+</code></pre><p>Note, that we set <code>value =&gt; 'no'</code>. This sets the default value of the field to “No”, which hides the email box.</p>
 <h3 id="build-the-conditional-field">Build the Conditional Field</h3>
-
 <p>Let’s start with a standard Piklist text box.</p>
-
 <pre><code>piklist('field', array(
  'type' =&gt; 'text'
  ,'field' =&gt; 'email_address'
@@ -1767,22 +1755,15 @@
  ,'description' =&gt; 'Please enter your email address'
  )
 ));
-</code></pre>
-
-<p>Now we are going to add the &ldquo;conditions&rdquo; array:</p>
-
+</code></pre><p>Now we are going to add the &ldquo;conditions&rdquo; array:</p>
 <pre><code>,'conditions' =&gt; array(
    array(
     'field' =&gt; 'subscribe_to_newsletter'
     ,'value' =&gt; 'yes'
    )
  )
-</code></pre>
-
-<p>This array can actually hold a variety of conditions. In this case, we are saying: <strong>If the field “subscribe_to_newsletter” (our Control field name) equals yes, then show this field.</strong></p>
-
+</code></pre><p>This array can actually hold a variety of conditions. In this case, we are saying: <strong>If the field “subscribe_to_newsletter” (our Control field name) equals yes, then show this field.</strong></p>
 <p>All together the conditional field looks like this:</p>
-
 <pre><code>piklist('field', array(
  'type' =&gt; 'text'
  ,'field' =&gt; 'email_address'
@@ -1795,10 +1776,7 @@
      )
    )
 ));
-</code></pre>
-
-<h3 id="full-code-snippet">Full Code Snippet:</h3>
-
+</code></pre><h3 id="full-code-snippet">Full Code Snippet:</h3>
 <pre><code>piklist('field', array(
  'type' =&gt; 'radio'
  ,'field' =&gt; 'subscribe_to_newsletter'
@@ -1826,7 +1804,6 @@ piklist('field', array(
  )
 ));
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3580,20 +3557,20 @@ piklist('field', array(
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

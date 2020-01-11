@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Piklist makes it super easy to create admin notices in WordPress.">
 
 
@@ -13,19 +13,19 @@
     <title>Building your first Admin Notice &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296512" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296512" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296512"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1685,13 +1685,10 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a></li>
-<li><a href="#full-code-snippet">Full Code Snippet</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#full-code-snippet">Full Code Snippet</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1710,12 +1707,8 @@
         
 
 
-
-
 <h2 id="description">Description</h2>
-
 <p>Piklist makes it super easy to create admin notices in WordPress, usually with no PHP.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1745,43 +1738,31 @@
 
 </div>
 
-
 <ul>
 <li>In your <code>parts/notices/</code> folder create a new PHP file to hold your notice code. This file can be named anything you want.</li>
-
-<li><p>Add the following to the top of your file:</p>
-
+<li>Add the following to the top of your file:</li>
+</ul>
 <pre><code>&lt;?php
 /*
 Notice Type: info
 Dismiss: true
 */
 ?&gt;
-</code></pre></li>
-</ul>
-
-<p>This simple comment block, creates an admin notice in the WordPress &ldquo;info&rdquo; style. And allows the user to dismiss it.</p>
-
+</code></pre><p>This simple comment block, creates an admin notice in the WordPress &ldquo;info&rdquo; style. And allows the user to dismiss it.</p>
 <ul>
-<li><p>Underneath the comment block add your message:</p>
-
-<pre><code>&lt;p&gt;The site will be offline tomorrow night for maintenance.&lt;/p&gt;
-</code></pre></li>
+<li>Underneath the comment block add your message:</li>
 </ul>
-
-<p>That&rsquo;s it!</p>
-
+<pre><code>&lt;p&gt;The site will be offline tomorrow night for maintenance.&lt;/p&gt;
+</code></pre><p>That's it!</p>
 <h2 id="full-code-snippet">Full Code Snippet</h2>
-
-<pre><code> &lt;?php
- /*
- Notice Type: info
- Dismiss: true
- */
- ?&gt;
-  &lt;p&gt;This website will be offline tomorrow night for maintenance.&lt;/p&gt;
+<pre><code>&lt;?php
+/*
+Notice Type: info
+Dismiss: true
+*/
+?&gt;
+ &lt;p&gt;This website will be offline tomorrow night for maintenance.&lt;/p&gt;
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3532,20 +3513,20 @@ Dismiss: true
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767321"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767321"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767321" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767321"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

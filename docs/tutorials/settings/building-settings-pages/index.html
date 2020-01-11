@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Creating WordPress Settings pages with Piklist is as easy as creating any other field type.">
 
 
@@ -13,19 +13,19 @@
     <title>Building Settings Pages &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,18 +1685,16 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#register-your-settings-page">Register your Settings Page</a></li>
-<li><a href="#create-a-settings-section">Create a Settings Section</a></li>
-<li><a href="#full-code-snippet">Full code snippet</a></li>
-<li><a href="#using-these-fields-in-a-theme">Using these fields in a theme:</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#register-your-settings-page">Register your Settings Page</a></li>
+        <li><a href="#create-a-settings-section">Create a Settings Section</a></li>
+        <li><a href="#full-code-snippet">Full code snippet</a></li>
+        <li><a href="#using-these-fields-in-a-theme">Using these fields in a theme:</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1715,18 +1713,11 @@
         
 
 
-
-
-<p><img src="https://docs.piklist.com/images/userguide-tutorial-theme-settings.jpg" alt="Settings" /></p>
-
+<p><img src="https://docs.piklist.com/images/userguide-tutorial-theme-settings.jpg" alt="Settings"></p>
 <p>Creating WordPress Settings pages with Piklist is as easy as creating any other field type. First we register the Settings page, and then we start adding Settings sections.  Piklist uses the standard WordPress settings API, plus it adds extra power and ease of use.  You can use any Piklist field type on a Settings page, and easily add Tabs as well.</p>
-
 <p>In this tutorial, we will create a Settings Page that includes three fields: <code>select</code>, <code>text</code> and <code>colorPicker</code>, with tooltip help.</p>
-
 <h3 id="register-your-settings-page">Register your Settings Page</h3>
-
 <p>Like everything in Piklist, we start with a simple but powerful array.  Then we hook it to the proper Piklist function. If you’re creating this settings page in your theme then this code belongs in functions.php. If this is a Settings page for a plugin, then add it to the main file in your plugin, after you register your plugin with Piklist.</p>
-
 <pre><code>add_filter('piklist_admin_pages', 'piklist_theme_setting_pages');
   function piklist_theme_setting_pages($pages) {
      $pages[] = array(
@@ -1745,96 +1736,73 @@
 
     return $pages;
   }
-</code></pre>
-
-<h3 id="create-a-settings-section">Create a Settings Section</h3>
-
+</code></pre><h3 id="create-a-settings-section">Create a Settings Section</h3>
 <p>Now we need to create the proper folder structure in your theme. Piklist uses this folder structure to automatically help you when building fields.  Create a piklist folder, and then a parts subfolder, and then add a settings subfolder. You can see the supported Piklist folder structure here.
 Each file we add to the the settings folder will create a Settings section on the Settings page.  You can have multiple Sections on each Settings page as well.  Each field we include in this file will be part of this Section. Fairly straightforward.  OK, let’s create our Settings section file!</p>
-
 <ul>
-<li><p>Create a new file: let’s call it <code>demo-settings.php</code>.  At the top of the file, we will add a comment block that will control the configuration of the Settings section. This comment block is very similar to what you would see in a standard WordPress plugin or theme.  Here are the minimum variables required:</p>
-
+<li>Create a new file: let’s call it <code>demo-settings.php</code>.  At the top of the file, we will add a comment block that will control the configuration of the Settings section. This comment block is very similar to what you would see in a standard WordPress plugin or theme.  Here are the minimum variables required:</li>
+</ul>
 <pre><code>&lt;?php
 /*
 Title: Theme Settings Section
 Setting: my_theme_settings
 */
-</code></pre></li>
-</ul>
-
-<p>This comment block tells Piklist you want to name your Settings section, “My Demo Settings Section”, and you want to associate this Section with the Settings page that uses the setting “demo-setting”. When you registered your Settings page, earlier in this tutorial, this is the setting you defined. The Piklist comment block for settings supports a lot more than just these two variables.  You can view the full list in our docs.</p>
-
+</code></pre><p>This comment block tells Piklist you want to name your Settings section, “My Demo Settings Section”, and you want to associate this Section with the Settings page that uses the setting “demo-setting”. When you registered your Settings page, earlier in this tutorial, this is the setting you defined. The Piklist comment block for settings supports a lot more than just these two variables.  You can view the full list in our docs.</p>
 <ul>
-<li><p>Now, let’s create our first field, a TEXT BOX:</p>
-
-<pre><code>piklist('field', array(
-'type' =&gt; 'text'
-,'field' =&gt; 'text'
-,'label' =&gt; 'Text Box'
-,'description' =&gt; 'Field Description'
-,'help' =&gt; 'This is help text.'
-,'value' =&gt; 'Default text'
-,'attributes' =&gt; array(
-  'class' =&gt; 'text'
-)
-));
-</code></pre></li>
+<li>Now, let’s create our first field, a TEXT BOX:</li>
 </ul>
-
-<p>This simple array will create a TEXT BOX that automatically uses the WordPress settings API to display and save.  The <code>'type' =&gt; 'text'</code> variable tells Piklist what sort of field to render. Also, notice that this is very similar to the way you create fields for metaboxes.</p>
-
+<pre><code>piklist('field', array(
+    'type' =&gt; 'text'
+    ,'field' =&gt; 'text'
+    ,'label' =&gt; 'Text Box'
+    ,'description' =&gt; 'Field Description'
+    ,'help' =&gt; 'This is help text.'
+    ,'value' =&gt; 'Default text'
+    ,'attributes' =&gt; array(
+      'class' =&gt; 'text'
+    )
+  ));
+</code></pre><p>This simple array will create a TEXT BOX that automatically uses the WordPress settings API to display and save.  The <code>'type' =&gt; 'text'</code> variable tells Piklist what sort of field to render. Also, notice that this is very similar to the way you create fields for metaboxes.</p>
 <ul>
-<li><p>Now, let’s create our next field, a SELECT FIELD:</p>
-
-<pre><code>piklist('field', array(
-'type' =&gt; 'select'
-,'field' =&gt; 'select'
-,'label' =&gt; 'Select Box'
-,'description' =&gt; 'Choose from the drop-down.'
-,'help' =&gt; 'This is help text.'
-,'attributes' =&gt; array(
-  'class' =&gt; 'text'
-)
-,'choices' =&gt; array(
-  'option1' =&gt; 'Option 1'
-  ,'option2' =&gt; 'Option 2'
-  ,'option3' =&gt; 'Option 3'
-)
-));
-</code></pre></li>
+<li>Now, let’s create our next field, a SELECT FIELD:</li>
 </ul>
-
-<p>Notice that this array is very similar to the one used to create the text box. Just two differences:</p>
-
+<pre><code>piklist('field', array(
+    'type' =&gt; 'select'
+    ,'field' =&gt; 'select'
+    ,'label' =&gt; 'Select Box'
+    ,'description' =&gt; 'Choose from the drop-down.'
+    ,'help' =&gt; 'This is help text.'
+    ,'attributes' =&gt; array(
+      'class' =&gt; 'text'
+    )
+    ,'choices' =&gt; array(
+      'option1' =&gt; 'Option 1'
+      ,'option2' =&gt; 'Option 2'
+      ,'option3' =&gt; 'Option 3'
+    )
+  ));
+</code></pre><p>Notice that this array is very similar to the one used to create the text box. Just two differences:</p>
 <ul>
 <li><code>'type' =&gt; 'select'</code>: Tells Piklist that you want to render a select field.</li>
 <li>The <code>choices</code> array adds your choices.</li>
 </ul>
-
 <p>That’s it! Everything else is the same.</p>
-
 <ul>
-<li><p>One more field to go in this tutorial. Let’s create our ColorPicker field. Normally, you would need to add Javascript and CSS to create this field… but not with Piklist!</p>
-
-<pre><code>piklist('field', array(
-'type' =&gt; 'colorpicker'
-,'field' =&gt; 'colorpicker'
-,'label' =&gt; 'Choose a color'
-,'value' =&gt; '#aee029'
-,'description' =&gt; 'Click in the box to select a color.'
-,'help' =&gt; 'This is help text.'
-,'attributes' =&gt; array(
-  'class' =&gt; 'text'
-)
-));
-</code></pre></li>
+<li>One more field to go in this tutorial. Let’s create our ColorPicker field. Normally, you would need to add Javascript and CSS to create this field… but not with Piklist!</li>
 </ul>
-
-<p>Seriously, that’s all you need to create a ColorPicker field.  You will notice this is pretty much the same code used to create the text box, except we set <code>'type' =&gt; 'colorpicker'</code>.</p>
-
+<pre><code> piklist('field', array(
+    'type' =&gt; 'colorpicker'
+    ,'field' =&gt; 'colorpicker'
+    ,'label' =&gt; 'Choose a color'
+    ,'value' =&gt; '#aee029'
+    ,'description' =&gt; 'Click in the box to select a color.'
+    ,'help' =&gt; 'This is help text.'
+    ,'attributes' =&gt; array(
+      'class' =&gt; 'text'
+    )
+  ));
+</code></pre><p>Seriously, that’s all you need to create a ColorPicker field.  You will notice this is pretty much the same code used to create the text box, except we set <code>'type' =&gt; 'colorpicker'</code>.</p>
 <h3 id="full-code-snippet">Full code snippet</h3>
-
 <pre><code> /*
  Title: Theme Settings Section
  Setting: my_theme_settings
@@ -1878,12 +1846,8 @@ piklist('field', array(
   'class' =&gt; 'text'
  )
  ));
-</code></pre>
-
-<h3 id="using-these-fields-in-a-theme">Using these fields in a theme:</h3>
-
+</code></pre><h3 id="using-these-fields-in-a-theme">Using these fields in a theme:</h3>
 <p>Where possible, Piklist uses the default WordPress functions to get things done, and using Settings is no different. You can use the standard WordPress function <code>get_option</code> to pull this data into your theme.  Here’s how you would use these fields in your theme file:</p>
-
 <pre><code>$theme_options = get_option('my_theme_settings');
 
   $text_field = $theme_options['text'];
@@ -1892,7 +1856,6 @@ piklist('field', array(
 
   echo 'This is a text field' . $text_field;
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3646,20 +3609,20 @@ piklist('field', array(
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

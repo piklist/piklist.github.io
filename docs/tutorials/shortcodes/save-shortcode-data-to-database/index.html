@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Save Shortcode data to database">
 
 
@@ -13,19 +13,19 @@
     <title>Save Shortcode data to database &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,16 +1685,14 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#create-the-field">Create the field</a></li>
-<li><a href="#save-the-meta-data">Save the meta data</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#create-the-field">Create the field</a></li>
+        <li><a href="#save-the-meta-data">Save the meta data</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1713,12 +1711,8 @@
         
 
 
-
-
 <h2 id="description">Description</h2>
-
 <p>With Piklist you can save shortcode data to your database instead of the WordPress editor.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1748,13 +1742,9 @@
 
 </div>
 
-
-<p>In this tutorial we&rsquo;ll save add_more (repeater) data to the database, since this data would be difficult to show in a standard shortcode.</p>
-
+<p>In this tutorial we'll save add_more (repeater) data to the database, since this data would be difficult to show in a standard shortcode.</p>
 <h3 id="create-the-field">Create the field</h3>
-
 <p>Open or create your shortcodes form file and add this field:</p>
-
 <pre><code>piklist('field', array(
     'type' =&gt; 'text'
     ,'field' =&gt; 'my_shortcode_saved_to_db'
@@ -1763,19 +1753,13 @@
     ,'label' =&gt; 'Demo shortcode'
     ,'add_more' =&gt; true
   );
-</code></pre>
-
-<p>A few things about this field:</p>
-
+</code></pre><p>A few things about this field:</p>
 <ul>
 <li>We are setting the <code>scope</code> to post_meta, to tell Piklist where to save the data. This can also be user_meta, term_meta, etc.</li>
 <li>The <code>save_id</code> parameter is the meta_id in your database. This line is telling Piklist to retrieve the meta_id.  This is what will be shown in the post editor.</li>
 </ul>
-
 <h3 id="save-the-meta-data">Save the meta data</h3>
-
 <p>Add the following directly under the above field.</p>
-
 <pre><code>// Get the last field rendered
 $field = piklist('field');
 
@@ -1785,9 +1769,7 @@ piklist('field', array(
   ,'field' =&gt; 'my_shortcode_saved_to_db'
   ,'value' =&gt; $field['data_id']
 ));
-</code></pre>
-
-<p>If you save this shortcode you should see the <code>my_shortcode_saved_to_db</code> field in your database. You can then retrieve it normally.</p>
+</code></pre><p>If you save this shortcode you should see the <code>my_shortcode_saved_to_db</code> field in your database. You can then retrieve it normally.</p>
 
 
 <footer class=" footline" >
@@ -3542,20 +3524,20 @@ piklist('field', array(
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

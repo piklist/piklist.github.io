@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fields on Piklist Documentation</title>
@@ -20,7 +20,7 @@
 Choose the appropriate type of sanitization for each of your fields.
 email Strips out all characters that are not allowable in an email address.
 Codex reference for parameters: sanitize_email
-&#39;sanitize&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;email&#39; ) )  file_name Removes special characters that are illegal in filenames on certain operating systems and special characters requiring special escaping to manipulate at the command line.</description>
+&amp;#39;sanitize&amp;#39; =&amp;gt; array( array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;email&amp;#39; ) ) file_name Removes special characters that are illegal in filenames on certain operating systems and special characters requiring special escaping to manipulate at the command line.</description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on Piklist Documentation</title>
@@ -27,8 +27,8 @@
       
       <guid>https://docs.piklist.com/getting-started/piklist-enable-your-theme/</guid>
       <description>Adding Piklist meta-boxes, fields, settings pages, Widgets, etc. to your theme is very easy.
- First you need to add the proper folder structure to your theme. Piklist works by searching the active theme for the /piklist folder and then processing the sub-folders and files within it.
- Most Piklist code will go in the folder structure you set up. But other Piklist code, like registering Post Types, would go in your theme’s functions.</description>
+  First you need to add the proper folder structure to your theme. Piklist works by searching the active theme for the /piklist folder and then processing the sub-folders and files within it.
+  Most Piklist code will go in the folder structure you set up. But other Piklist code, like registering Post Types, would go in your theme’s functions.</description>
     </item>
     
     <item>

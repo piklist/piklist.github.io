@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="This is a full list of available parameters for Piklist comment blocks.">
 
 
@@ -13,19 +13,19 @@
     <title>Comment Block Parameters &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1672,7 +1672,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1691,732 +1691,488 @@
 
 
 <p>This is a full list of available parameters for Piklist comment blocks. Not all parameters work with all Piklist parts (<code>parts/</code> folders).</p>
-
 <h2 id="action">Action</h2>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul><h2 id="align">Align</h2>
-
 <p>How the pointer should be aligned on this edge, relative to the target.</p>
-
 <p>Piklist Parts: pointers</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values: top, bottom, left, right, middle</li>
 </ul>
 <h2 id="anchor-id">Anchor ID</h2>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul><h2 id="capability">Capability</h2>
-
 <p>User capability that can view this group of fields. This is not the “minimum” capability, this is the actual capability. Do not include if you wish to allow all users to view. ** Do not use with “role”. Use one or the other</p>
-
 <p>Piklist Parts: all</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns: array</li>
 <li>Default: Whatever is set in register post type</li>
-
-<li><p>Examples:</p>
-
+<li>Examples:</li>
+</ul>
 <pre><code>Capability: edit_posts
 Capability: edit_posts, edit_others_posts
-</code></pre></li>
-</ul>
-<h2 id="class">Class</h2>
-
+</code></pre><h2 id="class">Class</h2>
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  comma-delimited</li>
 </ul><h2 id="clear">Clear</h2>
-
 <p>When set to true, all meta-boxes that have been registered by WordPress or other plugins will be removed. This allows you to build your Workflow views exactly the way you want them.</p>
-
 <p>Piklist Parts: workflows</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
 </ul>
 <h2 id="collapse">Collapse</h2>
-
 <p>If set to true, this meta-box will be collapsed by default.</p>
-
 <p>Piklist Parts: meta-boxes</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 <li>Default:  false</li>
 </ul>
 <h2 id="context">Context</h2>
-
 <p>The part of the page where you want this group of fields to show.</p>
-
 <p>Piklist Parts: meta-boxes</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values:  normal, advanced, side (<a href="https://developer.wordpress.org/reference/functions/add_meta_box/">Any valid value from add_meta_box()</a>)</li>
 <li>Default:  advanced</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>context: normal
-</code></pre>
-<h2 id="default">Default</h2>
-
+</code></pre><h2 id="default">Default</h2>
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 </ul><h2 id="description">Description</h2>
-
 <p>A description of this section. This field doesn’t do anything except add a description for you.</p>
-
 <p>Piklist Parts: all</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul>
 <h2 id="disable">Disable</h2>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 </ul><h2 id="edge">Edge</h2>
-
 <p>Which edge should be adjacent to the target.</p>
-
 <p>Piklist Parts: pointers</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values: left, right, top, bottom</li>
 </ul>
 <h2 id="editor">Editor</h2>
-
-<p>Add a button to the tinymce editor that will run your shortcode. The icon used is set by the <a href="#icon">icon</a> parameter</p>
-
+<p>Add a button to the tinymce editor that will run your shortcode. The icon used is set by the [icon] (#icon) parameter</p>
 <p>Piklist Parts: shortcodes</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
 </ul>
 <h2 id="extend">Extend</h2>
-
 <p>The div# to extend.</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul><h2 id="extend-method">Extend Method</h2>
-
 <p>The type of extending you would like to do. Choose one:</p>
-
 <ul>
-<li>before</li>
-<li>after</li>
-<li>replace</li>
-
-<li><p>remove</p></li>
-
-<li><p>Input:  string</p></li>
-
-<li><p>Returns:  string</p></li>
+<li>
+<p>before</p>
+</li>
+<li>
+<p>after</p>
+</li>
+<li>
+<p>replace</p>
+</li>
+<li>
+<p>remove</p>
+</li>
+<li>
+<p>Input:  string</p>
+</li>
+<li>
+<p>Returns:  string</p>
+</li>
 </ul>
 <h2 id="filter">Filter</h2>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 </ul><h2 id="flow">Flow</h2>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul><h2 id="flow-page">Flow page</h2>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul><h2 id="header">Header</h2>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 </ul><h2 id="height">Height</h2>
-
 <ul>
 <li>Input:  numeric</li>
 <li>Returns:  numeric</li>
 </ul><h2 id="icon">Icon</h2>
-
 <p>Name of the dashicon to represent this shortcode.</p>
-
 <p>Piklist Parts: shortcodes</p>
-
 <ul>
 <li>Input:  string. Any valid <a href="https://developer.wordpress.org/resource/dashicons/#editor-bold">Dashicon</a></li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>icon: dashicons-editor-quote
-</code></pre>
-<h2 id="id">ID</h2>
-
+</code></pre><h2 id="id">ID</h2>
 <p>Display this group of fields for this object ID.</p>
-
 <p>Piklist Parts: meta-boxes, terms, users, media, notices, workflows</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>id: 2
 id: 2, 4
-</code></pre>
-<h2 id="inline">Inline</h2>
-
+</code></pre><h2 id="inline">Inline</h2>
 <p>Display this shortcode inline.</p>
-
 <p>Piklist Parts: shortcodes</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false (block)</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>inline: true
-</code></pre>
-<h2 id="lock">Lock</h2>
-
+</code></pre><h2 id="lock">Lock</h2>
 <p>Locking the meta-box stops the user from being able to drag it around the edit screen.</p>
-
 <p>Piklist Parts: meta-boxes</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 <li>Default:  false</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>lock: true
-</code></pre>
-<h2 id="logged-in">Logged in</h2>
-
+</code></pre><h2 id="logged-in">Logged in</h2>
 <p>Whether to show to logged in users or not.</p>
-
 <p>Piklist Parts: all</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 <li>Default:  true</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>logged_in: false
-</code></pre>
-<h2 id="message">Message</h2>
-
+</code></pre><h2 id="message">Message</h2>
 <p>The message to show after a successful submission of a form.</p>
-
 <p>Piklist Parts: forms</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>message: Thank you for your message. We will get back to you shortly.
-</code></pre>
-<h2 id="meta-box">Meta box</h2>
-
+</code></pre><h2 id="meta-box">Meta box</h2>
 <p>If set to false, the default box box &ldquo;look&rdquo; will be removed.</p>
-
 <p>Piklist Parts: forms</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 <li>Default:  true</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Meta box: false
-</code></pre>
-<h2 id="method">Method</h2>
-
+</code></pre><h2 id="method">Method</h2>
 <p>The HTTP method used for this form.</p>
-
 <p>Piklist Parts: forms</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values:  get, post</li>
 <li>Default:  Post</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>method: get
-</code></pre>
-<h2 id="name">Name</h2>
-
+</code></pre><h2 id="name">Name</h2>
 <p>The name of the part.</p>
-
 <p>Piklist Parts: all</p>
-
 <ul>
 <li>Input:  string</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>name: My Shortcode
 name: Theme Options
-</code></pre>
-<h2 id="network">Network</h2>
-
+</code></pre><h2 id="network">Network</h2>
 <p>Show this item in the network settings of a multisite install.</p>
-
 <p>Piklist Parts: dashboard</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>network: true
-</code></pre>
-<h2 id="new">New</h2>
-
+</code></pre><h2 id="new">New</h2>
 <p>Show the fields in this file when creating a new term.</p>
-
 <p>Piklist Parts: term</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 <li>Default:  false</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>new: true
-</code></pre>
-<h2 id="notice-id">Notice ID</h2>
-
+</code></pre><h2 id="notice-id">Notice ID</h2>
 <p>ID of an admin notice.</p>
-
 <p>Piklist Parts: notices</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Notice ID: plugin-intro
-</code></pre>
-<h2 id="notice-type">Notice Type</h2>
-
+</code></pre><h2 id="notice-type">Notice Type</h2>
 <p>ID of an admin notice.</p>
-
 <p>Piklist Parts: notices</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values: info, error, warning</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Notice Type: info
-</code></pre>
-<h2 id="order">Order</h2>
-
+</code></pre><h2 id="order">Order</h2>
 <p>The sort order of this group of fields. Allows for creating an absolute order of field groups.
 NOTE: If the &ldquo;lock&rdquo; attribute is not set, or set to &ldquo;false&rdquo;, then the order you set is the default.</p>
-
 <p>For meta-boxes, this is within the context and priority.  The user can still drag and drop the meta-boxes and take them out of your designated order.</p>
-
 <p>Piklist Parts: meta-boxes, terms, users, workflows, media</p>
-
 <ul>
 <li>Input:  numeric</li>
 <li>Returns:  numeric</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>order: 4
-</code></pre>
-<h2 id="page">Page</h2>
-
+</code></pre><h2 id="page">Page</h2>
 <p>What admin page will display this data.
 NOTE: To display on a settings page, use the menu_slug.</p>
-
 <p>Piklist Parts: meta-boxes, terms, users, workflows, notices, media</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Page: post.php, post-new.php, post-edit.php
 Page: profile.php, user-edit.php
 Page: edit-tags.php, term.php
 Page: my_settings_menu_slug
-</code></pre>
-<h2 id="pointer-id">Pointer ID</h2>
-
+</code></pre><h2 id="pointer-id">Pointer ID</h2>
 <p>ID of a pointer</p>
-
 <p>Piklist Parts: pointers</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Pointer ID: plugin-settings
-</code></pre>
-<h2 id="position">Position</h2>
-
+</code></pre><h2 id="position">Position</h2>
 <p>The position of your workflow tabs</p>
-
 <p>Piklist Parts: workflows</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values:  header, body, title, editor</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Position: body
-</code></pre>
-<h2 id="post-type">Post Type</h2>
-
+</code></pre><h2 id="post-type">Post Type</h2>
 <p>The Post Type or a comma-delimited list of Post Types that will display this meta-box.</p>
-
 <p>Piklist Parts: meta-boxes</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 <li>Values:  any registered post type</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Post Type: post, page, custom_post_type
-</code></pre>
-<h2 id="preview">Preview</h2>
-
+</code></pre><h2 id="preview">Preview</h2>
 <p>Show preview in the admin.</p>
-
 <ul>
 <li>Input:  boolean</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Preview: false
-</code></pre>
-<h2 id="priority">Priority</h2>
-
+</code></pre><h2 id="priority">Priority</h2>
 <p>The priority within the context where the boxes should show. Works with the <a href="#context">context</a> parameter.</p>
-
 <p>Piklist Parts: meta-boxes</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values:  high, core, default, low  (<a href="https://developer.wordpress.org/reference/functions/add_meta_box/">Any valid value from add_meta_box()</a>)</li>
 <li>Default:  default</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Priority: core
-</code></pre>
-<h2 id="redirect">Redirect</h2>
-
+</code></pre><h2 id="redirect">Redirect</h2>
 <p>Piklist Parts: forms</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Redirect: /
 Redirect: /thank-you
 Redirect: https://another-site.com
-</code></pre>
-<h2 id="role">Role</h2>
-
+</code></pre><h2 id="role">Role</h2>
 <p>User role that can view this group of fields. This is not the &ldquo;minimum&rdquo; role, this is the actual role . Do not include if you wish to allow all users to view. ** Do not use with &ldquo;capability&rdquo;. Use one or the other.</p>
-
 <p>Piklist Parts: all</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 <li>Values:  Any user role</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Role: administrator
 Role: administrator, editor, custom-role
-</code></pre>
-<h2 id="setting">Setting</h2>
-
+</code></pre><h2 id="setting">Setting</h2>
 <p>The setting this section belongs to, as defined when you initially register the Settings Page.</p>
-
 <p>Piklist Parts: settings</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values:  Any registered setting</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Setting: my_settings
-</code></pre>
-<h2 id="shortcode">Shortcode</h2>
-
+</code></pre><h2 id="shortcode">Shortcode</h2>
 <p>The name of the shortcode. Spaces are not allowed.</p>
-
 <p>Piklist Parts: shortcodes</p>
-
 <ul>
 <li>Input: string</li>
 <li>Returns: string</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Shortcode: my_shortcode
-</code></pre>
-<h2 id="sidebar-parameter">Sidebar</h2>
-
+</code></pre><!-- raw HTML omitted -->
 <p>Display the content in this file in the Help Tab Sidebar. Do not create a tab for it.</p>
-
 <p>Piklist Parts: help</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Sidebar: true
-</code></pre>
-<h2 id="slug">Slug</h2>
-
-<h4 id="available-in-piklist-beta-only-https-github-com-piklist-piklist-releases">Available in <a href="https://github.com/piklist/piklist/releases">Piklist Beta only</a></h4>
-
+</code></pre><h2 id="slug">Slug</h2>
+<h4 id="available-in-piklist-beta-onlyhttpsgithubcompiklistpiklistreleases">Available in <a href="https://github.com/piklist/piklist/releases">Piklist Beta only</a></h4>
 <p>Display this group of fields for this object slug.</p>
-
 <p>Piklist Parts: meta-boxes, terms, users, media, notices, workflows</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul>
-
 <p>When targeting a post, term or media item, use that items slug. When targeting a user, use their user ID.</p>
-
 <p>Example:</p>
-
 <pre><code>slug: my-page
 slug: my-page, my-term, my-media, a-user-id
-</code></pre>
-<h2 id="standalone">Standalone</h2>
-
+</code></pre><h2 id="standalone">Standalone</h2>
 <p>By default, Piklist takes all widgets created within a plugin or theme, and groups them as one widget. If you want your widget to not be part of a group, like the WordPress default, set this parameter to true.</p>
-
 <p>Piklist Parts: help</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Returns:  boolean</li>
 <li>Default:  false</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Standalone: true
-</code></pre>
-<h2 id="status">Status</h2>
-
+</code></pre><h2 id="status">Status</h2>
 <p>List of post statuses that will show this meta-box. Custom post statuses are allowed.</p>
-
 <p>Piklist Parts: meta-boxes</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Status: my_custom_status
 Status: my_custom_status, published
-</code></pre>
-<h2 id="sub-tab">Sub Tab</h2>
-
+</code></pre><h2 id="sub-tab">Sub Tab</h2>
 <p>If a Workflow and a Tab have already been defined, use this parameter to assign this field group to a sub-tab of a Tab.</p>
-
 <p>Piklist Parts: meta-boxes, terms, users, settings, media</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Sub Tab: basic
 Sub Tab: basic, tab one
-</code></pre>
-<h2 id="tab">Tab</h2>
-
+</code></pre><h2 id="tab">Tab</h2>
 <p>If a Workflow has been defined, use this parameter to assign this field group to a specific Tab.</p>
-
 <p>Piklist Parts: meta-boxes, terms, users, settings, media</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>Tab: General
 Tab: General, Advanced
-</code></pre>
-<h2 id="tags">Tags</h2>
-
+</code></pre><h2 id="tags">Tags</h2>
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  comma-delimited</li>
 </ul><h2 id="taxonomy">Taxonomy</h2>
-
 <p>The Taxonomy or a comma-delimited list of Taxonomies that will display this meta-box.</p>
-
 <p>Piklist Parts: terms</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Returns:  array</li>
 <li>Values:  any registered taxonomy</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Taxonomy: category, tag
 Taxonomy: my_taxonomy
-</code></pre>
-<h2 id="template">Template</h2>
-
+</code></pre><h2 id="template">Template</h2>
 <p>The file name of the Page Template you want this meta-box to display, without “.php”. The page must be saved with this page template to work. If the file is in a directory, that directory must be included.</p>
-
 <p>You must save the page before this parameter will work.</p>
-
 <p>Piklist Parts: meta-boxes</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 <li>Values:  any registered taxonomy</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Template: my-template
 Template: page-templates/my-template
 Template: default
-</code></pre>
-<h2 id="title">Title</h2>
-
+</code></pre><h2 id="title">Title</h2>
 <p>Title of the section.</p>
-
 <p>Piklist Parts: all</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Returns:  string</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Title: Theme Settings
 Title: User Options
-</code></pre>
-<h2 id="type">Type</h2>
-
+</code></pre><h2 id="type">Type</h2>
 <ul>
 <li>Input:  string</li>
 </ul><h2 id="width">Width</h2>
-
 <p>The width of the widget UI in the admin</p>
-
 <p>Piklist Parts: widgets</p>
-
 <ul>
 <li>Input:  numeric</li>
 <li>Returns: numeric</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>Width: 500
 Width: 720
 </code></pre>
-
 
 
 
@@ -4167,20 +3923,20 @@ Width: 720
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

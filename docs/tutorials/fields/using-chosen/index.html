@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Chosen is a jQuery plugin that makes long, unwieldy select boxes much more user-friendly, and can easily be used with Piklist">
 
 
@@ -13,19 +13,19 @@
     <title>Using &#34;Chosen&#34; for select fields &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,15 +1685,13 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#full-code-snippet">Full Code Snippet:</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#full-code-snippet">Full Code Snippet:</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1712,137 +1710,114 @@
         
 
 
-
-
-<p><img src="https://docs.piklist.com/images/chosen.png" alt="Chosen Example" /></p>
-
+<p><img src="https://docs.piklist.com/images/chosen.png" alt="Chosen Example"></p>
 <h2 id="description">Description</h2>
-
 <p>Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &ldquo;Chosen&rdquo; jQuery plugin from Harvest can make them more user-friendly.</p>
-
 <ul>
-<li>First, let&rsquo;s load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.</li>
+<li>First, let's load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.</li>
 </ul>
-
-<p>In your theme&rsquo;s <code>functions.php</code> file, or your main plugin file add this code:</p>
-
+<p>In your theme's <code>functions.php</code> file, or your main plugin file add this code:</p>
 <pre><code>function my_enqueue_files() {
   wp_enqueue_style( 'chosen_styles', 'https://harvesthq.github.io/chosen/chosen.css', false );
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'chosen_js', 'https://harvesthq.github.io/chosen/chosen.jquery.js', array('jquery'), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_files' );
-</code></pre>
-
-<p>Note: for backend (admin) pages like a post editor, use admin_enqueue_scripts action hook instead:</p>
-
+</code></pre><p>Note: for backend (admin) pages like a post editor, use admin_enqueue_scripts action hook instead:</p>
 <pre><code>add_action( 'admin_enqueue_scripts', 'my_enqueue_files' );
-</code></pre>
-
-<ul>
-<li><p>Now let&rsquo;s add a select field with lots of options. Add this field to the proper file in your <code>/parts</code> folder:</p>
-
-<pre><code>piklist('field', array(
-'type' =&gt; 'select'
-,'field' =&gt; 'us_states'
-,'label' =&gt; 'Select a state'
-,'required' =&gt; true
-,'choices' =&gt; array(
-  '' =&gt; ''
-  ,'AL' =&gt; 'AL'
-  ,'AK' =&gt; 'AK'
-  ,'AZ' =&gt; 'AZ'
-  ,'AR' =&gt; 'AR'
-  ,'CA' =&gt; 'CA'
-  ,'CO' =&gt; 'CO'
-  ,'CT' =&gt; 'CT'
-  ,'DE' =&gt; 'DE'
-  ,'DC' =&gt; 'DC'
-  ,'FL' =&gt; 'FL'
-  ,'GA' =&gt; 'GA'
-  ,'HI' =&gt; 'HI'
-  ,'ID' =&gt; 'ID'
-  ,'IL' =&gt; 'IL'
-  ,'IN' =&gt; 'IN'
-  ,'IA' =&gt; 'IA'
-  ,'KS' =&gt; 'KS'
-  ,'KY' =&gt; 'KY'
-  ,'LA' =&gt; 'LA'
-  ,'ME' =&gt; 'ME'
-  ,'MD' =&gt; 'MD'
-  ,'MA' =&gt; 'MA'
-  ,'MI' =&gt; 'MI'
-  ,'MN' =&gt; 'MN'
-  ,'MS' =&gt; 'MS'
-  ,'MO' =&gt; 'MO'
-  ,'MT' =&gt; 'MT'
-  ,'NE' =&gt; 'NE'
-  ,'NV' =&gt; 'NV'
-  ,'NH' =&gt; 'NH'
-  ,'NJ' =&gt; 'NJ'
-  ,'NM' =&gt; 'NM'
-  ,'NY' =&gt; 'NY'
-  ,'NC' =&gt; 'NC'
-  ,'ND' =&gt; 'ND'
-  ,'OH' =&gt; 'OH'
-  ,'OK' =&gt; 'OK'
-  ,'OR' =&gt; 'OR'
-  ,'PA' =&gt; 'PA'
-  ,'RI' =&gt; 'RI'
-  ,'SC' =&gt; 'SC'
-  ,'SD' =&gt; 'SD'
-  ,'TN' =&gt; 'TN'
-  ,'TX' =&gt; 'TX'
-  ,'UT' =&gt; 'UT'
-  ,'VT' =&gt; 'VT'
-  ,'VA' =&gt; 'VA'
-  ,'WA' =&gt; 'WA'
-  ,'WV' =&gt; 'WV'
-  ,'WI' =&gt; 'WI'
-  ,'WY' =&gt; 'WY'
-)
-,'attributes' =&gt; array(
-'class' =&gt; 'chosen-select'
-,'data-placeholder' =&gt; 'Choose a State'
-)
-));
-</code></pre></li>
+</code></pre><ul>
+<li>Now let's add a select field with lots of options. Add this field to the proper file in your <code>/parts</code> folder:</li>
 </ul>
-
-<p>Let&rsquo;s take a closer look at this field:</p>
-
-<p>Under <code>attributes</code>, we&rsquo;ve assigned:</p>
-
+<pre><code>piklist('field', array(
+  'type' =&gt; 'select'
+  ,'field' =&gt; 'us_states'
+  ,'label' =&gt; 'Select a state'
+  ,'required' =&gt; true
+  ,'choices' =&gt; array(
+      '' =&gt; ''
+      ,'AL' =&gt; 'AL'
+      ,'AK' =&gt; 'AK'
+      ,'AZ' =&gt; 'AZ'
+      ,'AR' =&gt; 'AR'
+      ,'CA' =&gt; 'CA'
+      ,'CO' =&gt; 'CO'
+      ,'CT' =&gt; 'CT'
+      ,'DE' =&gt; 'DE'
+      ,'DC' =&gt; 'DC'
+      ,'FL' =&gt; 'FL'
+      ,'GA' =&gt; 'GA'
+      ,'HI' =&gt; 'HI'
+      ,'ID' =&gt; 'ID'
+      ,'IL' =&gt; 'IL'
+      ,'IN' =&gt; 'IN'
+      ,'IA' =&gt; 'IA'
+      ,'KS' =&gt; 'KS'
+      ,'KY' =&gt; 'KY'
+      ,'LA' =&gt; 'LA'
+      ,'ME' =&gt; 'ME'
+      ,'MD' =&gt; 'MD'
+      ,'MA' =&gt; 'MA'
+      ,'MI' =&gt; 'MI'
+      ,'MN' =&gt; 'MN'
+      ,'MS' =&gt; 'MS'
+      ,'MO' =&gt; 'MO'
+      ,'MT' =&gt; 'MT'
+      ,'NE' =&gt; 'NE'
+      ,'NV' =&gt; 'NV'
+      ,'NH' =&gt; 'NH'
+      ,'NJ' =&gt; 'NJ'
+      ,'NM' =&gt; 'NM'
+      ,'NY' =&gt; 'NY'
+      ,'NC' =&gt; 'NC'
+      ,'ND' =&gt; 'ND'
+      ,'OH' =&gt; 'OH'
+      ,'OK' =&gt; 'OK'
+      ,'OR' =&gt; 'OR'
+      ,'PA' =&gt; 'PA'
+      ,'RI' =&gt; 'RI'
+      ,'SC' =&gt; 'SC'
+      ,'SD' =&gt; 'SD'
+      ,'TN' =&gt; 'TN'
+      ,'TX' =&gt; 'TX'
+      ,'UT' =&gt; 'UT'
+      ,'VT' =&gt; 'VT'
+      ,'VA' =&gt; 'VA'
+      ,'WA' =&gt; 'WA'
+      ,'WV' =&gt; 'WV'
+      ,'WI' =&gt; 'WI'
+      ,'WY' =&gt; 'WY'
+  )
+  ,'attributes' =&gt; array(
+    'class' =&gt; 'chosen-select'
+    ,'data-placeholder' =&gt; 'Choose a State'
+  )
+));
+</code></pre><p>Let's take a closer look at this field:</p>
+<p>Under <code>attributes</code>, we've assigned:</p>
 <ul>
 <li><code>'class' =&gt; 'chosen-select'</code>: This can be any class you want, but it will allow the Chosen JS to convert this field.</li>
 <li><code>,'data-placeholder' =&gt; 'Choose a State'</code>: Set placeholder text.</li>
 </ul>
-
 <p>Notice we also set the first choice as empty. This is necessary so Chosen can apply the placeholder.</p>
-
 <ul>
-<li>Last, we need to add some jQuery and pass Chosen options. You can find a full list of options <a href="https://harvesthq.github.io/chosen/options.html">here</a>.</li>
-</ul>
-
+<li>
+<p>Last, we need to add some jQuery and pass Chosen options. You can find a full list of options <a href="https://harvesthq.github.io/chosen/options.html">here</a>.</p>
 <p>You can enqueue this code in a separate file, or if you like, you can include it in the same file as your field code:</p>
+<pre><code>&lt;script&gt;
 
-<pre><code>  &lt;script&gt;
-
-    jQuery(document).ready(function () {
-      jQuery(&quot;.chosen-select&quot;).chosen({
-          search_contains: true,
-          no_results_text: &quot;Nothing found for: &quot;,
-          width: &quot;100%&quot;,
-      });
+  jQuery(document).ready(function () {
+    jQuery(&quot;.chosen-select&quot;).chosen({
+        search_contains: true,
+        no_results_text: &quot;Nothing found for: &quot;,
+        width: &quot;100%&quot;,
     });
+  });
 
-  &lt;/script&gt;
-</code></pre>
-
-<p>IMPORTANT: notice that we&rsquo;ve included the class <code>chosen-select</code>, from the field code, in the jQuery script. This tells Chosen which field you want to convert.</p>
-
+&lt;/script&gt;
+</code></pre><p>IMPORTANT: notice that we've included the class <code>chosen-select</code>, from the field code, in the jQuery script. This tells Chosen which field you want to convert.</p>
+</li>
+</ul>
 <h3 id="full-code-snippet">Full Code Snippet:</h3>
-
 <pre><code>&lt;?php
 /*
 Title: Select Fields
@@ -1928,7 +1903,6 @@ piklist('field', array(
 
 &lt;/script&gt;
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3682,20 +3656,20 @@ piklist('field', array(
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Add some extra power to your Taxonomies by registering them the Piklist way.">
 
 
@@ -13,19 +13,19 @@
     <title>Getting Started with Taxonomies and Piklist &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296512" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296512" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296512"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1684,7 +1684,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1703,35 +1703,35 @@
 
 
 <p>Whether you register a taxonomy via the standard WordPress function register_taxonomy, or through Piklist, you can still take advantage of many Piklist features. However, you can add some extra power to your Taxonomies by registering them the Piklist way.  Piklist extends the register_taxonomy function with extra parameters to enable extra features.  You can use the standard <a href="https://codex.wordpress.org/Function_Reference/register_taxonomy"><code>register_taxonomy</code></a> parameters, plus additional ones defined by Piklist.</p>
-
 <p>To register a Taxonomy with Piklist:</p>
-
 <ul>
 <li>Create a function with your Taxonomy parameters.</li>
 <li>Hook it to the <code>piklist_taxonomies</code> filter.</li>
-
-<li><p>This code can go in your custom plugin, or your theme’s functions.php file.</p>
-
+<li>This code can go in your custom plugin, or your theme’s functions.php file.</li>
+</ul>
 <pre><code>add_filter('piklist_taxonomies', 'demo_type_tax');
-function demo_type_tax($taxonomies) {
- $taxonomies[] = array(
-    'post_type' =&gt; 'piklist_demo'
-    ,'name' =&gt; 'piklist_demo_type'
-    ,'show_admin_column' =&gt; true
-    ,'configuration' =&gt; array(
-      'hierarchical' =&gt; true
-      ,'labels' =&gt; piklist('taxonomy_labels', 'Demo Type')
-      ,'hide_meta_box' =&gt; true
-      ,'show_ui' =&gt; true
-      ,'query_var' =&gt; true
-      ,'rewrite' =&gt; array(
-        'slug' =&gt; 'demo-type'
-      )
-    )
-  );
-return $taxonomies;
-}
-</code></pre></li>
+  function demo_type_tax($taxonomies) {
+     $taxonomies[] = array(
+        'post_type' =&gt; 'piklist_demo'
+        ,'name' =&gt; 'piklist_demo_type'
+        ,'show_admin_column' =&gt; true
+        ,'configuration' =&gt; array(
+          'hierarchical' =&gt; true
+          ,'labels' =&gt; piklist('taxonomy_labels', 'Demo Type')
+          ,'hide_meta_box' =&gt; true
+          ,'show_ui' =&gt; true
+          ,'query_var' =&gt; true
+          ,'rewrite' =&gt; array(
+            'slug' =&gt; 'demo-type'
+          )
+        )
+      );
+    return $taxonomies;
+  }
+</code></pre><p>When registering a custom taxonomy, choose how you want it to be displayed.</p>
+<ul>
+<li>If you want the taxonomy to act the same way the &ldquo;tag&rdquo; taxonomy works in WordPress (multifaceted), then set the value of the hierarchical parameter to false</li>
+<li>If you want your taxonomy to act the same way the &ldquo;category&rdquo; taxonomy works in WordPress, then set the value of the hierarchical parameter to true</li>
 </ul>
 
 
@@ -3487,20 +3487,20 @@ return $taxonomies;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767321"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767321"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767321" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767321"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

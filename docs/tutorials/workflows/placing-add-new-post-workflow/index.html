@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Use the Workflows to divide the default WordPress add new Post page.">
 
 
@@ -13,19 +13,19 @@
     <title>Placing &#34;Add New Post&#34; in a Workflow &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1684,7 +1684,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1702,15 +1702,16 @@
         
 
 
-<p><img src="https://docs.piklist.com/images/workflow-add-new-post.jpg" alt="Metabox" /></p>
-
+<p><img src="https://docs.piklist.com/images/workflow-add-new-post.jpg" alt="Metabox"></p>
 <p>Piklist’s Workflow system is incredibly powerful. It allows you to divide a page into different tabs. In this tutorial, we’ll use the Workflows to divide the default WordPress add new Post page.</p>
-
 <ul>
-<li><p>Review the <a href="https://docs.piklist.com/tutorials/workflows/building-first-workflow/">&ldquo;Building Your First Workflow&rdquo; tutorial</a> to get an idea how they work. For this tutorial, we will need to create one Workflow HEADER, and two Workflow TAB files. Additionally, we will need to write a quick function as well.</p></li>
-
-<li><p>First create your Workflow HEADER file. A header file is determined by setting the header parameter to true. It can be named anything and should contain just a comment block that looks like this:</p>
-
+<li>
+<p>Review the <a href="https://docs.piklist.com/tutorials/workflows/building-first-workflow/">&ldquo;Building Your First Workflow&rdquo; tutorial</a> to get an idea how they work. For this tutorial, we will need to create one Workflow HEADER, and two Workflow TAB files. Additionally, we will need to write a quick function as well.</p>
+</li>
+<li>
+<p>First create your Workflow HEADER file. A header file is determined by setting the header parameter to true. It can be named anything and should contain just a comment block that looks like this:</p>
+</li>
+</ul>
 <pre><code>&lt;?php
 /*
 Flow: Add Post
@@ -1719,11 +1720,7 @@ Post Type: post
 Header: true
 Position: title
 */
-</code></pre></li>
-</ul>
-
-<p>Let’s break down the comment block:</p>
-
+</code></pre><p>Let’s break down the comment block:</p>
 <ul>
 <li><code>Flow</code>: we are naming this flow “Add Post”. This is just a name that ties all the workflow files together.</li>
 <li><code>Page</code>: Which pages should this flow appear on.</li>
@@ -1731,9 +1728,7 @@ Position: title
 <li><code>Header</code>: Since this is the header file, this parameter should be true.</li>
 <li><code>Position</code>: Where the flow should start on the page. In this case we are using &ldquo;title&rdquo;, which Piklist maps to the WordPress <code>edit_form_after_title</code> action.</li>
 </ul>
-
 <p>Now we are going to create two TAB files, for the two steps in this Workflow. Again, the files can be named anything. As long as they have these comment blocks, and are located in your parts/workflows directory, Piklist will render them. Here are the comment blocks for the two files:</p>
-
 <pre><code>&lt;?php
 /*
 Title: Step 1
@@ -1741,27 +1736,20 @@ Order: 10
 Flow: Add Post
 Default: true
 */
-</code></pre>
-
-<pre><code>&lt;?php
+</code></pre><pre><code>&lt;?php
 /*
 Title: Step 2
 Order: 20
 Flow: Add Post
 */
-</code></pre>
-
-<p>Let’s break down these comment blocks:</p>
-
+</code></pre><p>Let’s break down these comment blocks:</p>
 <ul>
 <li><code>Title</code>: Tab title</li>
 <li><code>Order</code>: What order should this tab appear in the flow.</li>
 <li><code>Flow</code>: This is the same as we defined in the header file.</li>
 <li><code>Default</code>: Which is the default tab.</li>
 </ul>
-
 <p>At this point, you should have the Workflow setup with two tabs, with the Editor appearing in both. The next step is to only have the Editor appear in Step 1… so we need to remove it from Step 2. We are going to use the WordPress function <code>remove_post_type_support</code> to remove the Editor from Step 2. In your plugin file, or themes functions.php file, place this code:</p>
-
 <pre><code>function my_remove_from_flow() {
 
  if ( isset( $_REQUEST['flow'] ) &amp;&amp; $_REQUEST['flow'] == 'add_post' &amp;&amp; $_REQUEST['flow_page'] == 'step_2' ) {
@@ -1772,10 +1760,7 @@ Flow: Add Post
 
 }
 add_action( 'admin_init', 'my_remove_from_flow' );
-</code></pre>
-
-<p>This code is hooking to <code>admin_init()</code>, and looking at the HTTP Request variable. If <code>$_REQUEST</code> is set to <code>flow</code>, and the flow is add_post (set in the header file), and the <code>flow_page</code> is step_2, then remove post type support for the Editor with Posts.</p>
-
+</code></pre><p>This code is hooking to <code>admin_init()</code>, and looking at the HTTP Request variable. If <code>$_REQUEST</code> is set to <code>flow</code>, and the flow is add_post (set in the header file), and the <code>flow_page</code> is step_2, then remove post type support for the Editor with Posts.</p>
 <p>That’s it! You now have the default Add New Post page placed in a Piklist Flow. Refer to the <a href="https://docs.piklist.com/tutorials/workflows/building-first-workflow/">Building Your First Workflow</a> Tutorial to find out how to add fields to Step 2 of your Workflow.</p>
 
 
@@ -3531,20 +3516,20 @@ add_action( 'admin_init', 'my_remove_from_flow' );
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

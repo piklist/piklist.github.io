@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FAQs on Piklist Documentation</title>
@@ -48,9 +48,9 @@ To remove the custom-fields meta box from a WordPress default post type, or one 
       
       <guid>https://docs.piklist.com/faq/number-of-fields-limit/</guid>
       <description>There is no limit to how many fields you can create and display with Piklist. However, your server limits how many can be used on each page.
-This is not a Piklist issue&amp;hellip; it&amp;rsquo;s part of your servers configuration.
+This is not a Piklist issue&amp;hellip; it&#39;s part of your servers configuration.
 The most common solution is adjusting your max_vars setting. This is a PHP setting which sets the maximum variables that can be used in one page load.
-Once you increase this limit, Piklist can finish rendering all it&amp;rsquo;s fields.</description>
+Once you increase this limit, Piklist can finish rendering all it&#39;s fields.</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ Once you increase this limit, Piklist can finish rendering all it&amp;rsquo;s fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/faq/update-script-not-running/</guid>
-      <description>Piklist allows you to easily create update scripts that run on certain versions of your plugin. If the script doesn&amp;rsquo;t run, you may have an issue with the piklist_active_plugin_versions setting:
+      <description>Piklist allows you to easily create update scripts that run on certain versions of your plugin. If the script doesn&#39;t run, you may have an issue with the piklist_active_plugin_versions setting:
  Backup your database Note which version of Piklist you are currently running. Deactivate and delete Piklist Open your database. In the wp_options table, look for this field: piklist_active_plugin_versions and delete it. Reinstall the same version of Piklist you had before.</description>
     </item>
     

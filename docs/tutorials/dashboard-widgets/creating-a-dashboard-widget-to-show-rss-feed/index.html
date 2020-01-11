@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Piklist makes it super easy to create Dashboard Widgets in WordPress.">
 
 
@@ -13,19 +13,19 @@
     <title>Create a Dashboard Widget to show an RSS Feed. &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296512" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296512" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296512"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296512"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1685,15 +1685,13 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#full-snippet">Full Snippet</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#full-snippet">Full Snippet</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1712,14 +1710,9 @@
         
 
 
-
-
-<p><img src="https://docs.piklist.com/images/creating-a-dashboard-widget-to-show-rss-feed.png" alt="Dashboard Widget" /></p>
-
+<p><img src="https://docs.piklist.com/images/creating-a-dashboard-widget-to-show-rss-feed.png" alt="Dashboard Widget"></p>
 <h2 id="description">Description</h2>
-
 <p>Piklist makes it super easy to create Dashboard Widgets in WordPress. This way you can concentrate on your widget code, and let Piklist do the hard part.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1749,31 +1742,22 @@
 
 </div>
 
-
 <ul>
-<li>Create a PHP file in your <code>/parts/dashboard/</code> <a href="https://docs.piklist.com/folder-structure/">folder</a>. It doesn&rsquo;t matter what you name the file. For this example we&rsquo;ll call it <code>rss-news.php</code>.</li>
-
-<li><p>At the top of the file, add this code:</p>
-
+<li>Create a PHP file in your <code>/parts/dashboard/</code> <a href="https://docs.piklist.com/folder-structure/">folder</a>. It doesn't matter what you name the file. For this example we'll call it <code>rss-news.php</code>.</li>
+<li>At the top of the file, add this code:</li>
+</ul>
 <pre><code>&lt;?php
 /*
 Title: Piklist News
 Capability: read
 */
 ?&gt;
-</code></pre></li>
-</ul>
-
-<p>This code tells Piklist to create a Dashboard Widget named &ldquo;Piklist News&rdquo;, and any user with the <code>read</code> capability can see it. If you go to your admin Dashboard you will see the widget show up.</p>
-
+</code></pre><p>This code tells Piklist to create a Dashboard Widget named &ldquo;Piklist News&rdquo;, and any user with the <code>read</code> capability can see it. If you go to your admin Dashboard you will see the widget show up.</p>
 <ul>
-<li>The next step is to add the code to grab the RSS feed and render it. We&rsquo;ll use the code example for the <a href="https://codex.wordpress.org/Function_Reference/fetch_feed"><code>fetch_feed</code></a> example on wordpress.org.</li>
+<li>The next step is to add the code to grab the RSS feed and render it. We'll use the code example for the <a href="https://codex.wordpress.org/Function_Reference/fetch_feed"><code>fetch_feed</code></a> example on wordpress.org.</li>
 </ul>
-
-<p>That&rsquo;s it! You just created a Dashboard Widget.</p>
-
+<p>That's it! You just created a Dashboard Widget.</p>
 <h3 id="full-snippet">Full Snippet</h3>
-
 <pre><code>&lt;?php
 /*
 Title: Piklist News
@@ -1815,7 +1799,6 @@ endif;
 &lt;/ul&gt;
 
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3569,20 +3552,20 @@ endif;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767321"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767321"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767321" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767321"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="This is a full list of available parameters for Piklist fields.">
 
 
@@ -13,19 +13,19 @@
     <title>Field Parameters &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1678,7 +1678,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1697,153 +1697,111 @@
 
 
 <p>This is a full list of available parameters for Piklist fields.</p>
-
-<h2 id="add-more-repeater">add_more (repeater)</h2>
-
+<h2 id="add_more-repeater">add_more (repeater)</h2>
 <p>Piklist allows you to turn ANY field, or group of fields, into a repeater field, by simple adding the add_more parameter.</p>
-
 <p><strong>Displaying Data</strong>
 To display the results of the Add-More in your theme, pull the data like you normally would. Add more’s save data as an array, so you can loop though the data to display.</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
 </ul>
-
 <p>Example:
 <code>'add_more' =&gt; true</code></p>
 <h2 id="attributes">attributes</h2>
-
 <p>Adds HTML attributes to your field.</p>
-
 <ul>
 <li>Input:  array
 8 values:  An array of HTML attributes piklist</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>array(
 	'placeholder' =&gt; 'Enter text'
 	,'class' =&gt; 'large-text'
 )
-</code></pre>
-<h2 id="capability">capability</h2>
-
+</code></pre><h2 id="capability">capability</h2>
 <p>Set the user capabilities that will see this field.</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Default:  none</li>
 </ul>
-
 <p>Examples:
 <code>'capability' =&gt; 'create_users'</code>
 <code>'capability' =&gt; 'create_users, edit_posts'</code></p>
-<h2 id="child-add-more">child_add_more</h2>
-
+<h2 id="child_add_more">child_add_more</h2>
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
-</ul><h2 id="child-field">child_field</h2>
-
+</ul><h2 id="child_field">child_field</h2>
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
 </ul><h2 id="choices">choices</h2>
-
 <p>Create a list of choices. Used with the following fields: <code>checkbox</code>, <code>radio</code>, <code>select</code>.</p>
-
 <ul>
 <li>Input:  array</li>
 <li>values:  An array of choices</li>
 </ul>
-
 <p>Example:</p>
-
 <pre><code>'choices' =&gt; array(
 	'first' =&gt; 'First Choice',
 	'second' =&gt; 'Second Choice',
 	'third' =&gt; 'Third Choice'
 )
-</code></pre>
-<h2 id="columns">columns</h2>
-
+</code></pre><h2 id="columns">columns</h2>
 <p>Piklist uses a 12 column grid system to help you layout your fields. The grid system is really helpful when laying out group fields.</p>
-
 <ul>
 <li>Input:  numeric</li>
 <li>values:  Any number 1-12</li>
 </ul>
-
 <p>Examples:
 <code>'columns' =&gt; 1</code>
 <code>'columns' =&gt; 12</code></p>
 <h2 id="conditions">Conditions</h2>
-
 <p>Set conditions for your fields.</p>
-
 <ul>
 <li>Input:  parameters</li>
 <li>values:  An array of conditions</li>
 </ul>
-
 <h3 id="sub-parameters">Sub Parameters:</h3>
-
 <h4 id="relation-sub-parameter">relation (sub parameter)</h4>
-
 <p>When using multiple conditions, the default logic is AND. Use this parameter to change the logic to OR.
 Examples:
 <code>'relation' =&gt; 'or'</code>
 <code>'relation' =&gt; 'and'</code></p>
-
 <h4 id="field-sub-parameter">field (sub parameter)</h4>
-
 <p>The name of the field you will be watching for Hide/Show, or the field you will be Updating.
 Example:
 <code>'field' =&gt; 'my_field'</code></p>
-
 <h4 id="value-sub-parameter">value (sub parameter)</h4>
-
 <p>The value(s) of the field that will trigger the condition. This parameter also accepts an array of values.
 Examples:
 <code>'value' =&gt; 'yes'</code>
 <code>'value' =&gt; array('yes', 'maybe')</code></p>
-
 <h4 id="reset-sub-parameter">reset (sub parameter)</h4>
-
 <p>By default, any field that is hidden/shown will have their values reset. To prevent this set reset to false.
 Example:
 <code>'reset' =&gt; 'false'</code></p>
-
 <h4 id="compare-sub-parameter">compare (sub parameter)</h4>
-
-<p>Operator to test the value against. Currently only two values are supported: == and !=.
-* default: ==</p>
-
+<p>Operator to test the value against. Currently only two values are supported: == and !=.</p>
+<ul>
+<li>default: ==</li>
+</ul>
 <p>Example:
 <code>'compare' =&gt; '!='</code></p>
-
 <h4 id="type-sub-parameter">type (sub parameter)</h4>
-
-<p>Piklist supports two condition types; <code>toggle</code> and <code>update</code>.
-* default: toggle</p>
-
+<p>Piklist supports two condition types; <code>toggle</code> and <code>update</code>.</p>
+<ul>
+<li>default: toggle</li>
+</ul>
 <p>Example:
 <code>'type' =&gt; update</code></p>
-
 <h4 id="scope-sub-parameter">scope (sub parameter)</h4>
-
 <p>IMPORTANT: Only use if you manually set the scope in the field you are monitoring for Hide/Show.
 Example:
 <code>'scope' =&gt; taxonomy</code></p>
-
-<h4 id="post-status-hide-sub-parameter">post_status_hide (sub parameter)</h4>
-
-<h4 id="post-status-value-sub-parameter">post_status_value (sub parameter)</h4>
-
+<h4 id="post_status_hide-sub-parameter">post_status_hide (sub parameter)</h4>
+<h4 id="post_status_value-sub-parameter">post_status_value (sub parameter)</h4>
 <p>Example:</p>
-
 <pre><code>  // Demonstrates a lot of conditional fields working together
 
 
@@ -2051,313 +2009,225 @@ Example:
       )
     )
   ));
-</code></pre>
-<h2 id="data-id">data_id</h2>
-
+</code></pre><h2 id="data_id">data_id</h2>
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
 </ul><h2 id="description">description</h2>
-
 <p>The description of your field.</p>
-
 <ul>
 <li>Input:  string</li>
 </ul>
-
 <p>Example:
 <code>'description' =&gt; 'This is my description'</code></p>
-<h2 id="disable-label">disable_label</h2>
-
+<h2 id="disable_label">disable_label</h2>
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  true</li>
 </ul><h2 id="display">display</h2>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  true</li>
 </ul><h2 id="embed">embed</h2>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
 </ul><h2 id="errors">errors</h2>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
 </ul><h2 id="field">field</h2>
-
 <p>The name of your field.</p>
-
 <p>For <code>scope</code>: <code>post_meta</code>, <code>term_meta</code>, <code>option</code>: this is the name of the field that will be saved to your database.</p>
-
 <p>For <code>scope</code>: <code>post</code>, <code>taxonomy</code>: use the name of the post_type or taxonomy you want to save your data to.</p>
-
 <ul>
 <li>Input:  string
 Examples:</li>
 </ul>
-
 <p><code>'field' =&gt; 'my_field'</code></p>
-
 <p><code>'field' =&gt; 'post_type_name'</code></p>
-
 <p><code>'field' =&gt; 'taxonomy_name'</code></p>
-<h2 id="group-field">group_field</h2>
-
+<h2 id="group_field">group_field</h2>
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
 </ul><h2 id="help">help</h2>
-
 <p>Adds tooltip help to your field. This will only display if a label is set for your field.</p>
-
 <ul>
 <li>Input:  string</li>
 </ul>
-
 <p>Example:
 <code>'help' =&gt; 'Some help text'</code></p>
 <h2 id="id">id</h2>
-
 <p>Adds tooltip help to your field. This will only display if a label is set for your field.</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
 </ul><h2 id="label">label</h2>
-
 <p>The label for your field.</p>
-
 <ul>
 <li>Input:  string</li>
 </ul>
-
 <p>Example:
 <code>'label' =&gt; 'My field'</code></p>
-<h2 id="label-position">label_position</h2>
-
+<h2 id="label_position">label_position</h2>
 <p>The position of your label relative to your field.</p>
-
 <ul>
 <li>Input:  string</li>
 <li>values:  before, after</li>
 <li>Default:  before</li>
 </ul>
-
 <p>Example:
 <code>'label_position' =&gt; 'after'</code></p>
-<h2 id="label-tag">label_tag</h2>
-
+<h2 id="label_tag">label_tag</h2>
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  true</li>
 </ul><h2 id="list">list</h2>
-
 <p>Display a list field (Checkbox, Radio or Select) as a vertical list or not. True is vertical.</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  true</li>
 </ul>
-
 <p>Example:
 <code>'list' =&gt; false</code></p>
-<h2 id="list-type">list_type</h2>
-
+<h2 id="list_type">list_type</h2>
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
-</ul><h2 id="list-type-item">list_type_item</h2>
-
+</ul><h2 id="list_type_item">list_type_item</h2>
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
-</ul><h2 id="logged-in">logged_in</h2>
-
+</ul><h2 id="logged_in">logged_in</h2>
 <p>Show field to only logged in users.</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  false</li>
-</ul><h2 id="meta-query">meta_query</h2>
-
+</ul><h2 id="meta_query">meta_query</h2>
 <ul>
 <li>Input:  parameters</li>
 </ul><h2 id="multiple">multiple</h2>
-
 <ul>
 <li>Input: string</li>
 </ul><h2 id="name">name</h2>
-
 <ul>
 <li>Input: string</li>
 <li>Default:  null</li>
-</ul><h2 id="object-id">object_id</h2>
-
+</ul><h2 id="object_id">object_id</h2>
 <ul>
 <li>Input: string</li>
 <li>Default:  null</li>
-</ul><h2 id="on-post-status">on_post_status</h2>
-
+</ul><h2 id="on_post_status">on_post_status</h2>
 <p>Lock the field value when your post is in a certain post status. A range of post statuses can be used by separating them with two hyphens (–).</p>
-
 <p>Only used for Post data.
 <code>on_post_status</code> is now part of the conditions array: <code>post_status_hide</code>, <code>post_status_value</code></p>
-
 <ul>
 <li>Input:  parameters</li>
 </ul>
-
 <p>Examples:</p>
-
 <pre><code>// lock on publish
 'on_post_status' =&gt; array(
 	'value' =&gt; 'publish'
 )
-</code></pre>
-
-<pre><code>// lock on draft or publish
+</code></pre><pre><code>// lock on draft or publish
 'on_post_status' =&gt; array(
 	'value' =&gt; array('draft','publish')
 )
-</code></pre>
-
-<pre><code>// lock on all statuses between repair and closed
+</code></pre><pre><code>// lock on all statuses between repair and closed
 'on_post_status' =&gt; array(
 	'value' =&gt; 'repair--closed'
 )
-</code></pre>
-<h2 id="options">options</h2>
-
+</code></pre><h2 id="options">options</h2>
 <ul>
 <li>Input: parameters</li>
 </ul><h2 id="position">position</h2>
-
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
 </ul><h2 id="prefix">prefix</h2>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  true</li>
 </ul><h2 id="query">query</h2>
-
 <ul>
 <li>Input:  parameters</li>
 </ul><h2 id="redirect">redirect</h2>
-
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
 </ul><h2 id="relate">relate</h2>
-
 <p>Allow this field to relate to a post type, user, comment or taxonomy.</p>
-
 <ul>
 <li>Input:  array</li>
 <li>Default:  none</li>
 </ul>
-
 <h3 id="sub-parameter">Sub Parameter:</h3>
-
 <h4 id="scope">scope</h4>
-
 <p>The scope of the item you want to relate to.</p>
-
 <p>Examples:
 <code>&quot;scope&quot; =&gt; &quot;post&quot;</code>
 <code>&quot;scope&quot; =&gt; &quot;user&quot;</code></p>
-<h2 id="relate-to">relate_to</h2>
-
+<h2 id="relate_to">relate_to</h2>
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
-</ul><h2 id="request-value">request_value</h2>
-
+</ul><h2 id="request_value">request_value</h2>
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
 </ul><h2 id="required">required</h2>
-
 <p>Make a field required. If this field is not filled in the form will not save.</p>
-
 <p>NOTE: Piklist uses server-side authentication instead of browser-side authentication to do required verification. The pro is that it’s more secure, the con is that the user has to press “save” before the validation kicks in.</p>
-
 <p>If you want the convenience of browser-side verification you could add the HTML5 &ldquo;required&rdquo; attribute as well. See example below.</p>
-
 <ul>
 <li>Input: boolean</li>
-
-<li><p>Default: false</p>
-
-<pre><code>// required with Piklist
-piklist('field', array(
-'type' =&gt; 'text'
-,'field' =&gt; 'text_required'
-,'label' =&gt; 'Enter some required text'
-,'required' =&gt; true
-));
-</code></pre>
-
-<pre><code>// required with Piklist and HTML 5
-piklist('field', array(
-'type' =&gt; 'text'
-,'field' =&gt; 'text_required_2'
-,'label' =&gt; 'Enter some required text'
-,'required' =&gt; true
-,'attributes' =&gt; array(
-  'required' =&gt; 'required' // HTML 5 validation
-)
-));
-</code></pre></li>
+<li>Default: false</li>
 </ul>
-<h2 id="role">role</h2>
-
+<pre><code>// required with Piklist
+  piklist('field', array(
+    'type' =&gt; 'text'
+    ,'field' =&gt; 'text_required'
+    ,'label' =&gt; 'Enter some required text'
+    ,'required' =&gt; true
+  ));
+</code></pre><pre><code>// required with Piklist and HTML 5
+  piklist('field', array(
+    'type' =&gt; 'text'
+    ,'field' =&gt; 'text_required_2'
+    ,'label' =&gt; 'Enter some required text'
+    ,'required' =&gt; true
+    ,'attributes' =&gt; array(
+      'required' =&gt; 'required' // HTML 5 validation
+    )
+  ));
+</code></pre><h2 id="role">role</h2>
 <p>Set the user role that will see this field.</p>
-
 <ul>
 <li>Input:  comma-delimited</li>
 <li>Default:  none</li>
 </ul>
-
 <p>Examples:
 <code>'role' =&gt; 'editor'</code>
 <code>'role' =&gt; 'super-editor, editor, author'</code></p>
 <h2 id="sanitize">sanitize</h2>
-
 <p>Untrusted data entered into your form should be sanitized and validated before saving. By default Piklist uses the WordPress <code>$wpdb-&gt;prepare</code> method to handle your data, insuring it is SQL-escaped before saving to prevent against SQL injection attacks.</p>
-
 <p>Piklist also adds another level of sanitization you can use at the field level, and makes it easy to use. A library of sanitization functions are included with Piklist, or you can create your own.</p>
-
 <p>Since data sanitization depends on the type of data and the context in which it is used, the <code>sanitize</code> parameter allows you to choose how to clean your data, and accepts the following parameters:</p>
-
 <ul>
 <li>Input:  parameters</li>
 </ul>
-
 <h3 id="sub-parameters">Sub Parameters:</h3>
-
 <h4 id="type">type</h4>
-
 <p>The type of sanitization function to run.
 <code>'type' =&gt; 'html_class'</code></p>
-
 <h4 id="options">options</h4>
-
 <p>An array of arguments to pass to the function.
 <code>'options' =&gt; array( 'fallback' =&gt; 'my-default-fallback' )</code></p>
-
 <h4 id="callback">callback</h4>
-
 <p>Override the default Piklist callback function with your own.
 <code>'callback' =&gt; 'my-custom-callback</code></p>
-
 <p>Examples:</p>
-
 <pre><code>// sanitize parameter example. Must be in field function
 ,'sanitize' =&gt; array(
   array(
@@ -2368,9 +2238,7 @@ piklist('field', array(
    ,'callback' =&gt; 'my-custom-callback'
  )
 )
-</code></pre>
-
-<pre><code>// Use the built-in sanitize function: file_name
+</code></pre><pre><code>// Use the built-in sanitize function: file_name
   piklist('field', array(
     'type' =&gt; 'text'
     ,'label' =&gt; 'File Name'
@@ -2382,81 +2250,58 @@ piklist('field', array(
       )
     )
   ));
-</code></pre>
-<h2 id="save-as">save_as</h2>
-
+</code></pre><h2 id="save_as">save_as</h2>
 <ul>
 <li>Input:  string</li>
-</ul><h2 id="save-id">save_id</h2>
-
+</ul><h2 id="save_id">save_id</h2>
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
 </ul><h2 id="scope">scope</h2>
-
 <p>The scope parameter tells Piklist where to save field data. In many cases this is the WordPress database table (i.e. post, post_meta, term, term_meta)</p>
-
 <p>When creating fields for the WordPress admin, in most cases, you do not have to define scope. Piklist will automatically set it for you.</p>
-
 <p>You MUST define scope when creating front-end forms.</p>
-
 <p>Piklist allows you to mix-and-match field types within a form. So, one form can have fields that save information as post_meta, while other fields save to a taxonomy. Scope is what determines where the field data is saved. If you don’t set the scope parameter then it will default to where the field is used. For example, if you are creating a meta-box, then scope will automatically be set to post_meta. When working with front-end forms, you must set the scope for each field, so Piklist knows where to save your data.</p>
-
 <p>If you want create a field that saves the <code>post_title</code>, then you would set <code>scope</code> to <code>post</code>, since the <code>post_title</code> field is in the <code>wp_posts</code> database table.</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Default:  piklist_form::get_field_scope()</li>
 </ul>
-
 <p>Example:
 <code>'scope' =&gt; 'post'</code></p>
 <h2 id="sortable">sortable</h2>
-
 <p>If set to <code>false</code>, will stop an add_more field from being sortable.</p>
-
 <ul>
 <li>Input:  boolean</li>
 <li>Default:  true</li>
-</ul><h2 id="tax-query">tax_query</h2>
-
+</ul><h2 id="tax_query">tax_query</h2>
 <ul>
 <li>Input:  parameters</li>
 </ul><h2 id="template">template</h2>
-
 <p>Define a Piklist field template.</p>
-
 <ul>
 <li>Input: string</li>
 </ul><h2 id="type">type</h2>
-
 <p>The type of field.</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Default:  text</li>
 </ul>
-
 <p>Examples:
 <code>'type' =&gt;'text'</code>
 <code>'type' =&gt;'radio'</code>
 <code>'type' =&gt;'editor'</code>
 <code>'type' =&gt;'group'</code></p>
 <h2 id="validate">validate</h2>
-
 <p>Validate this field with a set of validation rules.</p>
-
 <ul>
 <li>Input:  parameters</li>
 </ul><h2 id="value">value</h2>
-
 <p>The default value for this field.</p>
-
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
 </ul><h2 id="wrapper">wrapper</h2>
-
 <ul>
 <li>Input:  string</li>
 <li>Default:  null</li>
@@ -4216,20 +4061,20 @@ piklist('field', array(
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

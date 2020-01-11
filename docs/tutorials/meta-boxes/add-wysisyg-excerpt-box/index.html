@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="To add some style to your excerpts, you can easily add a WYSIWYG editor to your excerpt box.">
 
 
@@ -13,19 +13,19 @@
     <title>Add WYSISYG to your Excerpt Box &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,20 +1685,14 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#first-remove-the-default-excerpt-box">First, remove the default excerpt box</a>
-<ul>
-<li><a href="#custom-post-type">Custom post type</a></li>
-<li><a href="#built-in-post-type">Built in post type</a></li>
-</ul></li>
-<li><a href="#now-add-your-own-editor-with-piklist">Now, add your own editor with Piklist</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#first-remove-the-default-excerpt-box">First, remove the default excerpt box</a></li>
+        <li><a href="#now-add-your-own-editor-with-piklist">Now, add your own editor with Piklist</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1717,58 +1711,40 @@
         
 
 
-
-
-<p><img src="https://docs.piklist.com/images/post-excerpt-wysiwyg.jpg" alt="Metabox" /></p>
-
+<p><img src="https://docs.piklist.com/images/post-excerpt-wysiwyg.jpg" alt="Metabox"></p>
 <h2 id="description">Description</h2>
-
 <p>To add some style to your excerpts, you can easily add a WYSIWYG editor to your excerpt box.</p>
-
 <h3 id="first-remove-the-default-excerpt-box">First, remove the default excerpt box</h3>
-
 <h4 id="custom-post-type">Custom post type</h4>
-
 <p>If you’re registering your own post type, include the <code>supports</code> <a href="http://codex.wordpress.org/Function_Reference/register_post_type">parameter</a> but don’t include <code>excerpt</code> in the array. This will tell WordPress not to render the excerpt box.</p>
-
 <h4 id="built-in-post-type">Built in post type</h4>
-
 <p>Use the standard WordPress function <a href="http://codex.wordpress.org/Function_Reference/remove_post_type_support"><code>remove_post_type_support</code></a>, to remove the editor. For example, to remove the editor from Posts, place this in your theme’s functions.php file, or your main plugin file:</p>
-
 <pre><code>function my_remove_post_type_support() {
   remove_post_type_support('post', 'excerpt');
 }
 add_action('init', 'my_remove_post_type_support', 10);
-</code></pre>
-
-<h3 id="now-add-your-own-editor-with-piklist">Now, add your own editor with Piklist</h3>
-
+</code></pre><h3 id="now-add-your-own-editor-with-piklist">Now, add your own editor with Piklist</h3>
 <ul>
 <li>Create your metabox.</li>
-
-<li><p>Add the excerpt field, and make sure you set the following:</p>
-
+<li>Add the excerpt field, and make sure you set the following:
 <ul>
 <li><code>'scope' =&gt; 'post'</code> since WordPress saves this data in the post table.</li>
 <li><code>'field' =&gt; 'post_excerpt'</code> is the field name for the default excerpt field.</li>
-
-<li><p><code>'template' =&gt; 'field'</code> Uses the Piklist &ldquo;field-only&rdquo; template with no label.</p>
-
-<pre><code>piklist('field', array(
-'type' =&gt; 'editor'
-,'scope' =&gt; 'post'
-,'template' =&gt; 'field'
-,'field' =&gt; 'post_excerpt'
-,'options' =&gt; array (
-'media_buttons' =&gt; false
-,'teeny' =&gt; true
-)
-));
-</code></pre></li>
-</ul></li>
+<li><code>'template' =&gt; 'field'</code> Uses the Piklist &ldquo;field-only&rdquo; template with no label.</li>
 </ul>
-
-<p>That’s it. Your done.</p>
+</li>
+</ul>
+<pre><code>piklist('field', array(
+    'type' =&gt; 'editor'
+    ,'scope' =&gt; 'post'
+    ,'template' =&gt; 'field'
+    ,'field' =&gt; 'post_excerpt'
+    ,'options' =&gt; array (
+     'media_buttons' =&gt; false
+     ,'teeny' =&gt; true
+    )
+  ));
+</code></pre><p>That’s it. Your done.</p>
 
 
 <footer class=" footline" >
@@ -3523,20 +3499,20 @@ add_action('init', 'my_remove_post_type_support', 10);
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

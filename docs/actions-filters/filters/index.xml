@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Filters on Piklist Documentation</title>
@@ -18,7 +18,7 @@
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_admin_pages/</guid>
       <description>apply_filters(&#39;piklist_admin_pages&#39;, array()); The piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.
 To register an Admin Page with Piklist:
- Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
+ Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that add_menu_page() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     
@@ -30,7 +30,7 @@ Parameters This filter supports every parameter that add_menu_page() supports. A
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_empty_post_title/</guid>
       <description>apply_filters(&#39;piklist_empty_post_title&#39;, $data[&#39;post_title&#39;], $post_array); Let’s you programmatically set the post title when adding a new post (post type).
 Example:
-// Set the Post Title to &amp;quot;Order #&amp;quot; plus post ID: function set_post_title_to_order_number($data, $post_array) { if ($post_array[&#39;post_type&#39;] == &#39;MY-POST-TYPE&#39;) { return &#39;Order #&#39; . $post_array[&#39;ID&#39;]; } else { return $data; } } add_filter(&#39;piklist_empty_post_title&#39;, &#39;set_post_title_to_order_number&#39;, 10, 2);  IMPORTANT: This filter works best when there is no title field for posts. To disable the title field, do not pass &amp;ldquo;title&amp;rdquo; to the supports parameter when registering a post type.</description>
+// Set the Post Title to &amp;quot;Order #&amp;quot; plus post ID: function set_post_title_to_order_number($data, $post_array) { if ($post_array[&#39;post_type&#39;] == &#39;MY-POST-TYPE&#39;) { return &#39;Order #&#39; . $post_array[&#39;ID&#39;]; } else { return $data; } } add_filter(&#39;piklist_empty_post_title&#39;, &#39;set_post_title_to_order_number&#39;, 10, 2); IMPORTANT: This filter works best when there is no title field for posts. To disable the title field, do not pass &amp;ldquo;title&amp;rdquo; to the supports parameter when registering a post type.</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ $part The individual part (e.g. meta-box, setting, etc.) to be modified or remov
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_post_types/</guid>
       <description>apply_filters(&#39;piklist_post_types&#39;, self::$post_types); The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.
 To register a Post Type with Piklist:
- Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
+ Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that register_post_type() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     
@@ -96,10 +96,10 @@ $settings All key=&amp;gt;value pairs for this setting. If you are using multipl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_sanitization_rules/</guid>
-      <description> apply_filters(&#39;piklist_sanitization_rules&#39;, self::$sanitization_rules); Add your own rules to sanitize field data.
+      <description>apply_filters(&#39;piklist_sanitization_rules&#39;, self::$sanitization_rules); Add your own rules to sanitize field data.
 Example:
-// create a sanitization rule called &amp;quot;my_email_sanitization&amp;quot; add_filter(&#39;piklist_sanitization_rules&#39;, &#39;sanitize_email_function&#39;, 11); function sanitize_email_function($sanitization_rules) { $sanitization_rules[&#39;my_email_sanitization&#39;] = array( &#39;callback&#39; =&amp;gt; &#39;sanitize_email_callback&#39; ); return $sanitization_rules; } function sanitize_email_callback($value, $field, $options) { return sanitize_email($value); // sanitize_email() is a core WordPress function }  Usage:
-&#39;sanitize&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_email_sanitization&#39; ) )  </description>
+// create a sanitization rule called &amp;quot;my_email_sanitization&amp;quot; add_filter(&#39;piklist_sanitization_rules&#39;, &#39;sanitize_email_function&#39;, 11); function sanitize_email_function($sanitization_rules) { $sanitization_rules[&#39;my_email_sanitization&#39;] = array( &#39;callback&#39; =&amp;gt; &#39;sanitize_email_callback&#39; ); return $sanitization_rules; } function sanitize_email_callback($value, $field, $options) { return sanitize_email($value); // sanitize_email() is a core WordPress function } Usage:
+&#39;sanitize&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_email_sanitization&#39; ) ) </description>
     </item>
     
     <item>
@@ -127,8 +127,8 @@ meta_box_filter Add a filter to this meta box to make it easier to search for te
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_validation_rules/</guid>
       <description>apply_filters(&#39;piklist_validation_rules&#39;, self::$validation_rules); Add your own rules to validate field data.
 Example:
-add_filter(&#39;piklist_validation_rules&#39;, &#39;check_valid_number&#39;, 11); function check_valid_number($validation_rules) { $validation_rules[&#39;my_number&#39;] = array( &#39;rule&#39; =&amp;gt; &amp;quot;/[-+]?[0-9]*[.,]?[0-9]+/&amp;quot; ,&#39;message&#39; =&amp;gt; __(&#39;is not a number&#39;) ); return $validation_rules; }  Usage:
-&#39;validate&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_number&#39; ) )  Create a rule with a callback function:
+add_filter(&#39;piklist_validation_rules&#39;, &#39;check_valid_number&#39;, 11); function check_valid_number($validation_rules) { $validation_rules[&#39;my_number&#39;] = array( &#39;rule&#39; =&amp;gt; &amp;quot;/[-+]?[0-9]*[.,]?[0-9]+/&amp;quot; ,&#39;message&#39; =&amp;gt; __(&#39;is not a number&#39;) ); return $validation_rules; } Usage:
+&#39;validate&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_number&#39; ) ) Create a rule with a callback function:
 // Create a validation rule called &amp;quot;my_file_exists&amp;quot; add_filter(&#39;piklist_validation_rules&#39;, &#39;check_file_exists&#39;, 11); function check_file_exists($validation_rules) { $validation_rules[&#39;my_file_exists&#39;] = array( &#39;callback&#39; =&amp;gt; &#39;my_validate_file_exists&#39; ); return $validation_rules; } /** * @param int $index The field index being checked.</description>
     </item>
     

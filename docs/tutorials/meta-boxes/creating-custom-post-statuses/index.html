@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Custom Post Statuses are at the heart of any web application built with WordPress, and Piklist makes it easy for you to implement them.">
 
 
@@ -13,19 +13,19 @@
     <title>Creating Custom Post Statuses &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1684,7 +1684,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1702,31 +1702,22 @@
         
 
 
-<p><img src="https://docs.piklist.com/images/userguide-post-statuses.jpg" alt="Metabox" /></p>
-
+<p><img src="https://docs.piklist.com/images/userguide-post-statuses.jpg" alt="Metabox"></p>
 <p>Custom Post Statuses are at the heart of any web application built with WordPress, and Piklist makes it easy for you to implement them.  No longer are you stuck with draft, pending review and published.  You can add whatever post statuses you choose.</p>
-
 <p>A few important caveats:</p>
-
 <ul>
 <li>Due to the nature of WordPress, your first post status has to remain “draft”.  You can change the label so it displays “New”, or “Howdy”, but the key in the post status array will have to remain draft (we’ll explain more later in the tutorial).</li>
 <li>Some themes may not display your post if the status is not published, so you may have to modify your theme’s loop to show it.</li>
 <li>This parameter does not ADD statuses to the Post Type, it removes the default WordPress statuses and REPLACES them.</li>
 </ul>
-
 <p>Like most items in Piklist, we will use an array of values to add our Custom Post Statuses. Piklist has a bunch of parameters to use with Custom Post Types, the one we will use is <code>status</code>.  Add this to your Custom Post Type you registered with the Piklist filter <a href="https://docs.piklist.com/actions-filters/filters/piklist_post_types/"><code>piklist_post_types</code></a>:</p>
-
 <pre><code>'status' =&gt; array(
    'draft' =&gt; array(
      'label' =&gt; 'New'
    )
 )
-</code></pre>
-
-<p>This code tells Piklist to rename the draft status to New. Due to the nature of WordPress, your first status must always be draft. We just renamed it to New.</p>
-
+</code></pre><p>This code tells Piklist to rename the draft status to New. Due to the nature of WordPress, your first status must always be draft. We just renamed it to New.</p>
 <p>The second post status just gets added to this array. The “Request for Estimate” status looks like this:</p>
-
 <pre><code>'status' =&gt; array(
    'draft' =&gt; array(
      'label' =&gt; 'New'
@@ -1734,12 +1725,8 @@
    ,'estimate' =&gt; array(
      'label' =&gt; 'Request for Estimate'
 )
-</code></pre>
-
-<p>You’ve just created post status named “estimate”, with the label “Request for Estimate”.</p>
-
+</code></pre><p>You’ve just created post status named “estimate”, with the label “Request for Estimate”.</p>
 <p>Just continue adding your statuses to the array until you’re done. Here’s the full code snippet for creating the Custom Post Type from step 1, and adding in all the post statuses from the image above:</p>
-
 <pre><code>add_filter('piklist_post_types', 'demo_post_type');
  function demo_post_type($post_types)
  {
@@ -1796,10 +1783,7 @@
   );
 return $post_types;
 }
-</code></pre>
-
-<p>Custom Post Statuses in Piklist take the same parameters as the WordPress function <a href="https://developer.wordpress.org/reference/functions/register_post_status/">register_post_status</a>. They get passed in an array as seen below:</p>
-
+</code></pre><p>Custom Post Statuses in Piklist take the same parameters as the WordPress function <a href="https://developer.wordpress.org/reference/functions/register_post_status/">register_post_status</a>. They get passed in an array as seen below:</p>
 <pre><code>,'closed' =&gt; array(
 	'label' =&gt; 'Closed',
 	'public' =&gt; true,
@@ -1808,7 +1792,6 @@ return $post_types;
 	'show_in_admin_status_list' =&gt; true
 )
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3562,20 +3545,20 @@ return $post_types;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

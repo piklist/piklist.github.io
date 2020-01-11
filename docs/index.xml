@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Piklist Documentation</title>
@@ -9,16 +9,6 @@
     
 	<atom:link href="https://docs.piklist.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Building Your First Workflow</title>
-      <link>https://docs.piklist.com/tutorials/workflows/building-first-workflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/workflows/building-first-workflow/</guid>
-      <description>Piklist Workflows allow you to add a tabbed system on almost any admin page. Additionally, you can add almost anything you want to each tab.
-  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
-    </item>
     
     <item>
       <title>Building a simple Admin Page</title>
@@ -41,13 +31,23 @@
     </item>
     
     <item>
+      <title>Building Your First Workflow</title>
+      <link>https://docs.piklist.com/tutorials/workflows/building-first-workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/workflows/building-first-workflow/</guid>
+      <description>Piklist Workflows allow you to add a tabbed system on almost any admin page. Additionally, you can add almost anything you want to each tab.
+  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
+    </item>
+    
+    <item>
       <title>Create a Dashboard Widget to show an RSS Feed.</title>
       <link>https://docs.piklist.com/tutorials/dashboard-widgets/creating-a-dashboard-widget-to-show-rss-feed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/tutorials/dashboard-widgets/creating-a-dashboard-widget-to-show-rss-feed/</guid>
       <description>Description Piklist makes it super easy to create Dashboard Widgets in WordPress. This way you can concentrate on your widget code, and let Piklist do the hard part.
-  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme.</description>
+  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
     </item>
     
     <item>
@@ -138,9 +138,9 @@ To remove the custom-fields meta box from a WordPress default post type, or one 
       
       <guid>https://docs.piklist.com/faq/number-of-fields-limit/</guid>
       <description>There is no limit to how many fields you can create and display with Piklist. However, your server limits how many can be used on each page.
-This is not a Piklist issue&amp;hellip; it&amp;rsquo;s part of your servers configuration.
+This is not a Piklist issue&amp;hellip; it&#39;s part of your servers configuration.
 The most common solution is adjusting your max_vars setting. This is a PHP setting which sets the maximum variables that can be used in one page load.
-Once you increase this limit, Piklist can finish rendering all it&amp;rsquo;s fields.</description>
+Once you increase this limit, Piklist can finish rendering all it&#39;s fields.</description>
     </item>
     
     <item>
@@ -149,7 +149,7 @@ Once you increase this limit, Piklist can finish rendering all it&amp;rsquo;s fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/faq/update-script-not-running/</guid>
-      <description>Piklist allows you to easily create update scripts that run on certain versions of your plugin. If the script doesn&amp;rsquo;t run, you may have an issue with the piklist_active_plugin_versions setting:
+      <description>Piklist allows you to easily create update scripts that run on certain versions of your plugin. If the script doesn&#39;t run, you may have an issue with the piklist_active_plugin_versions setting:
  Backup your database Note which version of Piklist you are currently running. Deactivate and delete Piklist Open your database. In the wp_options table, look for this field: piklist_active_plugin_versions and delete it. Reinstall the same version of Piklist you had before.</description>
     </item>
     
@@ -160,8 +160,8 @@ Once you increase this limit, Piklist can finish rendering all it&amp;rsquo;s fi
       
       <guid>https://docs.piklist.com/getting-started/piklist-enable-your-theme/</guid>
       <description>Adding Piklist meta-boxes, fields, settings pages, Widgets, etc. to your theme is very easy.
- First you need to add the proper folder structure to your theme. Piklist works by searching the active theme for the /piklist folder and then processing the sub-folders and files within it.
- Most Piklist code will go in the folder structure you set up. But other Piklist code, like registering Post Types, would go in your theme’s functions.</description>
+  First you need to add the proper folder structure to your theme. Piklist works by searching the active theme for the /piklist folder and then processing the sub-folders and files within it.
+  Most Piklist code will go in the folder structure you set up. But other Piklist code, like registering Post Types, would go in your theme’s functions.</description>
     </item>
     
     <item>
@@ -174,7 +174,7 @@ Once you increase this limit, Piklist can finish rendering all it&amp;rsquo;s fi
 Choose the appropriate type of sanitization for each of your fields.
 email Strips out all characters that are not allowable in an email address.
 Codex reference for parameters: sanitize_email
-&#39;sanitize&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;email&#39; ) )  file_name Removes special characters that are illegal in filenames on certain operating systems and special characters requiring special escaping to manipulate at the command line.</description>
+&amp;#39;sanitize&amp;#39; =&amp;gt; array( array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;email&amp;#39; ) ) file_name Removes special characters that are illegal in filenames on certain operating systems and special characters requiring special escaping to manipulate at the command line.</description>
     </item>
     
     <item>
@@ -242,6 +242,16 @@ Please contact your host and ask them to upgrade you.</description>
     </item>
     
     <item>
+      <title>Add fields to Media items</title>
+      <link>https://docs.piklist.com/tutorials/media/add-fields-to-media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/media/add-fields-to-media/</guid>
+      <description>Description Piklist makes it radically easy to add meta-boxes and fields to your media items. In this tutorial, we will create a meta-box that includes three fields, select, text and ColorPicker, for standard posts.
+  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme.</description>
+    </item>
+    
+    <item>
       <title>Add Subtitle field to the Post screen</title>
       <link>https://docs.piklist.com/tutorials/meta-boxes/add-subtitle-field/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -258,17 +268,7 @@ Please contact your host and ask them to upgrade you.</description>
       <guid>https://docs.piklist.com/tutorials/meta-boxes/add-wysisyg-excerpt-box/</guid>
       <description>Description To add some style to your excerpts, you can easily add a WYSIWYG editor to your excerpt box.
 First, remove the default excerpt box Custom post type If you’re registering your own post type, include the supports parameter but don’t include excerpt in the array. This will tell WordPress not to render the excerpt box.
-Built in post type Use the standard WordPress function remove_post_type_support, to remove the editor.</description>
-    </item>
-    
-    <item>
-      <title>Add fields to Media items</title>
-      <link>https://docs.piklist.com/tutorials/media/add-fields-to-media/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/media/add-fields-to-media/</guid>
-      <description>Description Piklist makes it radically easy to add meta-boxes and fields to your media items. In this tutorial, we will create a meta-box that includes three fields, select, text and ColorPicker, for standard posts.
-  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme.</description>
+Built in post type Use the standard WordPress function remove_post_type_support, to remove the editor. For example, to remove the editor from Posts, place this in your theme’s functions.</description>
     </item>
     
     <item>
@@ -287,7 +287,7 @@ Built in post type Use the standard WordPress function remove_post_type_support,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/tutorials/pointers/building-pointers-without-code/</guid>
-      <description>Description Piklist let&amp;rsquo;s you build WordPress Pointers without code. No PHP. No Javascript.
+      <description>Description Piklist let&#39;s you build WordPress Pointers without code. No PHP. No Javascript.
 In this tutorial, we will create a simple WordPress pointer.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
     </item>
@@ -303,6 +303,36 @@ In this tutorial, we will create a Settings Page that includes three fields: sel
     </item>
     
     <item>
+      <title>checkbox Field</title>
+      <link>https://docs.piklist.com/fields/types/checkbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/checkbox/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;checkbox&#39; piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;checkbox&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;checkbox&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Checkbox&amp;#39;, &amp;#39;value&amp;#39; =&amp;gt; &amp;#39;third&amp;#39;, // set default value &amp;#39;choices&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; &amp;#39;First Choice&amp;#39;, ,&amp;#39;second&amp;#39; =&amp;gt; &amp;#39;Second Choice&amp;#39;, ,&amp;#39;third&amp;#39; =&amp;gt; &amp;#39;Third Choice&amp;#39; ) )); </description>
+    </item>
+    
+    <item>
+      <title>color Field</title>
+      <link>https://docs.piklist.com/fields/types/color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/color/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;color&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;color&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Color field&amp;#39;, )); </description>
+    </item>
+    
+    <item>
+      <title>colorpicker Field</title>
+      <link>https://docs.piklist.com/fields/types/colorpicker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/colorpicker/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;colorpicker&#39; Create a WordPress colorpicker field.
+You can use Piklist field parameters to customize this field.
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;colorpicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_color&#39;, &#39;label&#39; =&amp;gt; &#39;Color Picker&#39; )); </description>
+    </item>
+    
+    <item>
       <title>Conditionally Show Fields</title>
       <link>https://docs.piklist.com/tutorials/fields/conditionally-show-fields/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -310,7 +340,7 @@ In this tutorial, we will create a Settings Page that includes three fields: sel
       <guid>https://docs.piklist.com/tutorials/fields/conditionally-show-fields/</guid>
       <description>Description Piklist makes it easy to show one or more fields, based on the value of another field, and so much more. The Piklist conditions parameter is very powerful, and you can see all the options in the documentation.
 In this tutorial, if the user clicks on the “Yes” radio button to subscribe to our newsletter, we will show an “Email” text field.
- Conditional fields work on almost every page in WordPress.</description>
+  Conditional fields work on almost every page in WordPress.</description>
     </item>
     
     <item>
@@ -331,7 +361,7 @@ A few important caveats:
       
       <guid>https://docs.piklist.com/tutorials/help/creating-help-tabs-for-wordpress/</guid>
       <description>Description Creating Help Tabs for WordPress is super easy with Piklist.
-In this example, we&amp;rsquo;ll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.
+In this example, we&#39;ll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme.</description>
     </item>
     
@@ -343,6 +373,29 @@ In this example, we&amp;rsquo;ll create some help for your custom Post Type. You
       <guid>https://docs.piklist.com/tutorials/taxonomies-terms/creating-separate-taxonomies-user/</guid>
       <description>In this tutorial we’ll provide each logged in user with their own set of private tags.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure. If you&#39;re new to Piklist, you may want to review the &#34;</description>
+    </item>
+    
+    <item>
+      <title>date Field</title>
+      <link>https://docs.piklist.com/fields/types/date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/date/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;date&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;date&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Date field&amp;#39;, )); </description>
+    </item>
+    
+    <item>
+      <title>datepicker Field</title>
+      <link>https://docs.piklist.com/fields/types/datepicker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/datepicker/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;datepicker&#39; Create a jQuery datepicker field.
+This field uses the standard jQuery DatePicker field, and respects the same options. Just define them in the Piklist options array. See examples below.
+You can use Piklist field parameters to customize this field.
+Basic Datepicker field
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;datepicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_date_field&#39;, &#39;label&#39; =&amp;gt; &#39;Date&#39;, &#39;value&#39; =&amp;gt; date(&#39;M d, Y&#39;, time() + 604800), // set default value &#39;options&#39; =&amp;gt; array( &#39;dateFormat&#39; =&amp;gt; &#39;M d, yy&#39; ) )); Localizing the Datepicker field</description>
     </item>
     
     <item>
@@ -376,6 +429,30 @@ In this example, we&amp;rsquo;ll create some help for your custom Post Type. You
     </item>
     
     <item>
+      <title>editor Field</title>
+      <link>https://docs.piklist.com/fields/types/editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/editor/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;editor&#39; Create a standard WordPress editor field.
+You can use Piklist field parameters to customize this field.
+Custom Parameters The editor field takes any option that can be passed to the WordPress wp_editor() function. You can pass them through the options array. See examples below.
+Examples Basic Editor Field
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;editor&#39;, &#39;field&#39; =&amp;gt; &#39;my_editor_field&#39;, &#39;label&#39; =&amp;gt; &#39;Post Content&#39; )); Default Editor
+Piklist can replace the default editor in WordPress by using code the following code.</description>
+    </item>
+    
+    <item>
+      <title>email Field</title>
+      <link>https://docs.piklist.com/fields/types/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/email/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;email&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;email&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
+    </item>
+    
+    <item>
       <title>Field Parameters</title>
       <link>https://docs.piklist.com/fields/field-parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -388,13 +465,37 @@ Displaying Data To display the results of the Add-More in your theme, pull the d
     </item>
     
     <item>
+      <title>file (upload) Field</title>
+      <link>https://docs.piklist.com/fields/types/file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/file/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;file&#39; Create a file upload field. Uses either the WordPress media uploader, or a basic uploader.
+Custom Parameters The file field takes the following custom parameters. Include them within the options array.
+basic
+Piklist allows for two different file upload fields in the WordPress admin, a Basic uploader and the standard Media uploader. To use the Media uploader, do not set this parameter at all.
+NOTES:
+  The basic uploader is not supported in Widgets.</description>
+    </item>
+    
+    <item>
       <title>Getting started with Shortcodes</title>
       <link>https://docs.piklist.com/tutorials/shortcodes/getting-started-with-shortcodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/tutorials/shortcodes/getting-started-with-shortcodes/</guid>
-      <description>Description Creating Shortcodes with Piklist is super easy. In this tutorial, we&amp;rsquo;ll create a shortcode to display post meta in your post content.
+      <description>Description Creating Shortcodes with Piklist is super easy. In this tutorial, we&#39;ll create a shortcode to display post meta in your post content.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
+    </item>
+    
+    <item>
+      <title>group Field</title>
+      <link>https://docs.piklist.com/fields/types/group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/group/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;group&#39; Adds a group of fields.
+Examples piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;group&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;address_group&amp;#39; // removing this parameter saves all fields as separate meta ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;Address (Grouped)&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;list&amp;#39; =&amp;gt; false ,&amp;#39;description&amp;#39; =&amp;gt; __(&amp;#39;A grouped field with the field parameter set.&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;fields&amp;#39; =&amp;gt; array( array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;text&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;address_1&amp;#39; ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;Street Address&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;required&amp;#39; =&amp;gt; true ,&amp;#39;columns&amp;#39; =&amp;gt; 12 ,&amp;#39;attributes&amp;#39; =&amp;gt; array( &amp;#39;placeholder&amp;#39; =&amp;gt; &amp;#39;Street Address&amp;#39; ) ) ,array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;text&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;address_2&amp;#39; ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;PO Box, Suite, etc.</description>
     </item>
     
     <item>
@@ -409,6 +510,15 @@ This tutorial assumes you have already created a hierarchical taxonomy or you’
     </item>
     
     <item>
+      <title>hidden Field</title>
+      <link>https://docs.piklist.com/fields/types/hidden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/hidden/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;hidden&#39; piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;hidden&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;post_id&amp;#39;, &amp;#39;value&amp;#39; =&amp;gt; $post-&amp;gt;ID // set the value of this hidden field to the Post ID. )); </description>
+    </item>
+    
+    <item>
       <title>Hide Meta Boxes for a Page Template</title>
       <link>https://docs.piklist.com/tutorials/meta-boxes/hide-meta-boxes-page-template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -417,6 +527,17 @@ This tutorial assumes you have already created a hierarchical taxonomy or you’
       <description>Using Piklist, you can easily hide some meta boxes when a certain page template is selected in WordPress. This tutorial will show you how using two Piklist filters: piklist_get_file_data and piklist_add_part.
 All of the code in this tutorial will go in your theme’s functions.php file, or your main plugin file.
 Add a custom parameter to the Piklist comment block. Pikist uses a number of parameters in the comment block to control access to a meta box.</description>
+    </item>
+    
+    <item>
+      <title>html Field</title>
+      <link>https://docs.piklist.com/fields/types/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/fields/types/html/</guid>
+      <description>&#39;type&#39; =&amp;gt; &#39;html&#39; The Piklist html field, allows you to render standard HTML markup and keep the same label/field format as the rest of your fields.
+You can use Piklist field parameters to customize this field.
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;html&#39;, &#39;label&#39; =&amp;gt; &#39;HTML Field&#39;, &#39;value&#39; =&amp;gt; &#39;&amp;lt;strong&amp;gt;This is some html&amp;lt;/strong&amp;gt;&#39;, )); </description>
     </item>
     
     <item>
@@ -439,223 +560,13 @@ Add a custom parameter to the Piklist comment block. Pikist uses a number of par
     </item>
     
     <item>
-      <title>Placing &#34;Add New Post&#34; in a Workflow</title>
-      <link>https://docs.piklist.com/tutorials/workflows/placing-add-new-post-workflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/workflows/placing-add-new-post-workflow/</guid>
-      <description>Piklist’s Workflow system is incredibly powerful. It allows you to divide a page into different tabs. In this tutorial, we’ll use the Workflows to divide the default WordPress add new Post page.
- Review the &amp;ldquo;Building Your First Workflow&amp;rdquo; tutorial to get an idea how they work. For this tutorial, we will need to create one Workflow HEADER, and two Workflow TAB files. Additionally, we will need to write a quick function as well.</description>
-    </item>
-    
-    <item>
-      <title>Registering Post Types</title>
-      <link>https://docs.piklist.com/tutorials/meta-boxes/registering-post-types/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/meta-boxes/registering-post-types/</guid>
-      <description>Piklist works well with existing Post Types… those created with the standard WordPress function register_post_type. However, you can add some extra power to your Post Types by registering them the Piklist way. Piklist extends the register_post_type function with extra parameters to enable extra features. You can use the standard register_post_type() parameters, plus the additional Piklist Custom Post Type parameters.
-To learn more about registering Post Types with Piklist, please read about the piklist_post_types filter.</description>
-    </item>
-    
-    <item>
-      <title>Save Shortcode data to database</title>
-      <link>https://docs.piklist.com/tutorials/shortcodes/save-shortcode-data-to-database/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/shortcodes/save-shortcode-data-to-database/</guid>
-      <description>Description With Piklist you can save shortcode data to your database instead of the WordPress editor.
-  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure. If you&#39;re new to Piklist, you may want to review the &#34;</description>
-    </item>
-    
-    <item>
-      <title>Show Fields by User Capability or Role</title>
-      <link>https://docs.piklist.com/tutorials/fields/show-fields-user-capability-role/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/fields/show-fields-user-capability-role/</guid>
-      <description>With web applications and powerful websites, there will be times you want to only show a metabox or metafield to a particular user role or capability. For an Order Management system you may want your customers to see certain fields, while your employees can see them all. Or maybe you want Administrators and Editors to be able to leave notes on a post that no one else can see. Well, Piklist makes it easy to do just that.</description>
-    </item>
-    
-    <item>
-      <title>Show Metaboxes and Fields by Post Status</title>
-      <link>https://docs.piklist.com/tutorials/meta-boxes/show-metaboxes-fields-post-status/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/meta-boxes/show-metaboxes-fields-post-status/</guid>
-      <description>With web applications and powerful websites, there will be times you want to only show a meta-box or metafield when a post is in a particular post status. This becomes extra powerful when paired with the Piklist capability parameter, which allows you to show/hide a field based on a user role or capability. For an Order Management system, you may want an order notes field hidden until the estimate becomes an order.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Front End Forms</title>
-      <link>https://docs.piklist.com/tutorials/forms/understanding-front-end-forms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/forms/understanding-front-end-forms/</guid>
-      <description>Piklist makes creating Front End forms as easy as creating fields in the WordPress admin. In most cases you can use the same field code you used in the admin, plus you need to define the scope parameter. scope tells Piklist where to save your data. In the admin, this can be auto-detected, but not with front-end forms.
-  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin.</description>
-    </item>
-    
-    <item>
-      <title>Using &#34;Chosen&#34; for select fields</title>
-      <link>https://docs.piklist.com/tutorials/fields/using-chosen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/fields/using-chosen/</guid>
-      <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Chosen&amp;rdquo; jQuery plugin from Harvest can make them more user-friendly.
- First, let&amp;rsquo;s load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&amp;rsquo;s functions.php file, or your main plugin file add this code:</description>
-    </item>
-    
-    <item>
-      <title>Using &#34;Select2&#34; for select fields</title>
-      <link>https://docs.piklist.com/tutorials/fields/using-select2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/fields/using-select2/</guid>
-      <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Select2&amp;rdquo; jQuery plugin can make them more user-friendly.
- First, let&amp;rsquo;s load two files from Select2. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&amp;rsquo;s functions.php file, or your main plugin file add this code:</description>
-    </item>
-    
-    <item>
-      <title>Working with Field Relationships</title>
-      <link>https://docs.piklist.com/tutorials/relationships/working-with-field-relationships/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/tutorials/relationships/working-with-field-relationships/</guid>
-      <description>Piklist relationships allow you to relate any object to any object.
-In this tutorial we&amp;rsquo;ll use the classic books example, assuming our post types are book and chapter, and a user can be an author. We&amp;rsquo;ll cover the post_has, post_belongs, and relate_query parameters.
-First let&amp;rsquo;s add the chapter relate field to the book post type. Since this is a post type we&amp;rsquo;re adding a field to, the file goes in the /parts/meta-boxes/ folder.</description>
-    </item>
-    
-    <item>
-      <title>checkbox Field</title>
-      <link>https://docs.piklist.com/fields/types/checkbox/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/checkbox/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;checkbox&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;checkbox&#39;, &#39;field&#39; =&amp;gt; &#39;checkbox&#39;, &#39;label&#39; =&amp;gt; &#39;Checkbox&#39;, &#39;value&#39; =&amp;gt; &#39;third&#39;, // set default value &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, ,&#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, ,&#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  </description>
-    </item>
-    
-    <item>
-      <title>color Field</title>
-      <link>https://docs.piklist.com/fields/types/color/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/color/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;color&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;color&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;Color field&#39;, ));  </description>
-    </item>
-    
-    <item>
-      <title>colorpicker Field</title>
-      <link>https://docs.piklist.com/fields/types/colorpicker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/colorpicker/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;colorpicker&#39; Create a WordPress colorpicker field.
-You can use Piklist field parameters to customize this field.
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;colorpicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_color&#39;, &#39;label&#39; =&amp;gt; &#39;Color Picker&#39; ));  </description>
-    </item>
-    
-    <item>
-      <title>date Field</title>
-      <link>https://docs.piklist.com/fields/types/date/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/date/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;date&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;date&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;Date field&#39;, ));  </description>
-    </item>
-    
-    <item>
-      <title>datepicker Field</title>
-      <link>https://docs.piklist.com/fields/types/datepicker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/datepicker/</guid>
-      <description>&#39;type&#39; =&amp;gt; &#39;datepicker&#39; Create a jQuery datepicker field.
-This field uses the standard jQuery DatePicker field, and respects the same options. Just define them in the Piklist options array. See examples below.
-You can use Piklist field parameters to customize this field.
-Basic Datepicker field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;datepicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_date_field&#39;, &#39;label&#39; =&amp;gt; &#39;Date&#39;, &#39;value&#39; =&amp;gt; date(&#39;M d, Y&#39;, time() + 604800), // set default value &#39;options&#39; =&amp;gt; array( &#39;dateFormat&#39; =&amp;gt; &#39;M d, yy&#39; ) ));  Localizing the Datepicker field</description>
-    </item>
-    
-    <item>
-      <title>editor Field</title>
-      <link>https://docs.piklist.com/fields/types/editor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/editor/</guid>
-      <description>&#39;type&#39; =&amp;gt; &#39;editor&#39; Create a standard WordPress editor field.
-You can use Piklist field parameters to customize this field.
-Custom Parameters The editor field takes any option that can be passed to the WordPress wp_editor() function. You can pass them through the options array. See examples below.
-Examples Basic Editor Field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;editor&#39;, &#39;field&#39; =&amp;gt; &#39;my_editor_field&#39;, &#39;label&#39; =&amp;gt; &#39;Post Content&#39; ));  Default Editor
-Piklist can replace the default editor in WordPress by using code the following code.</description>
-    </item>
-    
-    <item>
-      <title>email Field</title>
-      <link>https://docs.piklist.com/fields/types/email/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/email/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;email&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;email&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
-    </item>
-    
-    <item>
-      <title>file (upload) Field</title>
-      <link>https://docs.piklist.com/fields/types/file/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/file/</guid>
-      <description>&#39;type&#39; =&amp;gt; &#39;file&#39; Create a file upload field. Uses either the WordPress media uploader, or a basic uploader.
-Custom Parameters The file field takes the following custom parameters. Include them within the options array.
-basic
-Piklist allows for two different file upload fields in the WordPress admin, a Basic uploader and the standard Media uploader. To use the Media uploader, do not set this parameter at all.
-NOTES:
- The basic uploader is not supported in Widgets.</description>
-    </item>
-    
-    <item>
-      <title>group Field</title>
-      <link>https://docs.piklist.com/fields/types/group/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/group/</guid>
-      <description>&#39;type&#39; =&amp;gt; &#39;group&#39; Adds a group of fields.
-If the main `field` parameter is set, a serialized array is created of all the fields in the group. Not including it saves all the fields as individual meta. Individual meta can easily be searched.  The `columns` field parameter is especially helpful in Field Groups for more complex layouts like address blocks.  Examples piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;group&#39; ,&#39;field&#39; =&amp;gt; &#39;address_group&#39; // removing this parameter saves all fields as separate meta ,&#39;label&#39; =&amp;gt; __(&#39;Address (Grouped)&#39;, &#39;piklist-demo&#39;) ,&#39;list&#39; =&amp;gt; false ,&#39;description&#39; =&amp;gt; __(&#39;A grouped field with the field parameter set.</description>
-    </item>
-    
-    <item>
-      <title>hidden Field</title>
-      <link>https://docs.piklist.com/fields/types/hidden/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/hidden/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;hidden&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;hidden&#39;, &#39;field&#39; =&amp;gt; &#39;post_id&#39;, &#39;value&#39; =&amp;gt; $post-&amp;gt;ID // set the value of this hidden field to the Post ID. ));  </description>
-    </item>
-    
-    <item>
-      <title>html Field</title>
-      <link>https://docs.piklist.com/fields/types/html/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.piklist.com/fields/types/html/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;html&#39; The Piklist html field, allows you to render standard HTML markup and keep the same label/field format as the rest of your fields.
-You can use Piklist field parameters to customize this field.
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;html&#39;, &#39;label&#39; =&amp;gt; &#39;HTML Field&#39;, &#39;value&#39; =&amp;gt; &#39;&amp;lt;strong&amp;gt;This is some html&amp;lt;/strong&amp;gt;&#39;, ));  </description>
-    </item>
-    
-    <item>
       <title>month Field</title>
       <link>https://docs.piklist.com/fields/types/month/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/month/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;month&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;month&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;email field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;month&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;month&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;email field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -664,8 +575,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;month&#39;, &#39;f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/number/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;number&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;number&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;number&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;number&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -676,7 +587,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;number&#39;, &#39;
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_admin_pages/</guid>
       <description>apply_filters(&#39;piklist_admin_pages&#39;, array()); The piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.
 To register an Admin Page with Piklist:
- Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
+ Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that add_menu_page() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     
@@ -688,7 +599,7 @@ Parameters This filter supports every parameter that add_menu_page() supports. A
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_empty_post_title/</guid>
       <description>apply_filters(&#39;piklist_empty_post_title&#39;, $data[&#39;post_title&#39;], $post_array); Let’s you programmatically set the post title when adding a new post (post type).
 Example:
-// Set the Post Title to &amp;quot;Order #&amp;quot; plus post ID: function set_post_title_to_order_number($data, $post_array) { if ($post_array[&#39;post_type&#39;] == &#39;MY-POST-TYPE&#39;) { return &#39;Order #&#39; . $post_array[&#39;ID&#39;]; } else { return $data; } } add_filter(&#39;piklist_empty_post_title&#39;, &#39;set_post_title_to_order_number&#39;, 10, 2);  IMPORTANT: This filter works best when there is no title field for posts. To disable the title field, do not pass &amp;ldquo;title&amp;rdquo; to the supports parameter when registering a post type.</description>
+// Set the Post Title to &amp;quot;Order #&amp;quot; plus post ID: function set_post_title_to_order_number($data, $post_array) { if ($post_array[&#39;post_type&#39;] == &#39;MY-POST-TYPE&#39;) { return &#39;Order #&#39; . $post_array[&#39;ID&#39;]; } else { return $data; } } add_filter(&#39;piklist_empty_post_title&#39;, &#39;set_post_title_to_order_number&#39;, 10, 2); IMPORTANT: This filter works best when there is no title field for posts. To disable the title field, do not pass &amp;ldquo;title&amp;rdquo; to the supports parameter when registering a post type.</description>
     </item>
     
     <item>
@@ -742,7 +653,7 @@ Arguments $folder The parts folder where the file is located ( e.g. meta-boxes, 
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_post_types/</guid>
       <description>apply_filters(&#39;piklist_post_types&#39;, self::$post_types); The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.
 To register a Post Type with Piklist:
- Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
+ Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that register_post_type() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     
@@ -774,10 +685,10 @@ $settings All key=&amp;gt;value pairs for this setting. If you are using multipl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_sanitization_rules/</guid>
-      <description> apply_filters(&#39;piklist_sanitization_rules&#39;, self::$sanitization_rules); Add your own rules to sanitize field data.
+      <description>apply_filters(&#39;piklist_sanitization_rules&#39;, self::$sanitization_rules); Add your own rules to sanitize field data.
 Example:
-// create a sanitization rule called &amp;quot;my_email_sanitization&amp;quot; add_filter(&#39;piklist_sanitization_rules&#39;, &#39;sanitize_email_function&#39;, 11); function sanitize_email_function($sanitization_rules) { $sanitization_rules[&#39;my_email_sanitization&#39;] = array( &#39;callback&#39; =&amp;gt; &#39;sanitize_email_callback&#39; ); return $sanitization_rules; } function sanitize_email_callback($value, $field, $options) { return sanitize_email($value); // sanitize_email() is a core WordPress function }  Usage:
-&#39;sanitize&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_email_sanitization&#39; ) )  </description>
+// create a sanitization rule called &amp;quot;my_email_sanitization&amp;quot; add_filter(&#39;piklist_sanitization_rules&#39;, &#39;sanitize_email_function&#39;, 11); function sanitize_email_function($sanitization_rules) { $sanitization_rules[&#39;my_email_sanitization&#39;] = array( &#39;callback&#39; =&amp;gt; &#39;sanitize_email_callback&#39; ); return $sanitization_rules; } function sanitize_email_callback($value, $field, $options) { return sanitize_email($value); // sanitize_email() is a core WordPress function } Usage:
+&#39;sanitize&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_email_sanitization&#39; ) ) </description>
     </item>
     
     <item>
@@ -805,9 +716,19 @@ meta_box_filter Add a filter to this meta box to make it easier to search for te
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_validation_rules/</guid>
       <description>apply_filters(&#39;piklist_validation_rules&#39;, self::$validation_rules); Add your own rules to validate field data.
 Example:
-add_filter(&#39;piklist_validation_rules&#39;, &#39;check_valid_number&#39;, 11); function check_valid_number($validation_rules) { $validation_rules[&#39;my_number&#39;] = array( &#39;rule&#39; =&amp;gt; &amp;quot;/[-+]?[0-9]*[.,]?[0-9]+/&amp;quot; ,&#39;message&#39; =&amp;gt; __(&#39;is not a number&#39;) ); return $validation_rules; }  Usage:
-&#39;validate&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_number&#39; ) )  Create a rule with a callback function:
+add_filter(&#39;piklist_validation_rules&#39;, &#39;check_valid_number&#39;, 11); function check_valid_number($validation_rules) { $validation_rules[&#39;my_number&#39;] = array( &#39;rule&#39; =&amp;gt; &amp;quot;/[-+]?[0-9]*[.,]?[0-9]+/&amp;quot; ,&#39;message&#39; =&amp;gt; __(&#39;is not a number&#39;) ); return $validation_rules; } Usage:
+&#39;validate&#39; =&amp;gt; array( array( &#39;type&#39; =&amp;gt; &#39;my_number&#39; ) ) Create a rule with a callback function:
 // Create a validation rule called &amp;quot;my_file_exists&amp;quot; add_filter(&#39;piklist_validation_rules&#39;, &#39;check_file_exists&#39;, 11); function check_file_exists($validation_rules) { $validation_rules[&#39;my_file_exists&#39;] = array( &#39;callback&#39; =&amp;gt; &#39;my_validate_file_exists&#39; ); return $validation_rules; } /** * @param int $index The field index being checked.</description>
+    </item>
+    
+    <item>
+      <title>Placing &#34;Add New Post&#34; in a Workflow</title>
+      <link>https://docs.piklist.com/tutorials/workflows/placing-add-new-post-workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/workflows/placing-add-new-post-workflow/</guid>
+      <description>Piklist’s Workflow system is incredibly powerful. It allows you to divide a page into different tabs. In this tutorial, we’ll use the Workflows to divide the default WordPress add new Post page.
+  Review the &amp;ldquo;Building Your First Workflow&amp;rdquo; tutorial to get an idea how they work. For this tutorial, we will need to create one Workflow HEADER, and two Workflow TAB files. Additionally, we will need to write a quick function as well.</description>
     </item>
     
     <item>
@@ -816,7 +737,7 @@ add_filter(&#39;piklist_validation_rules&#39;, &#39;check_valid_number&#39;, 11)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/radio/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;radio&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;radio&#39;, &#39;field&#39; =&amp;gt; &#39;my_radio&#39;, &#39;label&#39; =&amp;gt; &#39;Radio&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, &#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, &#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;radio&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;radio&#39;, &#39;field&#39; =&amp;gt; &#39;my_radio&#39;, &#39;label&#39; =&amp;gt; &#39;Radio&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, &#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, &#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) )); </description>
     </item>
     
     <item>
@@ -825,8 +746,28 @@ add_filter(&#39;piklist_validation_rules&#39;, &#39;check_valid_number&#39;, 11)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/range/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;range&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;range&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;min&#39; =&amp;gt; 5 ,&#39;max&#39; =&amp;gt; 30 ,&#39;step&#39; =&amp;gt; 5 ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;range&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;range&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, &amp;#39;attributes&amp;#39; =&amp;gt; array( &amp;#39;min&amp;#39; =&amp;gt; 5 ,&amp;#39;max&amp;#39; =&amp;gt; 30 ,&amp;#39;step&amp;#39; =&amp;gt; 5 ) )); </description>
+    </item>
+    
+    <item>
+      <title>Registering Post Types</title>
+      <link>https://docs.piklist.com/tutorials/meta-boxes/registering-post-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/meta-boxes/registering-post-types/</guid>
+      <description>Piklist works well with existing Post Types… those created with the standard WordPress function register_post_type. However, you can add some extra power to your Post Types by registering them the Piklist way. Piklist extends the register_post_type function with extra parameters to enable extra features. You can use the standard register_post_type() parameters, plus the additional Piklist Custom Post Type parameters.
+To learn more about registering Post Types with Piklist, please read about the piklist_post_types filter.</description>
+    </item>
+    
+    <item>
+      <title>Save Shortcode data to database</title>
+      <link>https://docs.piklist.com/tutorials/shortcodes/save-shortcode-data-to-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/shortcodes/save-shortcode-data-to-database/</guid>
+      <description>Description With Piklist you can save shortcode data to your database instead of the WordPress editor.
+  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure. If you&#39;re new to Piklist, you may want to review the &#34;</description>
     </item>
     
     <item>
@@ -835,8 +776,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;range&#39;, &#39;f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/search/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;search&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;search&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;search&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;search&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -846,8 +787,26 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;search&#39;, &#39;
       
       <guid>https://docs.piklist.com/fields/types/select/</guid>
       <description>&#39;type&#39; =&amp;gt; &#39;select&#39; Basic Select Field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;select&#39;, &#39;field&#39; =&amp;gt; &#39;my_select&#39;, &#39;label&#39; =&amp;gt; &#39;My select&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, &#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, &#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  Select Field with Optgroup
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;select&#39; ,&#39;field&#39; =&amp;gt; &#39;select_optgroup&#39; ,&#39;label&#39; =&amp;gt; __(&#39;Select with Option Groups&#39;, &#39;piklist-demo&#39;) ,&#39;value&#39; =&amp;gt; &#39;third&#39; ,&#39;choices&#39; =&amp;gt; array( &#39;Group 1&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; __(&#39;First Choice&#39;, &#39;piklist-demo&#39;) ,&#39;second&#39; =&amp;gt; __(&#39;Second Choice&#39;, &#39;piklist-demo&#39;) ,&#39;third&#39; =&amp;gt; __(&#39;Third Choice&#39;, &#39;piklist-demo&#39;) ) ,&#39;Group 2&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; __(&#39;First Choice&#39;, &#39;piklist-demo&#39;) ,&#39;second&#39; =&amp;gt; __(&#39;Second Choice&#39;, &#39;piklist-demo&#39;) ,&#39;third&#39; =&amp;gt; __(&#39;Third Choice&#39;, &#39;piklist-demo&#39;) ) ) ));  Multiselect</description>
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;select&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_select&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;My select&amp;#39;, &amp;#39;choices&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; &amp;#39;First Choice&amp;#39;, &amp;#39;second&amp;#39; =&amp;gt; &amp;#39;Second Choice&amp;#39;, &amp;#39;third&amp;#39; =&amp;gt; &amp;#39;Third Choice&amp;#39; ) )); Select Field with Optgroup
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;select&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;select_optgroup&amp;#39; ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;Select with Option Groups&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;value&amp;#39; =&amp;gt; &amp;#39;third&amp;#39; ,&amp;#39;choices&amp;#39; =&amp;gt; array( &amp;#39;Group 1&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; __(&amp;#39;First Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;second&amp;#39; =&amp;gt; __(&amp;#39;Second Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;third&amp;#39; =&amp;gt; __(&amp;#39;Third Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ) ,&amp;#39;Group 2&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; __(&amp;#39;First Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;second&amp;#39; =&amp;gt; __(&amp;#39;Second Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;third&amp;#39; =&amp;gt; __(&amp;#39;Third Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ) ) )); Multiselect</description>
+    </item>
+    
+    <item>
+      <title>Show Fields by User Capability or Role</title>
+      <link>https://docs.piklist.com/tutorials/fields/show-fields-user-capability-role/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/fields/show-fields-user-capability-role/</guid>
+      <description>With web applications and powerful websites, there will be times you want to only show a metabox or metafield to a particular user role or capability. For an Order Management system you may want your customers to see certain fields, while your employees can see them all. Or maybe you want Administrators and Editors to be able to leave notes on a post that no one else can see. Well, Piklist makes it easy to do just that.</description>
+    </item>
+    
+    <item>
+      <title>Show Metaboxes and Fields by Post Status</title>
+      <link>https://docs.piklist.com/tutorials/meta-boxes/show-metaboxes-fields-post-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/meta-boxes/show-metaboxes-fields-post-status/</guid>
+      <description>With web applications and powerful websites, there will be times you want to only show a meta-box or metafield when a post is in a particular post status. This becomes extra powerful when paired with the Piklist capability parameter, which allows you to show/hide a field based on a user role or capability. For an Order Management system, you may want an order notes field hidden until the estimate becomes an order.</description>
     </item>
     
     <item>
@@ -856,8 +815,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;select&#39; ,&#39;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/tel/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;tel&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;tel&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;tel&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -866,7 +825,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/text/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;text&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;text&#39;, &#39;field&#39; =&amp;gt; &#39;my_text&#39;, &#39;label&#39; =&amp;gt; &#39;Text&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;class&#39; =&amp;gt; &#39;regular-text&#39; // WordPress css class ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;text&#39; piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;text&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_text&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Text&amp;#39;, &amp;#39;attributes&amp;#39; =&amp;gt; array( &amp;#39;class&amp;#39; =&amp;gt; &amp;#39;regular-text&amp;#39; // WordPress css class ) )); </description>
     </item>
     
     <item>
@@ -875,7 +834,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/textarea/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;textarea&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;textarea&#39;, &#39;field&#39; =&amp;gt; &#39;my_textarea&#39;, &#39;label&#39; =&amp;gt; &#39;Text Area&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;rows&#39; =&amp;gt; 10, &#39;cols&#39; =&amp;gt; 50, &#39;class&#39; =&amp;gt; &#39;large-text&#39; ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;textarea&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;textarea&#39;, &#39;field&#39; =&amp;gt; &#39;my_textarea&#39;, &#39;label&#39; =&amp;gt; &#39;Text Area&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;rows&#39; =&amp;gt; 10, &#39;cols&#39; =&amp;gt; 50, &#39;class&#39; =&amp;gt; &#39;large-text&#39; ) )); </description>
     </item>
     
     <item>
@@ -884,8 +843,18 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/time/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;time&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;time&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;time&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;time&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
+    </item>
+    
+    <item>
+      <title>Understanding Front End Forms</title>
+      <link>https://docs.piklist.com/tutorials/forms/understanding-front-end-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/forms/understanding-front-end-forms/</guid>
+      <description>Piklist makes creating Front End forms as easy as creating fields in the WordPress admin. In most cases you can use the same field code you used in the admin, plus you need to define the scope parameter. scope tells Piklist where to save your data. In the admin, this can be auto-detected, but not with front-end forms.
+  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin.</description>
     </item>
     
     <item>
@@ -894,8 +863,28 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;time&#39;, &#39;fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/url/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;url&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;url&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;url&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;url&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
+    </item>
+    
+    <item>
+      <title>Using &#34;Chosen&#34; for select fields</title>
+      <link>https://docs.piklist.com/tutorials/fields/using-chosen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/fields/using-chosen/</guid>
+      <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Chosen&amp;rdquo; jQuery plugin from Harvest can make them more user-friendly.
+ First, let&#39;s load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&#39;s functions.php file, or your main plugin file add this code:</description>
+    </item>
+    
+    <item>
+      <title>Using &#34;Select2&#34; for select fields</title>
+      <link>https://docs.piklist.com/tutorials/fields/using-select2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/fields/using-select2/</guid>
+      <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Select2&amp;rdquo; jQuery plugin can make them more user-friendly.
+ First, let&#39;s load two files from Select2. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&#39;s functions.php file, or your main plugin file add this code:</description>
     </item>
     
     <item>
@@ -904,8 +893,19 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;url&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/week/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;week&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;week&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;week&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;week&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
+    </item>
+    
+    <item>
+      <title>Working with Field Relationships</title>
+      <link>https://docs.piklist.com/tutorials/relationships/working-with-field-relationships/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/relationships/working-with-field-relationships/</guid>
+      <description>Piklist relationships allow you to relate any object to any object.
+In this tutorial we&#39;ll use the classic books example, assuming our post types are book and chapter, and a user can be an author. We&#39;ll cover the post_has, post_belongs, and relate_query parameters.
+First let&#39;s add the chapter relate field to the book post type. Since this is a post type we&#39;re adding a field to, the file goes in the /parts/meta-boxes/ folder.</description>
     </item>
     
   </channel>

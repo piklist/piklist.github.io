@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="">
 
 
@@ -13,19 +13,19 @@
     <title>file (upload) Field &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,16 +1685,14 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#type-file"><code>'type' =&gt; 'file'</code></a></li>
-</ul></li>
-<li><a href="#custom-parameters">Custom Parameters</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#type--file">'type' => 'file'</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-parameters">Custom Parameters</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1713,98 +1711,78 @@
         
 
 
-
-
-<h3 id="type-file"><code>'type' =&gt; 'file'</code></h3>
-
+<h3 id="type--file"><code>'type' =&gt; 'file'</code></h3>
 <p>Create a file upload field. Uses either the WordPress media uploader, or a basic uploader.</p>
-
 <h2 id="custom-parameters">Custom Parameters</h2>
-
 <p>The file field takes the following custom parameters. Include them within the <code>options</code> array.</p>
-
 <p><strong>basic</strong></p>
-
 <p>Piklist allows for two different file upload fields in the WordPress admin, a Basic uploader and the standard Media uploader. To use the Media uploader, do not set this parameter at all.</p>
-
 <p>NOTES:</p>
-
 <ul>
-<li>The basic uploader is not supported in Widgets. Use the Media Uploader.</li>
-
-<li><p>If the basic uploader is on a form that has validation, and the validation fails, the uploader will be empty.</p></li>
-
-<li><p>Input:  Array</p></li>
-
-<li><p>Default:  false</p></li>
-
-<li><p>Example: <code>'basic' =&gt; true</code></p></li>
+<li>
+<p>The basic uploader is not supported in Widgets. Use the Media Uploader.</p>
+</li>
+<li>
+<p>If the basic uploader is on a form that has validation, and the validation fails, the uploader will be empty.</p>
+</li>
+<li>
+<p>Input:  Array</p>
+</li>
+<li>
+<p>Default:  false</p>
+</li>
+<li>
+<p>Example: <code>'basic' =&gt; true</code></p>
+</li>
 </ul>
-
 <p><strong>button</strong></p>
-
 <p>Set button text.</p>
-
 <ul>
 <li>Input:  Array</li>
 <li>Example: <code>'button' =&gt; 'Add File'</code></li>
 </ul>
-
 <p><strong>modal_title</strong></p>
-
 <p>Set the title in the modal window (Media Uploader only)</p>
-
 <ul>
 <li>Input:  Array</li>
 <li>Example: <code>'modal_title' =&gt; 'Add File(s)'</code></li>
 </ul>
-
 <p><strong>preview_size</strong></p>
-
 <p>The preview size of the image</p>
-
 <ul>
 <li>Input:  Array</li>
 <li>values:  Any registered image size</li>
 <li>Default:  thumbnail</li>
-<li>Example:  <code>'preview_size' =&gt; 'medium'</code></li>
+<li>Example: 	<code>'preview_size' =&gt; 'medium'</code></li>
 </ul>
-
 <p><strong>save</strong></p>
-
 <p>Save either the attachment ID or the url to the file to the database.</p>
-
 <ul>
 <li>Input:  Array</li>
 <li>values:  &lsquo;id&rsquo; or &lsquo;url&rsquo;</li>
 <li>Default:  id</li>
-
-<li><p>Example:  <code>'save' =&gt; 'url'</code></p>
-
-<pre><code>piklist('field', array(
-'type' =&gt; 'file'
-,'field' =&gt; 'my_upload_basic_field'
-,'scope' =&gt; 'post_meta'
-,'label' =&gt; 'Basic Upload Field'
-,'options' =&gt; array(
-  'basic' =&gt; true
-)
-));
-</code></pre>
-
-<pre><code>piklist('field', array(
-'type' =&gt; 'file'
-,'field' =&gt; 'my_upload_field'
-,'scope' =&gt; 'post_meta'
-,'label' =&gt; 'Media Uploader'
-,'options' =&gt; array(
-  'modal_title' =&gt; 'Add File(s)'
-  ,'button' =&gt; 'Add'
-)
-));
-</code></pre></li>
+<li>Example: 	<code>'save' =&gt; 'url'</code></li>
 </ul>
-
+<pre><code>  piklist('field', array(
+    'type' =&gt; 'file'
+    ,'field' =&gt; 'my_upload_basic_field'
+    ,'scope' =&gt; 'post_meta'
+    ,'label' =&gt; 'Basic Upload Field'
+    ,'options' =&gt; array(
+      'basic' =&gt; true
+    )
+  ));
+</code></pre><pre><code>  piklist('field', array(
+    'type' =&gt; 'file'
+    ,'field' =&gt; 'my_upload_field'
+    ,'scope' =&gt; 'post_meta'
+    ,'label' =&gt; 'Media Uploader'
+    ,'options' =&gt; array(
+      'modal_title' =&gt; 'Add File(s)'
+      ,'button' =&gt; 'Add'
+    )
+  ));
+</code></pre>
 
 <footer class=" footline" >
 	
@@ -3559,20 +3537,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

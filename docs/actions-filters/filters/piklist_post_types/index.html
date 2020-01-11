@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.">
 
 
@@ -13,19 +13,19 @@
     <title>piklist_post_types &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,29 +1685,25 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#apply-filters-piklist-post-types-self-post-types"><code>apply_filters('piklist_post_types', self::$post_types);</code></a></li>
-</ul></li>
-</ul></li>
-<li><a href="#parameters">Parameters</a>
-<ul>
-<li><a href="#admin-body-class"><code>admin_body_class</code></a></li>
-<li><a href="#edit-columns"><code>edit_columns</code></a></li>
-<li><a href="#hide-meta-box"><code>hide_meta_box</code></a></li>
-<li><a href="#hide-post-row-actions"><code>hide_post_row_actions</code></a></li>
-<li><a href="#hide-screen-options"><code>hide_screen_options</code></a></li>
-<li><a href="#status"><code>status</code></a></li>
-<li><a href="#title"><code>title</code></a></li>
-</ul></li>
-<li><a href="#example">EXAMPLE:</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#parameters">Parameters</a>
+      <ul>
+        <li><a href="#admin_body_class">admin_body_class</a></li>
+        <li><a href="#edit_columns">edit_columns</a></li>
+        <li><a href="#hide_meta_box">hide_meta_box</a></li>
+        <li><a href="#hide_post_row_actions">hide_post_row_actions</a></li>
+        <li><a href="#hide_screen_options">hide_screen_options</a></li>
+        <li><a href="#status">status</a></li>
+        <li><a href="#title">title</a></li>
+      </ul>
+    </li>
+    <li><a href="#example">EXAMPLE:</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1726,151 +1722,110 @@
         
 
 
-
-
-<h4 id="apply-filters-piklist-post-types-self-post-types"><code>apply_filters('piklist_post_types', self::$post_types);</code></h4>
-
+<h4 id="apply_filterspiklist_post_types-selfpost_types"><code>apply_filters('piklist_post_types', self::$post_types);</code></h4>
 <p>The <code>piklist_post_type</code>s filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.</p>
-
 <p>To register a Post Type with Piklist:</p>
-
 <ul>
 <li>Create a function with your Post Type parameters.</li>
 <li>Hook it to the <code>piklist_post_types()</code> filter.</li>
 </ul>
-
-<p>This code goes in your theme&rsquo;s functions.php file or your plugin file.</p>
-
+<p>This code goes in your theme's functions.php file or your plugin file.</p>
 <h2 id="parameters">Parameters</h2>
-
 <p>This filter supports every parameter that <a href="http://codex.wordpress.org/Function_Reference/register_post_type"><code>register_post_type()</code></a> supports. Additionally, you may use the following Piklist specific parameters.</p>
-
-<h3 id="admin-body-class"><code>admin_body_class</code></h3>
-
+<h3 id="admin_body_class"><code>admin_body_class</code></h3>
 <p>Add custom classes to the body attribute of any page that displays this post type. In the admin only.</p>
-
 <ul>
-<li><p>Input:  Array</p>
-
+<li>Input:  Array</li>
+</ul>
 <pre><code>'admin_body_class' =&gt; array(
-'custom-body-class',
-'custom-body-class-2
+  'custom-body-class',
+  'custom-body-class-2
 )
-</code></pre></li>
-</ul>
-
-<h3 id="edit-columns"><code>edit_columns</code></h3>
-
+</code></pre><h3 id="edit_columns"><code>edit_columns</code></h3>
 <p>Change the titles of the columns on the list posts screen.</p>
-
 <ul>
 <li>Input:  Array</li>
-
-<li><p>values:  array of items to change. key = default WordPress title, value = new title</p>
-
+<li>values:  array of items to change. key = default WordPress title, value = new title</li>
+</ul>
 <pre><code>'edit_columns' =&gt; array(
-'title' =&gt; 'Demo',
-'author' =&gt; 'Assigned to'
+  'title' =&gt; 'Demo',
+  'author' =&gt; 'Assigned to'
 )
-</code></pre></li>
-</ul>
-
-<h3 id="hide-meta-box"><code>hide_meta_box</code></h3>
-
+</code></pre><h3 id="hide_meta_box"><code>hide_meta_box</code></h3>
 <p>Easily hide meta boxes per post type. Even if the Post Type &ldquo;supports&rdquo; the metabox, you can still hide it</p>
-
 <ul>
 <li>Input:  Array</li>
-
-<li><p>values:  array for metaboxes to hide</p>
-
+<li>values:  array for metaboxes to hide</li>
+</ul>
 <pre><code>'hide_meta_box' =&gt; array(
-'author'
+  'author'
 )
-</code></pre></li>
-</ul>
-
-<h3 id="hide-post-row-actions"><code>hide_post_row_actions</code></h3>
-
+</code></pre><h3 id="hide_post_row_actions"><code>hide_post_row_actions</code></h3>
 <p>Hide the post row actions that show up when you hover over a post in the list posts screen (e.g. edit, quick edit, trash, preview)</p>
-
 <ul>
 <li>Input:  Array</li>
-
-<li><p>values:  array of row actions, the key corresponding to the span class attribute of the element</p>
-
+<li>values:  array of row actions, the key corresponding to the span class attribute of the element</li>
+</ul>
 <pre><code>'hide_post_row_actions' =&gt; array(
-'trash',
-'edit',
-'quick-edit'
+  'trash',
+  'edit',
+  'quick-edit'
 )
-</code></pre></li>
-</ul>
-
-<h3 id="hide-screen-options"><code>hide_screen_options</code></h3>
-
+</code></pre><h3 id="hide_screen_options"><code>hide_screen_options</code></h3>
 <p>Hide the screen options tab on the post edit screens.</p>
-
 <ul>
-<li><p>Input:  Array</p>
-
+<li>Input:  Array</li>
+</ul>
 <pre><code>'hide_screen_options' =&gt; true
-</code></pre></li>
-</ul>
-
-<h3 id="status"><code>status</code></h3>
-
-<p>Register custom post statuses to use with this Post Type. A few important notes:
-* You must define ALL the statuses for your Post Type.
-* Statuses are universal, meaning any status you register cannot have the same key as an existing status. If it does, the label you define will change the other status as well.
-* You can use any parameter from the WordPress <a href="https://codex.wordpress.org/Function_Reference/register_post_status"><code>register_post_status</code></a> function.</p>
-
+</code></pre><h3 id="status"><code>status</code></h3>
+<p>Register custom post statuses to use with this Post Type. A few important notes:</p>
 <ul>
-<li>Input:  Array</li>
-
-<li><p>values:  array of statuses and labels</p>
-
+<li>
+<p>You must define ALL the statuses for your Post Type.</p>
+</li>
+<li>
+<p>Statuses are universal, meaning any status you register cannot have the same key as an existing status. If it does, the label you define will change the other status as well.</p>
+</li>
+<li>
+<p>You can use any parameter from the WordPress <a href="https://codex.wordpress.org/Function_Reference/register_post_status"><code>register_post_status</code></a> function.</p>
+</li>
+<li>
+<p>Input:  Array</p>
+</li>
+<li>
+<p>values:  array of statuses and labels</p>
+</li>
+</ul>
 <pre><code>'status' =&gt; array(
-'new' =&gt; array(
-'label' =&gt; 'New',
-'public' =&gt; false
+  'new' =&gt; array(
+    'label' =&gt; 'New',
+    'public' =&gt; false
+  )
+  ,'pending' =&gt; array(
+    'label' =&gt; 'Pending Review',
+    'public' =&gt; false
+  )
+  ,'demo' =&gt; array(
+    'label' =&gt; 'Demo',
+    'public' =&gt; true,
+    'exclude_from_search' =&gt; true,
+    'show_in_admin_all_list' =&gt; true,
+    'show_in_admin_status_list' =&gt; true
+  )
+  ,'lock' =&gt; array(
+    'label' =&gt; 'Lock',
+    'public' =&gt; true
+  )
 )
-,'pending' =&gt; array(
-'label' =&gt; 'Pending Review',
-'public' =&gt; false
-)
-,'demo' =&gt; array(
-'label' =&gt; 'Demo',
-'public' =&gt; true,
-'exclude_from_search' =&gt; true,
-'show_in_admin_all_list' =&gt; true,
-'show_in_admin_status_list' =&gt; true
-)
-,'lock' =&gt; array(
-'label' =&gt; 'Lock',
-'public' =&gt; true
-)
-)
-</code></pre></li>
-</ul>
-
-<h3 id="title"><code>title</code></h3>
-
+</code></pre><h3 id="title"><code>title</code></h3>
 <p>Change the “Enter title here” text that appears when you create a new Post.</p>
-
 <ul>
 <li>Input:  Array</li>
-
-<li><p>values:  text you want to show</p>
-
-<pre><code>'title' =&gt; 'Enter Custom Title'
-</code></pre></li>
+<li>values:  text you want to show</li>
 </ul>
-
-<p>NOTE: WordPress doesn’t allow a Post Type slug defined as &lsquo;order&rsquo;. This is not allowed <code>'slug' =&gt; 'order'</code></p>
-
+<pre><code>'title' =&gt; 'Enter Custom Title'
+</code></pre><p>NOTE: WordPress doesn’t allow a Post Type slug defined as &lsquo;order&rsquo;. This is not allowed <code>'slug' =&gt; 'order'</code></p>
 <h2 id="example">EXAMPLE:</h2>
-
 <pre><code>add_filter('piklist_post_types', 'piklist_demo_post_types');
 
   function piklist_demo_post_types($post_types) {
@@ -1925,7 +1880,6 @@
     return $post_types;
   }
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3680,20 +3634,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

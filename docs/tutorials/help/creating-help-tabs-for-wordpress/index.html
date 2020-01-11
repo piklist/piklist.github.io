@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Creating Help Tabs for WordPress is super easy with Piklist.">
 
 
@@ -13,19 +13,19 @@
     <title>Creating Help Tabs for WordPress &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,19 +1685,18 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#full-snippet">Full Snippet</a></li>
-</ul></li>
-<li><a href="#add-a-help-sidebar">Add a Help Sidebar</a>
-<ul>
-<li><a href="#full-snippet-1">Full Snippet</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#full-snippet">Full Snippet</a></li>
+      </ul>
+    </li>
+    <li><a href="#add-a-help-sidebar">Add a Help Sidebar</a>
+      <ul>
+        <li><a href="#full-snippet-1">Full Snippet</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1716,16 +1715,10 @@
         
 
 
-
-
-<p><img src="https://docs.piklist.com/images/tutorial-help-tab-with-sidebar.png" alt="Metabox" /></p>
-
+<p><img src="https://docs.piklist.com/images/tutorial-help-tab-with-sidebar.png" alt="Metabox"></p>
 <h2 id="description">Description</h2>
-
 <p>Creating Help Tabs for WordPress is super easy with Piklist.</p>
-
-<p>In this example, we&rsquo;ll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.</p>
-
+<p>In this example, we'll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.</p>
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1755,32 +1748,22 @@
 
 </div>
 
-
 <ul>
 <li>In your <code>parts/help/</code> folder create a new PHP file to hold your notice code. This file can be named anything you want.</li>
-
-<li><p>Add the following to the top of your file:</p>
-
+<li>Add the following to the top of your file:</li>
+</ul>
 <pre><code>&lt;?php
 /*
 Title: Content Help
 Page: your_custom_post_type
 */
 ?&gt;
-</code></pre></li>
-</ul>
-
-<p>This comment block tells Piklist to create a Help tab for the page <code>yourdomain.com/wp-admin/post-new.php?post_type=your_custom_post_type</code>.</p>
-
+</code></pre><p>This comment block tells Piklist to create a Help tab for the page <code>yourdomain.com/wp-admin/post-new.php?post_type=your_custom_post_type</code>.</p>
 <ul>
-<li><p>Under this comment block add your help text.</p>
-
-<pre><code>This post type is used for a special purpose.
-</code></pre></li>
+<li>Under this comment block add your help text.</li>
 </ul>
-
-<h3 id="full-snippet">Full Snippet</h3>
-
+<pre><code>This post type is used for a special purpose.
+</code></pre><h3 id="full-snippet">Full Snippet</h3>
 <pre><code>&lt;?php
 /*
 Title: Content Help
@@ -1789,47 +1772,34 @@ Page: your_custom_post_type
 ?&gt;
 
 This post type is used for a special purpose.
-</code></pre>
-
-<h2 id="add-a-help-sidebar">Add a Help Sidebar</h2>
-
+</code></pre><h2 id="add-a-help-sidebar">Add a Help Sidebar</h2>
 <p>WordPress also allows for a sidebar in your help.</p>
-
 <ul>
-<li><p>Create another PHP file in the same folder. It can be named anything you want. Add this to the top:</p>
-
+<li>Create another PHP file in the same folder. It can be named anything you want. Add this to the top:</li>
+</ul>
 <pre><code>&lt;?php
 /*
 Page: your_custom_post_type
 Sidebar: true
 */
 ?&gt;
-</code></pre></li>
-</ul>
-
-<p>This code tells Piklist to create a Help sidebar on the same page as your help.</p>
-
+</code></pre><p>This code tells Piklist to create a Help sidebar on the same page as your help.</p>
 <ul>
-<li><p>Add your sidebar help below it:</p>
-
+<li>Add your sidebar help below it:</li>
+</ul>
 <pre><code>&lt;p&gt;
 
-&lt;h4&gt;Help is just a click away.&lt;/h4&gt;
+  &lt;h4&gt;Help is just a click away.&lt;/h4&gt;
 
-&lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&quot;//yoursite.com/contact-us target=&quot;_blank&quot;&gt;Contact us&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://google.com/&quot; target=&quot;_blank&quot;&gt;Search Google&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+    &lt;a href=&quot;//yoursite.com/contact-us target=&quot;_blank&quot;&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://google.com/&quot; target=&quot;_blank&quot;&gt;Search Google&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
 
 &lt;/p&gt;
-</code></pre></li>
-</ul>
-
-<p>You&rsquo;re done!</p>
-
+</code></pre><p>You're done!</p>
 <h3 id="full-snippet-1">Full Snippet</h3>
-
 <pre><code>&lt;?php
 /*
 Page: your_custom_post_type
@@ -1849,7 +1819,6 @@ Sidebar: true
 
 &lt;/p&gt;
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3603,20 +3572,20 @@ Sidebar: true
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

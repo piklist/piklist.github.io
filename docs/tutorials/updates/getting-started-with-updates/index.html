@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Use Piklist updates to run your update scripts">
 
 
@@ -13,19 +13,19 @@
     <title>Getting started with updates &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296512" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296512" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296512"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1685,15 +1685,13 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#example">Example</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1712,10 +1710,7 @@
         
 
 
-
-
 <p>If your plugin needs an update procedure, Piklist makes it quite easy. First create a php file, and drop it in the updates folder. The file name should be the current version of your plugin. So, if the update procedure is for version 2.0 of your plugin, then the file name should be 2.0.php.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1745,68 +1740,61 @@
 
 </div>
 
-
 <p>Then write your update procedure.</p>
-
 <h3 id="example">Example</h3>
-
 <p>This example is pulled from Piklist itself.</p>
-
 <ul>
 <li>This update scripts runs if you are upgrading from Piklist version 0.7.1.</li>
 <li>The script moves data from a legacy table to a new table, and drops the old table.</li>
-
-<li><p>You can find it in <code>piklist/parts/updates</code></p>
-
+<li>You can find it in <code>piklist/parts/updates</code></li>
+</ul>
 <pre><code>if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 if (!class_exists('Piklist_Update_0_7_2'))
 {
-class Piklist_Update_0_7_2
-{
-public function __construct()
-{
-  add_action('admin_init', array($this, 'admin_init'));
-}
-
-public function admin_init()
-{
-  global $wpdb;
-
-  $legacy_table = $wpdb-&gt;prefix . 'piklist_cpt_relate';
-
-  $count = $wpdb-&gt;get_var(&quot;SHOW TABLES LIKE '{$legacy_table}'&quot;);
-
-  // Does the legacy table exist?
-  if (!empty($count))
+  class Piklist_Update_0_7_2
   {
-    // Grab data from legacy table
-    $data = $wpdb-&gt;get_results(&quot;SELECT * FROM {$legacy_table}&quot;, ARRAY_A);
-
-    // Move data to new table
-    foreach ($data as $row)
+    public function __construct()
     {
-      $wpdb-&gt;insert(
-        $wpdb-&gt;post_relationships
-        ,$row
-        ,array(
-          '%d'
-          ,'%d'
-          ,'%d'
-        )
-      );
+      add_action('admin_init', array($this, 'admin_init'));
     }
 
-    // Delete legacy table
-    $wpdb-&gt;query(&quot;DROP TABLE IF EXISTS {$legacy_table}&quot;);
+    public function admin_init()
+    {
+      global $wpdb;
+
+      $legacy_table = $wpdb-&gt;prefix . 'piklist_cpt_relate';
+
+      $count = $wpdb-&gt;get_var(&quot;SHOW TABLES LIKE '{$legacy_table}'&quot;);
+
+      // Does the legacy table exist?
+      if (!empty($count))
+      {
+        // Grab data from legacy table
+        $data = $wpdb-&gt;get_results(&quot;SELECT * FROM {$legacy_table}&quot;, ARRAY_A);
+
+        // Move data to new table
+        foreach ($data as $row)
+        {
+          $wpdb-&gt;insert(
+            $wpdb-&gt;post_relationships
+            ,$row
+            ,array(
+              '%d'
+              ,'%d'
+              ,'%d'
+            )
+          );
+        }
+
+        // Delete legacy table
+        $wpdb-&gt;query(&quot;DROP TABLE IF EXISTS {$legacy_table}&quot;);
+      }
+    }
   }
 }
-}
-}
 
-</code></pre></li>
-</ul>
-
+</code></pre>
 
 <footer class=" footline" >
 	
@@ -3560,20 +3548,20 @@ public function admin_init()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767321"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767321"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767321" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767321"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

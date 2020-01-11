@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Creating Shortcodes with Piklist is super easy.">
 
 
@@ -13,19 +13,19 @@
     <title>Getting started with Shortcodes &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,18 +1685,16 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#shortcode-form-file">Shortcode Form File</a></li>
-<li><a href="#full-snippet-shortcode-form-file">Full Snippet: Shortcode Form File</a></li>
-<li><a href="#shortcode-output-file">Shortcode Output File</a></li>
-<li><a href="#full-snippet-shortcode-output-file">Full Snippet: Shortcode Output File</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#shortcode-form-file">Shortcode Form File</a></li>
+        <li><a href="#full-snippet-shortcode-form-file">Full Snippet: Shortcode Form File</a></li>
+        <li><a href="#shortcode-output-file">Shortcode Output File</a></li>
+        <li><a href="#full-snippet-shortcode-output-file">Full Snippet: Shortcode Output File</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1715,12 +1713,8 @@
         
 
 
-
-
 <h2 id="description">Description</h2>
-
-<p>Creating Shortcodes with Piklist is super easy. In this tutorial, we&rsquo;ll create a shortcode to display post meta in your post content.</p>
-
+<p>Creating Shortcodes with Piklist is super easy. In this tutorial, we'll create a shortcode to display post meta in your post content.</p>
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1750,23 +1744,18 @@
 
 </div>
 
-
 <ul>
-<li>If you don&rsquo;t already have a <code>shortcodes</code> folder, create one: <code>/parts/shortcodes/</code></li>
+<li>If you don't already have a <code>shortcodes</code> folder, create one: <code>/parts/shortcodes/</code></li>
 <li>Next we need to create the shortcode files.  Piklist shortcodes are made up of two:
-
 <ul>
 <li><code>shortcode-name.php</code>: This file holds the shortcode output, and is the <strong>only required file for a shortcode</strong>. (i.e. example.php)</li>
 <li><code>shortcode-name-form.php</code>: Settings fields for your shortcode are placed in this file. (i.e. example-form.php)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="shortcode-form-file">Shortcode Form File</h3>
-
 <p>Let’s start with example-form.php, which will hold the fields the user will fill in to control the Shortcode. This file is only required if you want to add settings to your Shortcode.</p>
-
 <p>At the top of the file add this code:</p>
-
 <pre><code>&lt;?php
 /*
 Name: Post Meta
@@ -1774,27 +1763,21 @@ Description: Embed the value of post meta
 Shortcode: postmeta
 Inline: true
 */
-</code></pre>
-
-<p>This code is a PHP comment block that tells Piklist a few things:
-* <code>Name</code>: Name of your shortcode.
-* <code>Description</code>: A description of your shortcode.
-* <code>Shortcode</code>: The actual shortcode that will appear in your code.
-* <code>Inline</code>: Tells Piklist you want to display the shortcode output inline, instead of in a block.</p>
-
+</code></pre><p>This code is a PHP comment block that tells Piklist a few things:</p>
+<ul>
+<li><code>Name</code>: Name of your shortcode.</li>
+<li><code>Description</code>: A description of your shortcode.</li>
+<li><code>Shortcode</code>: The actual shortcode that will appear in your code.</li>
+<li><code>Inline</code>: Tells Piklist you want to display the shortcode output inline, instead of in a block.</li>
+</ul>
 <p>Now, let’s create our field, a text box for the Post Meta key:</p>
-
 <pre><code>piklist('field', array(
   'type' =&gt; 'text'
   ,'field' =&gt; 'meta_key'
   ,'label' =&gt; 'Meta Key'
 ));
-</code></pre>
-
-<p>At this point, you should see an &ldquo;Add Shortcode&rdquo; button on your edit post screen. If you press it, a form will pop up, and one of the shortcode options will be <code>Meta Key</code>. Enter a meta key and save.</p>
-
+</code></pre><p>At this point, you should see an &ldquo;Add Shortcode&rdquo; button on your edit post screen. If you press it, a form will pop up, and one of the shortcode options will be <code>Meta Key</code>. Enter a meta key and save.</p>
 <h3 id="full-snippet-shortcode-form-file">Full Snippet: Shortcode Form File</h3>
-
 <pre><code>&lt;?php
 /*
 Name: Post Meta
@@ -1808,29 +1791,19 @@ piklist('field', array(
   ,'field' =&gt; 'meta_key'
   ,'label' =&gt; 'Meta Key'
 ));
-</code></pre>
-
-<h3 id="shortcode-output-file">Shortcode Output File</h3>
-
+</code></pre><h3 id="shortcode-output-file">Shortcode Output File</h3>
 <p><strong>The output file is the only required file</strong>, since settings may not be necessary for some shortcodes. Open <code>example.php</code>. At the top of the file, we will add a comment block that will control the configuration of the shortcode. This comment block is very similar to what you would see in a standard WordPress plugin or theme. The only required parameter is <code>shortcode</code>:</p>
-
 <pre><code>&lt;?php
 /*
 Shortcode: postmeta
 */
-</code></pre>
-
-<p>Now we&rsquo;ll add the output code. All the data you save in the shortcode form is saved in the <code>$arguments</code> array.</p>
-
+</code></pre><p>Now we'll add the output code. All the data you save in the shortcode form is saved in the <code>$arguments</code> array.</p>
 <pre><code>if ( isset( $arguments['meta_key'] ) ) {
 
     echo get_post_meta( get_the_id(), $arguments['meta_key'], true );
 
 }
-</code></pre>
-
-<h3 id="full-snippet-shortcode-output-file">Full Snippet: Shortcode Output File</h3>
-
+</code></pre><h3 id="full-snippet-shortcode-output-file">Full Snippet: Shortcode Output File</h3>
 <pre><code>&lt;?php
 /*
 Shortcode: postmeta
@@ -1841,9 +1814,7 @@ if ( isset( $arguments['meta_key'] ) ) {
     echo get_post_meta( get_the_id(), $arguments['meta_key'], true );
 
 }
-</code></pre>
-
-<p>You just built a shortcode!</p>
+</code></pre><p>You just built a shortcode!</p>
 
 
 <footer class=" footline" >
@@ -3598,20 +3569,20 @@ if ( isset( $arguments['meta_key'] ) ) {
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="When writing field code, whether with Piklist or not, you should be extra cautious of how you handle data coming into WordPress and how it’s presented to the end user. Piklist makes sanitizing your data easy with the `sanitize` parameter.">
 
 
@@ -13,19 +13,19 @@
     <title>Sanitizing Fields &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1678,7 +1678,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1697,151 +1697,113 @@
 
 
 <p>When writing field code, whether with Piklist or not, you should be extra cautious of how you handle data coming into WordPress and how it’s presented to the end user. Piklist makes sanitizing your data easy with the <code>sanitize</code> parameter.</p>
-
 <p>Choose the appropriate type of sanitization for each of your fields.</p>
-
 <h2 id="email">email</h2>
-
 <p>Strips out all characters that are not allowable in an email address.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/sanitize_email">sanitize_email</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
       array(
-        'type' =&gt; 'email'
+        &#39;type&#39; =&gt; &#39;email&#39;
       )
     )
-</code></pre>
-<h2 id="file-name">file_name</h2>
-
+</code></pre></div><h2 id="file_name">file_name</h2>
 <p>Removes special characters that are illegal in filenames on certain operating systems and special characters requiring special escaping to manipulate at the command line. Replaces spaces and consecutive dashes with a single dash. Trim period, dash and underscore from beginning and end of filename.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/sanitize_file_name">sanitize_file_name</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
       array(
-        'type' =&gt; 'file_name'
+        &#39;type&#39; =&gt; &#39;file_name&#39;
       )
     )
-</code></pre>
-<h2 id="html-class">html_class</h2>
-
+</code></pre></div><h2 id="html_class">html_class</h2>
 <p>Sanitizes a html classname to ensure it only contains valid characters.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/sanitize_html_class">sanitize_html_class</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
   array(
-   'type' =&gt; 'html_class'
-   ,'options' =&gt; array(
-     'fallback' =&gt; 'my-default-class'
+   &#39;type&#39; =&gt; &#39;html_class&#39;
+   ,&#39;options&#39; =&gt; array(
+     &#39;fallback&#39; =&gt; &#39;my-default-class&#39;
    )
  )
 )
-</code></pre>
-<h2 id="text-field">text_field</h2>
-
+</code></pre></div><h2 id="text_field">text_field</h2>
 <p>Checks for invalid UTF-8, Convert single &lt; characters to entity, strip all tags, remove line breaks, tabs and extra white space, strip octets.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/sanitize_text_field">sanitize_text_field</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
       array(
-        'type' =&gt; 'text_field'
+        &#39;type&#39; =&gt; &#39;text_field&#39;
       )
     )
 
-</code></pre>
-<h2 id="title">title</h2>
-
+</code></pre></div><h2 id="title">title</h2>
 <p>Specifically, HTML and PHP tags are stripped, and (in a ‘save’ context) accents are removed (accented characters are replaced with non-accented equivalents). Despite the name of this function, the returned value is intended to be suitable for use in a URL, not as a human-readable title.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/sanitize_title">sanitize_title</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
   array(
-    'type' =&gt; 'title'
-    ,'options' =&gt; array(
-      'fallback' =&gt; 'my-fallback-title'
+    &#39;type&#39; =&gt; &#39;title&#39;
+    ,&#39;options&#39; =&gt; array(
+      &#39;fallback&#39; =&gt; &#39;my-fallback-title&#39;
     )
-    ,'context' =&gt; 'save'
+    ,&#39;context&#39; =&gt; &#39;save&#39;
   )
 )
 
-</code></pre>
-<h2 id="user">user</h2>
-
+</code></pre></div><h2 id="user">user</h2>
 <p>Sanitize username stripping out unsafe characters.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/sanitize_user">sanitize_user</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
   array(
-   'type' =&gt; 'user'
-   ,'options' =&gt; array(
-     'strict' =&gt; 'true'
+   &#39;type&#39; =&gt; &#39;user&#39;
+   ,&#39;options&#39; =&gt; array(
+     &#39;strict&#39; =&gt; &#39;true&#39;
    )
  )
 )
 
-</code></pre>
-<h2 id="wp-filter-kses">wp_filter_kses</h2>
-
+</code></pre></div><h2 id="wp_filter_kses">wp_filter_kses</h2>
 <p>Sanitize content with allowed HTML Kses rules.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/wp_filter_kses">wp_filter_kses</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
       array(
-        'type' =&gt; 'wp_filter_kses'
+        &#39;type&#39; =&gt; &#39;wp_filter_kses&#39;
       )
     )
-</code></pre>
-<h2 id="wp-kses">wp_kses</h2>
-
+</code></pre></div><h2 id="wp_kses">wp_kses</h2>
 <p>Makes sure that only the allowed HTML element names, attribute names and attribute values plus only sane HTML entities will be saved.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/wp_kses">wp_kses</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
   array(
-    'type' =&gt; 'wp_kses'
-    ,'options' =&gt; array(
-      'allowed_html' =&gt; array(
-        'strong' =&gt; array()
-        ,'a' =&gt; array(
-          'href' =&gt; array()
-          ,'title' =&gt; array()
+    &#39;type&#39; =&gt; &#39;wp_kses&#39;
+    ,&#39;options&#39; =&gt; array(
+      &#39;allowed_html&#39; =&gt; array(
+        &#39;strong&#39; =&gt; array()
+        ,&#39;a&#39; =&gt; array(
+          &#39;href&#39; =&gt; array()
+          ,&#39;title&#39; =&gt; array()
         )
       )
-      ,'allowed_protocols' =&gt; array('http')
+      ,&#39;allowed_protocols&#39; =&gt; array(&#39;http&#39;)
     )
   )
 )
-</code></pre>
-<h2 id="wp-kses">wp_kses</h2>
-
+</code></pre></div><h2 id="wp_kses">wp_kses</h2>
 <p>Makes sure that only the allowed HTML element names, attribute names and attribute values plus only sane HTML entities will be saved.</p>
-
 <p>Codex reference for parameters: <a href="http://codex.wordpress.org/Function_Reference/wp_kses">wp_kses</a></p>
-
-<pre><code class="language-php">'sanitize' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;sanitize&#39; =&gt; array(
   array(
-    'type' =&gt; 'wp_kses'
-    ,'options' =&gt; array(
-      'allowed_html' =&gt; array(
-        'strong' =&gt; array()
-        ,'a' =&gt; array(
-          'href' =&gt; array()
-          ,'title' =&gt; array()
+    &#39;type&#39; =&gt; &#39;wp_kses&#39;
+    ,&#39;options&#39; =&gt; array(
+      &#39;allowed_html&#39; =&gt; array(
+        &#39;strong&#39; =&gt; array()
+        ,&#39;a&#39; =&gt; array(
+          &#39;href&#39; =&gt; array()
+          ,&#39;title&#39; =&gt; array()
         )
       )
-      ,'allowed_protocols' =&gt; array('http')
+      ,&#39;allowed_protocols&#39; =&gt; array(&#39;http&#39;)
     )
   )
 )
-</code></pre>
-
+</code></pre></div>
 
 
 
@@ -3597,20 +3559,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

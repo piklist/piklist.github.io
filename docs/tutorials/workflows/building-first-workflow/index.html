@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Piklist Workflows allow you to add a tabbed system on Post and User. Additionally, you can add almost anything you want to each tab.">
 
 
@@ -13,19 +13,19 @@
     <title>Building Your First Workflow &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296512" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296512" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296512"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1685,34 +1685,19 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#header-file">Header file</a>
-<ul>
-<li><a href="#parameters">Parameters</a>
-<ul>
-<li><a href="#flow">Flow</a></li>
-<li><a href="#page">Page</a></li>
-<li><a href="#post-type">Post Type</a></li>
-<li><a href="#header">Header</a></li>
-<li><a href="#position">Position</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#tab-file">Tab file</a>
-<ul>
-<li><a href="#parameters-1">Parameters</a>
-<ul>
-<li><a href="#title">Title</a></li>
-<li><a href="#order">Order</a></li>
-<li><a href="#flow-1">Flow</a></li>
-<li><a href="#page-1">Page</a></li>
-<li><a href="#default">Default</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#assign-meta-boxes-sections-etc-to-workflows">Assign Meta Boxes, Sections, Etc. to Workflows.</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#header-file">Header file</a>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
+      </ul>
+    </li>
+    <li><a href="#tab-file">Tab file</a>
+      <ul>
+        <li><a href="#parameters-1">Parameters</a></li>
+      </ul>
+    </li>
+    <li><a href="#assign-meta-boxes-sections-etc-to-workflows">Assign Meta Boxes, Sections, Etc. to Workflows.</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1731,10 +1716,7 @@
         
 
 
-
-
 <p>Piklist Workflows allow you to add a tabbed system on almost any admin page. Additionally, you can add almost anything you want to each tab.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1764,54 +1746,31 @@
 
 </div>
 
-
 <p>IMPORTANT: Each Workflow tab loads a separate page, with a new url. If you change tabs without saving you will lose your data.</p>
-
 <p>ALSO IMPORTANT: Workflows control the ENTIRE page, not just what is located under the tabs.</p>
-
 <p>Each Workflow needs a minimum of two files:</p>
-
 <h2 id="header-file">Header file</h2>
-
 <p>This file goes in the <code>/workflows</code> folder</p>
-
-<p>The header sets the main parameters for the entire flow. Entering the parameters into a comment block is all that&rsquo;s required of the header file.</p>
-
+<p>The header sets the main parameters for the entire flow. Entering the parameters into a comment block is all that's required of the header file.</p>
 <h3 id="parameters">Parameters</h3>
-
 <h4 id="flow">Flow</h4>
-
 <p>Define a unique name for your flow. The name will tie together all your tabs.
 Example: <code>My Flow</code></p>
-
 <h4 id="page">Page</h4>
-
 <p>What pages the flow should display on. This can be multiple pages, separated by commas.
 Example: <code>post.php, post-new.php, post-edit.php, admin.php, your_custom_setting</code></p>
-
 <h4 id="post-type">Post Type</h4>
-
 <p>For custom post type flows, please define the post type.
 Example: <code>my_cpt</code></p>
-
 <h4 id="header">Header</h4>
-
 <p>Tells Piklist this is a WorkFlow header file. Set this to: <code>true</code>.</p>
-
 <h4 id="position">Position</h4>
-
 <p>Where on the page should the WorkFlow display. The Workflow system can currently display in five WordPress hook locations:</p>
-
 <p><code>'header' =&gt; 'in_admin_header'</code></p>
-
 <p><code>'body' =&gt; 'all_admin_notices'</code></p>
-
 <p><code>'title' =&gt; 'edit_form_after_title'</code></p>
-
 <p><code>'editor' =&gt; 'edit_form_after_editor'</code></p>
-
 <p><code>'profile' =&gt; 'profile_personal_options'</code></p>
-
 <pre><code>/*
 Flow: My Flow
 Page: post.php, post-new.php, post-edit.php, admin.php
@@ -1819,86 +1778,53 @@ Post Type: my_cpt
 Header: true
 Position: title
 */
-</code></pre>
-
-<h2 id="tab-file">Tab file</h2>
-
+</code></pre><h2 id="tab-file">Tab file</h2>
 <p>This file goes in the <code>/workflows</code> folder</p>
-
 <p>Each tab in your Workflow gets its own file. Each file uses a comment block to link it to a Workflow.</p>
-
 <p><strong>TIP: You must create at least two tabs for WorkFlows to show up.</strong></p>
-
 <h3 id="parameters-1">Parameters</h3>
-
 <h4 id="title">Title</h4>
-
 <p>The title of the Workflow tab.
 Example: <code>My Tab</code></p>
-
 <h4 id="order">Order</h4>
-
 <p>Defines the sort order of the tabs.
 Example: <code>10</code></p>
-
 <h4 id="flow-1">Flow</h4>
-
 <p>Should be the same value as the header file.
 Example: <code>My Flow</code></p>
-
 <h4 id="page-1">Page</h4>
-
 <p>What pages the individual tab should display on. This can be multiple pages, separated by commas.
 Example: <code>post.php, post-new.php, post-edit.php, admin.php</code></p>
-
 <h4 id="default">Default</h4>
-
 <p>Sets this tab as the default tab.
 IMPORTANT: Only use this parameter in ONE of your WorkFlow tab files.
 Default: <code>true</code></p>
-
 <pre><code>/*
 Title: My Tab
 Order: 10
 Flow: My Flow
 */
-</code></pre>
-
-<p>So far we&rsquo;ve created a Workflow and a tab, but we have not shown any content. When you click on a tab you are defining the entire page environment, not just the environment in the tab. You have to define which meta-boxes (or user sections, settings sections, term sections, etc) are shown on the entire page, even in the sidebar. This means when a user clicks on a WorkFlow tab you can hide or show fields in the actual tab and in the sidebar.</p>
-
+</code></pre><p>So far we've created a Workflow and a tab, but we have not shown any content. When you click on a tab you are defining the entire page environment, not just the environment in the tab. You have to define which meta-boxes (or user sections, settings sections, term sections, etc) are shown on the entire page, even in the sidebar. This means when a user clicks on a WorkFlow tab you can hide or show fields in the actual tab and in the sidebar.</p>
 <h2 id="assign-meta-boxes-sections-etc-to-workflows">Assign Meta Boxes, Sections, Etc. to Workflows.</h2>
-
 <p>** This file goes in the <code>/meta-boxes</code> folder, if you want to assign meta-boxes to this workflow. If you want to assign settings sections, then this file would go in the <code>/settings</code> folder.</p>
-
 <p>In this example, we are creating and assigning a meta-box.</p>
-
 <p>Create a meta-box the way you normally would with Piklist.</p>
-
 <p>In the comment block of your meta box file add the following two parameters:</p>
-
 <pre><code>Tab: My Tab
 Flow: My Flow
-</code></pre>
-
-<p>So, if this was the original comment block for your meta box:</p>
-
+</code></pre><p>So, if this was the original comment block for your meta box:</p>
 <pre><code>/*
 Title: Text Fields
 Post Type: piklist_demo
 */
-</code></pre>
-
-<p>It would now look like this:</p>
-
+</code></pre><p>It would now look like this:</p>
 <pre><code>/*
 Title: Text Fields
 Post Type: piklist_demo
 Tab: My Tab
 Flow: My Flow
 */
-</code></pre>
-
-<p>Your meta-box will now show up under the “My Tab” tab of your workflow.</p>
+</code></pre><p>Your meta-box will now show up under the “My Tab” tab of your workflow.</p>
 
 
 <footer class=" footline" >
@@ -3653,20 +3579,20 @@ Flow: My Flow
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767321"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767321"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767321" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767321"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

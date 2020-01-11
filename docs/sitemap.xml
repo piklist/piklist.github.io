@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/workflows/building-first-workflow/</loc>
-    <lastmod>2017-12-20T15:18:52-05:00</lastmod>
-  </url>
   
   <url>
     <loc>https://docs.piklist.com/tutorials/admin-pages/creating-a-simple-admin-page/</loc>
@@ -15,6 +10,11 @@
   <url>
     <loc>https://docs.piklist.com/tutorials/admin-notices/building-an-admin-notice/</loc>
     <lastmod>2017-12-21T17:26:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/workflows/building-first-workflow/</loc>
+    <lastmod>2017-12-20T15:18:52-05:00</lastmod>
   </url>
   
   <url>
@@ -34,7 +34,7 @@
   
   <url>
     <loc>https://docs.piklist.com/tutorials/taxonomies-terms/getting-started-taxonomies/</loc>
-    <lastmod>2019-05-30T20:20:28-04:00</lastmod>
+    <lastmod>2020-01-04T19:49:13-05:00</lastmod>
   </url>
   
   <url>
@@ -243,6 +243,11 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/tutorials/media/add-fields-to-media/</loc>
+    <lastmod>2017-12-21T23:18:04-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/tutorials/meta-boxes/add-subtitle-field/</loc>
     <lastmod>2017-12-20T15:18:52-05:00</lastmod>
   </url>
@@ -250,11 +255,6 @@
   <url>
     <loc>https://docs.piklist.com/tutorials/meta-boxes/add-wysisyg-excerpt-box/</loc>
     <lastmod>2017-12-20T15:18:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/media/add-fields-to-media/</loc>
-    <lastmod>2017-12-21T23:18:04-05:00</lastmod>
   </url>
   
   <url>
@@ -284,7 +284,21 @@
   
   <url>
     <loc>https://docs.piklist.com/categories/</loc>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/fields/types/checkbox/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/fields/types/color/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/fields/types/colorpicker/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
   </url>
   
   <url>
@@ -313,6 +327,16 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/fields/types/date/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/fields/types/datepicker/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/tutorials/fields/display-menus-radio-checkbox-select-list/</loc>
     <lastmod>2017-12-22T14:14:17-05:00</lastmod>
   </url>
@@ -328,6 +352,16 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/fields/types/editor/</loc>
+    <lastmod>2019-06-23T21:02:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/fields/types/email/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/fields/field-parameters/</loc>
     <lastmod>2017-12-22T14:12:31-05:00</lastmod>
   </url>
@@ -335,6 +369,11 @@
   <url>
     <loc>https://docs.piklist.com/tutorials/fields/</loc>
     <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/fields/types/file/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
   </url>
   
   <url>
@@ -353,6 +392,11 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/fields/types/group/</loc>
+    <lastmod>2019-01-04T15:36:17-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/tutorials/taxonomies-terms/grouping-child-taxonomies-parents/</loc>
     <lastmod>2018-06-26T17:11:41-04:00</lastmod>
   </url>
@@ -363,8 +407,18 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/fields/types/hidden/</loc>
+    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/tutorials/meta-boxes/hide-meta-boxes-page-template/</loc>
     <lastmod>2017-12-20T15:18:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/fields/types/html/</loc>
+    <lastmod>2019-02-19T08:50:58+02:00</lastmod>
   </url>
   
   <url>
@@ -380,161 +434,6 @@
   <url>
     <loc>https://docs.piklist.com/tutorials/media/</loc>
     <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/workflows/placing-add-new-post-workflow/</loc>
-    <lastmod>2018-01-04T13:46:28-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/pointers/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/meta-boxes/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/meta-boxes/registering-post-types/</loc>
-    <lastmod>2017-12-20T15:18:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/relationships/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/shortcodes/save-shortcode-data-to-database/</loc>
-    <lastmod>2018-03-12T17:18:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/settings/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/shortcodes/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/fields/show-fields-user-capability-role/</loc>
-    <lastmod>2017-12-11T00:40:46-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/meta-boxes/show-metaboxes-fields-post-status/</loc>
-    <lastmod>2017-12-20T15:18:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/taxonomies-terms/</loc>
-    <lastmod>2018-06-26T17:11:41-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/forms/understanding-front-end-forms/</loc>
-    <lastmod>2017-12-22T14:14:17-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/updates/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/users/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/fields/using-chosen/</loc>
-    <lastmod>2019-10-07T12:42:16-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/fields/using-select2/</loc>
-    <lastmod>2019-06-23T21:18:19-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/widgets/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/workflows/</loc>
-    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/tutorials/relationships/working-with-field-relationships/</loc>
-    <lastmod>2018-06-11T22:09:21-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/checkbox/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/color/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/colorpicker/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/date/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/datepicker/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/editor/</loc>
-    <lastmod>2019-06-23T21:02:55-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/email/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/file/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/group/</loc>
-    <lastmod>2019-01-04T15:36:17-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/hidden/</loc>
-    <lastmod>2018-02-20T09:36:21-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.piklist.com/fields/types/html/</loc>
-    <lastmod>2019-02-19T08:50:58+02:00</lastmod>
   </url>
   
   <url>
@@ -599,12 +498,27 @@
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/filters/piklist_taxonomies/</loc>
-    <lastmod>2017-12-11T00:40:46-05:00</lastmod>
+    <lastmod>2020-01-11T13:27:31-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.piklist.com/actions-filters/filters/piklist_validation_rules/</loc>
     <lastmod>2017-12-11T00:40:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/workflows/placing-add-new-post-workflow/</loc>
+    <lastmod>2018-01-04T13:46:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/pointers/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/meta-boxes/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
   </url>
   
   <url>
@@ -618,6 +532,21 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/tutorials/meta-boxes/registering-post-types/</loc>
+    <lastmod>2017-12-20T15:18:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/relationships/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/shortcodes/save-shortcode-data-to-database/</loc>
+    <lastmod>2018-03-12T17:18:23-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/fields/types/search/</loc>
     <lastmod>2018-02-20T09:36:21-05:00</lastmod>
   </url>
@@ -625,6 +554,35 @@
   <url>
     <loc>https://docs.piklist.com/fields/types/select/</loc>
     <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/settings/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/shortcodes/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/fields/show-fields-user-capability-role/</loc>
+    <lastmod>2017-12-11T00:40:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/meta-boxes/show-metaboxes-fields-post-status/</loc>
+    <lastmod>2017-12-20T15:18:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/taxonomies-terms/</loc>
+    <lastmod>2018-06-26T17:11:41-04:00</lastmod>
   </url>
   
   <url>
@@ -648,13 +606,53 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/tutorials/forms/understanding-front-end-forms/</loc>
+    <lastmod>2017-12-22T14:14:17-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/updates/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/fields/types/url/</loc>
     <lastmod>2018-02-20T09:36:21-05:00</lastmod>
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/tutorials/users/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/fields/using-chosen/</loc>
+    <lastmod>2019-10-07T12:42:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/fields/using-select2/</loc>
+    <lastmod>2019-06-23T21:18:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/fields/types/week/</loc>
     <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/widgets/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/workflows/</loc>
+    <lastmod>2017-12-23T22:36:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/tutorials/relationships/working-with-field-relationships/</loc>
+    <lastmod>2018-06-11T22:09:21-04:00</lastmod>
   </url>
   
 </urlset>

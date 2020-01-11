@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="WordPress hierarchical taxonomies allow you to assign terms to a parent term. In this tutorial we’ll show you how to group the child terms under each parent, and make the parent unselectable, forcing the user to only select the children.">
 
 
@@ -13,19 +13,19 @@
     <title>Grouping child taxonomies by their parents &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,17 +1685,15 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#first-get-the-parents">First get the Parents</a></li>
-<li><a href="#next-assign-the-children">Next, assign the Children</a></li>
-<li><a href="#full-snippet">Full snippet</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#first-get-the-parents">First get the Parents</a></li>
+        <li><a href="#next-assign-the-children">Next, assign the Children</a></li>
+        <li><a href="#full-snippet">Full snippet</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1714,16 +1712,10 @@
         
 
 
-
-
-<p><img src="https://docs.piklist.com/images/taxonomy-parent-children.jpg" alt="Metabox" /></p>
-
+<p><img src="https://docs.piklist.com/images/taxonomy-parent-children.jpg" alt="Metabox"></p>
 <p>WordPress hierarchical taxonomies allow you to assign terms to a parent term. In this tutorial we’ll show you how to group the child terms under each parent, and make the parent unselectable, forcing the user to only select the children.</p>
-
 <p>The basis of this tutorial is the flexibility of the Piklist field function, which we will place in a foreach loop.</p>
-
 <p>This tutorial assumes you have already created a hierarchical taxonomy or you’re using the default WordPress Categories. In our example we will be using a custom taxonomy called <code>company_type</code>.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1753,23 +1745,15 @@
 
 </div>
 
-
 <h3 id="first-get-the-parents">First get the Parents</h3>
-
 <p>Using the standard WordPress function <code>get_terms()</code>, we will first get all the Parents for this taxonomy. Setting <code>'parent' =&gt; 0</code> returns all top-level terms.</p>
-
 <pre><code>$parents = get_terms('company_type', array(
   'hide_empty'  =&gt; false
   ,'parent'  =&gt; 0
 ));
-</code></pre>
-
-<h3 id="next-assign-the-children">Next, assign the Children</h3>
-
+</code></pre><h3 id="next-assign-the-children">Next, assign the Children</h3>
 <p>Now that we have the parents, we need to loop through each one, then show their child fields using the Piklist Field function. Then we pass some parameters to the Piklist Field function for each Parent ID.</p>
-
 <p>Once again we will use the WordPress function <code>get_terms()</code>, to get our child taxonomy values. This function stores data in an array, and with Piklist, parsing an array and displaying it as Checkboxes (or Radio buttons… or a Select box) is really easy. As you can see from the <a href="http://codex.wordpress.org/Function_Reference/get_terms">WordPress Codex page</a>, this array stores all data in an Object, and then breaks them out. You have access to fields like <code>term_id</code>, <code>name</code>, <code>child_of</code> etc.</p>
-
 <pre><code>foreach ($parents as $parent =&gt; $value) {
 piklist('field', array(
     'type' =&gt; 'checkbox'
@@ -1789,10 +1773,7 @@ piklist('field', array(
   ));
 
 }
-</code></pre>
-
-<p>Let’s take a look at this code:</p>
-
+</code></pre><p>Let’s take a look at this code:</p>
 <ul>
 <li>First we created a standard Piklist Checkbox list.</li>
 <li>Notice we set the scope here. In most cases Piklist will automatically determine the scope. But when using taxonomies you will need to set <code>'scope' =&gt; 'taxonomy'</code>.</li>
@@ -1800,9 +1781,7 @@ piklist('field', array(
 <li>The choices array gets pulled in dynamically. We told Piklist to use the <code>get_terms()</code> function, and told it to get the company_type taxonomy values. We also passed it two parameters: <code>hide_empty</code> and <code>child_of</code>. Both standard for <code>get_terms()</code>. We set child_of as the Parent term id: <code>$value-&gt;term_id</code>.</li>
 <li>The next array in the choices array tells Pikist what should be the KEY for the field, and what should be the VALUE. In this case we selected <code>term_id</code> as the KEY, and name as the VALUE to show in the list.</li>
 </ul>
-
 <h3 id="full-snippet">Full snippet</h3>
-
 <pre><code>$parents = get_terms(array(
   'taxonomy' =&gt; 'company_type'
   ,'hide_empty' =&gt; false
@@ -1831,7 +1810,6 @@ foreach ($parents as $parent =&gt; $value) {
 
 }
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3585,20 +3563,20 @@ foreach ($parents as $parent =&gt; $value) {
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

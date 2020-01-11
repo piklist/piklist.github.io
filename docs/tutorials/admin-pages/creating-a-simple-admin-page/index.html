@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Piklist makes it super easy to create admin pages in WordPress.">
 
 
@@ -13,19 +13,19 @@
     <title>Building a simple Admin Page &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296512" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296512" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296512"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1685,15 +1685,13 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#description">Description</a>
-<ul>
-<li><a href="#full-snippet">Full Snippet</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li><a href="#full-snippet">Full Snippet</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1712,12 +1710,8 @@
         
 
 
-
-
 <h2 id="description">Description</h2>
-
 <p>Piklist makes it super easy to create admin pages in WordPress.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1747,13 +1741,10 @@
 
 </div>
 
-
 <ul>
 <li>First, we need to register our page with Piklist using the <code>piklist_admin_pages</code> filter. This filter adds additional features to the standard WordPress functions <a href="https://developer.wordpress.org/reference/functions/add_menu_page/"><code>add_menu_page</code></a> and <a href="https://developer.wordpress.org/reference/functions/add_submenu_page/"><code>add_submenu_page</code></a>.</li>
 </ul>
-
-<p>Add this code to your theme&rsquo;s <code>functions.php</code> file, or in your custom plugin.</p>
-
+<p>Add this code to your theme's <code>functions.php</code> file, or in your custom plugin.</p>
 <pre><code>add_filter('piklist_admin_pages', 'my_admin_pages');
 
 function my_admin_pages($pages) {
@@ -1767,44 +1758,33 @@ function my_admin_pages($pages) {
 
     return $pages;
   }
-</code></pre>
-
-<p>If you go to the WordPress admin you should see a menu item called &ldquo;About&rdquo;.</p>
-
+</code></pre><p>If you go to the WordPress admin you should see a menu item called &ldquo;About&rdquo;.</p>
 <ul>
-<li>Now, create a PHP file in your <code>/parts/admin-pages/</code> <a href="https://docs.piklist.com/folder-structure/">folder</a>. It doesn&rsquo;t matter what you name the file. For this example we&rsquo;ll call it <code>about.php</code>.</li>
-
-<li><p>At the top of the file, add this code:</p>
-
+<li>Now, create a PHP file in your <code>/parts/admin-pages/</code> <a href="https://docs.piklist.com/folder-structure/">folder</a>. It doesn't matter what you name the file. For this example we'll call it <code>about.php</code>.</li>
+<li>At the top of the file, add this code:</li>
+</ul>
 <pre><code>&lt;?php
 /*
-* Page: about_my_plugin
-*/
+ * Page: about_my_plugin
+ */
 ?&gt;
-</code></pre></li>
-</ul>
-
-<p>This code tells Piklist to place the contents of this file on the <code>about_my_plugin</code> page. Notice that the value that goes in <code>Page:</code> matches the <code>menu_slug</code> you defined when you registered the page.</p>
-
+</code></pre><p>This code tells Piklist to place the contents of this file on the <code>about_my_plugin</code> page. Notice that the value that goes in <code>Page:</code> matches the <code>menu_slug</code> you defined when you registered the page.</p>
 <ul>
-<li><p>NOTE: There are many other <a href="https://docs.piklist.com/comment-block-parameters/">options you can add to the Comment Block</a>.</p></li>
-
-<li><p>Under this comment block you can add text, html, php, etc. Anything you want to show on this page.</p></li>
+<li>
+<p>NOTE: There are many other <a href="https://docs.piklist.com/comment-block-parameters/">options you can add to the Comment Block</a>.</p>
+</li>
+<li>
+<p>Under this comment block you can add text, html, php, etc. Anything you want to show on this page.</p>
+</li>
 </ul>
-
 <p>For this tutorial, add the following:</p>
-
 <pre><code>&lt;p&gt;
     Now is:
     &lt;?php echo date('l jS \of F Y h:i:s A'); ?&gt;
 &lt;/p&gt;
 
-</code></pre>
-
-<p>That&rsquo;s it! You just created an Admin Page.</p>
-
+</code></pre><p>That's it! You just created an Admin Page.</p>
 <h3 id="full-snippet">Full Snippet</h3>
-
 <pre><code>&lt;?php
 /*
  * Page: about_my_plugin
@@ -1816,7 +1796,6 @@ function my_admin_pages($pages) {
 &lt;/p&gt;
 
 </code></pre>
-
 
 <footer class=" footline" >
 	
@@ -3570,20 +3549,20 @@ function my_admin_pages($pages) {
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767321"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767321"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767321" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767321"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

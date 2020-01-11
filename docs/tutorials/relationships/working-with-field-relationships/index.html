@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Piklist allows you to relate any object to any object.">
 
 
@@ -13,19 +13,19 @@
     <title>Working with Field Relationships &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,13 +1685,10 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#querying-data-by-relationships">Querying data by relationships</a></li>
-<li><a href="#how-relationships-are-stored">How relationships are stored</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#querying-data-by-relationships">Querying data by relationships</a></li>
+    <li><a href="#how-relationships-are-stored">How relationships are stored</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1710,178 +1707,143 @@
         
 
 
-
-
 <p>Piklist relationships allow you to relate any object to any object.</p>
-
-<p>In this tutorial we&rsquo;ll use the classic books example, assuming our post types are book and chapter, and a user can be an author.
-We&rsquo;ll cover the <code>post_has</code>, <code>post_belongs</code>, and <code>relate_query</code> parameters.</p>
-
-<p>First let&rsquo;s add the chapter relate field to the book post type. Since this is a post type we&rsquo;re adding a field to, the
+<p>In this tutorial we'll use the classic books example, assuming our post types are book and chapter, and a user can be an author.
+We'll cover the <code>post_has</code>, <code>post_belongs</code>, and <code>relate_query</code> parameters.</p>
+<p>First let's add the chapter relate field to the book post type. Since this is a post type we're adding a field to, the
 file goes in the <code>/parts/meta-boxes/</code> folder.</p>
-
 <p>Create a file and add this code:</p>
-
-<pre><code class="language-php">/**
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">/**
  * Title: Chapters
  * Post Type: book
  * Context: normal
  * Priority: high
  */
 
-piklist('field', array(
-  'type' =&gt; 'select'
-  ,'title' =&gt; 'Chapters'
-  ,'choices' =&gt; piklist(get_posts(array(
-    'numberposts' =&gt; -1
-    ,'post_type' =&gt; 'chapters'
-  )), array('ID', 'post_title'))
-  ,'relate' =&gt; array(
-    'scope' =&gt; 'post'
+piklist(&#39;field&#39;, array(
+  &#39;type&#39; =&gt; &#39;select&#39;
+  ,&#39;title&#39; =&gt; &#39;Chapters&#39;
+  ,&#39;choices&#39; =&gt; piklist(get_posts(array(
+    &#39;numberposts&#39; =&gt; -1
+    ,&#39;post_type&#39; =&gt; &#39;chapters&#39;
+  )), array(&#39;ID&#39;, &#39;post_title&#39;))
+  ,&#39;relate&#39; =&gt; array(
+    &#39;scope&#39; =&gt; &#39;post&#39;
   )
-  ,'attributes' =&gt; array(
-    'multiple' =&gt; 'multiple'
+  ,&#39;attributes&#39; =&gt; array(
+    &#39;multiple&#39; =&gt; &#39;multiple&#39;
   )
 ));
-</code></pre>
-
-<p>Create a second file in the <code>/parts/user/</code> folder. Now let&rsquo;s add the books relate field to the author:</p>
-
-<pre><code class="language-php">/**
+</code></pre></div><p>Create a second file in the <code>/parts/user/</code> folder. Now let's add the books relate field to the author:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">/**
  * Title: Books
  * Capability: edit_books
  */
 
-piklist('field', array(
-  'type' =&gt; 'select'
-  ,'title' =&gt; 'Books'
-  ,'choices' =&gt; piklist(get_posts(array(
-    'numberposts' =&gt; -1
-    ,'post_type' =&gt; 'books'
-  )), array('ID', 'post_title'))
-  ,'relate' =&gt; array(
-    'scope' =&gt; 'post'
+piklist(&#39;field&#39;, array(
+  &#39;type&#39; =&gt; &#39;select&#39;
+  ,&#39;title&#39; =&gt; &#39;Books&#39;
+  ,&#39;choices&#39; =&gt; piklist(get_posts(array(
+    &#39;numberposts&#39; =&gt; -1
+    ,&#39;post_type&#39; =&gt; &#39;books&#39;
+  )), array(&#39;ID&#39;, &#39;post_title&#39;))
+  ,&#39;relate&#39; =&gt; array(
+    &#39;scope&#39; =&gt; &#39;post&#39;
   )
-  ,'attributes' =&gt; array(
-    'multiple' =&gt; 'multiple'
+  ,&#39;attributes&#39; =&gt; array(
+    &#39;multiple&#39; =&gt; &#39;multiple&#39;
   )
 ));
-</code></pre>
-
-<h2 id="querying-data-by-relationships">Querying data by relationships</h2>
-
+</code></pre></div><h2 id="querying-data-by-relationships">Querying data by relationships</h2>
 <p>Like most parts of Piklist, you can use <strong>standard WordPress functions to retrieve your data</strong>. Relationships are not different.</p>
-
 <p><strong>Important Note:</strong> When using the <code>get_posts()</code> function make sure ou include <code>'suppress_filters' =&gt; false</code>, otherwise
-WordPress won&rsquo;t allow Piklist to extend the function. <code>WP_Query</code> allows filters by default.</p>
-
-<p>Get a book&rsquo;s chapters:</p>
-
-<pre><code class="language-php">$chapters = get_posts(array(
-  'post_type' =&gt; 'chapter'
-  ,'numberposts' =&gt; -1
-  ,'suppress_filters' =&gt; false
-  ,'relate_query' =&gt; array(
+WordPress won't allow Piklist to extend the function. <code>WP_Query</code> allows filters by default.</p>
+<p>Get a book's chapters:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$chapters = get_posts(array(
+  &#39;post_type&#39; =&gt; &#39;chapter&#39;
+  ,&#39;numberposts&#39; =&gt; -1
+  ,&#39;suppress_filters&#39; =&gt; false
+  ,&#39;relate_query&#39; =&gt; array(
     array(
-      'id' =&gt; $book_id
-      ,'relate' =&gt; 'belongs'
+      &#39;id&#39; =&gt; $book_id
+      ,&#39;relate&#39; =&gt; &#39;belongs&#39;
     )
   )
 ));
-</code></pre>
-
-<p>Here&rsquo;s a shorthand method, which has the same result and works for simple queries. There&rsquo;s also a <code>post_belongs</code> counterpart.</p>
-
-<pre><code class="language-php">$chapters = get_posts(array(
-  'post_type' =&gt; 'chapter'
-  ,'numberposts' =&gt; -1
-  ,'suppress_filters' =&gt; false
-  ,'post_belongs' =&gt; $book_id
+</code></pre></div><p>Here's a shorthand method, which has the same result and works for simple queries. There's also a <code>post_belongs</code> counterpart.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$chapters = get_posts(array(
+  &#39;post_type&#39; =&gt; &#39;chapter&#39;
+  ,&#39;numberposts&#39; =&gt; -1
+  ,&#39;suppress_filters&#39; =&gt; false
+  ,&#39;post_belongs&#39; =&gt; $book_id
 ));
-</code></pre>
-
-<p>Get an author&rsquo;s books:</p>
-
-<pre><code class="language-php">$books = get_posts(array(
-  'post_type' =&gt; 'book'
-  ,'numberposts' =&gt; -1
-  ,'suppress_filters' =&gt; false
-  ,'relate_query' =&gt; array(
+</code></pre></div><p>Get an author's books:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$books = get_posts(array(
+  &#39;post_type&#39; =&gt; &#39;book&#39;
+  ,&#39;numberposts&#39; =&gt; -1
+  ,&#39;suppress_filters&#39; =&gt; false
+  ,&#39;relate_query&#39; =&gt; array(
     array(
-      'id' =&gt; $user_id
-      ,'scope' =&gt; 'user'
-      ,'relate' =&gt; 'has'
+      &#39;id&#39; =&gt; $user_id
+      ,&#39;scope&#39; =&gt; &#39;user&#39;
+      ,&#39;relate&#39; =&gt; &#39;has&#39;
     )
   )
 ));
-</code></pre>
-
-<p>Please note that we&rsquo;re including <code>scope</code> in the relate array but I didn&rsquo;t in the first example. This is because in the first example the scope is the same for both objects. I could put <code>'scope' =&gt; 'post'</code>, but it&rsquo;s unnecessary.</p>
-
+</code></pre></div><p>Please note that we're including <code>scope</code> in the relate array but I didn't in the first example. This is because in the first example the scope is the same for both objects. I could put <code>'scope' =&gt; 'post'</code>, but it's unnecessary.</p>
 <p>Get either books&rsquo; authors</p>
-
-<pre><code class="language-php">$authors = get_users(array(
-  'relate_query' =&gt; array(
-    'compare' =&gt; 'OR'
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$authors = get_users(array(
+  &#39;relate_query&#39; =&gt; array(
+    &#39;compare&#39; =&gt; &#39;OR&#39;
     ,array(
-      'id' =&gt; $book_one_id
-      ,'scope' =&gt; 'post'
-      ,'relate' =&gt; 'belongs'
+      &#39;id&#39; =&gt; $book_one_id
+      ,&#39;scope&#39; =&gt; &#39;post&#39;
+      ,&#39;relate&#39; =&gt; &#39;belongs&#39;
     )
     ,array(
-      'id' =&gt; $book_two_id
-      ,'scope' =&gt; 'post'
-      ,'relate' =&gt; 'belongs'
+      &#39;id&#39; =&gt; $book_two_id
+      ,&#39;scope&#39; =&gt; &#39;post&#39;
+      ,&#39;relate&#39; =&gt; &#39;belongs&#39;
     )
   )
 ));
-</code></pre>
-
-<p>To get an author that has both books, you would simply change <code>'compare' =&gt; 'OR'</code> to <code>'compare' =&gt; 'AND'</code> – and this is not case sensitive.</p>
-
+</code></pre></div><p>To get an author that has both books, you would simply change <code>'compare' =&gt; 'OR'</code> to <code>'compare' =&gt; 'AND'</code> – and this is not case sensitive.</p>
 <p>Advanced example of getting books that belong to ( Author 1 AND Author 2 ) OR Author 3:</p>
-
-<pre><code class="language-php">$books = get_posts(array(
-  'post_type' =&gt; 'book'
-  ,'numberposts' =&gt; -1
-  ,'suppress_filters' =&gt; false
-  ,'relate_query' =&gt; array(
-    'compare' =&gt; 'OR'
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$books = get_posts(array(
+  &#39;post_type&#39; =&gt; &#39;book&#39;
+  ,&#39;numberposts&#39; =&gt; -1
+  ,&#39;suppress_filters&#39; =&gt; false
+  ,&#39;relate_query&#39; =&gt; array(
+    &#39;compare&#39; =&gt; &#39;OR&#39;
     ,array(
-      'compare' =&gt; 'AND'
+      &#39;compare&#39; =&gt; &#39;AND&#39;
       ,array(
-        'id' =&gt; $user_one_id
-        ,'scope' =&gt; 'user'
-        ,'relate' =&gt; 'has'
+        &#39;id&#39; =&gt; $user_one_id
+        ,&#39;scope&#39; =&gt; &#39;user&#39;
+        ,&#39;relate&#39; =&gt; &#39;has&#39;
       )
-        'id' =&gt; $user_two_id
-        ,'scope' =&gt; 'user'
-        ,'relate' =&gt; 'has'
+        &#39;id&#39; =&gt; $user_two_id
+        ,&#39;scope&#39; =&gt; &#39;user&#39;
+        ,&#39;relate&#39; =&gt; &#39;has&#39;
       )
     )
     ,array(
-      'id' =&gt; $user_three_id
-      ,'scope' =&gt; 'user'
-      ,'relate' =&gt; 'has'
+      &#39;id&#39; =&gt; $user_three_id
+      ,&#39;scope&#39; =&gt; &#39;user&#39;
+      ,&#39;relate&#39; =&gt; &#39;has&#39;
     )
   )
 ));
-</code></pre>
-
-<h2 id="how-relationships-are-stored">How relationships are stored</h2>
-
+</code></pre></div><h2 id="how-relationships-are-stored">How relationships are stored</h2>
 <p>Let’s talk about how relate data is stored for a moment. In our case we have a book post type relating to a chapter post
 type. As mentioned, in this case the book <em>owns</em> the chapter; that is to say, when creating a book the user selects
 which chapters will be in it — makes sense!</p>
-
 <p>The way Piklist stores this is that in the <em>chapter’s</em> meta it adds a <code>__relate_post</code> meta key wherein the value is the
 ID of the event that owns it. This is later used when performing relate queries.</p>
-
 <p>So if you look at the book’s meta, you won’t see anything added about the chapter. Why? Because it’s not designed to put
 anything there. Look at the chapter’s meta. You should find it there. For this reason, you don’t need to specify a
 field, as relate fields are a special type which store in their own way. In short, the <em>owned</em> object stores the meta.</p>
-
-<p>Note: we&rsquo;re talking about two post types, here. In the case of a user that owns a post type, the post type would have
+<p>Note: we're talking about two post types, here. In the case of a user that owns a post type, the post type would have
 <code>__relate_user</code> in the meta. The possibilities are <code>__relate_post</code>, <code>__relate_user</code>, and <code>__relate_comment</code>.</p>
 
 
@@ -3637,20 +3599,20 @@ field, as relate fields are a special type which store in their own way. In shor
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

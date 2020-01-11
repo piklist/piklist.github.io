@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Using Piklist you can easily display your Taxonomies as Radio, Checkboxes or a Select list (dropdowns)">
 
 
@@ -13,19 +13,19 @@
     <title>Display Taxonomies as Radio, Checkboxes or Select list &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1684,7 +1684,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1702,10 +1702,8 @@
         
 
 
-<p><img src="https://docs.piklist.com/images/userguide-tax-as-list.jpg" alt="Metabox" /></p>
-
+<p><img src="https://docs.piklist.com/images/userguide-tax-as-list.jpg" alt="Metabox"></p>
 <p>Using Piklist you can easily display your Taxonomies as Radio, Checkboxes or a Select list (dropdowns).  This simple tutorial will show you how.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1735,11 +1733,8 @@
 
 </div>
 
-
 <p>In this example, we are going to pull the standard WordPress categories, this works for custom taxonomies as well.</p>
-
 <p>We’re are going to use the WordPress function <code>get_terms()</code>, to get our taxonomy values. This function stores data in an array, and with Piklist, parsing an array and displaying it as a Select List is really easy.  As you can see from the <a href="http://codex.wordpress.org/Function_Reference/get_terms">WordPress Codex page</a>, this array stores all data in an Object, and then breaks them out.  You have access to fields like <code>term_id</code>, <code>name</code>, <code>parent</code> etc.  We are going to assign each item in the select list to the <code>term_id</code>, but show the <code>name</code>. This is added to the Piklist parameter choices:</p>
-
 <pre><code>piklist('field', array(
   'type' =&gt; 'select'
   ,'scope' =&gt; 'taxonomy'
@@ -1759,23 +1754,17 @@
     )
   )
 ));
-</code></pre>
-
-<p>Let’s take a look at this code:</p>
-
+</code></pre><p>Let’s take a look at this code:</p>
 <ul>
 <li>First we created a standard Piklist Select list.</li>
 <li>Notice we set the <code>scope</code> here. In most cases Piklist will automatically determine the <code>scope</code>. But when SAVING to a taxonomy you will need to set <code>'scope' =&gt; 'taxonomy'</code>. Here we are saving to the taxonomy &lsquo;category&rsquo;. If this code was on a Settings page, and you wanted to save this data as a Setting, you would not set Scope.</li>
 <li>The <code>choices</code> array gets pulled in dynamically. We told Piklist to use the <code>get_terms()</code> function, and told it to get the <code>piklist_demo_type</code> taxonomy values. We also passed the <code>hide_empty</code> parameter to Piklist.  This parameter is standard to the <code>get_terms()</code> function and can be found at the Codex.</li>
 <li>The next array tells Pikist what should be the KEY for the field, and what should be the VALUE.  In this case we selected <code>term_id</code> as the KEY, and name as the VALUE to show in the list.</li>
 </ul>
-
 <p><strong>Radio Buttons:</strong>
 To make these Radio Buttons, just change <code>'type' =&gt; 'select'</code>, to <code>'type' =&gt; 'radio'</code>.</p>
-
 <p><strong>Checkboxes:</strong>
 To make these Checkboxes, just change <code>'type' =&gt; 'select'</code>, to <code>'type' =&gt; 'checkbox'</code>.</p>
-
 <p>Yes, it’s that easy!</p>
 
 
@@ -3531,20 +3520,20 @@ To make these Checkboxes, just change <code>'type' =&gt; 'select'</code>, to <co
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

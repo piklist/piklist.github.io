@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Help Tabs on Piklist Documentation</title>
@@ -17,7 +17,7 @@
       
       <guid>https://docs.piklist.com/tutorials/help/creating-help-tabs-for-wordpress/</guid>
       <description>Description Creating Help Tabs for WordPress is super easy with Piklist.
-In this example, we&amp;rsquo;ll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.
+In this example, we&#39;ll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme.</description>
     </item>
     

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Building widgets with Piklist is incredibly simple.  You can use a fraction of the code WordPress requires to make very powerful widgets.">
 
 
@@ -13,19 +13,19 @@
     <title>Easy Widgets &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296512" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296512" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767321" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767321" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296512" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767321" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296512"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767321"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767321"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767321"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767321"></script>
 
     
   </div>
@@ -1685,19 +1685,14 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#widget-settings-file">Widget Settings File</a>
-<ul>
-<li><a href="#full-code-snippet-for-widget-settings-example-form-php">Full Code Snippet for Widget Settings: example-form.php:</a></li>
-</ul></li>
-<li><a href="#widget-output-file">Widget Output File</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#widget-settings-file">Widget Settings File</a></li>
+        <li><a href="#widget-output-file">Widget Output File</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1716,10 +1711,7 @@
         
 
 
-
-
 <p>Building widgets with Piklist is incredibly simple.  You can use a fraction of the code WordPress requires to make very powerful widgets.  In this tutorial, we will create a widget that includes three fields: select, text and ColorPicker.</p>
-
 <div class="expand">
 
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
@@ -1749,23 +1741,18 @@
 
 </div>
 
-
 <ul>
 <li>The first step is to create the proper folder structure in your theme. Create a piklist folder, and then a parts subfolder, and then add a widgets subfolder.</li>
 <li>Next we need to create the widget files.  Piklist widgets are made up of two:
-
 <ul>
 <li><code>widget-name.php</code>: This file holds the widget output, and is the <strong>only required file for a widget</strong>. (i.e. example.php)</li>
 <li><code>widget-name-form.php</code>: Settings fields for your widget are placed in this file. (i.e. example-form.php)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="widget-settings-file">Widget Settings File</h3>
-
 <p>Let’s start with example-form.php, which will hold the fields the user will fill in to control the widget. This file is only required if you want to add settings to your widget.</p>
-
 <p>Now, let’s create our first field, a text box:</p>
-
 <pre><code>piklist('field', array(
   'type' =&gt; 'text'
   ,'field' =&gt; 'demo_text'
@@ -1776,12 +1763,8 @@
     'class' =&gt; 'text'
   )
 ));
-</code></pre>
-
-<p>This simple array will create a text box that automatically saves as a widget setting. The <code>'type' =&gt; 'text'</code> variable tells Piklist what sort of field to render. Also, notice that this is very similar to the way you create fields for meta-boxes.</p>
-
+</code></pre><p>This simple array will create a text box that automatically saves as a widget setting. The <code>'type' =&gt; 'text'</code> variable tells Piklist what sort of field to render. Also, notice that this is very similar to the way you create fields for meta-boxes.</p>
 <p>Now, let’s create our select field, a select field:</p>
-
 <pre><code>piklist('field', array(
   'type' =&gt; 'select'
   ,'field' =&gt; 'demo_select'
@@ -1796,19 +1779,13 @@
     ,'option3' =&gt; 'Option 3'
   )
 ));
-</code></pre>
-
-<p>Notice that this array is very similar to the one used to create the text box. Just two differences:</p>
-
+</code></pre><p>Notice that this array is very similar to the one used to create the text box. Just two differences:</p>
 <ul>
 <li><code>'type' =&gt; 'select'</code>: Tells Piklist that you want to render a select field.</li>
 <li>The choices array adds your choices.</li>
 </ul>
-
 <p>That’s it! Everything else is the same.</p>
-
 <p>One more field to go in this tutorial. Let’s create our <code>colorPicker</code> field. Normally, you would need to add Javascript and CSS to create this field… but not with Piklist!</p>
-
 <pre><code>piklist('field', array(
   'type' =&gt; 'colorpicker'
   ,'field' =&gt; 'demo_colorpicker'
@@ -1819,67 +1796,55 @@
     'class' =&gt; 'text'
   )
   ));
-</code></pre>
-
-<p>Seriously, that’s all you need to create a ColorPicker field. You will notice this is pretty much the same code used to create the text box, except we set <code>'type' =&gt; 'colorpicker'</code>.</p>
-
-<h4 id="full-code-snippet-for-widget-settings-example-form-php">Full Code Snippet for Widget Settings: example-form.php:</h4>
-
+</code></pre><p>Seriously, that’s all you need to create a ColorPicker field. You will notice this is pretty much the same code used to create the text box, except we set <code>'type' =&gt; 'colorpicker'</code>.</p>
+<h4 id="full-code-snippet-for-widget-settings-example-formphp">Full Code Snippet for Widget Settings: example-form.php:</h4>
 <pre><code>&lt;?php
 
 piklist('field', array(
- 'type' =&gt; 'text'
- ,'field' =&gt; 'demo_text'
- ,'label' =&gt; 'Text box'
- ,'description' =&gt; 'Field Description'
- ,'value' =&gt; 'Default text'
- ,'attributes' =&gt; array(
- 'class' =&gt; 'text'
- )
+'type' =&gt; 'text'
+,'field' =&gt; 'demo_text'
+,'label' =&gt; 'Text box'
+,'description' =&gt; 'Field Description'
+,'value' =&gt; 'Default text'
+,'attributes' =&gt; array(
+'class' =&gt; 'text'
+)
 ));
 
 piklist('field', array(
- 'type' =&gt; 'select'
- ,'field' =&gt; 'demo_select'
- ,'label' =&gt; 'Select box'
- ,'description' =&gt; 'Choose from the dropdown.'
- ,'attributes' =&gt; array(
- 'class' =&gt; 'text'
- )
- ,'choices' =&gt; array(
- 'option1' =&gt; 'Option 1'
- ,'option2' =&gt; 'Option 2'
- ,'option3' =&gt; 'Option 3'
- )
+'type' =&gt; 'select'
+,'field' =&gt; 'demo_select'
+,'label' =&gt; 'Select box'
+,'description' =&gt; 'Choose from the dropdown.'
+,'attributes' =&gt; array(
+'class' =&gt; 'text'
+)
+,'choices' =&gt; array(
+'option1' =&gt; 'Option 1'
+,'option2' =&gt; 'Option 2'
+,'option3' =&gt; 'Option 3'
+)
 ));
 
 piklist('field', array(
- 'type' =&gt; 'colorpicker'
- ,'field' =&gt; 'demo_colorpicker'
- ,'label' =&gt; 'Choose a color'
- ,'value' =&gt; '#aee029'
- ,'description' =&gt; 'Click in the box to select a color.'
- ,'attributes' =&gt; array(
- 'class' =&gt; 'text'
- )
- ));
-</code></pre>
-
-<h3 id="widget-output-file">Widget Output File</h3>
-
+'type' =&gt; 'colorpicker'
+,'field' =&gt; 'demo_colorpicker'
+,'label' =&gt; 'Choose a color'
+,'value' =&gt; '#aee029'
+,'description' =&gt; 'Click in the box to select a color.'
+,'attributes' =&gt; array(
+'class' =&gt; 'text'
+)
+));
+</code></pre><h3 id="widget-output-file">Widget Output File</h3>
 <p><strong>The output file is the only required file</strong>, since settings may not be necessary for some widgets. Open <code>example.php</code>. At the top of the file, we will add a comment block that will control the configuration of the widget. This comment block is very similar to what you would see in a standard WordPress plugin or theme. Here are the minimum variables required:</p>
-
 <pre><code>&lt;?php
 /*
 Title: My Demo Widget
 Description: A description of what my widget does
 */
-</code></pre>
-
-<p>This comment block tells Piklist you want to name your widget, &ldquo;My Demo Widget&rdquo;, with the description showing up in the widget edit screen.</p>
-
-<p>Now let&rsquo;s add the standard WordPress widget variables. These are dictated by your theme:</p>
-
+</code></pre><p>This comment block tells Piklist you want to name your widget, &ldquo;My Demo Widget&rdquo;, with the description showing up in the widget edit screen.</p>
+<p>Now let's add the standard WordPress widget variables. These are dictated by your theme:</p>
 <pre><code>&lt;?php echo $before_widget; ?&gt;
 
 &lt;?php echo $before_title; ?&gt;
@@ -1887,10 +1852,7 @@ Description: A description of what my widget does
 &lt;?php echo $after_title; ?&gt;
 
 &lt;?php echo $after_widget; ?&gt;
-</code></pre>
-
-<p>Then add in your fields where you want them to show:</p>
-
+</code></pre><p>Then add in your fields where you want them to show:</p>
 <pre><code>&lt;?php echo $before_widget; ?&gt;
 
 &lt;?php echo $before_title; ?&gt;
@@ -1904,9 +1866,7 @@ Description: A description of what my widget does
 &lt;?php echo $settings['demo_colorpicker']; ?&gt;!
 
 &lt;?php echo $after_widget; ?&gt;
-</code></pre>
-
-<p>You just built a widget!</p>
+</code></pre><p>You just built a widget!</p>
 
 
 <footer class=" footline" >
@@ -3661,20 +3621,20 @@ Description: A description of what my widget does
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767321"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767321"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767321"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767321" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767321"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

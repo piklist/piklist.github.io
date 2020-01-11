@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="When writing field code, whether with Piklist or not, you should be extra cautious of how you handle data coming into WordPress and how it’s presented to the end user. Piklist makes validating your data easy with the `validate` parameter.">
 
 
@@ -13,19 +13,19 @@
     <title>Validating Fields &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1678,7 +1678,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1697,220 +1697,154 @@
 
 
 <p>When writing field code, whether with Piklist or not, you should be extra cautious of how you handle data coming into WordPress and how it’s presented to the end user. Piklist makes validating your data easy with the <code>validate</code> parameter.</p>
-
 <p>You can also create your own custom validation rules using the <a href="https://docs.piklist.com/actions-filters/filters/piklist_validation_rules/">piklist_validation_rules</a> filter.</p>
-
 <p>Choose the appropriate type of validation for each of your fields.</p>
-
 <h2 id="email">email</h2>
-
 <p>Verifies that the input is in the proper format for an email address.</p>
-
 <p>Uses the standard WordPress function <a href="http://codex.wordpress.org/Function_Reference/is_email"><code>is_email</code></a></p>
-
-<pre><code class="language-php">'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'email'
+        &#39;type&#39; =&gt; &#39;email&#39;
       )
     )
-</code></pre>
-<h2 id="email-domain">email_domain</h2>
-
+</code></pre></div><h2 id="email_domain">email_domain</h2>
 <p>Verifies that the input is a valid email domain.</p>
-
 <p>Uses the standard PHP function <a href="http://php.net/manual/en/function.checkdnsrr.php"><code>checkdnsrr</code></a></p>
-
-<pre><code class="language-php">'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'email_domain'
+        &#39;type&#39; =&gt; &#39;email_domain&#39;
       )
     )
-</code></pre>
-<h2 id="email-exists">email_exists</h2>
-
+</code></pre></div><h2 id="email_exists">email_exists</h2>
 <p>Checks that the entered email is not already registered to another user.</p>
-
 <p>Uses the standard WordPress function <a href="https://codex.wordpress.org/Function_Reference/email_exists"><code>email_exists</code></a></p>
-
-<pre><code class="language-php">'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'email_exists'
+        &#39;type&#39; =&gt; &#39;email_exists&#39;
       )
     )
-</code></pre>
-<h2 id="file-exists">file_exists</h2>
-
+</code></pre></div><h2 id="file_exists">file_exists</h2>
 <p>Verifies that the file path entered leads to an actual file.</p>
-
-<pre><code class="language-php">'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'file_exists'
+        &#39;type&#39; =&gt; &#39;file_exists&#39;
       )
     )
-</code></pre>
-<h2 id="hex-color">hex_color</h2>
-
+</code></pre></div><h2 id="hex_color">hex_color</h2>
 <p>Verifies that the data entered is a valid hex color.</p>
-
-<pre><code class="language-php">'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'hex_color'
+        &#39;type&#39; =&gt; &#39;hex_color&#39;
       )
     )
-</code></pre>
-<h2 id="image">image</h2>
-
+</code></pre></div><h2 id="image">image</h2>
 <p>Verifies that the file path entered leads to an image file.</p>
-
 <p>Uses the standard PHP function <a href="http://php.net/manual/en/function.exif-imagetype.php"><code>exif_imagetype</code></a></p>
-
-<pre><code class="language-php">'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'image'
+        &#39;type&#39; =&gt; &#39;image&#39;
       )
     )
-</code></pre>
-<h2 id="ip-address">ip_address</h2>
-
+</code></pre></div><h2 id="ip_address">ip_address</h2>
 <p>Verifies that the data entered is a valid IP Address.</p>
-
-<pre><code class="language-php">'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'ip_address'
+        &#39;type&#39; =&gt; &#39;ip_address&#39;
       )
     )
-</code></pre>
-<h2 id="limit">limit</h2>
-
+</code></pre></div><h2 id="limit">limit</h2>
 <p>Verifies that the number of items are within the defined limit.</p>
-
 <h3 id="options">Options</h3>
-
 <h4 id="min">min</h4>
-
 <p>The minimum allowed value.
 default: 1</p>
-
 <h4 id="max">max</h4>
-
 <p>The maximum allowed value
 default: infinite</p>
-
 <h4 id="count">count</h4>
-
-<p>Determines what you want to count: words, characters, files, images, add-more&rsquo;s</p>
-
+<p>Determines what you want to count: words, characters, files, images, add-more's</p>
 <p>values: words, characters</p>
-
-<p>default: false (files, images, add-more&rsquo;s)</p>
-
-<pre><code class="language-php">,'validate' =&gt; array(
+<p>default: false (files, images, add-more's)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">,&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'limit'
-        ,'options' =&gt; array(
-          'min' =&gt; 2
-          ,'max' =&gt; 2
+        &#39;type&#39; =&gt; &#39;limit&#39;
+        ,&#39;options&#39; =&gt; array(
+          &#39;min&#39; =&gt; 2
+          ,&#39;max&#39; =&gt; 2
         )
       )
     )
-</code></pre>
-
-<pre><code class="language-php">,'validate' =&gt; array(
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">,&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'limit'
-        ,'options' =&gt; array(
-          'min' =&gt; 2
-          ,'max' =&gt; 6
-          ,'count' =&gt; 'characters'
+        &#39;type&#39; =&gt; &#39;limit&#39;
+        ,&#39;options&#39; =&gt; array(
+          &#39;min&#39; =&gt; 2
+          ,&#39;max&#39; =&gt; 6
+          ,&#39;count&#39; =&gt; &#39;characters&#39;
         )
       )
     )
-</code></pre>
-<h2 id="match">match</h2>
-
+</code></pre></div><h2 id="match">match</h2>
 <p>Checks to see if two fields match.</p>
-
 <h3 id="options">Options</h3>
-
 <h4 id="field">field</h4>
-
 <p>The field name to match</p>
-
-<pre><code class="language-php">piklist('field', array(
-    'type' =&gt; 'password'
-    ,'scope' =&gt; 'user'
-    ,'field' =&gt; 'user_pass_repeat'
-    ,'label' =&gt; 'Repeat New Password'
-    ,'value' =&gt; false // Setting to false forces no value to show in form.
-    ,'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">piklist(&#39;field&#39;, array(
+    &#39;type&#39; =&gt; &#39;password&#39;
+    ,&#39;scope&#39; =&gt; &#39;user&#39;
+    ,&#39;field&#39; =&gt; &#39;user_pass_repeat&#39;
+    ,&#39;label&#39; =&gt; &#39;Repeat New Password&#39;
+    ,&#39;value&#39; =&gt; false // Setting to false forces no value to show in form.
+    ,&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'match'
-        ,'options' =&gt; array(
-          'field' =&gt; 'user_pass' // does this match the field user_pass_repeat
+        &#39;type&#39; =&gt; &#39;match&#39;
+        ,&#39;options&#39; =&gt; array(
+          &#39;field&#39; =&gt; &#39;user_pass&#39; // does this match the field user_pass_repeat
         )
       )
     )
   ));
-</code></pre>
-<h2 id="range">range</h2>
-
+</code></pre></div><h2 id="range">range</h2>
 <p>Verifies that the data entered is within the defined range.</p>
-
 <h3 id="options">Options</h3>
-
 <h4 id="min">min</h4>
-
 <p>The minimum allowed value.
 default: 1</p>
-
 <h4 id="max">max</h4>
-
 <p>The maximum allowed value
 default: 10</p>
-
-<pre><code class="language-php">,'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">,&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'range'
-        ,'options' =&gt; array(
-          'min' =&gt; 2
-          ,'max' =&gt; 8
+        &#39;type&#39; =&gt; &#39;range&#39;
+        ,&#39;options&#39; =&gt; array(
+          &#39;min&#39; =&gt; 2
+          ,&#39;max&#39; =&gt; 8
         )
       )
     )
-</code></pre>
-<h2 id="safe-text">safe_text</h2>
-
+</code></pre></div><h2 id="safe_text">safe_text</h2>
 <p>Verifies that the data entered is alphanumeric.</p>
-
-<pre><code class="language-php">,'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">,&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'safe_text'
+        &#39;type&#39; =&gt; &#39;safe_text&#39;
       )
     )
-</code></pre>
-<h2 id="url">url</h2>
-
+</code></pre></div><h2 id="url">url</h2>
 <p>Verifies that the data entered is a valid URL.</p>
-
-<pre><code class="language-php">,'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">,&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'url'
+        &#39;type&#39; =&gt; &#39;url&#39;
       )
     )
-</code></pre>
-<h2 id="username-exists">username_exists</h2>
-
+</code></pre></div><h2 id="username_exists">username_exists</h2>
 <p>Checks that the entered username does not already exist.</p>
-
 <p>Uses the standard WordPress function <a href="https://codex.wordpress.org/Function_Reference/username_exists"><code>username_exists</code></a></p>
-
-<pre><code class="language-php">,'validate' =&gt; array(
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">,&#39;validate&#39; =&gt; array(
       array(
-        'type' =&gt; 'username_exists'
+        &#39;type&#39; =&gt; &#39;username_exists&#39;
       )
     )
-</code></pre>
-
+</code></pre></div>
 
 
 
@@ -3666,20 +3600,20 @@ default: 10</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

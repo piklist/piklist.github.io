@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Field Types on Piklist Documentation</title>
@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/checkbox/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;checkbox&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;checkbox&#39;, &#39;field&#39; =&amp;gt; &#39;checkbox&#39;, &#39;label&#39; =&amp;gt; &#39;Checkbox&#39;, &#39;value&#39; =&amp;gt; &#39;third&#39;, // set default value &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, ,&#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, ,&#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;checkbox&#39; piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;checkbox&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;checkbox&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Checkbox&amp;#39;, &amp;#39;value&amp;#39; =&amp;gt; &amp;#39;third&amp;#39;, // set default value &amp;#39;choices&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; &amp;#39;First Choice&amp;#39;, ,&amp;#39;second&amp;#39; =&amp;gt; &amp;#39;Second Choice&amp;#39;, ,&amp;#39;third&amp;#39; =&amp;gt; &amp;#39;Third Choice&amp;#39; ) )); </description>
     </item>
     
     <item>
@@ -25,8 +25,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/color/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;color&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;color&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;Color field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;color&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;color&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Color field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -35,9 +35,9 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;color&#39;, &#39;f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/colorpicker/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;colorpicker&#39; Create a WordPress colorpicker field.
+      <description>&#39;type&#39; =&amp;gt; &#39;colorpicker&#39; Create a WordPress colorpicker field.
 You can use Piklist field parameters to customize this field.
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;colorpicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_color&#39;, &#39;label&#39; =&amp;gt; &#39;Color Picker&#39; ));  </description>
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;colorpicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_color&#39;, &#39;label&#39; =&amp;gt; &#39;Color Picker&#39; )); </description>
     </item>
     
     <item>
@@ -46,8 +46,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;colorpicker&#39;, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/date/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;date&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;date&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;Date field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;date&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;date&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Date field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -60,7 +60,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;date&#39;, &#39;fi
 This field uses the standard jQuery DatePicker field, and respects the same options. Just define them in the Piklist options array. See examples below.
 You can use Piklist field parameters to customize this field.
 Basic Datepicker field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;datepicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_date_field&#39;, &#39;label&#39; =&amp;gt; &#39;Date&#39;, &#39;value&#39; =&amp;gt; date(&#39;M d, Y&#39;, time() + 604800), // set default value &#39;options&#39; =&amp;gt; array( &#39;dateFormat&#39; =&amp;gt; &#39;M d, yy&#39; ) ));  Localizing the Datepicker field</description>
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;datepicker&#39;, &#39;field&#39; =&amp;gt; &#39;my_date_field&#39;, &#39;label&#39; =&amp;gt; &#39;Date&#39;, &#39;value&#39; =&amp;gt; date(&#39;M d, Y&#39;, time() + 604800), // set default value &#39;options&#39; =&amp;gt; array( &#39;dateFormat&#39; =&amp;gt; &#39;M d, yy&#39; ) )); Localizing the Datepicker field</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;datepicker&#39;, &
 You can use Piklist field parameters to customize this field.
 Custom Parameters The editor field takes any option that can be passed to the WordPress wp_editor() function. You can pass them through the options array. See examples below.
 Examples Basic Editor Field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;editor&#39;, &#39;field&#39; =&amp;gt; &#39;my_editor_field&#39;, &#39;label&#39; =&amp;gt; &#39;Post Content&#39; ));  Default Editor
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;editor&#39;, &#39;field&#39; =&amp;gt; &#39;my_editor_field&#39;, &#39;label&#39; =&amp;gt; &#39;Post Content&#39; )); Default Editor
 Piklist can replace the default editor in WordPress by using code the following code.</description>
     </item>
     
@@ -83,8 +83,8 @@ Piklist can replace the default editor in WordPress by using code the following 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/email/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;email&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;email&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;email&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;email&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@ Custom Parameters The file field takes the following custom parameters. Include 
 basic
 Piklist allows for two different file upload fields in the WordPress admin, a Basic uploader and the standard Media uploader. To use the Media uploader, do not set this parameter at all.
 NOTES:
- The basic uploader is not supported in Widgets.</description>
+  The basic uploader is not supported in Widgets.</description>
     </item>
     
     <item>
@@ -108,7 +108,7 @@ NOTES:
       
       <guid>https://docs.piklist.com/fields/types/group/</guid>
       <description>&#39;type&#39; =&amp;gt; &#39;group&#39; Adds a group of fields.
-If the main `field` parameter is set, a serialized array is created of all the fields in the group. Not including it saves all the fields as individual meta. Individual meta can easily be searched.  The `columns` field parameter is especially helpful in Field Groups for more complex layouts like address blocks.  Examples piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;group&#39; ,&#39;field&#39; =&amp;gt; &#39;address_group&#39; // removing this parameter saves all fields as separate meta ,&#39;label&#39; =&amp;gt; __(&#39;Address (Grouped)&#39;, &#39;piklist-demo&#39;) ,&#39;list&#39; =&amp;gt; false ,&#39;description&#39; =&amp;gt; __(&#39;A grouped field with the field parameter set.</description>
+Examples piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;group&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;address_group&amp;#39; // removing this parameter saves all fields as separate meta ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;Address (Grouped)&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;list&amp;#39; =&amp;gt; false ,&amp;#39;description&amp;#39; =&amp;gt; __(&amp;#39;A grouped field with the field parameter set.&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;fields&amp;#39; =&amp;gt; array( array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;text&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;address_1&amp;#39; ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;Street Address&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;required&amp;#39; =&amp;gt; true ,&amp;#39;columns&amp;#39; =&amp;gt; 12 ,&amp;#39;attributes&amp;#39; =&amp;gt; array( &amp;#39;placeholder&amp;#39; =&amp;gt; &amp;#39;Street Address&amp;#39; ) ) ,array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;text&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;address_2&amp;#39; ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;PO Box, Suite, etc.</description>
     </item>
     
     <item>
@@ -117,7 +117,7 @@ If the main `field` parameter is set, a serialized array is created of all the f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/hidden/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;hidden&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;hidden&#39;, &#39;field&#39; =&amp;gt; &#39;post_id&#39;, &#39;value&#39; =&amp;gt; $post-&amp;gt;ID // set the value of this hidden field to the Post ID. ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;hidden&#39; piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;hidden&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;post_id&amp;#39;, &amp;#39;value&amp;#39; =&amp;gt; $post-&amp;gt;ID // set the value of this hidden field to the Post ID. )); </description>
     </item>
     
     <item>
@@ -126,9 +126,9 @@ If the main `field` parameter is set, a serialized array is created of all the f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/html/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;html&#39; The Piklist html field, allows you to render standard HTML markup and keep the same label/field format as the rest of your fields.
+      <description>&#39;type&#39; =&amp;gt; &#39;html&#39; The Piklist html field, allows you to render standard HTML markup and keep the same label/field format as the rest of your fields.
 You can use Piklist field parameters to customize this field.
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;html&#39;, &#39;label&#39; =&amp;gt; &#39;HTML Field&#39;, &#39;value&#39; =&amp;gt; &#39;&amp;lt;strong&amp;gt;This is some html&amp;lt;/strong&amp;gt;&#39;, ));  </description>
+piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;html&#39;, &#39;label&#39; =&amp;gt; &#39;HTML Field&#39;, &#39;value&#39; =&amp;gt; &#39;&amp;lt;strong&amp;gt;This is some html&amp;lt;/strong&amp;gt;&#39;, )); </description>
     </item>
     
     <item>
@@ -137,8 +137,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;html&#39;, &#39;la
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/month/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;month&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;month&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;email field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;month&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;month&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;email field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -147,8 +147,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;month&#39;, &#39;f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/number/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;number&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;number&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;number&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;number&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -157,7 +157,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;number&#39;, &#39;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/radio/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;radio&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;radio&#39;, &#39;field&#39; =&amp;gt; &#39;my_radio&#39;, &#39;label&#39; =&amp;gt; &#39;Radio&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, &#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, &#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;radio&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;radio&#39;, &#39;field&#39; =&amp;gt; &#39;my_radio&#39;, &#39;label&#39; =&amp;gt; &#39;Radio&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, &#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, &#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) )); </description>
     </item>
     
     <item>
@@ -166,8 +166,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;number&#39;, &#39;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/range/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;range&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;range&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;min&#39; =&amp;gt; 5 ,&#39;max&#39; =&amp;gt; 30 ,&#39;step&#39; =&amp;gt; 5 ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;range&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;range&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, &amp;#39;attributes&amp;#39; =&amp;gt; array( &amp;#39;min&amp;#39; =&amp;gt; 5 ,&amp;#39;max&amp;#39; =&amp;gt; 30 ,&amp;#39;step&amp;#39; =&amp;gt; 5 ) )); </description>
     </item>
     
     <item>
@@ -176,8 +176,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;range&#39;, &#39;f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/search/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;search&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;search&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;search&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;search&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -187,8 +187,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;search&#39;, &#39;
       
       <guid>https://docs.piklist.com/fields/types/select/</guid>
       <description>&#39;type&#39; =&amp;gt; &#39;select&#39; Basic Select Field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;select&#39;, &#39;field&#39; =&amp;gt; &#39;my_select&#39;, &#39;label&#39; =&amp;gt; &#39;My select&#39;, &#39;choices&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; &#39;First Choice&#39;, &#39;second&#39; =&amp;gt; &#39;Second Choice&#39;, &#39;third&#39; =&amp;gt; &#39;Third Choice&#39; ) ));  Select Field with Optgroup
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;select&#39; ,&#39;field&#39; =&amp;gt; &#39;select_optgroup&#39; ,&#39;label&#39; =&amp;gt; __(&#39;Select with Option Groups&#39;, &#39;piklist-demo&#39;) ,&#39;value&#39; =&amp;gt; &#39;third&#39; ,&#39;choices&#39; =&amp;gt; array( &#39;Group 1&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; __(&#39;First Choice&#39;, &#39;piklist-demo&#39;) ,&#39;second&#39; =&amp;gt; __(&#39;Second Choice&#39;, &#39;piklist-demo&#39;) ,&#39;third&#39; =&amp;gt; __(&#39;Third Choice&#39;, &#39;piklist-demo&#39;) ) ,&#39;Group 2&#39; =&amp;gt; array( &#39;first&#39; =&amp;gt; __(&#39;First Choice&#39;, &#39;piklist-demo&#39;) ,&#39;second&#39; =&amp;gt; __(&#39;Second Choice&#39;, &#39;piklist-demo&#39;) ,&#39;third&#39; =&amp;gt; __(&#39;Third Choice&#39;, &#39;piklist-demo&#39;) ) ) ));  Multiselect</description>
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;select&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_select&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;My select&amp;#39;, &amp;#39;choices&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; &amp;#39;First Choice&amp;#39;, &amp;#39;second&amp;#39; =&amp;gt; &amp;#39;Second Choice&amp;#39;, &amp;#39;third&amp;#39; =&amp;gt; &amp;#39;Third Choice&amp;#39; ) )); Select Field with Optgroup
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;select&amp;#39; ,&amp;#39;field&amp;#39; =&amp;gt; &amp;#39;select_optgroup&amp;#39; ,&amp;#39;label&amp;#39; =&amp;gt; __(&amp;#39;Select with Option Groups&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;value&amp;#39; =&amp;gt; &amp;#39;third&amp;#39; ,&amp;#39;choices&amp;#39; =&amp;gt; array( &amp;#39;Group 1&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; __(&amp;#39;First Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;second&amp;#39; =&amp;gt; __(&amp;#39;Second Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;third&amp;#39; =&amp;gt; __(&amp;#39;Third Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ) ,&amp;#39;Group 2&amp;#39; =&amp;gt; array( &amp;#39;first&amp;#39; =&amp;gt; __(&amp;#39;First Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;second&amp;#39; =&amp;gt; __(&amp;#39;Second Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ,&amp;#39;third&amp;#39; =&amp;gt; __(&amp;#39;Third Choice&amp;#39;, &amp;#39;piklist-demo&amp;#39;) ) ) )); Multiselect</description>
     </item>
     
     <item>
@@ -197,8 +197,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;select&#39; ,&#39;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/tel/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;tel&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;tel&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;tel&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -207,7 +207,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/text/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;text&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;text&#39;, &#39;field&#39; =&amp;gt; &#39;my_text&#39;, &#39;label&#39; =&amp;gt; &#39;Text&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;class&#39; =&amp;gt; &#39;regular-text&#39; // WordPress css class ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;text&#39; piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;text&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_text&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;Text&amp;#39;, &amp;#39;attributes&amp;#39; =&amp;gt; array( &amp;#39;class&amp;#39; =&amp;gt; &amp;#39;regular-text&amp;#39; // WordPress css class ) )); </description>
     </item>
     
     <item>
@@ -216,7 +216,7 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/textarea/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;textarea&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;textarea&#39;, &#39;field&#39; =&amp;gt; &#39;my_textarea&#39;, &#39;label&#39; =&amp;gt; &#39;Text Area&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;rows&#39; =&amp;gt; 10, &#39;cols&#39; =&amp;gt; 50, &#39;class&#39; =&amp;gt; &#39;large-text&#39; ) ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;textarea&#39; piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;textarea&#39;, &#39;field&#39; =&amp;gt; &#39;my_textarea&#39;, &#39;label&#39; =&amp;gt; &#39;Text Area&#39;, &#39;attributes&#39; =&amp;gt; array( &#39;rows&#39; =&amp;gt; 10, &#39;cols&#39; =&amp;gt; 50, &#39;class&#39; =&amp;gt; &#39;large-text&#39; ) )); </description>
     </item>
     
     <item>
@@ -225,8 +225,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;tel&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/time/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;time&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;time&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;time&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;time&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -235,8 +235,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;time&#39;, &#39;fi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/url/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;url&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;url&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;url&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;url&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
     <item>
@@ -245,8 +245,8 @@ piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;url&#39;, &#39;fie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/fields/types/week/</guid>
-      <description> &#39;type&#39; =&amp;gt; &#39;week&#39; This is an HTML5 field
-piklist(&#39;field&#39;, array( &#39;type&#39; =&amp;gt; &#39;week&#39;, &#39;field&#39; =&amp;gt; &#39;my_field&#39;, &#39;label&#39; =&amp;gt; &#39;my field&#39;, ));  </description>
+      <description>&#39;type&#39; =&amp;gt; &#39;week&#39; This is an HTML5 field
+piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;week&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
     </item>
     
   </channel>

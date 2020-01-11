@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     <meta name="description" content="Using Piklist, you can easily hide some meta boxes when a certain page template is selected in WordPress">
 
 
@@ -13,19 +13,19 @@
     <title>Hide Meta Boxes for a Page Template &middot; Piklist Documentation</title>
 
     
-    <link href="https://docs.piklist.com/css/nucleus.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/font-awesome.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hybrid.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/featherlight.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/auto-complete.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/theme.css?1576296513" rel="stylesheet">
-    <link href="https://docs.piklist.com/css/hugo-theme.css?1576296513" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/nucleus.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/font-awesome.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hybrid.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/featherlight.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/perfect-scrollbar.min.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/auto-complete.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/theme.css?1578767322" rel="stylesheet">
+    <link href="https://docs.piklist.com/css/hugo-theme.css?1578767322" rel="stylesheet">
     
-      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1576296513" rel="stylesheet">
+      <link href="https://docs.piklist.com/css/theme-piklist.min.css?1578767322" rel="stylesheet">
     
 
-    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/jquery-2.x.min.js?1578767322"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -68,14 +68,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1576296513"></script>
-<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/lunr.min.js?1578767322"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/auto-complete.js?1578767322"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.piklist.com";
     
 </script>
-<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1576296513"></script>
+<script type="text/javascript" src="https://docs.piklist.com/js/search.js?1578767322"></script>
 
     
   </div>
@@ -1685,17 +1685,15 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#add-a-custom-parameter-to-the-piklist-comment-block">Add a custom parameter to the Piklist comment block.</a></li>
-<li><a href="#assign-meta-box-access-to-user-role-no-role-if-the-page-template-is-selected">Assign meta-box access to user role, “no-role”, if the page template is selected</a></li>
-<li><a href="#usage">Usage</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#add-a-custom-parameter-to-the-piklist-comment-block">Add a custom parameter to the Piklist comment block.</a></li>
+        <li><a href="#assign-meta-box-access-to-user-role-no-role-if-the-page-template-is-selected">Assign meta-box access to user role, “no-role”, if the page template is selected</a></li>
+        <li><a href="#usage">Usage</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1714,16 +1712,10 @@
         
 
 
-
-
 <p>Using Piklist, you can easily hide some meta boxes when a certain page template is selected in WordPress. This tutorial will show you how using two Piklist filters: <code>piklist_get_file_data</code> and <code>piklist_add_part</code>.</p>
-
 <p>All of the code in this tutorial will go in your theme’s <code>functions.php</code> file, or your main plugin file.</p>
-
 <h3 id="add-a-custom-parameter-to-the-piklist-comment-block">Add a custom parameter to the Piklist comment block.</h3>
-
 <p>Pikist uses a number of parameters in the comment block to control access to a meta box. The first step is to tell Piklist you want to use a custom parameter using the <code>piklist_part_data</code> filter. We’ll name our parameter &ldquo;Hide for Template&rdquo;.</p>
-
 <pre><code>add_filter('piklist_part_data', 'my_custom_comment_block', 10, 2);
 
 function my_custom_comment_block($data, $folder) {
@@ -1740,12 +1732,8 @@ function my_custom_comment_block($data, $folder) {
 
   return $data;
 }
-</code></pre>
-
-<h3 id="assign-meta-box-access-to-user-role-no-role-if-the-page-template-is-selected">Assign meta-box access to user role, “no-role”, if the page template is selected</h3>
-
+</code></pre><h3 id="assign-meta-box-access-to-user-role-no-role-if-the-page-template-is-selected">Assign meta-box access to user role, “no-role”, if the page template is selected</h3>
 <p>One of the parameters you can use in the Piklist comment block is <code>role</code>. This allows you to set which user role has access to a meta-box. In this step, we are going to change which user role can view the meta-box ONLY if our page template is selected. We’ll change the meta-box access to a made up user role called “no-role”.</p>
-
 <pre><code>add_filter('piklist_part_process_callback', 'my_hide_for_template', 10, 2);
 function my_hide_for_template($part, $type) {
 
@@ -1774,20 +1762,14 @@ function my_hide_for_template($part, $type) {
     }
     return $part;
 }
-</code></pre>
-
-<h3 id="usage">Usage</h3>
-
+</code></pre><h3 id="usage">Usage</h3>
 <p>In the comment block of the meta-box where you want to restrict access, use your new parameter: <code>Hide for Template</code></p>
-
 <pre><code>/*
 Title: Custom Sections
 Post type: page
 Hide for Template: full-width, another-template
 */
-</code></pre>
-
-<p>IMPORTANT: You need to change your template and press SAVE to hide the metaboxes.</p>
+</code></pre><p>IMPORTANT: You need to change your template and press SAVE to hide the metaboxes.</p>
 
 
 <footer class=" footline" >
@@ -3542,20 +3524,20 @@ Hide for Template: full-width, another-template
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.piklist.com/js/clipboard.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/jquery.sticky.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/featherlight.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/highlight.pack.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/clipboard.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/perfect-scrollbar.jquery.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/jquery.sticky.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/featherlight.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/html5shiv-printshiv.min.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/highlight.pack.js?1578767322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/learn.js?1576296513"></script>
-    <script src="https://docs.piklist.com/js/hugo-learn.js?1576296513"></script>
+    <script src="https://docs.piklist.com/js/modernizr.custom.71422.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/learn.js?1578767322"></script>
+    <script src="https://docs.piklist.com/js/hugo-learn.js?1578767322"></script>
 
-    <link href="https://docs.piklist.com/mermaid/mermaid.css?1576296513" type="text/css" rel="stylesheet" />
-    <script src="https://docs.piklist.com/mermaid/mermaid.js?1576296513"></script>
+    <link href="https://docs.piklist.com/mermaid/mermaid.css?1578767322" type="text/css" rel="stylesheet" />
+    <script src="https://docs.piklist.com/mermaid/mermaid.js?1578767322"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

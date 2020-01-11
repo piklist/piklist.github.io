@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts / Meta-boxes on Piklist Documentation</title>
@@ -37,7 +37,7 @@
       <guid>https://docs.piklist.com/tutorials/meta-boxes/add-wysisyg-excerpt-box/</guid>
       <description>Description To add some style to your excerpts, you can easily add a WYSIWYG editor to your excerpt box.
 First, remove the default excerpt box Custom post type If you’re registering your own post type, include the supports parameter but don’t include excerpt in the array. This will tell WordPress not to render the excerpt box.
-Built in post type Use the standard WordPress function remove_post_type_support, to remove the editor.</description>
+Built in post type Use the standard WordPress function remove_post_type_support, to remove the editor. For example, to remove the editor from Posts, place this in your theme’s functions.</description>
     </item>
     
     <item>
