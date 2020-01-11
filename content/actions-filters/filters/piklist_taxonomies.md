@@ -35,7 +35,7 @@ Example:
 
 Add a filter to this meta box to make it easier to search for terms.
 
-* Input:  Array
+* Input:  Boolean
 
 Example:
 
