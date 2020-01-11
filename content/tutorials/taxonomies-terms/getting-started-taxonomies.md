@@ -34,3 +34,8 @@ add_filter('piklist_taxonomies', 'demo_type_tax');
     return $taxonomies;
   }
  ```
+
+When registering a custom taxonomy, choose how you want it to be displayed. 
+* If you want the taxonomy to act the same way the "tag" taxonomy works in WordPress (multifaceted), then set the value of the hierarchical parameter to false
+* If you want your taxonomy to act the same way the "category" taxonomy works in WordPress, then set the value of the hierarchical parameter to true
+
