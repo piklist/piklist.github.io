@@ -5,7 +5,14 @@
     or <a href="https://github.com/piklist/Piklist-Documentation/compare">pull request</a> to help!
   </p>
   <p>
+
+	{{if .File.LogicalName}}
+                  {{ $File := .File }}
+                  {{ $Site := .Site }}
+           
 	<a class="button" title='Improve this page' href="{{.Site.Params.docsrepo}}/edit/master/content/{{ .File.LogicalName }}" target="blank">Improve this page</a>
+	{{end}}
+	
 
   </p>
 </div>
