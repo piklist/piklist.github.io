@@ -6,12 +6,20 @@
   </p>
   <p>
 
+	<a class="button" href="{{.Site.Params.docsrepo}}/edit/master/content/{{.File.Path}}">Improve this page</a>
+
+
+	<!--
+	{{ printf "%#v" .File.LogicalName }}
+
+
 	{{if .File.LogicalName}}
-                  {{ $File := .File }}
-                  {{ $Site := .Site }}
+		{{ $File := .File }}
+		{{ $Site := .Site }}
            
 	<a class="button" title='Improve this page' href="{{.Site.Params.docsrepo}}/edit/master/content/{{ .File.LogicalName }}" target="blank">Improve this page</a>
 	{{end}}
+	-->
 	
 
   </p>
