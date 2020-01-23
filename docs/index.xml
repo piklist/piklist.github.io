@@ -699,11 +699,11 @@ Example:
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_taxonomies/</guid>
       <description>apply_filters(&#39;piklist_taxonomies&#39;, self::$taxonomies); Extends the standard WordPress function register_taxonomy() with additional features and parameters.
 Parameters piklist_taxonomies supports all parameters from register_taxonomy() as well as these custom parameters:
-object_type Set this parameter to use this Piklist taxonomy for users
- Input: Array  Example:
+object_type To create a taxonomy for USERS set this parameter user
+ Input: Boolean  Example:
 &#39;object_type&#39; =&amp;gt; &#39;user
 hide_meta_box Hide the meta box created by this taxonomy
- Input: Array  Example:
+ Input: Boolean  Example:
 &amp;quot;hide_meta_box&amp;quot; =&amp;gt; true
 meta_box_filter Add a filter to this meta box to make it easier to search for terms.</description>
     </item>

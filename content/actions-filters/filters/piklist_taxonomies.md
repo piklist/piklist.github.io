@@ -13,9 +13,9 @@ Extends the standard WordPress function [register_taxonomy()](https://codex.word
 
 ### `object_type`
 
-Set this parameter to use this Piklist taxonomy for users
+To create a taxonomy for USERS set this parameter `user`
 
-* Input:  Array
+* Input:  Boolean
 
 Example:
 
@@ -25,7 +25,7 @@ Example:
 
 Hide the meta box created by this taxonomy
 
-* Input:  Array
+* Input:  Boolean
 
 Example:
 
