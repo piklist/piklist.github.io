@@ -87,3 +87,9 @@ weight = 14
      pre = "<i class='fa fa-road'></i>"
      weight = -100
      url = "/getting-started/"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
