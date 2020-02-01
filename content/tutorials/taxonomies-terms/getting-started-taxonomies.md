@@ -39,3 +39,10 @@ When registering a custom taxonomy, choose how you want it to be displayed.
 * If you want the taxonomy to act the same way the "tag" taxonomy works in WordPress (multifaceted), then set the value of the hierarchical parameter to false
 * If you want your taxonomy to act the same way the "category" taxonomy works in WordPress, then set the value of the hierarchical parameter to true
 
+## Displaying Taxonomy (Displaying Terms)
+To show the taxonomy (taxonomies) a post is associated with, use the following lines of code
+```
+foreach (get_the_terms($id, 'vendor_type') as $cat) {
+			echo $cat->name;
+		}
+```
