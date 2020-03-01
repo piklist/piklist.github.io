@@ -18,7 +18,7 @@
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_admin_pages/</guid>
       <description>apply_filters(&#39;piklist_admin_pages&#39;, array()); The piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.
 To register an Admin Page with Piklist:
- Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
+ Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that add_menu_page() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     
@@ -64,7 +64,7 @@ $part The individual part (e.g. meta-box, setting, etc.) to be modified or remov
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_post_types/</guid>
       <description>apply_filters(&#39;piklist_post_types&#39;, self::$post_types); The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.
 To register a Post Type with Piklist:
- Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
+ Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that register_post_type() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     

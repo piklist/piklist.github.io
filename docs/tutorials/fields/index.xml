@@ -47,7 +47,7 @@ In this tutorial, if the user clicks on the “Yes” radio button to subscribe 
       
       <guid>https://docs.piklist.com/tutorials/fields/using-chosen/</guid>
       <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Chosen&amp;rdquo; jQuery plugin from Harvest can make them more user-friendly.
- First, let&#39;s load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&#39;s functions.php file, or your main plugin file add this code:</description>
+ First, let&amp;rsquo;s load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&amp;rsquo;s functions.php file, or your main plugin file add this code:</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ In this tutorial, if the user clicks on the “Yes” radio button to subscribe 
       
       <guid>https://docs.piklist.com/tutorials/fields/using-select2/</guid>
       <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Select2&amp;rdquo; jQuery plugin can make them more user-friendly.
- First, let&#39;s load two files from Select2. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&#39;s functions.php file, or your main plugin file add this code:</description>
+ First, let&amp;rsquo;s load two files from Select2. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&amp;rsquo;s functions.php file, or your main plugin file add this code:</description>
     </item>
     
   </channel>

@@ -138,9 +138,9 @@ To remove the custom-fields meta box from a WordPress default post type, or one 
       
       <guid>https://docs.piklist.com/faq/number-of-fields-limit/</guid>
       <description>There is no limit to how many fields you can create and display with Piklist. However, your server limits how many can be used on each page.
-This is not a Piklist issue&amp;hellip; it&#39;s part of your servers configuration.
+This is not a Piklist issue&amp;hellip; it&amp;rsquo;s part of your servers configuration.
 The most common solution is adjusting your max_vars setting. This is a PHP setting which sets the maximum variables that can be used in one page load.
-Once you increase this limit, Piklist can finish rendering all it&#39;s fields.</description>
+Once you increase this limit, Piklist can finish rendering all it&amp;rsquo;s fields.</description>
     </item>
     
     <item>
@@ -149,7 +149,7 @@ Once you increase this limit, Piklist can finish rendering all it&#39;s fields.<
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/faq/update-script-not-running/</guid>
-      <description>Piklist allows you to easily create update scripts that run on certain versions of your plugin. If the script doesn&#39;t run, you may have an issue with the piklist_active_plugin_versions setting:
+      <description>Piklist allows you to easily create update scripts that run on certain versions of your plugin. If the script doesn&amp;rsquo;t run, you may have an issue with the piklist_active_plugin_versions setting:
  Backup your database Note which version of Piklist you are currently running. Deactivate and delete Piklist Open your database. In the wp_options table, look for this field: piklist_active_plugin_versions and delete it. Reinstall the same version of Piklist you had before.</description>
     </item>
     
@@ -287,7 +287,7 @@ Built in post type Use the standard WordPress function remove_post_type_support,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/tutorials/pointers/building-pointers-without-code/</guid>
-      <description>Description Piklist let&#39;s you build WordPress Pointers without code. No PHP. No Javascript.
+      <description>Description Piklist let&amp;rsquo;s you build WordPress Pointers without code. No PHP. No Javascript.
 In this tutorial, we will create a simple WordPress pointer.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
     </item>
@@ -361,7 +361,7 @@ A few important caveats:
       
       <guid>https://docs.piklist.com/tutorials/help/creating-help-tabs-for-wordpress/</guid>
       <description>Description Creating Help Tabs for WordPress is super easy with Piklist.
-In this example, we&#39;ll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.
+In this example, we&amp;rsquo;ll create some help for your custom Post Type. You should already have a custom Post Type registered and working in WordPress.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme.</description>
     </item>
     
@@ -484,7 +484,7 @@ NOTES:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.piklist.com/tutorials/shortcodes/getting-started-with-shortcodes/</guid>
-      <description>Description Creating Shortcodes with Piklist is super easy. In this tutorial, we&#39;ll create a shortcode to display post meta in your post content.
+      <description>Description Creating Shortcodes with Piklist is super easy. In this tutorial, we&amp;rsquo;ll create a shortcode to display post meta in your post content.
   New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
     </item>
     
@@ -587,7 +587,7 @@ piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#3
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_admin_pages/</guid>
       <description>apply_filters(&#39;piklist_admin_pages&#39;, array()); The piklist_admin_pages filter lets you register your custom Admin Pages through Piklist. This gives you access to additional functionality that Piklist offers.
 To register an Admin Page with Piklist:
- Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
+ Create a function with your Admin Page parameters. Hook it to the piklist_admin_pages() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that add_menu_page() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     
@@ -653,7 +653,7 @@ Arguments $folder The parts folder where the file is located ( e.g. meta-boxes, 
       <guid>https://docs.piklist.com/actions-filters/filters/piklist_post_types/</guid>
       <description>apply_filters(&#39;piklist_post_types&#39;, self::$post_types); The piklist_post_types filter lets you register your custom Post Types through Piklist. This gives you access to additional functionality that Piklist offers.
 To register a Post Type with Piklist:
- Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&#39;s functions.php file or your plugin file.
+ Create a function with your Post Type parameters. Hook it to the piklist_post_types() filter.  This code goes in your theme&amp;rsquo;s functions.php file or your plugin file.
 Parameters This filter supports every parameter that register_post_type() supports. Additionally, you may use the following Piklist specific parameters.</description>
     </item>
     
@@ -874,7 +874,7 @@ piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#3
       
       <guid>https://docs.piklist.com/tutorials/fields/using-chosen/</guid>
       <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Chosen&amp;rdquo; jQuery plugin from Harvest can make them more user-friendly.
- First, let&#39;s load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&#39;s functions.php file, or your main plugin file add this code:</description>
+ First, let&amp;rsquo;s load two files from Chosen. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&amp;rsquo;s functions.php file, or your main plugin file add this code:</description>
     </item>
     
     <item>
@@ -884,7 +884,7 @@ piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#3
       
       <guid>https://docs.piklist.com/tutorials/fields/using-select2/</guid>
       <description>Description Piklist makes it easy to create select boxes, but sometimes they can become long with tons of options. Using the &amp;ldquo;Select2&amp;rdquo; jQuery plugin can make them more user-friendly.
- First, let&#39;s load two files from Select2. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&#39;s functions.php file, or your main plugin file add this code:</description>
+ First, let&amp;rsquo;s load two files from Select2. Their javascript and css file. Though the javascript is mandatory, the css is not. You can just borrow from this file if you want.  In your theme&amp;rsquo;s functions.php file, or your main plugin file add this code:</description>
     </item>
     
     <item>
@@ -904,8 +904,8 @@ piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#3
       
       <guid>https://docs.piklist.com/tutorials/relationships/working-with-field-relationships/</guid>
       <description>Piklist relationships allow you to relate any object to any object.
-In this tutorial we&#39;ll use the classic books example, assuming our post types are book and chapter, and a user can be an author. We&#39;ll cover the post_has, post_belongs, and relate_query parameters.
-First let&#39;s add the chapter relate field to the book post type. Since this is a post type we&#39;re adding a field to, the file goes in the /parts/meta-boxes/ folder.</description>
+In this tutorial we&amp;rsquo;ll use the classic books example, assuming our post types are book and chapter, and a user can be an author. We&amp;rsquo;ll cover the post_has, post_belongs, and relate_query parameters.
+First let&amp;rsquo;s add the chapter relate field to the book post type. Since this is a post type we&amp;rsquo;re adding a field to, the file goes in the /parts/meta-boxes/ folder.</description>
     </item>
     
   </channel>
