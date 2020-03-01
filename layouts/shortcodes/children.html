@@ -54,7 +54,8 @@
   {{(printf "<%s class=\"child\">" $.style)|safeHTML}}
   <p class="children-title"><a href="{{.Permalink}}" >{{ .Title }}</a></p>
 	{{if $.description}} {{if .Description}}
-      <p class="children-description">{{.Description}}</p>
+<!-- Indenting the following line causes markdown to interpret this as a code block.-->
+<p class="children-description">{{.Description}}</p>
 		{{else}}
       <p class="children-summary">{{.Summary}}</p>
 		{{end}}
