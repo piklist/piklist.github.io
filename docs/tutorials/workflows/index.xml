@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Adding SubTabs to Workflows</title>
+      <link>https://docs.piklist.com/tutorials/workflows/adding-subtabs-to-workflows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/workflows/adding-subtabs-to-workflows/</guid>
+      <description>Piklist Workflow tabs can be enhanced with unlimited subtabs, allowing you to create more complex, but easy to manage, user interfaces.
+  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
+    </item>
+    
+    <item>
       <title>Placing &#34;Add New Post&#34; in a Workflow</title>
       <link>https://docs.piklist.com/tutorials/workflows/placing-add-new-post-workflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

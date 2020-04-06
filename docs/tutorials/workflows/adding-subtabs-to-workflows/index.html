@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.66.0" />
-    <meta name="description" content="Tutorials on Updates">
+    <meta name="description" content="Piklist Workflow tabs can be enhanced with subtabs.">
 
 
     <link rel="shortcut icon" href="https://docs.piklist.com/images/piklist-favicon.png" type="image/x-icon" />
 <link rel="icon" href="https://docs.piklist.com/images/piklist-favicon.png" type="image/x-icon" />
 
-    <title>Updates &middot; Piklist Documentation</title>
+    <title>Adding SubTabs to Workflows &middot; Piklist Documentation</title>
 
     
     <link href="https://docs.piklist.com/css/nucleus.css?1586191206" rel="stylesheet">
@@ -49,7 +49,7 @@
 </script>
 
   </head>
-    <body class="type-section updates file-_index dir-tutorialsupdates" data-url="/tutorials/updates/">
+    <body class="type-page adding-subtabs-to-workflows file-adding-subtabs-to-workflows dir-tutorialsworkflows" data-url="/tutorials/workflows/adding-subtabs-to-workflows/">
     <nav id="sidebar" class="">
 
 
@@ -1669,7 +1669,13 @@
             
           
           
-            <a href='https://docs.piklist.com/'></a> > <a href='https://docs.piklist.com/tutorials/'>Tutorials</a> > Updates
+            
+            
+          
+          
+            <a href='https://docs.piklist.com/'></a> > <a href='https://docs.piklist.com/tutorials/'>Tutorials</a> > <a href='https://docs.piklist.com/tutorials/workflows/'>Workflow Tabs</a> > Adding SubTabs to Workflows
+          
+        
           
         
           
@@ -1681,11 +1687,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#tutorials">Tutorials</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1697,24 +1699,64 @@
         
         <div id="body-inner">
           
-            <h1>Updates</h1>
+            <h1>Adding SubTabs to Workflows</h1>
           
 
         
 
 
-<h2 id="tutorials">Tutorials</h2>
-<ul class="children children-li">
-  <li class="child">
-	<p class="children-title"><a href="https://docs.piklist.com/tutorials/updates/getting-started-with-updates/" >Getting started with updates</a></p>
-<p class="children-description">Use Piklist updates to run your update scripts</p>
-  </li>
-</ul>
+<p>Piklist Workflow tabs can be enhanced with unlimited subtabs, allowing you to create more complex, but easy to manage, user interfaces.</p>
+<div class="expand">
 
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+
+        <i style="font-size:x-small;" class="fa fa-chevron-right"></i>
+
+        <span>
+
+            <strong>New to Piklist?</strong>
+
+        </span>
+
+    </div>
+
+    <div class="expand-content" style="display: none;">
+
+        <p>
+            <h3>Before you start this tutorial:</h3>
+            <ol>
+                <li><a href="https://wordpress.org/plugins/piklist/">Install Piklist</a> like you would any other WordPress plugin.</li>
+                <li>Decide if you are going to add the code in this tutorial to your custom plugin or your theme.  This will define how to setup your <a href="https://docs.piklist.com/folder-structure/">Piklist folder structure</a>.</li>
+                <li>If you're new to Piklist, you may want to review the <a href="https://docs.piklist.com/getting-started/">"Getting Started"</a> tutorial first.  It gives you a good overview of how Piklist works.</li>
+            </ol>
+        </p>
+        <hr/>
+    </div>
+
+</div>
+
+<p>IMPORTANT: You should already have a Piklist Workflow system set up before using this tutorial. If you do not, you can reference <a href="https://docs.piklist.com/tutorials/workflows/building-first-workflow/">this tutorial</a>.</p>
+<p>In this example, we are going to place a subtab under a tab called <code>My Tab</code>.</p>
+<ol>
+<li>Create a file under the <code>/workflows</code> folder.</li>
+<li>The file header can contain all the parameters you use for a normal Workflow file. Additionally, you will add a <code>Tab</code> parameter which defines which tab your subtab will display under.</li>
+</ol>
+<p>The following code snippet will display a subtab titled <code>My Subtab</code>, under a tab called <code>My Tab</code> in the <code>My Workflow</code> Flow, and make it the default tab.</p>
+<pre><code>&lt;?php
+/*
+Title: My Subtab
+Order: 10
+Flow: My Workflow
+Tab: My Tab
+Default: true
+*/
+?&gt;
+</code></pre>
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -3353,31 +3395,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -3433,6 +3450,28 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
                         
             
             
@@ -3454,6 +3493,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -3472,10 +3514,10 @@
 
 
         
-            <a class="nav nav-prev" href="https://docs.piklist.com/tutorials/taxonomies-terms/" title="Taxonomies / Terms"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="https://docs.piklist.com/tutorials/widgets/" title="Widgets"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="https://docs.piklist.com/tutorials/users/" title="Users" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="https://docs.piklist.com/contribute-to-docs/" title="Contribute to Docs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -3509,7 +3551,7 @@
   </p>
   <p>
 
-	<a class="button" href="https://github.com/piklist/piklist-documentation/edit/master/content/tutorials/updates/_index.md">Improve this page</a>
+	<a class="button" href="https://github.com/piklist/piklist-documentation/edit/master/content/tutorials/workflows/adding-subtabs-to-workflows.md">Improve this page</a>
 
 
 	
@@ -3540,3 +3582,4 @@ $(document).ready(function(){
 
   </body>
 </html>
+

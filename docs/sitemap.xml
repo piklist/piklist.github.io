@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://docs.piklist.com/tutorials/workflows/adding-subtabs-to-workflows/</loc>
+    <lastmod>2020-04-06T12:39:34-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.piklist.com/about-piklist/</loc>
     <lastmod>2017-12-22T14:12:31-05:00</lastmod>
   </url>
@@ -444,6 +449,10 @@
   <url>
     <loc>https://docs.piklist.com/fields/types/number/</loc>
     <lastmod>2018-02-20T09:36:21-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.piklist.com/actions-filters/actions/piklistadd-onsafter_including_all/</loc>
   </url>
   
   <url>

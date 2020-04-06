@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>piklist/add-ons/after_including_all</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklistadd-onsafter_including_all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklistadd-onsafter_including_all/</guid>
+      <description>This hook will be depreciated in a future version of Piklist. Replaced by [&amp;lsquo;piklist/add-ons/after_including_all] (actions-filters/) Runs after a Piklist add-on is activated.
+do_action(&#39;piklist_activate_add_on&#39;); Class class-piklist-add-on.php</description>
+    </item>
+    
+    <item>
       <title>piklist_parts_process-{$folder}</title>
       <link>https://docs.piklist.com/actions-filters/actions/piklist_parts_process-folder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

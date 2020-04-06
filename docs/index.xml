@@ -101,6 +101,16 @@ Most people use Piklist to add fields in the WordPress admin area, but you can d
     </item>
     
     <item>
+      <title>Adding SubTabs to Workflows</title>
+      <link>https://docs.piklist.com/tutorials/workflows/adding-subtabs-to-workflows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/tutorials/workflows/adding-subtabs-to-workflows/</guid>
+      <description>Piklist Workflow tabs can be enhanced with unlimited subtabs, allowing you to create more complex, but easy to manage, user interfaces.
+  New to Piklist?    Before you start this tutorial:  Install Piklist like you would any other WordPress plugin. Decide if you are going to add the code in this tutorial to your custom plugin or your theme. This will define how to setup your Piklist folder structure.</description>
+    </item>
+    
+    <item>
       <title>How do I include Piklist in my plugin or theme?</title>
       <link>https://docs.piklist.com/faq/how-to-include-piklist-in-plugin-or-theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -577,6 +587,16 @@ piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#3
       <guid>https://docs.piklist.com/fields/types/number/</guid>
       <description>&#39;type&#39; =&amp;gt; &#39;number&#39; This is an HTML5 field
 piklist(&amp;#39;field&amp;#39;, array( &amp;#39;type&amp;#39; =&amp;gt; &amp;#39;number&amp;#39;, &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;my_field&amp;#39;, &amp;#39;label&amp;#39; =&amp;gt; &amp;#39;my field&amp;#39;, )); </description>
+    </item>
+    
+    <item>
+      <title>piklist/add-ons/after_including_all</title>
+      <link>https://docs.piklist.com/actions-filters/actions/piklistadd-onsafter_including_all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.piklist.com/actions-filters/actions/piklistadd-onsafter_including_all/</guid>
+      <description>This hook will be depreciated in a future version of Piklist. Replaced by [&amp;lsquo;piklist/add-ons/after_including_all] (actions-filters/) Runs after a Piklist add-on is activated.
+do_action(&#39;piklist_activate_add_on&#39;); Class class-piklist-add-on.php</description>
     </item>
     
     <item>

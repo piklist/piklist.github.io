@@ -1,0 +1,17 @@
+---
+title: "piklist/add-ons/after_registering_all"
+description:
+hidden: "true"
+---
+
+#### `do_action( 'piklist/add-ons/after_registering_all');`
+
+
+## Class
+`class-piklist-add-on.php`
+
+## Replaces
+`piklist_activate_add_on`
+
+## Arguments
+none
