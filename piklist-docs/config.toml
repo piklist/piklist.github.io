@@ -1,0 +1,21 @@
+baseURL = "https://docs.piklist.com"
+languageCode = "en-us"
+title = "Piklist Documentation"
+publishDir = "docs"
+canonifyURLs = true
+enableGitInfo = true
+theme = "piklist-theme"
+googleAnalytics = "UA-31864921-2"
+[Social]
+  twitter = "piklist"
+relativeURLs = true
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
