@@ -1,7 +1,0 @@
-{{- $path := "data/filters" -}}
-{{- $files := readDir $path -}}
-{{- range $files }}
-  {{- if ne "_index.md" .Name }}
-    {{- print "data/filters/" .Name | readFile | markdownify }}
-  {{- end }}
-{{- end }}

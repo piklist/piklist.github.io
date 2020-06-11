@@ -1,3 +1,0 @@
-## query
-
-* Input:  parameters

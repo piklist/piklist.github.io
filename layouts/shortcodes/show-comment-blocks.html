@@ -1,7 +1,0 @@
-{{- $path := "layouts/shortcodes/data/comment-block-parameters" -}}
-{{- $files := readDir $path -}}
-{{- range $files }}
-  {{- if ne "_index.md" .Name }}
-    {{- print "layouts/shortcodes/data/comment-block-parameters/" .Name | readFile | markdownify }}
-  {{- end }}
-{{- end }}

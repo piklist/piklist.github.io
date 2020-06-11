@@ -1,7 +1,0 @@
-{{- $path := "layouts/shortcodes/data/field-parameters" -}}
-{{- $files := readDir $path -}}
-{{- range $files }}
-  {{- if ne "_index.md" .Name }}
-    {{- print "layouts/shortcodes/data/field-parameters/" .Name | readFile | markdownify }}
-  {{- end }}
-{{- end }}

@@ -1,3 +1,0 @@
-## options
-
-* Input: parameters

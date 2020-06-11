@@ -1,3 +1,0 @@
-## multiple
-
-* Input: string
