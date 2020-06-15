@@ -1,121 +1,153 @@
 <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow col-md-3 col-lg-12 mr-0 px-3">
-  <a class="navbar-brand" href="#"><title>Piklist</title>
-<img src="https://docs.piklist.com/images/piklist-logo.png" /></a>
+	<a class="navbar-brand" href="#">
+		<title>Piklist</title>
+		<img src="https://docs.piklist.com/images/piklist-logo.png" />
+	</a>
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-        <li class="navbar-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
-          <a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  </div>
-  <button class="navbar-toggler d-md-none collapsed justify-content-end" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			{{ $currentPage := . }}
+			{{ range .Site.Menus.main }}
+			<li
+				class="navbar-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+				<a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+			</li>
+			{{ end }}
+		</ul>
+	</div>
+	<button class="navbar-toggler d-md-none collapsed justify-content-end" type="button" data-toggle="collapse"
+		data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+
+		<ul class="navbar-nav bd-navbar-nav flex-row navbar-dark d-none d-sm-none d-sm-inline-flex d-md-inline-flex">
+		  <li class="nav-item">
+			<a class="nav-link active" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/docs/4.5/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link " href="/docs/4.5/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://icons.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://expo.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+		  </li>
+		</ul>
+	
 </nav>
 
 
 
 <div class="container-fluid">
 	<div class="row">
-	  <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-		<div class="sidebar-sticky pt-3">
-			<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-		  <ul class="nav flex-column">
-			<li class="nav-item">
-			  <a class="nav-link active" href="#">
-				<span data-feather="home"></span>
-				Dashboard <span class="sr-only">(current)</span>
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="file"></span>
-				Orders
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="shopping-cart"></span>
-				Products
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="users"></span>
-				Customers
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="bar-chart-2"></span>
-				Reports
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="layers"></span>
-				Integrations
-			  </a>
-			</li>
-		  </ul>
-  
-		  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-			<span>Saved reports</span>
-			<a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-			  <span data-feather="plus-circle"></span>
-			</a>
-		  </h6>
-		  <ul class="nav flex-column mb-2">
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="file-text"></span>
-				Current month
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="file-text"></span>
-				Last quarter
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="file-text"></span>
-				Social engagement
-			  </a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">
-				<span data-feather="file-text"></span>
-				Year-end sale
-			  </a>
-			</li>
-		  </ul>
-		</div>
-	  </nav>
-  
-	  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-		  <h1 class="h2">Dashboard</h1>
-		  <div class="btn-toolbar mb-2 mb-md-0">
-			<div class="btn-group mr-2">
-			  <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-			  <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-			</div>
-			<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-			  <span data-feather="calendar"></span>
-			  This week
-			</button>
-		  </div>
-		</div>
-  
+		<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+			<div class="sidebar-sticky pt-3">
+				<input class="form-control form-control-dark w-100" type="text" placeholder="Search"
+					aria-label="Search">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+							<span data-feather="home"></span>
+							Dashboard <span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="file"></span>
+							Orders
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="shopping-cart"></span>
+							Products
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="users"></span>
+							Customers
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="bar-chart-2"></span>
+							Reports
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="layers"></span>
+							Integrations
+						</a>
+					</li>
+				</ul>
 
-  
-		</div>
-	  </main>
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+					<span>Saved reports</span>
+					<a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+						<span data-feather="plus-circle"></span>
+					</a>
+				</h6>
+				<ul class="nav flex-column mb-2">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="file-text"></span>
+							Current month
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="file-text"></span>
+							Last quarter
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="file-text"></span>
+							Social engagement
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span data-feather="file-text"></span>
+							Year-end sale
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+			<div
+				class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+				<h1 class="h2">Dashboard</h1>
+				<div class="btn-toolbar mb-2 mb-md-0">
+					<div class="btn-group mr-2">
+						<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+						<button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+					</div>
+					<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+						<span data-feather="calendar"></span>
+						This week
+					</button>
+				</div>
+			</div>
+
+
+
 	</div>
-  </div>
+	</main>
+</div>
+</div>
