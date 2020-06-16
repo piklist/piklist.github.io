@@ -1,9 +1,32 @@
-{{ define "main" }}
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="display-4">This could be the title</h1>
-    <p class="lead">Here's some description stuff</p>
-    <p>There's also other things that are super nice</p>
-  </div>
-</div>
-{{ end }}
+<!DOCTYPE html>
+<html lang="en">
+  {{- partial "header.html" . -}}
+  <body>
+    <div class="container-fluid mt-3">
+      <div class="row">
+        {{- partial "sidebar.html" . -}}
+        <main role="main" class="col-md-9 mx-auto col-lg-8">
+			{{- partial "header-nav.html" . -}}
+			<div class="row">
+				<h1>{{ .Title }}</h1>
+				<p>{{ .Description }}</p>
+			
+				<!-- Split into columns if our custom parameter exists: ||columns|| -->
+				{{ if in .RawContent "||columns||"}}
+					{{ $cols := split .RawContent "||columns||" }}
+					{{ range $cols }}
+						<div class="col-12 col-md-6">
+							{{ . | markdownify }}
+						</div>
+					{{ end }}
+				{{else}}
+					{{ .Content}}
+				{{ end }}
+
+			</div>
+        </main>
+      </div>
+    </div>
+{{- partial "footer.html" . -}}
+  </body>
+</html>
