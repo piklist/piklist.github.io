@@ -6,6 +6,8 @@ canonifyURLs = true
 enableGitInfo = true
 theme = "piklist-theme"
 googleAnalytics = "UA-31864921-2"
+[markup.goldmark.renderer]
+  unsafe= true
 [Social]
   twitter = "piklist"
 relativeURLs = true

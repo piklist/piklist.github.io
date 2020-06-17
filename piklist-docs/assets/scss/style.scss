@@ -1,7 +1,14 @@
-@import "node_modules/bootstrap/scss/bootstrap";
 
 
-.sophie {
-
-	color:wheat;
+body {
+	
+	font-size:140px;
+	font-weight:400;
 }
+
+$font-family-sans-serif:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+$nav-link-padding-y: .2rem;
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";

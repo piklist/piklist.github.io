@@ -3,6 +3,7 @@
 	  <table class="table table-sm">
 		<caption>Hugo Variables for current page</caption>
 		<tr><th>Name</th><td>{{ .Name }}</td></tr>
+		<tr><th>Title</th><td>{{ .Title }}</td></tr>
 		<tr><th>Kind</th><td>{{ .Kind }}</td></tr>
 		<tr><th>Type</th><td>{{ .Type }}</td></tr>
 		<tr><th>List Page</th><td>.Pages</td></tr>
@@ -11,7 +12,6 @@
 		<tr><th>Next</th><td>{{ .Next }}</td></tr>
 		<tr><th>Prev</th><td>{{ .Prev }}</td></tr>
 		<tr><th>Section</th><td>{{ .CurrentSection }}</td></tr>
-		<tr><th>File Path</th><td>{{ .File.Path }}</td></tr>
 	  </table>
 	</div>
   </footer>

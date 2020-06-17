@@ -8,11 +8,21 @@
         <main role="main" class="col-md-9 mx-auto col-lg-8">
 			{{- partial "header-nav.html" . -}}
 			<div class="row">
-				<div class="col">
 				<h1>{{ .Title }}</h1>
-				{{ .Description }}
-				</div>
-				{{ .Content }}
+				<p>{{ .Description }}</p>
+			
+				<!-- Split into columns if our custom parameter exists: ||columns|| -->
+				{{ if in .RawContent "||columns||"}}
+					{{ $cols := split .RawContent "||columns||" }}
+					{{ range $cols }}
+						<div class="col-12 col-md-6">
+							{{ . | markdownify }}
+						</div>
+					{{ end }}
+				{{else}}
+					{{ .Content}}
+				{{ end }}
+
 			</div>
         </main>
       </div>
