@@ -1,0 +1,43 @@
+<!--
+'columns' shortcode
+To use: columns [number of cols]
+Example: columns 1
+
+Support 1 and 2 columns
+-->
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<!-- Get the number of columns from the columns shortcode -->
+{{ $columns := .Get 0 }}
+
+
+<!-- count how many times this shortcode is used-->
+{{ .Page.Scratch.Add "shortcode_counter_$columns" 1 }}
+
+<!-- if this is an odd number of times include "row" class-->
+{{if not (modBool (.Page.Scratch.Get "shortcode_counter_$columns") 2)}}
+<div class="row">
+{{end}}
+
+
+
+{{ if eq $columns 1 }}
+<div class="col-12">
+{{ .Inner | markdownify }}
+{{ .Scratch.Get "count" }}
+</div>
+{{ end }}
+
+
+
+{{ if eq $columns 2 }}
+<div class="col-md-6 col-sm-12">
+{{ .Inner | markdownify }}
+{{ .Scratch.Get "count" }}
+</div>
+{{ end }}
+
+<!-- if this is an even number of times close "row" class-->
+{{if (modBool (.Page.Scratch.Get "shortcode_counter_$columns") 2)}}
+</div>
+{{end}}

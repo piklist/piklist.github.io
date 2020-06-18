@@ -1,0 +1,14 @@
+<!--
+'columns_1' shortcode
+To use: columns_1
+-->
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="row">
+<div class="col-12">
+{{ .Inner | markdownify }}
+</div>
+</div>
+
+
+

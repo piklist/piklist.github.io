@@ -4,19 +4,21 @@ description: "Official documentation for Piklist, the most powerful framework av
 chapter: false
 weight: 90
 ---
+{{< columns_1 >}}
 
-
-{{< columns 1 >}}
 <h3 class="center"><i class="fas fa-graduation-cap fa-sm"></i><a href="/getting-started">Getting Started</a></h3>
 <h3 class="center"><i class="fas fa-check fa-sm"></i> <a href="/faq">FAQS</a></h3>
 
 ### With Piklist you can create and enhance almost every part of WordPress.
 
 <hr/>
-{{<	/columns >}}
+
+{{< /columns_1 >}}
 
 
-{{< columns 2 >}}
+
+
+{{< columns_2 >}}
 <ul id="features-table">
   <li class="feature">
     <h3><i class="fas fa-bullhorn fa-sm"></i><a href="/admin-notices/">Admin Notices</a></h3>
@@ -36,9 +38,9 @@ weight: 90
     <h3><i class="fas fa-keyboard fa-sm"></i><a href="/forms/">Frontend Forms</a></h3> Powerful forms that can do anything you can imagine.
   </li>
   </ul>
-  {{< /columns >}}
+  {{< /columns_2 >}}
 
-  {{< columns 2 >}}
+  {{< columns_2 >}}
   <ul class="features-table">
   <li class="feature">
     <h3><i class="fas fa-question-circle fa-sm"></i><a href="/help/">Help Tabs</a></h3> Easily add WordPress help tabs to any page.
@@ -74,4 +76,9 @@ weight: 90
     <h3><i class="fas fa-cogs fa-sm"></i><a href="/workflows/">Workflow Tabs</a></h3> Break up any page with an advanced tab system.
   </li>
 </ul>
-  {{< /columns >}}
+  {{< /columns_2 >}}
+
+
+  {{< columns_1 >}}
+  This is one column
+  {{< /columns_1 >}}

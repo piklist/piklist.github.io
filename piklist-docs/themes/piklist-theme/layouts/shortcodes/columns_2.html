@@ -1,0 +1,19 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<!-- count how many times this shortcode is used-->
+{{ .Page.Scratch.Add "columns_2" 1 }}
+
+<!-- if this is an odd number of times include "row" class-->
+{{if not (modBool (.Page.Scratch.Get "columns_2") 2)}}
+<div class="row">
+{{end}}
+
+<div class="col-md-6 col-sm-12">
+{{ .Inner | markdownify }}
+{{ .Scratch.Get "count" }}
+</div>
+
+<!-- if this is an even number of times close "row" class-->
+{{if (modBool (.Page.Scratch.Get "columns_2") 2)}}
+</div>
+{{end}}

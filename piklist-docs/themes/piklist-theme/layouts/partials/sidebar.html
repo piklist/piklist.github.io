@@ -1,10 +1,15 @@
 <div class="col-md-3 col-lg-2">
 
 	<nav class="navbar-light">
-		<a class="navbar-brand" href="#">
-			<title>Piklist</title>
+		<title>Piklist</title>
+		<a class="navbar-brand" href="/">
 			<img src="{{ relURL "/logo-with-doc.png" }}" />
 		</a>
+		<button class="navbar-toggler d-md-none collapsed align-content-end align-items-end" type="button"
+			data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
@@ -17,11 +22,7 @@
 				{{ end }}
 			</ul>
 		</div>
-		<button class="navbar-toggler d-md-none collapsed justify-content-end" type="button"
-			data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+		
 	</nav>
 
 
