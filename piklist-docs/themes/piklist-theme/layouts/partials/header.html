@@ -1,10 +1,13 @@
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	<title>{{ .Title }}</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="{{ relURL "/css/style.css" }}" />
-	<script src="https://kit.fontawesome.com/26036b74cc.js" crossorigin="anonymous"></script>
+	<script src="https://docs.piklist.com/js/jquery-2.x.min.js?1586191206"></script>
+	
 	{{ range .AlternativeOutputFormats -}}
 	  {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
@@ -15,3 +18,7 @@
 	{{ template "_internal/schema.html" . }}
   
   </head>
+  <body>
+    <div class="container-fluid mt-3">
+      <div class="row">
+        {{- partial "sidebar.html" . -}}

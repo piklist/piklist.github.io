@@ -1,0 +1,16 @@
+<main role="main" class="col-md-9 mx-auto col-lg-8">
+	{{- partial "header-nav.html" . -}}
+	<div class="row">
+		<div class="col-12">
+		<h1>{{ .Title }}</h1>
+		{{ .Description }}
+		</div>
+	</div>
+	<!-- If columns_X shortcode in content, display normal content and let shortcodes work-->
+	{{ if in .RawContent "columns_" }}
+	{{ .Content }}
+	<!-- If not, display content with wrappers-->
+	{{ else }}
+	{{- partial "content-with-wrapper.html" . -}}
+	{{ end }}
+</main>
