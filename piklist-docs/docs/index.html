@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.66.0" />
+	<title>Piklist Documentation</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="https://docs.piklist.com/js/jquery-2.x.min.js?1586191206"></script>
+	
+	<link rel="alternate" type="application/rss+xml+xml" href="/index.xml" title="Piklist Documentation" />
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-31864921-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+	<meta property="og:title" content="Piklist Documentation" />
+<meta property="og:description" content="Official documentation for Piklist, the most powerful framework available for WordPress." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
+
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Piklist Documentation"/>
+<meta name="twitter:description" content="Official documentation for Piklist, the most powerful framework available for WordPress."/>
+<meta name="twitter:site" content="@piklist"/>
+
+	<meta itemprop="name" content="Piklist Documentation">
+<meta itemprop="description" content="Official documentation for Piklist, the most powerful framework available for WordPress.">
+  
+  </head>
+  <body>
+    <div class="container-fluid mt-3">
+      <div class="row"><div class="col-md-3 col-lg-2">
+
+	<nav class="navbar-light">
+		<title>Piklist</title>
+		<a class="navbar-brand" href="/">
+			<img src="/logo-with-doc.png" />
+		</a>
+		<button class="navbar-toggler d-md-none collapsed" type="button"
+			data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				
+				
+				<li
+					class="navbar-item ">
+					<a class="nav-link" href="/about/" title="">About</a>
+				</li>
+				
+				<li
+					class="navbar-item ">
+					<a class="nav-link" href="/posts/" title="">Posts</a>
+				</li>
+				
+			</ul>
+		</div>
+		
+	</nav>
+
+
+	<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar collapse">
+		<div class="sidebar-sticky pt-3">
+			<input id="search-by" class="form-control form-control-dark w-100 col-lg-8" type="search" placeholder="Find anything"
+				aria-label="Search">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">
+						<span data-feather="home"></span>
+						Dashboard <span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="file"></span>
+						Orders
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="shopping-cart"></span>
+						Products
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="users"></span>
+						Customers
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="bar-chart-2"></span>
+						Reports
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="layers"></span>
+						Integrations
+					</a>
+				</li>
+			</ul>
+
+			<h6
+				class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+				<span>Saved reports</span>
+				<a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+					<span data-feather="plus-circle"></span>
+				</a>
+			</h6>
+			<ul class="nav flex-column mb-2">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="file-text"></span>
+						Current month
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="file-text"></span>
+						Last quarter
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="file-text"></span>
+						Social engagement
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span data-feather="file-text"></span>
+						Year-end sale
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+</div><main role="main" class="col-md-9 mx-auto col-lg-8"><ul class="nav justify-content-end mb-4 d-none d-sm-none d-md-none d-lg-flex">
+	<li class="nav-item">
+		<a class="nav-link active" href="https://piklist.com/support/">Support / Community</a>
+	</li>
+	<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Products
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="https://piklist.com/product/piklist/">Piklist Framework</a>
+			<a class="dropdown-item" href="https://piklist.com/product/toolbox/">Toolbox</a>
+			<a class="dropdown-item" href="https://piklist.com/product/fields-forms/">Fields and Forms</a>
+			<a class="dropdown-item" href="https://piklist.com/product/wp-helpers/">WordPress Helpers</a>
+		</div>
+	</li>
+</ul><div class="row">
+		<div class="col-12">
+		<h1>Piklist Documentation</h1>
+		Official documentation for Piklist, the most powerful framework available for WordPress.
+		</div>
+	</div>
+	
+	
+	
+
+
+<div class="row">
+<div class="col-12">
+<h3 class="center"><i class="fas fa-graduation-cap fa-sm"></i><a href="/getting-started">Getting Started</a></h3>
+<h3 class="center"><i class="fas fa-check fa-sm"></i> <a href="/faq">FAQS</a></h3>
+<h3 id="with-piklist-you-can-create-and-enhance-almost-every-part-of-wordpress">With Piklist you can create and enhance almost every part of WordPress.</h3>
+<hr/>
+</div>
+</div>
+
+
+
+
+<p>
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-bullhorn fa-sm"></i> Admin Notices</h5>
+    <p class="card-text">Dismissable or standard admin notices that can be on every admin page, or just specific ones.</p>
+    <a href="/admin-notices/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-file fa-sm"></i> Admin Pages</h5>
+    <p class="card-text">Create "About" pages and more, with customizable forms.</p>
+    <a href="/admin-pages/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fas fa-tachometer-alt fa-sm"></i> Dashboard Widgets</h5>
+    <p class="card-text">Easy dashboard widgets for Multisite or Single site</p>
+    <a href="/dashboard-widgets/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-list-alt fa-sm"></i> Custom Fields</h5>
+    <p class="card-text">The simplest, most powerful way to create custom fields in WordPress</p>
+    <a href="/fields/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-keyboard fa-sm"></i> Frontend Forms</h5>
+    <p class="card-text">Powerful forms that can do anything you can imagine.</p>
+    <a href="/forms/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-question-circle fa-sm"></i> Help Tabs</h5>
+    <p class="card-text">Easily add WordPress help tabs to any page.</p>
+    <a href="/help/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-images fa-sm"></i> Media Library</h5>
+    <p class="card-text">Totally customize your Media Library pages.</p>
+    <a href="/media/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-angle-up fa-sm"></i> Pointers</h5>
+    <p class="card-text">Create step-by-step tutorials in the admin.</p>
+    <a href="/pointers/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-thumbtack fa-sm"></i> Post Types</h5>
+    <p class="card-text">Register Post Types with Piklist and add power to your post types.</p>
+    <a href="/posts-meta-boxes/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-sliders-h fa-sm fa-rotate-90"></i> Settings</h5>
+    <p class="card-text">The simplest way to add settings pages in WordPress.</p>
+    <a href="/settings/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-code fa-sm"></i> Shortcodes</h5>
+    <p class="card-text">Piklist automatically creates a UI for your shortcodes.</p>
+    <a href="/shortcodes/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-sitemap fa-sm"></i> Taxonomies</h5>
+    <p class="card-text">Register Taxonomies with Piklist and add power to your terms.</p>
+    <a href="/settings/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-arrow-alt-circle-up fa-sm"></i> Update Scripts</h5>
+    <p class="card-text">Let Piklist handle update scripts for your plugin or theme.</p>
+    <a href="/updates/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-user fa-sm"></i> Users</h5>
+    <p class="card-text">Totally customize the user screens.</p>
+    <a href="/users/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-arrows-alt fa-sm"></i> Widgets</h5>
+    <p class="card-text">Easily add widgets to your plugin or theme.</p>
+    <a href="/widgets/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-6 col-sm-12 mb-2">
+<div class="card h-100">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-cogs fa-sm"></i> Workflow Tabs</h5>
+    <p class="card-text">Break up any page with an advanced tab system.</p>
+    <a href="/workflows/" class="card-link">Learn more...</a>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+</p>
+
+	
+	
+</main></div>
+</div>
+<footer class="footer mt-5">
+	<div class="container">
+	  <table class="table table-sm">
+		<caption>Hugo Variables for current page</caption>
+		<tr><th>Name</th><td>Piklist Documentation</td></tr>
+		<tr><th>Title</th><td>Piklist Documentation</td></tr>
+		<tr><th>Kind</th><td>home</td></tr>
+		<tr><th>Type</th><td>page</td></tr>
+		<tr><th>List Page</th><td>.Pages</td></tr>
+		<tr><th>IsPage</th><td>false</td></tr>
+		<tr><th>IsHome</th><td>false</td></tr>
+		<tr><th>Next</th><td></td></tr>
+		<tr><th>Prev</th><td></td></tr>
+		<tr><th>Section</th><td>Page(/_index.md)</td></tr>
+	  </table>
+	</div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/26036b74cc.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
