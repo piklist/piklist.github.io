@@ -28,8 +28,20 @@
 
 	<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar collapse">
 		<div class="sidebar-sticky pt-3">
-			<input id="search-by" class="form-control form-control-dark w-100 col-lg-8" type="search" placeholder="Find anything"
+			<div id="fastSearch"></div>
+			<input id="searchInput" class="form-control form-control-dark w-100 col-lg-8" type="search" placeholder="Find anything"
 				aria-label="Search">
+				<ul id="searchResults">
+				</ul>
+			</div>
+
+				<div id="fastSearch">
+					<input id="searchInput" tabindex="0">
+					<ul id="searchResults">
+					</ul>
+				  </div>
+
+
 			<ul class="nav flex-column">
 				<li class="nav-item">
 					<a class="nav-link active" href="#">
