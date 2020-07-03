@@ -1,4 +1,4 @@
-baseURL = "https://docs.piklist.com"
+baseURL = "/"
 languageCode = "en-us"
 title = "Piklist Documentation"
 publishDir = "docs"
@@ -6,6 +6,8 @@ canonifyURLs = true
 enableGitInfo = true
 theme = "piklist-theme"
 googleAnalytics = "UA-31864921-2"
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 [markup.goldmark.renderer]
   unsafe= true
 [Social]
