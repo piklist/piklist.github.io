@@ -1,22 +1,118 @@
+html {
+  font-size: 100%;
+}
+$font-size-base: 1rem; // 16px
+$font-size-lg: $font-size-base * 1 !default;
+$font-size-md: $font-size-base * 0.9 !default; // about 13px
+$font-size-sm: $font-size-base * 0.815 !default; // about 13px
+$lead-font-size: $font-size-base * 0.1 !default;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Helvetica Neue, Ubuntu, sans-serif;
 
+$h1-font-size: $font-size-base * 1.5 !default;
+$h2-font-size: $font-size-base * 1.45 !default;
+$h3-font-size: $font-size-base * 1.35 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base * 1.15 !default;
+$h6-font-size: $font-size-base !default;
 
+$nav-link-padding-y: 0.2rem;
 
-
-$font-size-base: 1rem;
-$font-family-sans-serif:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
-$nav-link-padding-y: .2rem;
-
-
-
-@import "node_modules/bootstrap/scss/bootstrap";
-
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
-	font-size: 14px;
-	font-weight:400;
-	line-height: 26px;
+  color: $gray-700;
+  //   font-size: 14px;
+  font-weight: 400;
+  //   line-height: 26px;
 }
 
-h5.card-title {
-	font-size: 24px;
+// h5.card-title {
+//   font-size: 24px;
+// }
+
+// #fastSearch {
+// 	visibility: hidden;
+// 	position: absolute;
+// 	right: 0px;
+// 	top: 0px;
+// 	display: inline-block;
+// 	width: 300px;
+//   }
+
+//   #fastSearch input {
+// 	padding: 4px 10px;
+// 	width: 100%;
+// 	height: 31px;
+// 	font-size: 1.6em;
+// 	color: #aaa;
+// 	font-weight: bold;
+// 	background-color: #000;
+// 	border-radius: 3px 3px 0px 0px;
+// 	border: none;
+// 	outline: none;
+// 	text-align: left;
+// 	display: inline-block;
+//   }
+
+a.nav-link {
+  font-size: $font-size-md;
+  color: $gray-700;
+}
+a.nav-link:hover {
+  font-size: $font-size-md;
+  color: $black;
+}
+#search-button.btn {
+  font-size: $font-size-sm;
+  text-align: left;
+  color: $gray-600;
+  border-color: $gray-300;
+  background-color: $gray-100;
+}
+
+#search-button.btn-light:focus {
+  box-shadow: none;
+}
+
+.modal-footer {
+  justify-content: center;
+  font-size: $font-size-sm;
+}
+#search-results {
+  visibility: inherit;
+  //   display: inline-block;
+  padding-left: 0;
+  background-color: #fff;
+  z-index: 999;
+  left: 0px;
+  right: auto;
+}
+
+#search-results li {
+  list-style: none;
+  margin-left: 0em;
+  // background-color: #333;
+  // border-bottom: 1px dotted #000;
+}
+#search-results li .title {
+  //   font-size: 1.1em;
+  display: inline-block;
+  font-weight: bold;
+}
+#search-results li a {
+  text-decoration: none !important;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  color: $gray-700;
+}
+#search-results {
+  li:hover a,
+  li:active a,
+  li:focus a {
+    //   border: 5px;
+    background-color: #556cd6;
+    color: #fff !important;
+  }
 }
