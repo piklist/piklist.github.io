@@ -2,8 +2,8 @@
 	{{- if ne $page.Type "json" -}}
 	{{- if and $index (gt $index 0) -}},{{- end }}
 	{
-		"uri": "{{ $page.Permalink }}",
-		"title": "{{ htmlEscape $page.Title}}",
+		"title": "{{$page.Title}}",
+		"permalink": "{{$page.Permalink}}",
 		"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag| htmlEscape }}"{{ end }}],
 		"description": "{{ htmlEscape .Description}}",
 		"content": {{$page.Plain | jsonify}}
