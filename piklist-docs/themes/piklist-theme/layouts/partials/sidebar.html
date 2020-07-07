@@ -22,100 +22,44 @@
 				{{ end }}
 			</ul>
 		</div>
-		
 	</nav>
+
 
 
 	<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar collapse">
 		<div class="sidebar-sticky pt-3">
-			<div id="fastSearch"></div>
-			<input id="searchInput" class="form-control form-control-dark w-100 col-lg-8" type="search" placeholder="Find anything"
-				aria-label="Search">
-				<ul id="searchResults">
-				</ul>
-			</div>
+			<button id="search-button" type="button" class="btn btn-light col-12 pt-1 pb-1 mb-3" data-toggle="modal" data-target="#search-modal"><span class="text-left"><i class="fas fa-search "></i></span> Find anything</button>
 
-				<div id="fastSearch">
-					<input id="searchInput" tabindex="0">
-					<ul id="searchResults">
-					</ul>
-				  </div>
-
-
-			<ul class="nav flex-column">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">
-						<span data-feather="home"></span>
-						Dashboard <span class="sr-only">(current)</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="file"></span>
-						Orders
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="shopping-cart"></span>
-						Products
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="users"></span>
-						Customers
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="bar-chart-2"></span>
-						Reports
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="layers"></span>
-						Integrations
-					</a>
-				</li>
-			</ul>
-
-			<h6
-				class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-				<span>Saved reports</span>
-				<a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-					<span data-feather="plus-circle"></span>
-				</a>
-			</h6>
-			<ul class="nav flex-column mb-2">
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="file-text"></span>
-						Current month
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="file-text"></span>
-						Last quarter
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="file-text"></span>
-						Social engagement
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<span data-feather="file-text"></span>
-						Year-end sale
-					</a>
-				</li>
-			</ul>
+			{{- partial "menu.html" . -}}
 		</div>
 	</nav>
 
 
 </div>
+
+
+  <div id="search-modal" class="modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+			<input id="searchInput" style="font-family: FontAwesome 5 Free;" class="form-control form-control-dark w-100 col-lg-12" type="search" placeholder='Go to...'
+			aria-label="Search" tabindex="999">
+		</div>
+		<div class="modal-body">
+			<ul id="search-results">
+			</ul>
+		</div>
+		<div class="modal-footer bg-light pt-0 pb-0">
+		 	<code>tab</code> Navigate  |  <code>enter</code> Go
+		</div>
+	  </div>
+	</div>
+  </div>
+
+	<script>
+		$(document).ready(function(){
+			$("#search-modal").on('shown.bs.modal', function(){
+				$(this).find('#searchInput').focus();
+			});
+		});
+	</script>

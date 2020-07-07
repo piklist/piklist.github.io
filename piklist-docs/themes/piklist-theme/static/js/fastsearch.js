@@ -1,45 +1,23 @@
 var fuse; // holds our search engine
 var searchVisible = false;
 var firstRun = true; // allow us to delay loading json data unless search activated
-var list = document.getElementById("searchResults"); // targets the <ul>
+var list = document.getElementById("search-results"); // targets the <ul>
 var first = list.firstChild; // first child of search list
 var last = list.lastChild; // last child of search list
 var maininput = document.getElementById("searchInput"); // input box for search
 var resultsAvailable = false; // Did we get any search results?
 
+
+// Load search
+$( document ).ready(function() {
+    loadSearch();
+});
+
+
 // ==========================================
 // The main keyboard event listener running the show
 //
 document.addEventListener("keydown", function (event) {
-  // CMD-/ to show / hide Search
-  if (event.metaKey && event.which === 191) {
-    // Load json search index if first time invoking search
-    // Means we don't load json unless searches are going to happen; keep user payload small unless needed
-    if (firstRun) {
-      loadSearch(); // loads our json data and builds fuse.js search index
-      firstRun = false; // let's never do this again
-    }
-
-    // Toggle visibility of search box
-    if (!searchVisible) {
-      document.getElementById("fastSearch").style.visibility = "visible"; // show search box
-      document.getElementById("searchInput").focus(); // put focus in input box so you can just start typing
-      searchVisible = true; // search visible
-    } else {
-      document.getElementById("fastSearch").style.visibility = "hidden"; // hide search box
-      document.activeElement.blur(); // remove focus from search box
-      searchVisible = false; // search not visible
-    }
-  }
-
-  // Allow ESC (27) to close search box
-  if (event.keyCode == 27) {
-    if (searchVisible) {
-      document.getElementById("fastSearch").style.visibility = "hidden";
-      document.activeElement.blur();
-      searchVisible = false;
-    }
-  }
 
   // DOWN (40) arrow
   if (event.keyCode == 40) {
@@ -101,7 +79,6 @@ function fetchJSONFile(path, callback) {
 
 // ==========================================
 // load our search index, only executed once
-// on first call of search box (CMD-/)
 //
 function loadSearch() {
   fetchJSONFile("/index.json", function (data) {
@@ -121,8 +98,7 @@ function loadSearch() {
 }
 
 // ==========================================
-// using the index we loaded on CMD-/, run
-// a search query (for "term") every time a letter is typed
+// run a search query (for "term") every time a letter is typed
 // in the search box
 //
 function executeSearch(term) {
@@ -134,14 +110,16 @@ function executeSearch(term) {
     resultsAvailable = false;
     searchitems = "";
   } else {
-    // build our html
-    for (let item in results.slice(0, 5)) {
+	// build our html
+	counter = 1000;
+    for (let item in results.slice(0, 15) ) {
+		counter++;
       // only show first 5 results
       searchitems =
         searchitems +
-        '<li><a href="' +
+        '<li class="rounded" tabindex="' + counter + '"><a class="rounded" href="' +
         results[item].item.permalink +
-        '" tabindex="0">' +
+        '">' +
         '<span class="title">' +
         results[item].item.title +
         '</span><br /> <span class="sc">' +
@@ -154,7 +132,7 @@ function executeSearch(term) {
     resultsAvailable = true;
   }
 
-  document.getElementById("searchResults").innerHTML = searchitems;
+  document.getElementById("search-results").innerHTML = searchitems;
   if (results.length > 0) {
     first = list.firstChild.firstElementChild; // first result container — used for checking against keyboard up/down location
     last = list.lastChild.firstElementChild; // last result container — used for checking against keyboard up/down location
