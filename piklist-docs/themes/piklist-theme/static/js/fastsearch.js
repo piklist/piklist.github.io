@@ -91,7 +91,7 @@ function loadSearch() {
       minMatchCharLength: 2,
       includeMatches: true,
       ignoreLocation: true,
-      keys: ["title", "permalink", "contents", "description"],
+      keys: ["title", "permalink", "content", "description"],
     };
     fuse = new Fuse(data, options); // build the index from the json file
   });
@@ -117,7 +117,7 @@ function executeSearch(term) {
       // only show first 5 results
       searchitems =
         searchitems +
-        '<li class="rounded" tabindex="' + counter + '"><a class="rounded" href="' +
+        '<li class=""><a class="rounded" tabindex="' + counter + '" href="' +
         results[item].item.permalink +
         '">' +
         '<span class="title">' +
@@ -126,8 +126,6 @@ function executeSearch(term) {
         results[item].item.description +
         "</span>" +
         "</a></li>";
-
-      // alert(JSON.stringify(results[item], null, 4));
     }
     resultsAvailable = true;
   }
