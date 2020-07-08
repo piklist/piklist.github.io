@@ -96,8 +96,11 @@
 				<i class="fa fa-check read-icon"></i>
 			  {{ end }}
 		  </a>
+		  <!-- 
+			 Child Pages
+		  -->
 		  {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
-		  {{ if ne $numberOfPages 0 }}
+		  {{ if and (ne $numberOfPages 0) (eq .File.UniqueID $currentNode.File.UniqueID) }}
 			<ul>
 			  {{ .Scratch.Set "pages" .Pages }}
 			  {{ if .Sections}}
@@ -121,7 +124,10 @@
 			  {{ end }}
 			{{end}}
 			</ul>
-		  {{ end }}        
+		  {{ end }}
+		  <!--
+			  End child pages
+		  -->      
 		</li>
 	  {{else}}
 		{{ if not .Params.Hidden }}
