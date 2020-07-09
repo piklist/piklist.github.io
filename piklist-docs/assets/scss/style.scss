@@ -1,12 +1,12 @@
 html {
   font-size: 100%;
 }
-$font-size-base: 1rem; // 16px
+$font-size-base: .88rem; // 16px
 $font-size-lg: $font-size-base * 1 !default;
 $font-size-md: $font-size-base * 0.9 !default; // about 13px
 $font-size-sm: $font-size-base * 0.815 !default; // about 13px
 $lead-font-size: $font-size-base * 0.1 !default;
-$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , "Roboto" , "Helvetica Neue" , "Ubuntu" , sans-serif;
 
 $h1-font-size: $font-size-base * 1.5 !default;
 $h2-font-size: $font-size-base * 1.45 !default;
@@ -17,43 +17,14 @@ $h6-font-size: $font-size-base !default;
 
 $nav-link-padding-y: 0.2rem;
 
-
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
-  color: $gray-700;
+  color: $gray-900;
   //   font-size: 14px;
   font-weight: 400;
   //   line-height: 26px;
 }
-
-// h5.card-title {
-//   font-size: 24px;
-// }
-
-// #fastSearch {
-// 	visibility: hidden;
-// 	position: absolute;
-// 	right: 0px;
-// 	top: 0px;
-// 	display: inline-block;
-// 	width: 300px;
-//   }
-
-//   #fastSearch input {
-// 	padding: 4px 10px;
-// 	width: 100%;
-// 	height: 31px;
-// 	font-size: 1.6em;
-// 	color: #aaa;
-// 	font-weight: bold;
-// 	background-color: #000;
-// 	border-radius: 3px 3px 0px 0px;
-// 	border: none;
-// 	outline: none;
-// 	text-align: left;
-// 	display: inline-block;
-//   }
 
 a.nav-link {
   font-size: $font-size-md;
