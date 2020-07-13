@@ -6,6 +6,11 @@
 		<div class="highlightable">
 		<ul class="topics">
 	
+			<!-- 
+				range .Site.Home.Sections.ByTitle
+				OR
+				range .Site.Home.Sections.ByWeight
+			-->
 			{{if eq .Site.Params.ordersectionsby "title"}}  
 			  {{range .Site.Home.Sections.ByTitle}}
 			  {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks}}
@@ -100,7 +105,7 @@
 			 Child Pages
 		  -->
 		  {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
-		  {{ if and (ne $numberOfPages 0) (eq .File.UniqueID $currentNode.File.UniqueID) }}
+		  {{ if or ( and (ne $numberOfPages 0) (eq .File.UniqueID $currentNode.File.UniqueID) ) (.IsAncestor $currentNode) (eq .File.UniqueID $currentNode.File.UniqueID)  }}
 			<ul>
 			  {{ .Scratch.Set "pages" .Pages }}
 			  {{ if .Sections}}
