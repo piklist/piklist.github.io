@@ -5,17 +5,29 @@ chapter: false
 weight: 90
 ---
 
-{{< columns_1 >}}
-
-<hr/>
 
 
-<div class="col-6 offset-3 d-flex justify-content-around">
-	<h3><i class="fas fa-graduation-cap fa-sm"></i>&nbsp;<a href="/getting-started" class="link-unstyled">Getting Started</a></h3>
-	<h3><i class="fas fa-check fa-sm"></i>&nbsp;<a href="/faq" class="link-unstyled">FAQS</a></h3>
+<div class="col- offset-2 justify-content-center">
+{{< columns_2 >}}
+<a href="/getting-started/" class="card link-unstyled">
+  <div class="card-body">
+    <h3 class="text-center"><i class="fas fa-graduation-cap fa-sm"></i> Getting Started</h3>
+  </div>
+</a>
+{{< /columns_2 >}}
+{{< columns_2 >}}
+<a href="/faq/" class="card link-unstyled">
+  <div class="card-body">
+    <h3 class="text-center"><i class="fas fa-check fa-sm"></i> FAQS</h3>
+  </div>
+</a>
+{{< /columns_2 >}}
 </div>
 
-{{< /columns_1 >}}
+
+
+
+
 
 {{< columns_2 >}}
 <a href="/admin-notices/" class="card h-100 link-unstyled">
