@@ -87,9 +87,10 @@ function loadSearch() {
       shouldSort: true,
       location: 0,
       distance: 100,
-      threshold: 0.4,
+      threshold: 0.0, // keep at 0 for exact match
       minMatchCharLength: 2,
-      includeMatches: true,
+	  includeMatches: true,
+	  includeScore: true,
       ignoreLocation: true,
       keys: ["title", "permalink", "content", "description"],
     };
