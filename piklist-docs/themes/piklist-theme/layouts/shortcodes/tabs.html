@@ -1,0 +1,51 @@
+<!--
+	Based on this shortcode:
+	https://github.com/feiskyer/kubernetes-docs/tree/master/layouts/shortcodes
+-->
+	
+{{ .Page.Scratch.Add "tabset-counter" 1 }}
+{{ $tab_set_id := .Get "name" | default (printf "tabset-%s-%d" (.Page.RelPermalink) (.Page.Scratch.Get "tabset-counter") ) | anchorize }}
+{{ $tabs := .Scratch.Get "tabs" }}
+{{ if .Inner }}{{/* We don't use the inner content, but Hugo will complain if we don't reference it. */}}{{ end }}
+<div id="{{ $tab_set_id }}">
+	<nav>
+		<div class="nav nav-tabs" id="nav-tab" role="tablist">
+	{{ range $i, $e := $tabs }}
+	  {{ $id := printf "%s-%d" $tab_set_id $i }}
+
+  <a class="nav-item nav-link {{if eq $i 0}}active{{end}}" id="{{ $id }}-tab" data-toggle="tab" href="#{{ $id }}" role="tab" aria-controls="#{{ $id }}" aria-selected="false">{{ trim .name " " }}</a>
+{{ end }}
+</div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+{{ range $i, $e := $tabs }}
+{{ $id := printf "%s-%d" $tab_set_id $i }}
+
+<div class="tab-pane fade {{if eq $i 0}}active show{{end}}" id="{{ $id }}" role="tabpanel" >
+	{{ with .content }}
+		{{ . }}
+	{{ else }}
+		{{ if eq $.Page.BundleType "leaf" }}
+			{{/* find the file somewhere inside the bundle. Note the use of double asterisk */}}
+			{{ with $.Page.Resources.GetMatch (printf "**%s*" .include)  }}
+				{{ if ne .ResourceType "page" }}
+				{{/* Assume it is a file that needs code highlighting. */}}
+				{{ $codelang := $e.codelang | default ( path.Ext .Name | strings.TrimPrefix ".") }} 
+				{{ highlight .Content $codelang "" }}
+				{{ else}}
+					{{ .Content }}
+				{{ end }}
+			{{ end }}
+		{{ else}}
+		{{ $path := path.Join $.Page.File.Dir .include }}
+		{{ $page := site.GetPage "page" $path }}
+		{{ with $page }}
+			{{ .Content }}
+		{{ else }}	
+		{{ errorf "[%s] tabs include not found for path %q" site.Language.Lang $path}}
+		{{ end }}
+		{{ end }}
+	{{ end }}
+</div>
+{{ end }}
+</div>
