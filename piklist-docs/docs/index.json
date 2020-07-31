@@ -1,0 +1,50 @@
+[
+	{
+		"title": "About Piklist",
+		"permalink": "/about-piklist/",
+		"tags": [],
+		"description": "Piklist is a fast and concise plugin that encourages WordPress rapid development. It simplifies many of the more difficult tasks in WordPress and adds functionality not presently common in WordPress core.",
+		"content": "The most powerful framework available for WordPress.\nBuilt for Developers. Piklist is a fast and concise plugin that encourages WordPress rapid development. It simplifies many of the more difficult tasks in WordPress and adds functionality not presently common in WordPress core.\nWhether it\u0026rsquo;s adding simple custom fields or more complex, conditionally driven forms, you can always do more in less time with Piklist.\nIf you can build it with WordPress, Piklist will make it better. Piklist is a layer that works between you and WordPress, reducing redundant code, extending core API’s and just plain super-charging WordPress. Anything you build with WordPress will be better with Piklist…anything.\nBuild plugins for Piklist. Piklist is a code based framework, so everything you build can easily be distributed. Your own plugins can now take advantage of the Piklist framework.\nAdd Piklist to your Theme. Piklist functionality can easily be added to your themes as well. Parent themes or child themes, it doesn\u0026rsquo;t matter. Piklist plays well with them all.\n"
+	},
+	{
+		"title": "Piklist Documentation",
+		"permalink": "/",
+		"tags": [],
+		"description": "Official documentation for Piklist, the most powerful framework available for WordPress.",
+		"content": "  \u0026nbsp;Getting Started \u0026nbsp;FAQS      Admin Notices Dismissable or standard admin notices that can be on every admin page, or just specific ones.\n    Admin Pages Create \"About\" pages and more, with customizable forms.\n     Dashboard Widgets Easy dashboard widgets for Multisite or Single site\n    Custom Fields The simplest, most powerful way to create custom fields in WordPress\n     Frontend Forms Powerful forms that can do anything you can imagine.\n    Help Tabs Easily add WordPress help tabs to any page.\n     Media Library Totally customize your Media Library pages.\n    Pointers Create step-by-step tutorials in the admin.\n     Post Types Register Post Types with Piklist and add power to your post types.\n    Settings The simplest way to add settings pages in WordPress.\n     Shortcodes Piklist automatically creates a UI for your shortcodes.\n    Taxonomies Register Taxonomies with Piklist and add power to your terms.\n     Update Scripts Let Piklist handle update scripts for your plugin or theme.\n    Users Totally customize the user screens.\n     Widgets Easily add widgets to your plugin or theme.\n    Workflow Tabs Break up any page with an advanced tab system.\n    "
+	},
+	{
+		"title": "Admin Notices",
+		"permalink": "/admin-notices/",
+		"tags": [],
+		"description": "Creating Admin Notices with Piklist is very easy, and can be done without writing any PHP.",
+		"content": "  Decide whether you are going to include your notice in a plugin or theme. Create a notices/ folder in your parts/ folder (e.g. /parts/notices/). Now, create a php file in your notices folder. This file will hold your notice code. At the top of the file, add the following comment block which tells Piklist this is an “updated” type notice, and can be dismissible by the user.  View Tutorials →  /parts/notices/ \u0026lt;?php /* Notice Type: updated Dismiss: true */ ?\u0026gt; \u0026lt;p\u0026gt;This is my notice\u0026lt;/p\u0026gt;    "
+	},
+	{
+		"title": "Benefits of using Piklist",
+		"permalink": "/about-piklist/benefits-of-using-piklist/",
+		"tags": [],
+		"description": "Piklist makes it super simple to add fields and data to almost every part of WordPress",
+		"content": " Use minimal code to generate complex fields. Code-based for maximum flexibility. Use the same field code to generate a post-meta field or a settings field or a user field\u0026hellip; Packed with hooks and filters so you can modify almost everything in WordPress. Enterprise level code quality.  "
+	},
+	{
+		"title": "Categories",
+		"permalink": "/categories/",
+		"tags": [],
+		"description": "",
+		"content": ""
+	},
+	{
+		"title": "License",
+		"permalink": "/about-piklist/license/",
+		"tags": [],
+		"description": "The license under which the Piklist software is released is GPLv2",
+		"content": "The license under which the Piklist software is released is the same as WordPress; the GPLv2 (or later) from the Free Software Foundation. A copy of the license is included with every copy of Piklist, but you can also read the text of the license here.\n"
+	},
+	{
+		"title": "Tags",
+		"permalink": "/tags/",
+		"tags": [],
+		"description": "",
+		"content": ""
+	}]

@@ -3,13 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/test/test/</loc>
-    <lastmod>2020-06-18T15:50:56-04:00</lastmod>
+    <loc>/about-piklist/</loc>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-18T15:50:56-04:00</lastmod>
+    <lastmod>2020-07-14T16:37:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/admin-notices/</loc>
+  </url>
+  
+  <url>
+    <loc>/about-piklist/benefits-of-using-piklist/</loc>
   </url>
   
   <url>
@@ -17,12 +24,11 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/about-piklist/license/</loc>
   </url>
   
   <url>
-    <loc>/test/</loc>
-    <lastmod>2020-06-18T15:50:56-04:00</lastmod>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

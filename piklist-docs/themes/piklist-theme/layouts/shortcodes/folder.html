@@ -1,0 +1,24 @@
+<!--
+'folder' shortcode
+To use: folder
+-->
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="alert alert-secondary" role="alert">
+  <span style="font-size: 32px; color: #007bff; float:left;">
+    <i class="fas fa-info-circle"></i>
+  </span>
+  <div class="ml-5">
+    <h4>
+      Place files in this folder:<br />
+      <code>{{ .Inner | markdownify }}</code>
+    </h4>
+  </div>
+  <hr />
+  <div>
+    <p class="mb-0">
+		<a href="/folder-structure/" class="">
+      Learn about the Piklist folder structure &rightarrow;</a>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+{
+	"name": "piklist-docs",
+	"version": "4.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "node-sass --watch assets/scss -o static/css",
+		"hugo": "hugo",
+		"dev": "(npm run scss) && (npm run hugo)",
+		"hugo:watch": "hugo serve --config config-dev.toml --bind=0.0.0.0"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bootstrap": "^4.5.0"
+	},
+	"devDependencies": {
+		"fuse.js": "^6.4.0",
+		"node-sass": "^4.14.1"
+	}
+}

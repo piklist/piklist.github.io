@@ -1,9 +1,15 @@
+
+
+
+
+
 <nav id="sidebar" class="{{if $.Site.Params.showVisitedLinks }}showVisitedLinks{{end}}">
 
 	{{ $currentNode := . }}
 	{{ $showvisitedlinks := .Site.Params.showVisitedLinks }}
-
-		<ul class="list-unstyled components">
+	
+		<div class="highlightable">
+		<ul class="topics">
 	
 			<!-- 
 				range .Site.Home.Sections.ByTitle
@@ -21,9 +27,6 @@
 			{{end}} 
 		</ul>
 	
-		<!--
-			Shortcuts
-		-->
 		{{ $disableShortcutsTitle := .Site.Params.DisableShortcutsTitle}}
 		{{with .Site.Menus.shortcuts}}
 		  <section id="shortcuts">
@@ -38,10 +41,6 @@
 		  </section>
 		{{end}}
 	
-
-		<!--
-			REMOVE ?
-		-->
 		{{ if or .Site.IsMultiLingual $showvisitedlinks }}
 		<section id="prefooter">
 		  <hr/>
@@ -90,34 +89,29 @@
 		<section id="footer">
 		
 		</section>
-
+	  </div>
 	</nav>
 	
-	<!-- Template: section-tree-nav-->
+	<!-- templates -->
 	{{ define "section-tree-nav" }}
 	{{ $showvisitedlinks := .showvisitedlinks }}
 	{{ $currentNode := .currentnode }}
 	 {{with .sect}}
 	  {{if .IsSection}}
 		{{safeHTML .Params.head}}
-		{{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
 		<li data-nav-id="{{.URL}}" title="{{.Title}}" class="dd-item {{if .IsAncestor $currentNode }}parent{{end}} {{if eq .File.UniqueID $currentNode.File.UniqueID}}active{{end}} {{if .Params.alwaysopen}}parent{{end}}">
 		  <a href="{{.RelPermalink}}">
 			  {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
-			  {{if(ne $numberOfPages 0)}} <!-- if child pages -->
-				  {{if or (eq .File.UniqueID $currentNode.File.UniqueID) (.IsAncestor $currentNode)}} <!-- if active or child active-->
-				  	<i class="fas fa-chevron-up fa-xs float-right align-middle"></i>
-				  {{else}}
-			  		<i class="fas fa-chevron-down fa-xs float-right align-middle"></i>
-			  	{{end}}
-			  {{end}}
+			  {{ if $showvisitedlinks}}
+				<i class="fa fa-check read-icon"></i>
+			  {{ end }}
 		  </a>
 		  <!-- 
 			 Child Pages
 		  -->
-		  
-		  {{ if or ( and (ne $numberOfPages 0) (eq .File.UniqueID $currentNode.File.UniqueID) ) (.IsAncestor $currentNode) (eq .File.UniqueID $currentNode.File.UniqueID)  }}
-		  	<ul class="list-unstyled">
+		  {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
+		  {{ if or ( and (ne $numberOfPages 0) (eq .File.UniqueID $currentNode.File.UniqueID) ) (eq .File.UniqueID $currentNode.File.UniqueID) }}
+			<ul>
 			  {{ .Scratch.Set "pages" .Pages }}
 			  {{ if .Sections}}
 				{{ .Scratch.Set "pages" (.Pages | union .Sections) }}
@@ -150,6 +144,7 @@
 		  <li data-nav-id="{{.URL}}" title="{{.Title}}" class="dd-item {{if eq .File.UniqueID $currentNode.File.UniqueID}}active{{end}}">
 			<a href="{{ .RelPermalink}}">
 			{{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
+			{{ if $showvisitedlinks}}<i class="fa fa-check read-icon"></i>{{end}}
 			</a>
 		</li>
 		 {{ end }}

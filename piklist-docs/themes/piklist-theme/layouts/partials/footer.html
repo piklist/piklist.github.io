@@ -4,10 +4,12 @@
   <script src="/js/fastsearch.js"></script>
 <footer class="footer mt-5">
 	<div class="container">
+		{{ $currentNode := . }}
 	  <table class="table table-sm">
 		<caption>Hugo Variables for current page</caption>
 		<tr><th>Name</th><td>{{ .Name }}</td></tr>
 		<tr><th>Title</th><td>{{ .Title }}</td></tr>
+		<tr><th>.Permalink</th><td>{{ .Permalink }}</td></tr>
 		<tr><th>Kind</th><td>{{ .Kind }}</td></tr>
 		<tr><th>Type</th><td>{{ .Type }}</td></tr>
 		<tr><th>List Page</th><td>.Pages</td></tr>
@@ -16,7 +18,20 @@
 		<tr><th>Next</th><td>{{ .Next }}</td></tr>
 		<tr><th>Prev</th><td>{{ .Prev }}</td></tr>
 		<tr><th>Section</th><td>{{ .CurrentSection }}</td></tr>
+		<tr><th>File.UniqueID</th><td>{{ .File.UniqueID }}</td></tr>
+		<tr><th>.</th><td>{{ . }}</td></tr>
+		<tr><th>$currentNode</th><td>{{ $currentNode }}</td></tr>
+		<tr><th>$currentNode.File.UniqueID</th><td>{{ $currentNode.File.UniqueID }}</td></tr>
+
+		
+
+
+
+		
 	  </table>
+	  <pre>
+	  {{ printf "%#v" $.Site }}
+	  </pre>
 	</div>
   </footer>
 
@@ -26,6 +41,15 @@
 <script src="https://kit.fontawesome.com/26036b74cc.js" crossorigin="anonymous"></script>
 
 
+
+<!-- Divides menu -->
+<script>
+	$(document).ready(function(){
+		$('<li><h4>Customize</h4></li>').insertBefore('li[data-nav-id="/admin-notices/"]');
+		$('<li><h4>Reference</h4></li>').insertBefore('li[data-nav-id="/folder-structure/"]');
+		$('<li><h4>Help</h4></li>').insertBefore('li[data-nav-id="/faq/"]');
+	});
+</script>
 
 </body>
 </html>

@@ -2,24 +2,26 @@
 	Based on this shortcode:
 	https://github.com/feiskyer/kubernetes-docs/tree/master/layouts/shortcodes
 -->
-	
+{{ $_hugo_config := `{ "version": 1 }` }}
 {{ .Page.Scratch.Add "tabset-counter" 1 }}
 {{ $tab_set_id := .Get "name" | default (printf "tabset-%s-%d" (.Page.RelPermalink) (.Page.Scratch.Get "tabset-counter") ) | anchorize }}
 {{ $tabs := .Scratch.Get "tabs" }}
 {{ if .Inner }}{{/* We don't use the inner content, but Hugo will complain if we don't reference it. */}}{{ end }}
-<div id="{{ $tab_set_id }}">
-	<nav>
-		<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+	<nav class="code-tabs">
+		<div class="nav nav-pills" id="nav-tab" role="tablist">
 	{{ range $i, $e := $tabs }}
-	  {{ $id := printf "%s-%d" $tab_set_id $i }}
+		{{$tab_set_id := anchorize .name}}
+		{{ $id := printf "%s-%d" $tab_set_id $i }}
 
   <a class="nav-item nav-link {{if eq $i 0}}active{{end}}" id="{{ $id }}-tab" data-toggle="tab" href="#{{ $id }}" role="tab" aria-controls="#{{ $id }}" aria-selected="false">{{ trim .name " " }}</a>
 {{ end }}
 </div>
 </nav>
-<div class="tab-content" id="nav-tabContent">
+<div class="tab-content">
 {{ range $i, $e := $tabs }}
-{{ $id := printf "%s-%d" $tab_set_id $i }}
+	{{ $tab_set_id := anchorize .name }}
+	{{ $id := printf "%s-%d" $tab_set_id $i }}
 
 <div class="tab-pane fade {{if eq $i 0}}active show{{end}}" id="{{ $id }}" role="tabpanel" >
 	{{ with .content }}
@@ -48,4 +50,3 @@
 	{{ end }}
 </div>
 {{ end }}
-</div>

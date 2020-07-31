@@ -3,17 +3,29 @@
 <!-- count how many times this shortcode is used-->
 {{ .Page.Scratch.Add "columns_2" 1 }}
 
-<!-- if this is an odd number of times include "row" class-->
+<!-- if this is an odd column:
+		- include "row" class
+		- set the col-class to col-md-7
+	 else
+		- set the col-class to col-md-5
+-->
 {{if not (modBool (.Page.Scratch.Get "columns_2") 2)}}
 <div class="row">
+	{{ .Scratch.Set "col-class" "col-md-7" }}
+{{else}}
+	{{ .Scratch.Set "col-class" "col-md-5" }}
 {{end}}
 
-<div class="col-md-6 col-sm-12 mb-2">
-{{ .Inner | markdownify }}
+<div class="{{ .Scratch.Get "col-class" }} col-sm-12 mb-2 px-lg-5">
+	{{ if .Parent }}
+	{{ .Inner | markdownify }}
+	{{ else }}
+	{{ .Inner | htmlUnescape | safeHTML }}
+	{{ end }}
 {{ .Scratch.Get "count" }}
 </div>
 
-<!-- if this is an even number of times close "row" class-->
+<!-- if this is an even column close "row" class-->
 {{if (modBool (.Page.Scratch.Get "columns_2") 2)}}
 </div>
 {{end}}

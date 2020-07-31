@@ -1,4 +1,4 @@
-<div class="col-md-3 col-lg-2">
+<div class="col-md-3 col-lg-2 pl-0">
 
 	<nav class="navbar-light">
 		<title>Piklist</title>
@@ -24,20 +24,16 @@
 		</div>
 	</nav>
 
-
-
-	<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar collapse">
+	<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar collapse pl-0">
 		<div class="sidebar-sticky pt-3">
-			<button id="search-button" type="button" class="btn btn-light col-12 pt-1 pb-1 mb-3" data-toggle="modal" data-target="#search-modal"><span class="text-left"><i class="fas fa-search "></i></span> Find anything</button>
-
+			<button id="search-button" type="button" class="btn btn-light col-11 pt-1 pb-1 mb-3 ml-3" data-toggle="modal" data-target="#search-modal"><span class="text-left"><i class="fas fa-search "></i></span> Find anything</button>
 			{{- partial "menu.html" . -}}
 		</div>
 	</nav>
 
-
 </div>
 
-
+<!-- Search Modal -->
   <div id="search-modal" class="modal" tabindex="-1" role="dialog">
 	<div class="modal-dialog">
 	  <div class="modal-content">
@@ -57,6 +53,7 @@
   </div>
 
 	<script>
+		// Make sure modal input is in focus when modal is active
 		$(document).ready(function(){
 			$("#search-modal").on('shown.bs.modal', function(){
 				$(this).find('#searchInput').focus();

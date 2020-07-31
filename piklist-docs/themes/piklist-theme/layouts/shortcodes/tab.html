@@ -2,6 +2,7 @@
 	Based on this shortcode:
 	https://github.com/feiskyer/kubernetes-docs/tree/master/layouts/shortcodes
 -->
+{{ $_hugo_config := `{ "version": 1 }` }}
 {{ if .Parent }}
 	{{ $name := trim (.Get "name") " " }}
 	{{ $include := trim (.Get "include") " "}}

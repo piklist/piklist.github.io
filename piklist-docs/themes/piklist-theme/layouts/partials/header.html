@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="{{ relURL "/css/style.css" }}" />
+	<link rel="stylesheet" href="{{ relURL "/css/syntax.css" }}" />
 	<script src="https://docs.piklist.com/js/jquery-2.x.min.js?1586191206"></script>
 	{{ range .AlternativeOutputFormats -}}
 	  {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
@@ -17,7 +18,7 @@
 	{{ template "_internal/schema.html" . }}
   
   </head>
-  <body>
+  <body class="{{ .Type }} {{ with .File }}{{ .TranslationBaseName }}{{ end }} {{.Name | urlize}}">
     <div class="container-fluid mt-3">
       <div class="row">
         {{- partial "sidebar.html" . -}}
