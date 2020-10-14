@@ -23,7 +23,7 @@ piklist('field', array(
     ,'save_id' => isset($shortcode['attributes']['my_shortcode_saved_to_db']) ? (int) $shortcode['attributes']['my_shortcode_saved_to_db'] : true // Get the meta_id from the shortcode
     ,'label' => 'Demo shortcode'
     ,'add_more' => true
-  );
+));
 ```
 
 A few things about this field:
@@ -40,12 +40,14 @@ Add the following directly under the above field.
 // Get the last field rendered
 $field = piklist('field');
 
-// Store our meta id on the shortcode using the same field name as the post_meta for easy reference
+// Store our meta id on the shortcode using the same field name as the post_meta for easy reference. Yes, we know there are two fields in this file with the same name, `my_shortcode_saved_to_db`. Don't worry, it's fine.
 piklist('field', array(
   'type' => 'hidden'
   ,'field' => 'my_shortcode_saved_to_db'
   ,'value' => $field['data_id']
 ));
 ```
+
+The shortcode itself will render something like `[source_information sources_group="506"]Your text here[/source_information]` in your post. In this example the `506`, is the `meta_id` from the database. Since you can use this shortcode multiple times in one post, this is the only ID that is unique to this row.
 
 If you save this shortcode you should see the `my_shortcode_saved_to_db` field in your database. You can then retrieve it normally.
