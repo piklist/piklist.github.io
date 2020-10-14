@@ -1,0 +1,17 @@
+To start:
+-open terminal
+-navigate to this project folder
+-run:  hugo server -D
+
+When finished:
+-ctrl - C to exit
+-run:  hugo
+
+To view live:
+http://docs.piklist.com/file-structure/
+
+
+
+/**   FROM https://willschenk.com/articles/2018/building-a-hugo-site/ **/
+
+hugo server --watch --verbose --buildDrafts --cleanDestinationDir --disableFastRender
