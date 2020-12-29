@@ -212,4 +212,6 @@ nav.code-tabs .nav-pills a.show > .nav-link {
 .tab-content .tab-pane .highlight {
 	border-radius: 0 0 8px 8px;
 	padding: 0em;
-} 
+}
+
+@import "syntax.scss";
