@@ -1,6 +1,6 @@
 To start:
 -open terminal
--navigate to this project folder
+-navigate to the project folder: `cd piklist-docs`
 -run:  hugo server -D
 
 When finished:

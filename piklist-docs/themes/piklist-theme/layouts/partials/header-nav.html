@@ -1,24 +1,24 @@
 <div class="row">
-<nav class="col-6" aria-label="breadcrumb">
 
-	<ol class="breadcrumb bg-transparent small pl-0 pt-1">
-		{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-	  </ol>
-	  {{ define "breadcrumbnav" }}
-	  {{ if .p1.Parent }}
-	  {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
-	  {{ else if not .p1.IsHome }}
-	  {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
-	  {{ end }}
-	  <li class="breadcrumb-item {{ if eq .p1 .p2 }} active{{ end }}">
-		<a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
-	  </li>
-	  {{ end }}
-</nav>
+  <nav class="col-6" aria-label="breadcrumb">
 
-<ul
-  class="nav justify-content-end col-6 mb-4 d-none d-sm-none d-md-none d-lg-flex pb-6"
->
+    <ol class="breadcrumb bg-transparent small pl-0 pt-1">
+      {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+      </ol>
+      {{ define "breadcrumbnav" }}
+      {{ if .p1.Parent }}
+      {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+      {{ else if not .p1.IsHome }}
+      {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+      {{ end }}
+      <li class="breadcrumb-item {{ if eq .p1 .p2 }} active{{ end }}">
+      <a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
+      </li>
+      {{ end }}
+  </nav>
+
+  <nav class="col-6 mb-4 d-none d-sm-none d-md-none d-lg-flex pb-6 justify-content-end">
+  <ul class="nav">
   <li class="nav-item">
     <a class="nav-link active" href="https://piklist.com/support/"
       >Support / Community</a
@@ -52,5 +52,6 @@
     </div>
   </li>
 </ul>
+</nav>
 
 </div>
