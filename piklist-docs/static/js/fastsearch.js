@@ -20,7 +20,7 @@ $( document ).ready(function() {
 document.addEventListener("keydown", function (event) {
 
   // DOWN (40) arrow
-  if (event.keyCode == 40) {
+  if (KeyboardEvent.keyCode == 40) {
     if (searchVisible && resultsAvailable) {
       console.log("down");
       event.preventDefault(); // stop window from scrolling
@@ -37,7 +37,7 @@ document.addEventListener("keydown", function (event) {
   }
 
   // UP (38) arrow
-  if (event.keyCode == 38) {
+  if (KeyboardEvent.keyCode == 38) {
     if (searchVisible && resultsAvailable) {
       event.preventDefault(); // stop window from scrolling
       if (document.activeElement == maininput) {

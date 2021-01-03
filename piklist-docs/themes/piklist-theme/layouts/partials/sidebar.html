@@ -13,7 +13,7 @@
 			<div class="collapse navbar-collapse" id="mainNavbarToggler">
 				<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar  pl-0">
 					<div class="sidebar-sticky pt-3">
-						<button id="search-button" type="button" class="btn btn-light col-11 pt-1 pb-1 mb-3 ml-3" data-toggle="modal" data-target="#search-modal"><span class="text-left"><i class="fas fa-search "></i></span> Find anything</button>
+						<button id="search-button" type="button" class="btn btn-light col-11 pt-1 pb-1 mb-3 ml-3" data-bs-toggle="modal" data-bs-target="#search-modal"><span class="text-left"><i class="fas fa-search "></i></span> Find anything</button>
 						{{- partial "menu.html" . -}}
 					</div>
 				</nav>
@@ -22,18 +22,18 @@
 		</div>
 	</nav>
 
-</div>	
+</div>
 
 
 <!-- Search Modal -->
   <div id="search-modal" class="modal" tabindex="-1" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-dialog-scrollable">
 	  <div class="modal-content">
 		<div class="modal-header">
-			<input id="searchInput" style="font-family: FontAwesome 5 Free;" class="form-control form-control-dark w-100 col-lg-12" type="search" placeholder='Go to...'
+			<input id="searchInput" style="font-family: FontAwesome 5 Free;" class="form-control form-control-dark w-100 col-lg-12" type="search" placeholder='Search for...'
 			aria-label="Search" tabindex="999">
 		</div>
-		<div class="modal-body">
+		<div class="modal-body ">
 			<ul id="search-results">
 			</ul>
 		</div>
@@ -45,10 +45,11 @@
   </div>
 
 	<script>
-		// Make sure modal input is in focus when modal is active
-		$(document).ready(function(){
-			$("#search-modal").on('shown.bs.modal', function(){
-				$(this).find('#searchInput').focus();
-			});
-		});
+		// Autofocus on input when search modal is launched
+		var myModal = document.getElementById('search-modal')
+		var myInput = document.getElementById('searchInput')
+
+		myModal.addEventListener('shown.bs.modal', function () {
+			myInput.focus()
+		})
 	</script>
