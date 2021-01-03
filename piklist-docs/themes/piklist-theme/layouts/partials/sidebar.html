@@ -1,37 +1,29 @@
 <div class="col-md-3 col-lg-2 pl-0">
 
-	<nav class="navbar-light">
-		<title>Piklist</title>
-		<a class="navbar-brand" href="/">
-			<img src="{{ relURL "/logo-with-doc.png" }}" />
-		</a>
-		<button class="navbar-toggler collapsed" type="button"
-			data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+	<title>Piklist</title>
+	<a class="navbar-brand" href="/">
+		<img src="{{ relURL "/logo-with-doc.png" }}" />
+	</a>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				{{ $currentPage := . }}
-				{{ range .Site.Menus.main }}
-				<li
-					class="navbar-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
-					<a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-				</li>
-				{{ end }}
-			</ul>
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarToggler" aria-controls="mainNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainNavbarToggler">
+				<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar  pl-0">
+					<div class="sidebar-sticky pt-3">
+						<button id="search-button" type="button" class="btn btn-light col-11 pt-1 pb-1 mb-3 ml-3" data-toggle="modal" data-target="#search-modal"><span class="text-left"><i class="fas fa-search "></i></span> Find anything</button>
+						{{- partial "menu.html" . -}}
+					</div>
+				</nav>
+
+			</div>
 		</div>
 	</nav>
 
-	<nav id="sidebarMenu" class="border-right col-lg-12 d-md-block sidebar collapse pl-0">
-		<div class="sidebar-sticky pt-3">
-			<button id="search-button" type="button" class="btn btn-light col-11 pt-1 pb-1 mb-3 ml-3" data-toggle="modal" data-target="#search-modal"><span class="text-left"><i class="fas fa-search "></i></span> Find anything</button>
-			{{- partial "menu.html" . -}}
-		</div>
-	</nav>
+</div>	
 
-</div>
 
 <!-- Search Modal -->
   <div id="search-modal" class="modal" tabindex="-1" role="dialog">
