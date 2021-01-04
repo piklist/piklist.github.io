@@ -1,32 +1,17 @@
 <div class="row">
 
-  <nav class="col-6" aria-label="breadcrumb">
-
-    <ol class="breadcrumb bg-transparent small pl-0 pt-1">
-      {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-      </ol>
-      {{ define "breadcrumbnav" }}
-      {{ if .p1.Parent }}
-      {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
-      {{ else if not .p1.IsHome }}
-      {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
-      {{ end }}
-      <li class="breadcrumb-item {{ if eq .p1 .p2 }} active{{ end }}">
-      <a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
-      </li>
-      {{ end }}
-  </nav>
+  {{ partial "breadcrumbs.html" . }}
 
   <nav class="col-6 mb-4 d-none d-sm-none d-md-none d-lg-flex pb-6 justify-content-end">
-  <ul class="nav">
+  <ul class="nav pt-1">
   <li class="nav-item">
-    <a class="nav-link active" href="https://piklist.com/support/"
+    <a class="nav-link pt-0 active" href="https://piklist.com/support/"
       >Support / Community</a
     >
   </li>
   <li class="nav-item dropdown">
     <a
-      class="nav-link dropdown-toggle"
+      class="nav-link pt-0 dropdown-toggle"
       href="#"
       id="navbarDropdown"
       role="button"

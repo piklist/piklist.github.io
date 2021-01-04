@@ -1,0 +1,22 @@
+<!-- Using Microdata and RDFa -->
+<nav class="col-lg-6 col-md-12" aria-label="breadcrumb">
+	<ol itemscope itemtype="https://schema.org/BreadcrumbList" vocab="https://schema.org/" typeof="BreadcrumbList" class="breadcrumb bg-transparent small pl-0 pt-1">
+		{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+	</ol>
+	
+	  {{ define "breadcrumbnav" }}
+      {{ if .p1.Parent }}
+      {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2)  }}
+      {{ else if not .p1.IsHome }}
+      {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2) }}
+	  {{ end }}
+
+	  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" property="itemListElement" typeof="ListItem" class="breadcrumb-item {{ if eq .p1 .p2 }} active{{ end }}">
+        <a itemprop="item" property="item" typeof="WebPage" href="{{ .p1.Permalink }}">
+			<span itemprop="name" property="name">
+				{{ replace .p1.Title "Piklist Documentation" "Home"}}
+			</span>
+		</a>
+      </li>
+      {{ end }}
+  </nav>
