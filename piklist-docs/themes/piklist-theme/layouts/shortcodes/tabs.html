@@ -9,21 +9,29 @@
 {{ if .Inner }}{{/* We don't use the inner content, but Hugo will complain if we don't reference it. */}}{{ end }}
 
 	<nav class="code-tabs">
-		<div class="nav nav-pills" id="nav-tab" role="tablist">
+		<ul class="nav nav-pills" id="nav-tab" role="tablist">
 	{{ range $i, $e := $tabs }}
 		{{$tab_set_id := anchorize .name}}
 		{{ $id := printf "%s-%d" $tab_set_id $i }}
+	<li class="nav-item" role="presentation">
+	  <a class="nav-item nav-link {{if eq $i 0}}active{{end}}" id="{{ $id }}-tab" data-bs-toggle="pill" href="#{{ $id }}" role="tab" aria-controls="#{{ $id }}" aria-selected="false">{{ trim .name " " }}</a>
+	</li>
 
-  <a class="nav-item nav-link {{if eq $i 0}}active{{end}}" id="{{ $id }}-tab" data-toggle="tab" href="#{{ $id }}" role="tab" aria-controls="#{{ $id }}" aria-selected="false">{{ trim .name " " }}</a>
+  
+
+
 {{ end }}
-</div>
+</ul>
 </nav>
+
+
+
 <div class="tab-content">
 {{ range $i, $e := $tabs }}
 	{{ $tab_set_id := anchorize .name }}
 	{{ $id := printf "%s-%d" $tab_set_id $i }}
 
-<div class="tab-pane fade {{if eq $i 0}}active show{{end}}" id="{{ $id }}" role="tabpanel" >
+<div class="tab-pane fade px-3 py-3 pt-2 {{if eq $i 0}}active show{{end}}" id="{{ $id }}" role="tabpanel" aria-labelledby="{{ $id }}-tab" >
 	{{ with .content }}
 		{{ . }}
 	{{ else }}

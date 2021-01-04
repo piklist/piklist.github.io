@@ -183,9 +183,11 @@ a.card:hover {
 	background-color: #4f566b;
 	display: inline-block;
 	padding: 1em;
-	border-radius: 8px;
-	border: 1px solid #4f566b;
 	width: 100%;
+}
+
+.highlight pre {
+	margin-bottom: 0;
 }
 
 ///// Code Tabs
@@ -209,6 +211,9 @@ nav.code-tabs .nav-pills a.show > .nav-link {
 	margin: 1px;
 }
 
+.tab-content {
+	background-color: #272822;
+}
 .tab-content .tab-pane .highlight {
 	border-radius: 0 0 8px 8px;
 	padding: 0em;
