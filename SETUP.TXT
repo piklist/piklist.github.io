@@ -1,6 +1,7 @@
 To start:
 -open terminal
 -navigate to the project folder: `cd piklist-docs`
+-run: npm run sass
 -run:  hugo server -D
 
 When finished:
@@ -15,3 +16,13 @@ http://docs.piklist.com/file-structure/
 /**   FROM https://willschenk.com/articles/2018/building-a-hugo-site/ **/
 
 hugo server --watch --verbose --buildDrafts --cleanDestinationDir --disableFastRender
+
+
+
+SASS 
+STYLES: /piklist-docs/themes/piklist-theme/assets/scss/style.scss
+
+SYNTAX:
+https://help.farbox.com/pygments.html
+https://gohugo.io/getting-started/configuration-markup#highlight
+https://gohugo.io/commands/hugo_gen_chromastyles/
