@@ -2,7 +2,7 @@
 	Based on this shortcode:
 	https://github.com/feiskyer/kubernetes-docs/tree/master/layouts/shortcodes
 -->
-{{ $_hugo_config := `{ "version": 1 }` }}
+
 {{ .Page.Scratch.Add "tabset-counter" 1 }}
 {{ $tab_set_id := .Get "name" | default (printf "tabset-%s-%d" (.Page.RelPermalink) (.Page.Scratch.Get "tabset-counter") ) | anchorize }}
 {{ $tabs := .Scratch.Get "tabs" }}
@@ -17,14 +17,9 @@
 	  <a class="nav-item nav-link {{if eq $i 0}}active{{end}}" id="{{ $id }}-tab" data-bs-toggle="pill" href="#{{ $id }}" role="tab" aria-controls="#{{ $id }}" aria-selected="false">{{ trim .name " " }}</a>
 	</li>
 
-  
-
-
 {{ end }}
 </ul>
 </nav>
-
-
 
 <div class="tab-content">
 {{ range $i, $e := $tabs }}
