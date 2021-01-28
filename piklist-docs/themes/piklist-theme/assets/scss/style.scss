@@ -4,6 +4,7 @@
 html {
   font-size: 100%;
 }
+
 $font-size-base: .88rem; // 14px
 $font-size-lg: $font-size-base * 1.0 !default;
 $font-size-md: $font-size-base * 0.9 !default; // about 13px
@@ -24,6 +25,31 @@ $headings-line-height:        1.68 !default;
 $nav-link-padding-y: 0.2rem;
 
 $border-radius-lg: .5rem !default;
+
+$gray-100: #ebeded !default;
+$gray-200: #c5c9c9 !default;
+$gray-300: #b2b8b7 !default;
+$gray-400: #9fa6a6 !default;
+$gray-500: #8c9494 !default;
+$gray-600: #798382 !default;
+$gray-700: #667170 !default;
+$gray-800: #535f5e !default;
+$gray-900: #404e4d !default;
+
+$red:     #E32E19 !default;
+$purple:  #646881 !default;
+$green:   #62bec1 !default;
+$cyan:    #5ad2f4 !default;
+$blue:    #4196f1 !default;
+$yellow:  #f2e86d !default;
+$pink:    #f7d1cd !default;
+$orange:  #f2af29 !default;
+
+
+// Bootstrap defaults not overwritten... yet
+$indigo:  #6610f2 !default;
+$teal:    #20c997 !default;
+
 
 /*************************
 	IMPORT BOOTSTRAP
@@ -63,8 +89,8 @@ a.link-unstyled {
 	CUSTOM STYLES
 *************************/ 
 body {
-  color: $gray-900;
-  font-weight: 400;
+	color: #404e4d;
+	font-weight: 400;
 }
 
 a.nav-link {
