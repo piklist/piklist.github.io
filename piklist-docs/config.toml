@@ -10,6 +10,19 @@ googleAnalytics = "UA-31864921-2"
   home = ["HTML", "RSS", "JSON"]
 [markup.goldmark.renderer]
   unsafe= true
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "native"
+    tabWidth = 4
 [Social]
   twitter = "piklist"
 relativeURLs = true
