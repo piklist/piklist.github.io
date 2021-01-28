@@ -20,7 +20,7 @@
 	{{ if .Parent }}
 	{{ .Inner | markdownify }}
 	{{ else }}
-	{{ .Inner | htmlUnescape | safeHTML }}
+	{{ .Inner | safeHTML }}
 	{{ end }}
 {{ .Scratch.Get "count" }}
 </div>
