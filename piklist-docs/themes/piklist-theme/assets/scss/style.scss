@@ -41,7 +41,7 @@ $red:     #E32E19 !default;
 $purple:  #646881 !default;
 $green:   #62bec1 !default;
 $cyan:    #5ad2f4 !default;
-$blue:    #4196f1 !default;
+$blue:    #5469D4 !default;
 $yellow:  #f2e86d !default;
 $pink:    #f7d1cd !default;
 $orange:  #f2af29 !default;
@@ -63,6 +63,35 @@ $teal:    #20c997 !default;
 /*************************
 	HELPERS
 *************************/ 
+a{
+	&,
+	&:visited,
+	&:hover,
+	&:active,
+	&:focus,
+	&:active:hover {
+	  font-style: inherit;
+	  color: $blue;
+	  background-color: transparent;
+	  font-size: inherit;
+	  text-decoration: none;
+	  font-variant: inherit;
+	  font-weight: 500;
+	  line-height: inherit;
+	  font-family: inherit;
+	  border-radius: inherit;
+	  border: inherit;
+	  outline: inherit;
+	  box-shadow: inherit;
+	  padding: inherit;
+	  vertical-align: inherit;
+	}
+	&:hover {
+		color: $purple;
+	}
+  }
+
+
 a.link-unstyled {
 	&,
 	&:visited,
@@ -166,7 +195,7 @@ a.nav-link:hover {
 	}
 
 .folder-path-box {
-	background-color: $gray-800;
+	background-color: $purple;
 }
 	.folder-path-box h4,
 	.folder-path-box svg {
@@ -185,6 +214,9 @@ a.nav-link:hover {
 			color: $gray-300;
 			text-decoration: none;
 		}
+	.folder-path-box hr {
+		color: #fff;
+	}
 
 //// SIDE MENU
 
@@ -220,10 +252,15 @@ nav#sidebar ul li ul li {
 	}
 
 nav#sidebar ul li.active > a {
-	background: $gray-200;
+	background: none;
 	color: $link-color;
 	border-top-right-radius: $border-radius-lg;
 	border-bottom-right-radius: $border-radius-lg;
+}
+
+nav#sidebar h4 {
+	padding: 5px 10px 0px 1rem;
+	margin: 0;
 }
 
 ///// Link Cards
@@ -234,8 +271,9 @@ a.card {
 	@include border-radius($card-border-radius);
 }
 a.card:hover {
-	background: $gray-200;
+	background: $purple;
 	border: $card-border-width solid $card-border-color;
+	color: #fff;
 	@include border-radius($card-border-radius);
 }
 
@@ -258,7 +296,7 @@ code {
 
 
  .highlight{
-	// background-color: #4f566b;
+	background-color: #000;
 	display: inline-block;
 	padding: 1em;
 	width: 100%;
@@ -284,7 +322,7 @@ nav.code-tabs .nav-pills a.nav-link {
 nav.code-tabs .nav-pills a.nav-link:hover,
 nav.code-tabs .nav-pills a.nav-link.active,
 nav.code-tabs .nav-pills a.show > .nav-link {
-	background-color: #4F566B !important;
+	background-color: $purple !important;
 	color: #fff;
 	margin: 1px;
 }
