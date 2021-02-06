@@ -7,7 +7,7 @@ weight: 90
 
 {{< columns_1 >}}
 
-<hr/>
+---
 
 <div class="col-6 offset-3 d-flex justify-content-around">
 	<h3><i class="fas fa-graduation-cap fa-sm"></i>&nbsp;<a href="/getting-started" class="link-unstyled text-center" title="Get started with Piklist">Getting Started</a></h3>
