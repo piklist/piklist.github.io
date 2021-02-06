@@ -13,15 +13,15 @@
 	{{ range $i, $e := $tabs }}
 		{{$tab_set_id := anchorize .name}}
 		{{ $id := printf "%s-%d" $tab_set_id $i }}
-	<li class="nav-item" role="presentation">
-	  <a class="nav-item nav-link {{if eq $i 0}}active{{end}}" id="{{ $id }}-tab" data-bs-toggle="pill" href="#{{ $id }}" role="tab" aria-controls="#{{ $id }}" aria-selected="false">{{ trim .name " " }}</a>
-	</li>
+		<li class="nav-item" role="presentation">
+		<a class="nav-item nav-link {{if eq $i 0}}active{{end}}" id="{{ $id }}-tab" data-bs-toggle="pill" href="#{{ $id }}" role="tab" aria-controls="#{{ $id }}" aria-selected="false">{{ trim .name " " }}</a>
+		</li>
 
-{{ end }}
-</ul>
-</nav>
+	{{ end }}
+		</ul>
+	</nav>
 
-<div class="tab-content">
+<div class="tab-content-code">
 {{ range $i, $e := $tabs }}
 	{{ $tab_set_id := anchorize .name }}
 	{{ $id := printf "%s-%d" $tab_set_id $i }}
