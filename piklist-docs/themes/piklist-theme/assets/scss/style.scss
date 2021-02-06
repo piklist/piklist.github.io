@@ -5,22 +5,23 @@ html {
   font-size: 100%;
 }
 
-$font-size-base: .88rem; // 14px
+$font-size-base: 1rem; // 14px
 $font-size-lg: $font-size-base * 1.0 !default;
 $font-size-md: $font-size-base * 0.9 !default; // about 13px
 $font-size-sm: $font-size-base * 0.815 !default; // about 13px
 $lead-font-size: $font-size-base * 0.1 !default;
 $font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , "Roboto" , "Helvetica Neue" , "Ubuntu" , sans-serif;
 
-$h1-font-size: $font-size-base * 1.7 !default;
+$h1-font-size: $font-size-base * 2 !default;
 $h2-font-size: $font-size-base * 1.45 !default;
 $h3-font-size: $font-size-base * 1.35 !default;
 $h4-font-size: $font-size-base * 1.25 !default;
 $h5-font-size: $font-size-base * 1.15 !default;
 $h6-font-size: $font-size-base !default;
 
-$line-height-base:            1.57 !default;
+$line-height-base:            1.65 !default;
 $headings-line-height:        1.68 !default;
+$headings-font-weight:        700 !default;
 
 $nav-link-padding-y: 0.2rem;
 
@@ -33,7 +34,7 @@ $gray-400: #9fa6a6 !default;
 $gray-500: #8c9494 !default;
 $gray-600: #798382 !default;
 $gray-700: #667170 !default;
-$gray-800: #535f5e !default;
+$gray-800: #4F566B !default;
 $gray-900: #404e4d !default;
 
 $red:     #E32E19 !default;
@@ -128,7 +129,6 @@ a.nav-link:hover {
   left: 0px;
   right: auto;
 }
-
 #search-results li {
   list-style: none;
   margin-left: 0em;
@@ -156,8 +156,41 @@ a.nav-link:hover {
   }
 }
 
+.breadcrumb-item a{
+	color: $gray-700;
+	text-decoration: none;
+}
+
+	.breadcrumb-item a:hover{
+		color: black;
+	}
+
+.folder-path-box {
+	background-color: $gray-800;
+}
+	.folder-path-box h4,
+	.folder-path-box svg {
+		color: #fff;
+	}
+	.folder-path-box code {
+		color: $gray-300;
+		background-color: transparent;
+		border: none;
+	}
+	.folder-path-box a {
+		color: #fff;
+		text-decoration: none;
+	}
+		.folder-path-box a:hover {
+			color: $gray-300;
+			text-decoration: none;
+		}
 
 //// SIDE MENU
+
+#sidebar-menu {
+	border-right: 1px solid $gray-100;
+}
 nav#sidebar a {
 	font-weight: 500;
 	color: $gray-600;
@@ -210,6 +243,17 @@ a.card:hover {
 
 code {
 	color: $gray-900;
+	border-radius: 4px;
+    color: #3c4257;
+    font-weight: 500;
+    background: #f7fafc;
+    border: 1px solid #e3e8ee;
+    padding: 1px 2px;
+}
+
+.folder-path code {
+	background: #e4e6e6;
+
 }
 
 
