@@ -141,7 +141,7 @@ Piklist fields can be added almost anywhere in WordPress by using a very simple 
 
 Now that we created our metabox, it’s time to add some fields.  Under the comment block add the following field code so your file looks like this:
 
-```
+```php
 <?php
 /**
  * Title: My custom fields
@@ -174,7 +174,7 @@ Save the file. Go back to WordPress and add a new Post or a new Page. You will s
 
 Now go back to your file, copy the field code (not the comment block), and paste it under the first field.  Change the type to colorpicker, the field parameter to ‘field_two’, and the label to ‘Second field’. Your file should now look like this:
 
-```
+```php
 <?php
 /**
  * Title: My custom fields
