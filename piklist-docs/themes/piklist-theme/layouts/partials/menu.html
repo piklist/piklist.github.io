@@ -101,16 +101,19 @@
 	  {{if .IsSection}}
 		{{safeHTML .Params.head}}
 		{{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
-		<li data-nav-id="{{.URL}}" title="{{.Title}}" id="{{ replace .URL "/" "" }}" class="dd-item {{if .IsAncestor $currentNode }}parent{{end}} {{if eq .File.UniqueID $currentNode.File.UniqueID}}active{{end}} {{if .Params.alwaysopen}}parent{{end}}">
+		<li data-nav-id="{{.URL}}" title="{{.Title}}" id="{{ replace .URL "/" "" }}" class="{{ .Params.showhidden }} dd-item {{if .IsAncestor $currentNode }}parent{{end}} {{if eq .File.UniqueID $currentNode.File.UniqueID}}active{{end}} {{if .Params.alwaysopen}}parent{{end}}">
 		  <a href="{{.RelPermalink}}">
 			  {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
-			  {{if(ne $numberOfPages 0)}} <!-- if child pages -->
+			  {{if(ne $numberOfPages 0)}} 
+			  <!-- if child pages -->
+				  {{ if not (in .Params.showhidden "false") }}
 				  {{if or (eq .File.UniqueID $currentNode.File.UniqueID) (.IsAncestor $currentNode)}} <!-- if active or child active-->
 				  	<i class="fas fa-chevron-up fa-xs float-right align-middle"></i>
 				  {{else}}
 			  		<i class="fas fa-chevron-down fa-xs float-right align-middle"></i>
 			  	{{end}}
 			  {{end}}
+			{{end}}
 		  </a>
 		  <!-- 
 			 Child Pages
